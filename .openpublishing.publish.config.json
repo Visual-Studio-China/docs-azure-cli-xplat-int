@@ -2,6 +2,7 @@
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "enable_incremental_build": true,
   "docsets_to_publish": [
     {
       "docset_name": "azure-xplat",
@@ -13,10 +14,11 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+		"AzureXplatCli": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+	  "customized_template_paths": ["azurexplatcli"]
     }
   ],
   "notification_subscribers": [],
@@ -26,9 +28,16 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
+      "branch": "azurerelease"
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "dependent_packages": [
+    {
+      "path_to_root": "azurexplatcli",
+      "id": "opbuild.templates.azurexplatcli",
+      "version": "latest-prerelease",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2"
+    }
+  ]
 }

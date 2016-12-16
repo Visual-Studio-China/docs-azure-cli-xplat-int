@@ -16,7 +16,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+		  "breadcrumb.json"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,7 +28,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+	  "breadcrumb_path": "/azure-xplat/breadcrumb.json"
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "azure-xplat-cli-poc"
