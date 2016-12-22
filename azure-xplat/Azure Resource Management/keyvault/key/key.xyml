@@ -1,0 +1,508 @@
+commands:
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  name: list
+  description: Lists keys of a vault
+  usage: '[options] <vault-name>'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: lists only versions of this key
+  name: list-versions
+  description: Lists key versions
+  usage: '[options] <vault-name> [key-name>]'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: name of the key to be created; if already exists, a new key version is generated
+  - flags: -d, --destination <destination>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --destination
+    description: 'tells if the key is software-protected or HSM-protected; valid values: [Software, HSM]'
+  - flags: --enabled <boolean>
+    required: -11
+    optional: 0
+    bool: True
+    long: --enabled
+    description: 'tells if the key should be enabled; valid values: [false, true]; default is true'
+  - flags: -e, --expires <datetime>
+    required: -15
+    optional: 0
+    bool: True
+    short: -e
+    long: --expires
+    description: key expiration time, expressed in RFC-1123/ISO8601 date format
+  - flags: -n, --not-before <datetime>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --not-before
+    description: time before which key cannot be used, expressed in RFC-1123/ISO8601 date format
+  - flags: -o, --key-ops <key-ops>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --key-ops
+    description: JSON-encoded array of strings representing key operations; each string can be one of [encrypt, decrypt, sign, verify, wrapKey, unwrapKey]
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the key. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  name: create
+  description: Creates a key in the vault
+  usage: '[options] <vault-name> <key-name>'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: name of the key to be imported; if already exists, a new key version is generated
+  - flags: --pem-file <file-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --pem-file
+    description: name of a PEM file containing the key to be imported; the file must not be password protected
+  - flags: --byok-file <file-name>
+    required: -13
+    optional: 0
+    bool: True
+    long: --byok-file
+    description: name of a BYOK file containing the key to be imported
+  - flags: -p, --password <password>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --password
+    description: password of key file; if not informed and the file is encrypted, will prompt
+  - flags: -d, --destination <destination>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --destination
+    description: 'tells if the key is software-protected or HSM-protected; valid values: [Software, HSM]'
+  - flags: --enabled <boolean>
+    required: -11
+    optional: 0
+    bool: True
+    long: --enabled
+    description: 'tells if the key should be enabled; valid values: [false, true]; default is true'
+  - flags: -e, --expires <datetime>
+    required: -15
+    optional: 0
+    bool: True
+    short: -e
+    long: --expires
+    description: key expiration time, expressed in RFC-1123/ISO8601 date format
+  - flags: -n, --not-before <datetime>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --not-before
+    description: time before which key cannot be used, expressed in RFC-1123/ISO8601 date format
+  - flags: -o, --key-ops <key-ops>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --key-ops
+    description: JSON-encoded array of strings representing key operations; each string can be one of [encrypt, decrypt, sign, verify, wrapKey, unwrapKey]
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the key. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  name: import
+  description: Imports an existing key into a vault
+  usage: '[options] <vault-name> <key-name>'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: name of the key to be modified
+  - flags: -r, --key-version <key-version>
+    required: -19
+    optional: 0
+    bool: True
+    short: -r
+    long: --key-version
+    description: the version to be modified; if omited, modifies only the most recent
+  - flags: --enabled <boolean>
+    required: -11
+    optional: 0
+    bool: True
+    long: --enabled
+    description: 'if informed, command will change the enabled state; valid values: [false, true]'
+  - flags: -e, --expires <datetime>
+    required: -15
+    optional: 0
+    bool: True
+    short: -e
+    long: --expires
+    description: if informed, command will change secret expiration time; expressed in RFC-1123/ISO8601 date format, or null to clear the value
+  - flags: -n, --not-before <datetime>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --not-before
+    description: if informed, command will change time before which secret cannot be used; expressed in RFC-1123/ISO8601 date format, or null to clear the value
+  - flags: -o, --key-ops <key-ops>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --key-ops
+    description: if informed, command will change valid operations; must be JSON-encoded array of strings representing key operations; each string can be one of [encrypt, decrypt, sign, verify, wrapKey, unwrapKey]
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the key. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  - flags: --reset-tags
+    required: 0
+    optional: 0
+    bool: True
+    long: --reset-tags
+    description: remove previously existing tags; can combined with --tags
+  name: set-attributes
+  description: Changes attributes of an existing key
+  usage: '[options] <vault-name> <key-name> [key-version]'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: the key name
+  - flags: -r, --key-version <key-version>
+    required: -19
+    optional: 0
+    bool: True
+    short: -r
+    long: --key-version
+    description: the key version; if omited, uses the most recent
+  name: show
+  description: Shows properties of a vault key
+  usage: '[options] <vault-name> <key-name> [key-version]'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: the key name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  name: delete
+  description: Deletes a key from the vault
+  usage: '[options] <vault-name> <key-name>'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -k, --key-name <key-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: the key name
+  - flags: -f, --output-file <output-file>
+    required: -19
+    optional: 0
+    bool: True
+    short: -f
+    long: --output-file
+    description: name of the binary file that will contain backup data
+  name: backup
+  description: Generates a protected backup of a vault key
+  usage: '[options] <vault-name> <key-name> <output-file>'
+- filePath: commands/arm/keyvault/keyvault.key._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -f, --input-file <input-file>
+    required: -18
+    optional: 0
+    bool: True
+    short: -f
+    long: --input-file
+    description: name of the binary file that contains backup data
+  name: restore
+  description: Restores a backed up key to a vault
+  usage: '[options] <vault-name> <input-file>'
+name: key
+description: Commands to manage keys in the Azure Key Vault service
+usage: '[options] [command]'

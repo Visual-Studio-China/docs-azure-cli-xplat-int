@@ -1,0 +1,122 @@
+commands:
+- filePath: commands/arm/feature/feature._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: List all features available for your subscription
+  usage: '[options]'
+- filePath: commands/arm/feature/feature._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p --providerName <providerName>
+    required: -19
+    optional: 0
+    bool: True
+    short: -p
+    long: --providerName
+    description: the resource provider name
+  - flags: -n --featureName <featureName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --featureName
+    description: the feature name
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Shows a feature
+  usage: '[options] <providerName> <featureName>'
+- filePath: commands/arm/feature/feature._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p --providerName <providerName>
+    required: -19
+    optional: 0
+    bool: True
+    short: -p
+    long: --providerName
+    description: the resource provider name
+  - flags: -n --name <featureName>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the feature name
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  name: register
+  description: Registers a previewed feature of a resource provider.
+  usage: '[options] <providerName> <featureName>'
+name: feature
+description: Commands to manage your features
+usage: '[options] [command]'

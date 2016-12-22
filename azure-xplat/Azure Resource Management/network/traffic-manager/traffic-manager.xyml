@@ -1,0 +1,4 @@
+commands: []
+name: traffic-manager
+description: Commands to manage Traffic Manager
+usage: '[options]'

@@ -1,0 +1,63 @@
+commands:
+- filePath: commands/arm/insights/insights.usage._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p --ApiVersion <apiVersion>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --ApiVersion
+    description: The underlying resource provider API version.
+  - flags: -n --metricNames <metricNames>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --metricNames
+    description: The list of metric names.
+  - flags: -b --startTime <startTime>
+    required: -16
+    optional: 0
+    bool: True
+    short: -b
+    long: --startTime
+    description: 'The start time of the query. In ISO format with explicit indication of timezone: 1970-01-01T00:00:00Z, 1970-01-01T00:00:00-0500'
+  - flags: -e --endTime <endTime>
+    required: -14
+    optional: 0
+    bool: True
+    short: -e
+    long: --endTime
+    description: 'The end time of the query. In ISO format with explicit indication of timezone: 1970-01-01T00:00:00Z, 1970-01-01T00:00:00-0500'
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+  name: list
+  description: List usage metrics for a resource.
+  usage: '[options] <resourceId>'
+name: usage
+description: Retrieve usage metrics for a resource.
+usage: '[options] [command]'

@@ -1,0 +1,629 @@
+commands:
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: list
+  description: List your web sites
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: --net-version <net-version>
+    required: -15
+    optional: 0
+    bool: True
+    long: --net-version
+    description: the .NET version. Valid options are v3.5 and v4.5
+  - flags: --php-version <php-version>
+    required: -15
+    optional: 0
+    bool: True
+    long: --php-version
+    description: the PHP version. Valid options are off, v5.4, v5.5 and v5.6
+  - flags: --platform <platform>
+    required: -12
+    optional: 0
+    bool: True
+    long: --platform
+    description: the platform. Valid options are x86 and x64
+  - flags: -w, --web-socket
+    required: 0
+    optional: 0
+    bool: True
+    short: -w
+    long: --web-socket
+    description: use this flag to enable web sockets
+  - flags: -W, --disable-web-socket
+    required: 0
+    optional: 0
+    bool: True
+    short: -W
+    long: --disable-web-socket
+    description: use this flag to disable web sockets
+  - flags: -r, --remote-debugging
+    required: 0
+    optional: 0
+    bool: True
+    short: -r
+    long: --remote-debugging
+    description: use this flag to enable remote debugging
+  - flags: -R, --disable-remote-debugging
+    required: 0
+    optional: 0
+    bool: True
+    short: -R
+    long: --disable-remote-debugging
+    description: use this flag to disable remote debugging
+  - flags: -d, --remote-debugging-version <remote-debugging-version>
+    required: -32
+    optional: 0
+    bool: True
+    short: -d
+    long: --remote-debugging-version
+    description: the version of remote debugging. It's either VS2012 or VS2013. This parameter is only valid when remote debugging is on.
+  - flags: -m, --managed-pipeline-mode <managed-pipeline-mode>
+    required: -29
+    optional: 0
+    bool: True
+    short: -m
+    long: --managed-pipeline-mode
+    description: the mode for managed pipeline. valid values are Classic and Integrated.
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: set
+  description: Set configuration options for your web site [name]
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -r, --repositoryRoot [dir path]
+    required: 0
+    optional: -22
+    bool: True
+    short: -r
+    long: --repositoryRoot
+    description: 'The root path for the repository (default: .)'
+  - flags: --aspWAP <projectFilePath>
+    required: -10
+    optional: 0
+    bool: True
+    long: --aspWAP
+    description: Create a deployment script for .NET web application, specify the project file path
+  - flags: --aspNetCore <projectFilePath>
+    required: -14
+    optional: 0
+    bool: True
+    long: --aspNetCore
+    description: Create a deployment script for ASP.NET Core web application, specify the project.json file path
+  - flags: --aspWebSite
+    required: 0
+    optional: 0
+    bool: True
+    long: --aspWebSite
+    description: Create a deployment script for basic website
+  - flags: --go
+    required: 0
+    optional: 0
+    bool: True
+    long: --go
+    description: Create a deployment script for Go website
+  - flags: --node
+    required: 0
+    optional: 0
+    bool: True
+    long: --node
+    description: Create a deployment script for node.js website
+  - flags: --php
+    required: 0
+    optional: 0
+    bool: True
+    long: --php
+    description: Create a deployment script for php website
+  - flags: --python
+    required: 0
+    optional: 0
+    bool: True
+    long: --python
+    description: Create a deployment script for python website
+  - flags: --functionApp
+    required: 0
+    optional: 0
+    bool: True
+    long: --functionApp
+    description: Create a deployment script for function App
+  - flags: --basic
+    required: 0
+    optional: 0
+    bool: True
+    long: --basic
+    description: Create a deployment script for any other website
+  - flags: --dotNetConsole <projectFilePath>
+    required: -17
+    optional: 0
+    bool: True
+    long: --dotNetConsole
+    description: Create a deployment script for .NET console application, specify the project file path
+  - flags: -s, --solutionFile [file path]
+    required: 0
+    optional: -20
+    bool: True
+    short: -s
+    long: --solutionFile
+    description: The solution file path (sln)
+  - flags: -p, --sitePath [directory path]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --sitePath
+    description: 'The path to the site being deployed (default: same as repositoryRoot)'
+  - flags: -t, --scriptType [batch|bash|posh]
+    required: 0
+    optional: -18
+    bool: True
+    short: -t
+    long: --scriptType
+    description: 'The script output type (default: batch)'
+  - flags: -o, --outputPath <output path>
+    required: -18
+    optional: 0
+    bool: True
+    short: -o
+    long: --outputPath
+    description: 'The path to output generated script (default: same as repository root)'
+  - flags: -y, --suppressPrompt
+    required: 0
+    optional: 0
+    bool: True
+    short: -y
+    long: --suppressPrompt
+    description: Suppresses prompting to confirm you want to overwrite an existing destination file.
+  - flags: --no-dot-deployment
+    required: 0
+    optional: 0
+    bool: False
+    long: --no-dot-deployment
+    description: Do not generate the .deployment file.
+  - flags: --no-solution
+    required: 0
+    optional: 0
+    bool: False
+    long: --no-solution
+    description: Do not require a solution file path (only for --aspWAP otherwise ignored).
+  name: deploymentscript
+  description: Generate custom deployment script
+  usage: '[options]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --location <location>
+    required: -12
+    optional: 0
+    bool: True
+    long: --location
+    description: the geographic region to create the website
+  - flags: --hostname <hostname>
+    required: -12
+    optional: 0
+    bool: True
+    long: --hostname
+    description: the custom host name to use
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: --git
+    required: 0
+    optional: 0
+    bool: True
+    long: --git
+    description: Configure git on web site and local folder
+  - flags: --gitusername <gitusername>
+    required: -15
+    optional: 0
+    bool: True
+    long: --gitusername
+    description: the publishing username for git
+  - flags: --github
+    required: 0
+    optional: 0
+    bool: True
+    long: --github
+    description: Configure github on web site and local folder
+  - flags: --githubusername <username>
+    required: -18
+    optional: 0
+    bool: True
+    long: --githubusername
+    description: the github username
+  - flags: --githubpassword <password>
+    required: -18
+    optional: 0
+    bool: True
+    long: --githubpassword
+    description: the github password
+  - flags: --githubrepository <repository>
+    required: -20
+    optional: 0
+    bool: True
+    long: --githubrepository
+    description: the github repository full name (i.e. user/repository)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: create
+  description: Create a web site
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: browse
+  description: Open your web site in a browser
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --details
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --details
+    description: show additional site details
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: show
+  description: Show details for a web site
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: delete
+  description: Delete a web site
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for swap confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: swap
+  description: Swap two web site slots
+  usage: '[options] <name> [slot1] [slot2]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: start
+  description: Start a web site
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: stop
+  description: Stop a web site
+  usage: '[options] [name]'
+- filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: restart
+  description: Stop and then start a web site
+  usage: '[options] [name]'
+name: site
+description: Commands to manage your Web Sites
+usage: '[options] [command]'

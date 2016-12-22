@@ -1,0 +1,481 @@
+commands:
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  name: list
+  description: Lists certificates of a vault
+  usage: '[options] <vault-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: lists only versions of this certificate
+  name: list-versions
+  description: Lists certificate versions
+  usage: '[options] <vault-name> [certificate-name]'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -r, --certificate-version <certificate-version>
+    required: -27
+    optional: 0
+    bool: True
+    short: -r
+    long: --certificate-version
+    description: the certificate version; if omited, uses the most recent
+  name: show
+  description: Shows a vault certificate
+  usage: '[options] <vault-name> <certificate-name> [certificate-version]'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -r, --certificate-version <certificate-version>
+    required: -27
+    optional: 0
+    bool: True
+    short: -r
+    long: --certificate-version
+    description: the certificate version; if omited, uses the most recent
+  - flags: --file <file>
+    required: -8
+    optional: 0
+    bool: True
+    long: --file
+    description: the file to receive certificate contents; the file must not exist otherwise the command fails
+  - flags: --encode <encoding>
+    required: -10
+    optional: 0
+    bool: True
+    long: --encode
+    description: 'tells to write a file by encoding certificate contents with the informed encoding; valid values: [base64]'
+  name: get
+  description: Downloads a certificate from the vault
+  usage: '[options] <vault-name> <certificate-name> [certificate-version] <file>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -p --certificate-policy <certificate-policy>
+    required: -25
+    optional: 0
+    bool: True
+    short: -p
+    long: --certificate-policy
+    description: a JSON-formatted string containing the certificate policy.
+  - flags: -e --certificate-policy-file <certificate-policy-file>
+    required: -30
+    optional: 0
+    bool: True
+    short: -e
+    long: --certificate-policy-file
+    description: a file containing the certificate policy. Mutually exlcusive with --certificate-policy.
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the certificate. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  name: create
+  description: Creates a certificate in the vault
+  usage: '[options] <vault-name> <certificate-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -b --content <content>
+    required: -14
+    optional: 0
+    bool: True
+    short: -b
+    long: --content
+    description: a base64 encoded string containing the certificate and private key (optional) to be imported
+  - flags: -e --content-file <content-file>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --content-file
+    description: a file containing the certificate and private key (optional) to be imported
+  - flags: --content-file-binary <boolean>
+    required: -23
+    optional: 0
+    bool: True
+    long: --content-file-binary
+    description: 'indicates if the content file is binary. valid values: [false, true]. default is false.'
+  - flags: -d, --password <password>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --password
+    description: password of the file if it contains a encrypted private key
+  - flags: -p --certificate-policy <certificate-policy>
+    required: -25
+    optional: 0
+    bool: True
+    short: -p
+    long: --certificate-policy
+    description: a JSON-formatted string containing the certificate policy.
+  - flags: -e --certificate-policy-file <certificate-policy-file>
+    required: -30
+    optional: 0
+    bool: True
+    short: -e
+    long: --certificate-policy-file
+    description: a file containing the certificate policy. Mutually exlusive with --certificate-policy.
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the certificate. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  name: import
+  description: Imports a certificate into the vault
+  usage: '[options] <vault-name> <certificate-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -b --content <content>
+    required: -14
+    optional: 0
+    bool: True
+    short: -b
+    long: --content
+    description: certificate chain to merge; must be JSON-encoded array of base64 encoded certificate
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the certificate. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  name: merge
+  description: Merges certificate(s)into the vault
+  usage: '[options] <vault-name> <certificate-name> <content>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: name of the certificate to be modified
+  - flags: -r, --certificate-version <certificate-version>
+    required: -27
+    optional: 0
+    bool: True
+    short: -r
+    long: --certificate-version
+    description: the version to be modified; if omited, modifies only the most recent
+  - flags: --enabled <boolean>
+    required: -11
+    optional: 0
+    bool: True
+    long: --enabled
+    description: 'if informed, command will change the enabled state; valid values: [false, true]'
+  - flags: -t, --tags <tags>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set on the certificate. Can be multiple in the format 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  - flags: --reset-tags
+    required: 0
+    optional: 0
+    bool: True
+    long: --reset-tags
+    description: remove previously existing tags; can combined with --tags
+  name: set-attributes
+  description: Changes attributes of an existing certificate
+  usage: '[options] <vault-name> <certificate-name> [certificate-version]'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  name: delete
+  description: Deletes a certificate from the vault
+  usage: '[options] <vault-name> <certificate-name>'
+name: certificate
+description: Commands to manage certificates in the Azure Key Vault service
+usage: '[options] [command]'

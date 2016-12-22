@@ -1,0 +1,153 @@
+commands:
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -w, --weekly <weekly>.
+    required: -14
+    optional: 0
+    bool: True
+    short: -w
+    long: --weekly
+    description: 'selected weekdays to start machines. example: Monday,Friday means start machines on Monday and Friday.'
+  - flags: -t, --time <time>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --time
+    description: 'the time (in UTC) to start virtual machines on the selected weekday, example: 0815 means 8:15am'
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Set virtual machine auto-start policy.
+  usage: '[options]'
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Get virtual machine auto-start policy.
+  usage: '[options]'
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete virtual machine auto-start policy.
+  usage: '[options]'
+name: auto-start-policy
+description: Commands to manage auto-start policy
+usage: '[options] [command]'

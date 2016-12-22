@@ -1,0 +1,41 @@
+commands:
+- filePath: commands/servicefabric/serviceFabricNode._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --node-name <nodeName>
+    required: -16
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the node
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+  name: show
+  description: Show node load information
+  usage: '[options] [nodeName]'
+name: load
+description: Commands to manage your node load
+usage: '[options] [command]'

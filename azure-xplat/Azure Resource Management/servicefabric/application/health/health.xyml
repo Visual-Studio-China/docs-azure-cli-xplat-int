@@ -1,0 +1,141 @@
+commands:
+- filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -e --events-health-state-filter <eventsHealthStateFilter>
+    required: -33
+    optional: 0
+    bool: True
+    short: -e
+    long: --events-health-state-filter
+    description: the filter of the event health state, values are [Default|None|Ok|Warning|Error|All]
+  - flags: -f --deployed-applications-health-state-filter <deployedapplicationsHealthStateFilter>
+    required: -48
+    optional: 0
+    bool: True
+    short: -f
+    long: --deployed-applications-health-state-filter
+    description: the filter of the deployed applications health state, values are [Default|None|Ok|Warning|Error|All]
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+  name: show
+  description: Show application health
+  usage: '[options] [applicationName]'
+- filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -i --source-id <sourceId>
+    required: -16
+    optional: 0
+    bool: True
+    short: -i
+    long: --source-id
+    description: the id of the source
+  - flags: -p --property <property>
+    required: -15
+    optional: 0
+    bool: True
+    short: -p
+    long: --property
+    description: the property
+  - flags: -e --health-state <healthState>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --health-state
+    description: the state of the health, values are [Ok|Warning|Error|Unknown]
+  - flags: -d --description <description>
+    required: -18
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: the description
+  - flags: -m --time-to-live-in-milliSeconds <timeToLiveInMilliSeconds>
+    required: -35
+    optional: 0
+    bool: True
+    short: -m
+    long: --time-to-live-in-milliSeconds
+    description: the time in milliseconds for live
+  - flags: -q --sequence-number <sequenceNumber>
+    required: -22
+    optional: 0
+    bool: True
+    short: -q
+    long: --sequence-number
+    description: the number of the sequence
+  - flags: -w --remove-when-expired
+    required: 0
+    optional: 0
+    bool: True
+    short: -w
+    long: --remove-when-expired
+    description: the boolean of the remove when expired
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+  name: send
+  description: 'Send application health, Example: azure servicefabric application health send --application-name fabric:app --source-id monitor --property pc --health-state Ok --description healthy'
+  usage: '[options] [applicationName] [sourceId] [property] [healthState]'
+name: health
+description: Commands to send your application health
+usage: '[options] [command]'

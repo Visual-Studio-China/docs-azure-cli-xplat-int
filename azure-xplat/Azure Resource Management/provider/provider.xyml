@@ -1,0 +1,161 @@
+commands:
+- filePath: commands/arm/providers/provider._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: Subscription to list providers for
+  - flags: --details
+    required: 0
+    optional: 0
+    bool: True
+    long: --details
+    description: shows full list of resource type and locations.
+  name: list
+  description: List currently registered providers in ARM
+  usage: '[options]'
+- filePath: commands/arm/providers/provider._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --details
+    required: 0
+    optional: 0
+    bool: True
+    long: --details
+    description: show details such as alias definitions, etc.
+  - flags: -n --namespace <namespace>
+    required: -16
+    optional: 0
+    bool: True
+    short: -n
+    long: --namespace
+    description: the provider namespace to show
+  - flags: -s --subscription <subscription
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: subscription to show provider for
+  name: show
+  description: Show details about the requested provider namespace
+  usage: '[options] <namespace>'
+- filePath: commands/arm/providers/provider._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --namespace <namespace>
+    required: -16
+    optional: 0
+    bool: True
+    short: -n
+    long: --namespace
+    description: the provider namespace to register
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: Subscription to register
+  name: register
+  description: Register namespace provider with the subscription
+  usage: '[options] <namespace>'
+- filePath: commands/arm/providers/provider._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --namespace <namespace>
+    required: -16
+    optional: 0
+    bool: True
+    short: -n
+    long: --namespace
+    description: the provider namespace to register
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: Subscription to register
+  name: unregister
+  description: Un-register namespace provider with the subscription
+  usage: '[options] <namespace>'
+name: provider
+description: Commands to manage resource provider registrations
+usage: '[options] [command]'

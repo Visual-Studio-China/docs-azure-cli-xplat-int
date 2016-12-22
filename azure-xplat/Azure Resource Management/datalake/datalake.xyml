@@ -1,0 +1,4 @@
+commands: []
+name: datalake
+description: Commands to manage your Data Lake objects
+usage: '[options]'

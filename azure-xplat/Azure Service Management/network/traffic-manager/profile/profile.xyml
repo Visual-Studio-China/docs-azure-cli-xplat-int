@@ -1,0 +1,361 @@
+commands:
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager profile
+  - flags: -d, --domain-name <domain-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --domain-name
+    description: >-
+      the profile DNS name
+         Example: foobar.trafficmanager.net
+  - flags: -m, --load-balancing-method <load-balancing-method>
+    required: -29
+    optional: 0
+    bool: True
+    short: -m
+    long: --load-balancing-method
+    description: >-
+      the load balancing method to use to distribute connection.
+         Valid values are [performance,failover,roundrobin]
+  - flags: -o, --monitor-port <monitor-port>
+    required: -20
+    optional: 0
+    bool: True
+    short: -o
+    long: --monitor-port
+    description: >-
+      the port used to monitor endpoint health.
+         Valid range is [1-65535] inclusive
+  - flags: -p, --monitor-protocol <monitor-protocol>
+    required: -24
+    optional: 0
+    bool: True
+    short: -p
+    long: --monitor-protocol
+    description: >-
+      the protocol to use to monitor endpoint health.
+         Valid values are [http,https]
+  - flags: -r, --monitor-relative-path <monitor-relative-path>
+    required: -29
+    optional: 0
+    bool: True
+    short: -r
+    long: --monitor-relative-path
+    description: the path relative to the endpoint domain name to probe for health state. Must start with a forward slash "/".
+  - flags: -t, --ttl <ttl>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --ttl
+    description: the DNS Time-to-Live (TTL) that informs the Local DNS resolvers how long to cache DNS entries
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Create a Traffic Manager profile
+  usage: '[options] <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager profile
+  - flags: -m, --load-balancing-method <load-balancing-method>
+    required: -29
+    optional: 0
+    bool: True
+    short: -m
+    long: --load-balancing-method
+    description: >-
+      the load balancing method to use to distribute connection.
+         Valid values are [performance,failover,roundrobin]
+  - flags: -o, --monitor-port <monitor-port>
+    required: -20
+    optional: 0
+    bool: True
+    short: -o
+    long: --monitor-port
+    description: >-
+      the port used to monitor endpoint health.
+         Valid range is [1-65535] inclusive
+  - flags: -p, --monitor-protocol <monitor-protocol>
+    required: -24
+    optional: 0
+    bool: True
+    short: -p
+    long: --monitor-protocol
+    description: >-
+      the protocol to use to monitor endpoint health.
+         Valid values are [http,https]
+  - flags: -r, --monitor-relative-path <monitor-relative-path>
+    required: -29
+    optional: 0
+    bool: True
+    short: -r
+    long: --monitor-relative-path
+    description: the path relative to the endpoint domain name to probe for health state. Must start with a forward slash "/".
+  - flags: -t, --ttl <ttl>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --ttl
+    description: the DNS Time-to-Live (TTL) that informs the Local DNS resolvers how long to cache DNS entries
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Set a Traffic Manager profile
+  usage: '[options] <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager profile
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Get a Traffic Manager profile
+  usage: '[options] <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: Get all Traffic Manager profiles
+  usage: '[options]'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete a Traffic Manager profile
+  usage: '[options] <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: enable
+  description: Enable a Traffic Manager profile
+  usage: '[options] <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Traffic Manager
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: disable
+  description: Disable a Traffic Manager profile
+  usage: '[options] <name>'
+name: profile
+description: Commands to manage Traffic Manager profile
+usage: '[options] [command]'

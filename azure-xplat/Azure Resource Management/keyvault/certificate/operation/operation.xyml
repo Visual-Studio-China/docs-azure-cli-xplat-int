@@ -1,0 +1,132 @@
+commands:
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  name: show
+  description: Shows a vault certificate operation
+  usage: '[options] <vault-name> <certificate-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for cancel confirmation)
+  name: cancel
+  description: Cancels a vault certificate operation
+  usage: '[options] <vault-name> <certificate-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  name: delete
+  description: Deletes a vault certificate operation
+  usage: '[options] <vault-name> <certificate-name>'
+name: operation
+description: Commands to manage certificate operations in the Azure Key Vault service
+usage: '[options] [command]'

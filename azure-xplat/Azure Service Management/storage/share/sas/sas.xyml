@@ -1,0 +1,91 @@
+commands:
+- filePath: commands/storage/storage.file._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --share <share>
+    required: -9
+    optional: 0
+    bool: True
+    long: --share
+    description: the storage share name
+  - flags: --permissions <permissions>
+    required: -15
+    optional: 0
+    bool: True
+    long: --permissions
+    description: the operation permissions combining symbols of r(Read)/w(Write)/d(Delete)/l(List)
+  - flags: --protocol <protocol>
+    required: -12
+    optional: 0
+    bool: True
+    long: --protocol
+    description: the protocol permitted for a request made with the SAS. Possible values are HttpsOnly and HttpsOrHttp
+  - flags: --ip-range <ipRange>
+    required: -12
+    optional: 0
+    bool: True
+    long: --ip-range
+    description: an IP address or a range of IP addresses from which to accept requests. When specifying a range of IP addresses, note that the range is inclusive. For example, specifying 168.1.5.65 or 168.1.5.60-168.1.5.70 on the SAS restricts the request to those IP addresses.
+  - flags: --start <start>
+    required: -9
+    optional: 0
+    bool: True
+    long: --start
+    description: the UTC time at which the SAS becomes valid
+  - flags: --expiry <expiry>
+    required: -10
+    optional: 0
+    bool: True
+    long: --expiry
+    description: the UTC time at which the SAS expires
+  - flags: --policy <policy>
+    required: -10
+    optional: 0
+    bool: True
+    long: --policy
+    description: the stored access policy identifier
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+  name: create
+  description: Generate shared access signature of storage share
+  usage: '[options] [share] [permissions] [expiry]'
+name: sas
+description: Commands to manage shared access signatures of your Storage file shares
+usage: '[options] [command]'

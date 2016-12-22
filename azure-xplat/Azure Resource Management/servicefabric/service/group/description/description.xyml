@@ -1,0 +1,41 @@
+commands:
+- filePath: commands/servicefabric/serviceFabricServiceGroup._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --service-name <serviceName>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --service-name
+    description: the name of the service
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+  name: show
+  description: Show service group description
+  usage: '[options] [serviceName]'
+name: description
+description: Commands to manage your service group description
+usage: '[options] [command]'

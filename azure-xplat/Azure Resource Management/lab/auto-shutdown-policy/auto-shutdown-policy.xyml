@@ -1,0 +1,146 @@
+commands:
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -t, --time <time>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --time
+    description: 'the time (in UTC) to shutdown virtual machines everyday, example: 1905 means 7:05pm'
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Set virtual machine daily auto-shutdown policy.
+  usage: '[options]'
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Get virtual machine auto-shutdown policy.
+  usage: '[options]'
+- filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete virtual machine auto-shutdown policy.
+  usage: '[options]'
+name: auto-shutdown-policy
+description: Commands to manage auto-shutdown policy
+usage: '[options] [command]'

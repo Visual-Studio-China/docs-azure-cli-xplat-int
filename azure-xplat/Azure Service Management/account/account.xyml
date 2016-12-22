@@ -1,0 +1,203 @@
+commands:
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  name: list
+  description: List the imported subscriptions
+  usage: '[options]'
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s --subscriptionNameOrId <subscriptionNameOrId>
+    required: -27
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscriptionNameOrId
+    description: The subscription to show
+  - flags: -d --details
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --details
+    description: Show extra information about the subscription
+  name: show
+  description: Show details about a subscription
+  usage: '[options] [subscriptionNameOrId]'
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  name: set
+  description: Set the current subscription
+  usage: '[options] <subscriptionNameOrId>'
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s --subscription <subscriptionNameOrId>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: Subscription name or id to remove
+  - flags: -e --environment <environmentName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -e
+    long: --environment
+    description: Environment name to remove
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  name: clear
+  description: Remove a subscription or environment, or clear all of the stored account and environment info
+  usage: '[options]'
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --skipregister
+    required: 0
+    optional: 0
+    bool: True
+    long: --skipregister
+    description: skip registering resources
+  name: import
+  description: Import a publishsettings file or certificate for your account
+  usage: '[options] <file>'
+- filePath: commands/account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -e, --environment <environment>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --environment
+    description: the publish settings download environment
+  - flags: -r, --realm <realm>
+    required: -13
+    optional: 0
+    bool: True
+    short: -r
+    long: --realm
+    description: the organization's realm, aka 'tenant'
+  name: download
+  description: Launch a browser to download your publishsettings file
+  usage: '[options]'
+name: account
+description: Commands to manage your account information and publish settings
+usage: '[options] [command]'

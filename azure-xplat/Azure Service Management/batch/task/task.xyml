@@ -1,0 +1,650 @@
+commands:
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the id of the job to which the task is to be added
+  - flags: -f, --json-file <json-file>
+    required: -17
+    optional: 0
+    bool: True
+    short: -f
+    long: --json-file
+    description: the file containing either a single task object or an array of task objects in JSON format, if this parameter is specified, --id and --command-line parameters are ignored
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: -c, --command-line <command-line>
+    required: -20
+    optional: 0
+    bool: True
+    short: -c
+    long: --command-line
+    description: the command line of the task
+  - flags: --affinity-id <affinity-id>
+    required: -15
+    optional: 0
+    bool: True
+    long: --affinity-id
+    description: the opaque string representing the location of compute node or a task that has run previously
+  - flags: --max-wall-clock-time <max-wall-clock-time>
+    required: -23
+    optional: 0
+    bool: True
+    long: --max-wall-clock-time
+    description: the maximum elapsed time that the task may run, measured from the time the task starts, in ISO 8601 duration formation
+  - flags: --max-task-retry-count <max-task-retry-count>
+    required: -24
+    optional: 0
+    bool: True
+    long: --max-task-retry-count
+    description: the maximum number of times the task may be retried
+  - flags: --retention-time <retention-time>
+    required: -18
+    optional: 0
+    bool: True
+    long: --retention-time
+    description: the time in which the working directory for the task is retained, in ISO 8601 duration formation
+  - flags: -e, --environment-settings <environment-settings>
+    required: -28
+    optional: 0
+    bool: True
+    short: -e
+    long: --environment-settings
+    description: 'the semicolon separated list of environment variable settings for the task, ex: name1=value1;name2=value2'
+  - flags: -r, --resources-files <resources-files>
+    required: -23
+    optional: 0
+    bool: True
+    short: -r
+    long: --resources-files
+    description: 'the semicolon separated list of files that Batch will download to the compute node before running the command line, ex: blob1=file1;blob2=file2'
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: create
+  description: Create a Batch task
+  usage: '[options] [jobId] [json-file]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the id of the job from which you want to get a list of tasks
+  - flags: --select-clause <select-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --select-clause
+    description: list of a subset of properties to select
+  - flags: --filter-clause <filter-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --filter-clause
+    description: an OData expression by which the results will be filtered
+  - flags: --expand-clause <expand-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --expand-clause
+    description: list of related entities by which the results can be expanded
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: list
+  description: List Batch tasks under a job
+  usage: '[options] [jobId]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the Batch job id
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: --subtasks
+    required: 0
+    optional: 0
+    bool: True
+    long: --subtasks
+    description: display information about the subtasks of a multi-instance task
+  - flags: --select-clause <select-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --select-clause
+    description: list of a subset of properties to select
+  - flags: --expand-clause <expand-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --expand-clause
+    description: list of related entities by which the results can be expanded
+  - flags: --if-match <if-match>
+    required: -12
+    optional: 0
+    bool: True
+    long: --if-match
+    description: only perform if resource's ETag is an exact match to the specified value
+  - flags: --if-none-match <if-none-match>
+    required: -17
+    optional: 0
+    bool: True
+    long: --if-none-match
+    description: only perform if resource's ETag does not match the specified value
+  - flags: --if-modified-since <if-modified-since>
+    required: -21
+    optional: 0
+    bool: True
+    long: --if-modified-since
+    description: only perform if the resource has been modified since the specified time
+  - flags: --if-unmodified-since <if-unmodified-since>
+    required: -23
+    optional: 0
+    bool: True
+    long: --if-unmodified-since
+    description: only perform if the resource has not been modified since the specified time
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: show
+  description: Show information on the specified Batch task
+  usage: '[options] [jobId] [taskId]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the Batch job id
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: remove the specified Batch task without confirmation
+  - flags: --if-match <if-match>
+    required: -12
+    optional: 0
+    bool: True
+    long: --if-match
+    description: only perform if resource's ETag is an exact match to the specified value
+  - flags: --if-none-match <if-none-match>
+    required: -17
+    optional: 0
+    bool: True
+    long: --if-none-match
+    description: only perform if resource's ETag does not match the specified value
+  - flags: --if-modified-since <if-modified-since>
+    required: -21
+    optional: 0
+    bool: True
+    long: --if-modified-since
+    description: only perform if the resource has been modified since the specified time
+  - flags: --if-unmodified-since <if-unmodified-since>
+    required: -23
+    optional: 0
+    bool: True
+    long: --if-unmodified-since
+    description: only perform if the resource has not been modified since the specified time
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: delete
+  description: Delete the specified Batch task
+  usage: '[options] [jobId] [taskId]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the Batch job id
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: --max-wall-clock-time <max-wall-clock-time>
+    required: -23
+    optional: 0
+    bool: True
+    long: --max-wall-clock-time
+    description: the maximum elapsed time that the task may run, measured from the time the task starts, in ISO 8601 duration formation
+  - flags: --max-task-retry-count <max-task-retry-count>
+    required: -24
+    optional: 0
+    bool: True
+    long: --max-task-retry-count
+    description: the maximum number of times the task may be retried
+  - flags: --retention-time <retention-time>
+    required: -18
+    optional: 0
+    bool: True
+    long: --retention-time
+    description: the time in which the working directory for the task is retained, in ISO 8601 duration formation
+  - flags: --if-match <if-match>
+    required: -12
+    optional: 0
+    bool: True
+    long: --if-match
+    description: only perform if resource's ETag is an exact match to the specified value
+  - flags: --if-none-match <if-none-match>
+    required: -17
+    optional: 0
+    bool: True
+    long: --if-none-match
+    description: only perform if resource's ETag does not match the specified value
+  - flags: --if-modified-since <if-modified-since>
+    required: -21
+    optional: 0
+    bool: True
+    long: --if-modified-since
+    description: only perform if the resource has been modified since the specified time
+  - flags: --if-unmodified-since <if-unmodified-since>
+    required: -23
+    optional: 0
+    bool: True
+    long: --if-unmodified-since
+    description: only perform if the resource has not been modified since the specified time
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: set
+  description: Update the properties of the specified Batch task
+  usage: '[options] [jobId] [taskId]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the Batch job id
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: terminate the specified Batch task without confirmation
+  - flags: --if-match <if-match>
+    required: -12
+    optional: 0
+    bool: True
+    long: --if-match
+    description: only perform if resource's ETag is an exact match to the specified value
+  - flags: --if-none-match <if-none-match>
+    required: -17
+    optional: 0
+    bool: True
+    long: --if-none-match
+    description: only perform if resource's ETag does not match the specified value
+  - flags: --if-modified-since <if-modified-since>
+    required: -21
+    optional: 0
+    bool: True
+    long: --if-modified-since
+    description: only perform if the resource has been modified since the specified time
+  - flags: --if-unmodified-since <if-unmodified-since>
+    required: -23
+    optional: 0
+    bool: True
+    long: --if-unmodified-since
+    description: only perform if the resource has not been modified since the specified time
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: stop
+  description: Terminate the specified Batch task
+  usage: '[options] [jobId] [taskId]'
+- filePath: commands/batch/batch.task._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -j, --job-id <jobId>
+    required: -14
+    optional: 0
+    bool: True
+    short: -j
+    long: --job-id
+    description: the Batch job id
+  - flags: -i, --id <taskId>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: the Batch task id
+  - flags: --if-match <if-match>
+    required: -12
+    optional: 0
+    bool: True
+    long: --if-match
+    description: only perform if resource's ETag is an exact match to the specified value
+  - flags: --if-none-match <if-none-match>
+    required: -17
+    optional: 0
+    bool: True
+    long: --if-none-match
+    description: only perform if resource's ETag does not match the specified value
+  - flags: --if-modified-since <if-modified-since>
+    required: -21
+    optional: 0
+    bool: True
+    long: --if-modified-since
+    description: only perform if the resource has been modified since the specified time
+  - flags: --if-unmodified-since <if-unmodified-since>
+    required: -23
+    optional: 0
+    bool: True
+    long: --if-unmodified-since
+    description: only perform if the resource has not been modified since the specified time
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: reactivate
+  description: Reactivate the specified Batch task
+  usage: '[options] [jobId] [taskId]'
+name: task
+description: Commands to manage your Batch tasks
+usage: '[options] [command]'

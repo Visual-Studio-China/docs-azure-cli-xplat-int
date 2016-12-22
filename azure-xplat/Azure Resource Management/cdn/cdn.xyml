@@ -1,0 +1,4 @@
+commands: []
+name: cdn
+description: Commands to manage Azure Content Delivery Network (CDN)
+usage: '[options]'

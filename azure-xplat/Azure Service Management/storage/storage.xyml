@@ -1,0 +1,4 @@
+commands: []
+name: storage
+description: Commands to invoke service management operations.
+usage: '[options]'

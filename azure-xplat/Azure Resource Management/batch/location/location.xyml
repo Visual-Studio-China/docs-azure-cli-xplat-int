@@ -1,0 +1,4 @@
+commands: []
+name: location
+description: Commands to manage Batch service options for a subscription at the region level
+usage: '[options]'

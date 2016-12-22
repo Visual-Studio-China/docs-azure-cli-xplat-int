@@ -1,0 +1,4 @@
+commands: []
+name: actions
+description: Creates alert rules actions
+usage: '[options]'

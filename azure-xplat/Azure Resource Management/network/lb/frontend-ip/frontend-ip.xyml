@@ -1,0 +1,316 @@
+commands:
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the frontend ip configuration
+  - flags: -a, --private-ip-address [private-ip-address]
+    required: 0
+    optional: -26
+    bool: True
+    short: -a
+    long: --private-ip-address
+    description: the private ip address
+  - flags: -u, --public-ip-id [public-ip-id]
+    required: 0
+    optional: -20
+    bool: True
+    short: -u
+    long: --public-ip-id
+    description: >-
+      the public ip address identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/publicIPAddresses/<public-ip-name>
+  - flags: -i, --public-ip-name [public-ip-name]
+    required: 0
+    optional: -22
+    bool: True
+    short: -i
+    long: --public-ip-name
+    description: >-
+      the public ip address name.
+           This public ip must exist in the same resource group as the load balancer.
+           Please use public-ip-id if that is not the case.
+  - flags: -b, --subnet-id [subnet-id]
+    required: 0
+    optional: -17
+    bool: True
+    short: -b
+    long: --subnet-id
+    description: >-
+      the subnet identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/VirtualNetworks/<vnet-name>/subnets/<subnet-name>
+  - flags: -e, --subnet-name [subnet-name]
+    required: 0
+    optional: -19
+    bool: True
+    short: -e
+    long: --subnet-name
+    description: the subnet name
+  - flags: -m, --subnet-vnet-name [subnet-vnet-name]
+    required: 0
+    optional: -24
+    bool: True
+    short: -m
+    long: --subnet-vnet-name
+    description: >-
+      the virtual network name in which subnet exists.
+           This virtual network must exist in the same resource group as the load balancer.
+           Please use subnet-id if that is not the case.
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Add a frontend ip configuration to the load balancer
+  usage: '[options] <resource-group> <lb-name> <name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the frontend ip configuration
+  - flags: -a, --private-ip-address [private-ip-address]
+    required: 0
+    optional: -26
+    bool: True
+    short: -a
+    long: --private-ip-address
+    description: the private ip address
+  - flags: -u, --public-ip-id [public-ip-id]
+    required: 0
+    optional: -20
+    bool: True
+    short: -u
+    long: --public-ip-id
+    description: >-
+      the public ip address identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/publicIPAddresses/<public-ip-name>
+  - flags: -i, --public-ip-name [public-ip-name]
+    required: 0
+    optional: -22
+    bool: True
+    short: -i
+    long: --public-ip-name
+    description: >-
+      the public ip address name.
+           This public ip must exist in the same resource group as the load balancer.
+           Please use public-ip-id if that is not the case.
+  - flags: -b, --subnet-id [subnet-id]
+    required: 0
+    optional: -17
+    bool: True
+    short: -b
+    long: --subnet-id
+    description: >-
+      the subnet identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/VirtualNetworks/<vnet-name>/subnets/<subnet-name>
+  - flags: -e, --subnet-name [subnet-name]
+    required: 0
+    optional: -19
+    bool: True
+    short: -e
+    long: --subnet-name
+    description: the subnet name
+  - flags: -m, --subnet-vnet-name [subnet-vnet-name]
+    required: 0
+    optional: -24
+    bool: True
+    short: -m
+    long: --subnet-vnet-name
+    description: >-
+      the virtual network name in which subnet exists.
+           This virtual network must exist in the same resource group as the load balancer.
+           Please use subnet-id if that is not the case.
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Set a frontend ip configuration of a load balancer
+  usage: '[options] <resource-group> <lb-name> <name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: Get all frontend ip configurations in the load balancer
+  usage: '[options] <resource-group> <lb-name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the frontend ip configuration
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete a frontend ip configuration from a load balancer
+  usage: '[options] <resource-group> <lb-name> <name>'
+name: frontend-ip
+description: Commands to manage frontend ip configurations of a load balancer
+usage: '[options] [command]'

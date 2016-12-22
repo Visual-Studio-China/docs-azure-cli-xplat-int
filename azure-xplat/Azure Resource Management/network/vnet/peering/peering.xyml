@@ -1,0 +1,343 @@
+commands:
+- filePath: commands/arm/network/virtualNetworkPeerings._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource-group of virtual network peering
+  - flags: -e, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --vnet-name
+    description: the virtual-network-name of virtual network peering
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the virtual-network-peering-name of virtual network peering
+  - flags: -r, --remote-vnet-id <remote-vnet-id>
+    required: -22
+    optional: 0
+    bool: True
+    short: -r
+    long: --remote-vnet-id
+    description: the reference of the remote virtual network by Id
+  - flags: -f, --allow-forwarded-traffic <allow-forwarded-traffic>
+    required: -31
+    optional: 0
+    bool: True
+    short: -f
+    long: --allow-forwarded-traffic
+    description: >-
+      whether the forwarded traffic from the VMs in the remote virtual network will be allowed/disallowed
+            Valid values are [true,false]
+  - flags: -y, --allow-gateway-transit <allow-gateway-transit>
+    required: -29
+    optional: 0
+    bool: True
+    short: -y
+    long: --allow-gateway-transit
+    description: >-
+      if gatewayLinks can be used in remote virtual network’s link to this virtual network
+            Valid values are [true,false]
+  - flags: -w, --use-remote-gateways <use-remote-gateways>
+    required: -27
+    optional: 0
+    bool: True
+    short: -w
+    long: --use-remote-gateways
+    description: >-
+      if remote gateways can be used on this virtual network. If the flag is set to true, and allowGatewayTransit on remotepeering is also true, virtual network will use gateways of remote virtual network for transit. Only 1 peering can have this flag set to true. This flag cannot be set if virtual network already has a gateway.
+            Valid values are [true,false]
+  - flags: -a, --allow-vnet-access <allow-vnet-access>
+    required: -25
+    optional: 0
+    bool: True
+    short: -a
+    long: --allow-vnet-access
+    description: >-
+      whether the VMs in the linked virtual network space would be able to access all the VMs in local Virtual network space
+            Valid values are [true,false]
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Create a virtual network peering
+  usage: '[options] <resource-group> <vnet-name> <name> <remote-vnet-id>'
+- filePath: commands/arm/network/virtualNetworkPeerings._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource-group of virtual network peering
+  - flags: -e, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --vnet-name
+    description: the virtual-network-name of virtual network peering
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the virtual-network-peering-name of virtual network peering
+  - flags: -f, --allow-forwarded-traffic <allow-forwarded-traffic>
+    required: -31
+    optional: 0
+    bool: True
+    short: -f
+    long: --allow-forwarded-traffic
+    description: >-
+      whether the forwarded traffic from the VMs in the remote virtual network will be allowed/disallowed
+            Valid values are [true,false]
+  - flags: -y, --allow-gateway-transit <allow-gateway-transit>
+    required: -29
+    optional: 0
+    bool: True
+    short: -y
+    long: --allow-gateway-transit
+    description: >-
+      if gatewayLinks can be used in remote virtual network’s link to this virtual network
+            Valid values are [true,false]
+  - flags: -w, --use-remote-gateways <use-remote-gateways>
+    required: -27
+    optional: 0
+    bool: True
+    short: -w
+    long: --use-remote-gateways
+    description: >-
+      if remote gateways can be used on this virtual network. If the flag is set to true, and allowGatewayTransit on remotepeering is also true, virtual network will use gateways of remote virtual network for transit. Only 1 peering can have this flag set to true. This flag cannot be set if virtual network already has a gateway.
+            Valid values are [true,false]
+  - flags: -a, --allow-vnet-access <allow-vnet-access>
+    required: -25
+    optional: 0
+    bool: True
+    short: -a
+    long: --allow-vnet-access
+    description: >-
+      whether the VMs in the linked virtual network space would be able to access all the VMs in local Virtual network space
+            Valid values are [true,false]
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Update a virtual network peering
+  usage: '[options] <resource-group> <vnet-name> <name>'
+- filePath: commands/arm/network/virtualNetworkPeerings._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource-group of virtual network peering
+  - flags: -e, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --vnet-name
+    description: the virtual-network-name of virtual network peering
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the virtual-network-peering-name of virtual network peering
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete a virtual network peering
+  usage: '[options] <resource-group> <vnet-name> <name>'
+- filePath: commands/arm/network/virtualNetworkPeerings._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource-group of virtual network peering
+  - flags: -e, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --vnet-name
+    description: the virtual-network-name of virtual network peering
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the virtual-network-peering-name of virtual network peering
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Show a virtual network peering
+  usage: '[options] <resource-group> <vnet-name> <name>'
+- filePath: commands/arm/network/virtualNetworkPeerings._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource-group of virtual network peerings
+  - flags: -e, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --vnet-name
+    description: the virtual-network-name of virtual network peerings
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: List a virtual network peerings
+  usage: '[options] <resource-group> <vnet-name>'
+name: peering
+description: Commands to manage virtual network peerings
+usage: '[options] [command]'

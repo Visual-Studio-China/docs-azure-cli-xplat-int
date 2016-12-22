@@ -1,0 +1,177 @@
+commands:
+- filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: list
+  description: List mobile service scheduled jobs
+  usage: '[options] [servicename]'
+- filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i, --interval <number>
+    required: -16
+    optional: 0
+    bool: True
+    short: -i
+    long: --interval
+    description: job interval as an integer; defaults to 15
+  - flags: -u, --intervalUnit <unit>
+    required: -20
+    optional: 0
+    bool: True
+    short: -u
+    long: --intervalUnit
+    description: 'specify one of: minute, hour, day, month or none for on-demand jobs; defaults to minute'
+  - flags: -t, --startTime <time>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --startTime
+    description: time of the first run of the script in ISO format; defaults to now
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: create
+  description: Create a mobile service scheduled job
+  usage: '[options] [servicename] [jobname]'
+- filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i, --interval <number>
+    required: -16
+    optional: 0
+    bool: True
+    short: -i
+    long: --interval
+    description: job interval as an integer
+  - flags: -u, --intervalUnit <unit>
+    required: -20
+    optional: 0
+    bool: True
+    short: -u
+    long: --intervalUnit
+    description: 'specify one of: minute, hour, day, month or none for on-demand jobs'
+  - flags: -t, --startTime <time>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --startTime
+    description: time of the first run of the script in ISO format
+  - flags: -a, --status <status>
+    required: -14
+    optional: 0
+    bool: True
+    short: -a
+    long: --status
+    description: enabled or disabled
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: update
+  description: Update a mobile service scheduled job
+  usage: '[options] [servicename] [jobname]'
+- filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: delete
+  description: Delete a mobile service scheduled job
+  usage: '[options] [servicename] [jobname]'
+name: job
+description: Commands to manage your Mobile Service scheduled jobs
+usage: '[options] [command]'

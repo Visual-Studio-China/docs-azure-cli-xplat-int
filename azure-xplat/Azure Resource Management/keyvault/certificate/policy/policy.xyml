@@ -1,0 +1,260 @@
+commands:
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  name: show
+  description: Shows a vault certificate policy
+  usage: '[options] <vault-name> <certificate-name>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: --file <file>
+    required: -8
+    optional: 0
+    bool: True
+    long: --file
+    description: the file to receive certificate policy contents; the file must not exist otherwise the command fails
+  name: get
+  description: Gets a vault certificate policy
+  usage: '[options] <vault-name> <certificate-name> <file>'
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i, --issuer-name <issuer-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -i
+    long: --issuer-name
+    description: issuer name
+  - flags: -n, --subject-name <subject-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -n
+    long: --subject-name
+    description: subject name
+  - flags: --file <file>
+    required: -8
+    optional: 0
+    bool: True
+    long: --file
+    description: the file to receive certificate policy object; the file must not exist otherwise the command fails
+  - flags: -k, --key-type <key-type>
+    required: -16
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-type
+    description: 'tells if the key backing the certificate is software-protected or HSM-protected; valid values: [RSA, RSA-HSM]'
+  - flags: --reuse-key-on-renewal
+    required: 0
+    optional: 0
+    bool: True
+    long: --reuse-key-on-renewal
+    description: indicates if the key should be reused on renewal; defaults to key is not reused
+  - flags: --key-not-exportable
+    required: 0
+    optional: 0
+    bool: True
+    long: --key-not-exportable
+    description: indicates if the key should not be exportable; defaults to key is exportable
+  - flags: -t, --secret-content-type <secret-content-type>
+    required: -27
+    optional: 0
+    bool: True
+    short: -t
+    long: --secret-content-type
+    description: 'secret content type; valid values: [application/x-pkcs12, application/x-pem-file]'
+  - flags: -d, --dns-names <dns-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-names
+    description: subject alternative dns names; must be JSON-encoded array of strings
+  - flags: -e, --ekus <ekus>
+    required: -12
+    optional: 0
+    bool: True
+    short: -e
+    long: --ekus
+    description: extended key usages; must be JSON-encoded array of strings
+  - flags: -m, --validity-in-months <validity-in-months>
+    required: -26
+    optional: 0
+    bool: True
+    short: -m
+    long: --validity-in-months
+    description: validity of the certificate in months
+  - flags: -c, --certificate-type <certificate-type>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-type
+    description: Type of certificate to be requested from the issuer
+  - flags: --renew-days-before-expiry <renew-days-before-expiry>
+    required: -28
+    optional: 0
+    bool: True
+    long: --renew-days-before-expiry
+    description: number of days before expiry to automatically renew the certificate
+  - flags: --renew-at-percentage-lifetime <renew-at-percentage-lifetime>
+    required: -32
+    optional: 0
+    bool: True
+    long: --renew-at-percentage-lifetime
+    description: lifetime percentage at which automatically renew the certificate
+  - flags: --email-days-before-expiry <email-days-before-expiry>
+    required: -28
+    optional: 0
+    bool: True
+    long: --email-days-before-expiry
+    description: number of days before expiry to send notification
+  - flags: --email-at-percentage-lifetime <email-at-percentage-lifetime>
+    required: -32
+    optional: 0
+    bool: True
+    long: --email-at-percentage-lifetime
+    description: lifetime percentage at which send notification
+  name: create
+  description: Creates a new certificate policy JSON object. This policy object can be used as input to other certificate commands such as certificate create.
+  usage: options <issuer-name> [subject-name] [file]
+- filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-name <certificate-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-name
+    description: the certificate name
+  - flags: -p --certificate-policy <certificate-policy>
+    required: -25
+    optional: 0
+    bool: True
+    short: -p
+    long: --certificate-policy
+    description: a JSON-formatted string containing the certificate policy
+  - flags: -e --certificate-policy-file <certificate-policy-file>
+    required: -30
+    optional: 0
+    bool: True
+    short: -e
+    long: --certificate-policy-file
+    description: a file containing the certificate policy.Mutually exlcusive with --certificate-policy.
+  name: set
+  description: Sets a vault certificate policy
+  usage: '[options] <vault-name> <certificate-name>'
+name: policy
+description: Commands to manage a certificate policy in the Azure Key Vault service
+usage: '[options] [command]'

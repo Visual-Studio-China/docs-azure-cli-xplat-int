@@ -1,0 +1,92 @@
+commands:
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resourceGroup>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: list
+  description: List the keys for a storage account
+  usage: '[options] <name>'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --primary
+    required: 0
+    optional: 0
+    bool: True
+    long: --primary
+    description: Update the primary key
+  - flags: --secondary
+    required: 0
+    optional: 0
+    bool: True
+    long: --secondary
+    description: Update the secondary key
+  - flags: -g, --resource-group <resourceGroup>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: renew
+  description: Renew a key for a storage account from your account
+  usage: '[options] <name>'
+name: keys
+description: Commands to manage your Storage account keys
+usage: '[options] [command]'

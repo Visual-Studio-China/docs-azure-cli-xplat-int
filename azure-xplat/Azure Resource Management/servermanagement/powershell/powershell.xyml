@@ -1,0 +1,122 @@
+commands:
+- filePath: commands/arm/servermanagement/servermanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --node-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the server management node
+  - flags: -e, --session-name <name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -e
+    long: --session-name
+    description: the name of the session on the node
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Create a powershell session
+  usage: '[options] <resource-group> <node-name> <session-name>'
+- filePath: commands/arm/servermanagement/servermanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --node-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the server management node
+  - flags: -e, --session-name <name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -e
+    long: --session-name
+    description: the name of the session on the node
+  - flags: -p, --powershell-session-id <id>
+    required: -29
+    optional: 0
+    bool: True
+    short: -p
+    long: --powershell-session-id
+    description: the id of the powershell session on the node
+  - flags: -c, --command <command>
+    required: -15
+    optional: 0
+    bool: True
+    short: -c
+    long: --command
+    description: the powershell command or script to invoke
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: invoke
+  description: Invoke a powershell script on a session
+  usage: '[options] <resource-group> <node-name> <session-name> <powershell-sessionid>'
+name: powershell
+description: Commands to invoke powershelll commands on a Azure Server Management Tools node
+usage: '[options] [command]'

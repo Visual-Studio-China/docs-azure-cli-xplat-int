@@ -1,0 +1,56 @@
+commands:
+- filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -t --tags [tags]
+    required: 0
+    optional: -11
+    bool: True
+    short: -t
+    long: --tags
+    description: The tags to set to the resource group. The tags specified here will replace the existing ones and not append to them. Can be multipleIn the format of 'name=value'. Name is required and value is optionalFor example, -t 'tag1=value1;tag2'.
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: set
+  description: Set tags on the IoT hub
+  usage: <resourceGroup> <name> [options]
+name: tags
+description: Commands to manage the tags of an Iot hub
+usage: '[options] [command]'

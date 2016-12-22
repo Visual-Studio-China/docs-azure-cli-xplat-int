@@ -1,0 +1,297 @@
+commands:
+- filePath: commands/arm/group/group.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the deployment
+  - flags: -f --template-file <template-file>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --template-file
+    description: the path to the template file in the file system
+  - flags: --template-uri <template-uri>
+    required: -16
+    optional: 0
+    bool: True
+    long: --template-uri
+    description: the uri to the remote template file
+  - flags: --template-version <template-version>
+    required: -20
+    optional: 0
+    bool: True
+    long: --template-version
+    description: the content version of the template
+  - flags: -p --parameters <parameters>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --parameters
+    description: a JSON-formatted string containing parameters
+  - flags: -e --parameters-file <parametersFile>
+    required: -22
+    optional: 0
+    bool: True
+    short: -e
+    long: --parameters-file
+    description: a file containing parameters
+  - flags: -m --mode <mode>
+    required: -11
+    optional: 0
+    bool: True
+    short: -m
+    long: --mode
+    description: 'the deployment mode: specify one of Incremental or Complete. If no mode is specified, Incremental is used as default. When Complete mode is used, all the resources in the specified resource group, which are not included in the template, will be deleted.'
+  - flags: -d --debug-setting <debugSetting>
+    required: -20
+    optional: 0
+    bool: True
+    short: -d
+    long: --debug-setting
+    description: the debug setting for deployment logs. Valid values include RequestContent, ResponseContent, All or None. None is the default value. When All is specified, both request content and response content will be logged, which will be visible in deployment operations.
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (when complete mode is specified, do not ask for deployment confirmation)
+  - flags: --nowait
+    required: 0
+    optional: 0
+    bool: True
+    long: --nowait
+    description: does not wait for the deployment to complete. Returns as soon as the deployment is created
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Creates a deployment
+  usage: '[options] [resource-group] [name]'
+- filePath: commands/arm/group/group.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group.
+  - flags: --state <state>
+    required: -9
+    optional: 0
+    bool: True
+    long: --state
+    description: filter the deployments by provisioning state (valid values are Accepted, Running, Failed, and Succeeded)
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: subscription containing deployments to list (optional)
+  name: list
+  description: Gets deployments
+  usage: '[options] <resource-group> [state]'
+- filePath: commands/arm/group/group.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group.
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the deployment (if not specified, the most recent deployment is shown)
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: subscription containing the deployment to display (optional)
+  name: show
+  description: Shows a deployment
+  usage: '[options] <resource-group> [deployment-name]'
+- filePath: commands/arm/group/group.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for stop deployment confirmation)
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the deployment (if not specified, the currently running deployment is stopped)
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  name: stop
+  description: Stops a deployment
+  usage: '[options] <resource-group> [deployment-name]'
+- filePath: commands/arm/group/group.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group.
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the deployment.
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: subscription containing the deployment to display (optional)
+  name: delete
+  description: Deletes a deployment
+  usage: '[options] <resource-group> <deployment-name>'
+name: deployment
+description: Commands to manage your deployment in a resource group
+usage: '[options] [command]'

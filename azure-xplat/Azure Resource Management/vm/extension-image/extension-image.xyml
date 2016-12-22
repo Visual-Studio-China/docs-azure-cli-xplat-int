@@ -1,0 +1,250 @@
+commands:
+- filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list-publishers
+  description: Lists virtual machine/extension image publishers
+  usage: '[options] <location>'
+- filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list-types
+  description: Lists virtual machine extension image types by a publisher
+  usage: '[options] <location> <publisher>'
+- filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -t, --typeName <typeName>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --typeName
+    description: the type name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list-versions
+  description: Lists virtual machine extension image versions by publisher and type input
+  usage: '[options] <location> <publisher> <typeName>'
+- filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -t, --typeName <typeName>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --typeName
+    description: the type name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: Lists virtual machine extension images by publisher, and type input
+  usage: '[options] <location> <publisher> <typeName>'
+- filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -t, --typeName <typeName>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --typeName
+    description: the type name
+  - flags: -v, --version <version>
+    required: -15
+    optional: 0
+    bool: True
+    short: -v
+    long: --version
+    description: the version
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Lists virtual machine extension image versions by publisher, type and version input
+  usage: '[options] <location> <publisher> <typeName> <version>'
+name: extension-image
+description: Commands to query available VM resource extensions
+usage: '[options] [command]'

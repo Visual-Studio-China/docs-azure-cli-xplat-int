@@ -1,0 +1,178 @@
+commands:
+- filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: show logging properties for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: show logging properties for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: show logging properties for queue service
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+  name: show
+  description: 'Show the logging properties of the storage services '
+  usage: '[options]'
+- filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: set logging properties for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: set logging properties for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: set logging properties for queue service
+  - flags: --version <version>
+    required: -11
+    optional: 0
+    bool: True
+    long: --version
+    description: the version string
+  - flags: --retention <retention>
+    required: -13
+    optional: 0
+    bool: True
+    long: --retention
+    description: set logging retention in days
+  - flags: --read
+    required: 0
+    optional: 0
+    bool: True
+    long: --read
+    description: enable logging for read requests
+  - flags: --read-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --read-off
+    description: disable logging for read requests
+  - flags: --write
+    required: 0
+    optional: 0
+    bool: True
+    long: --write
+    description: enable logging for write requests
+  - flags: --write-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --write-off
+    description: disable logging for write requests
+  - flags: --delete
+    required: 0
+    optional: 0
+    bool: True
+    long: --delete
+    description: enable logging for delete requests
+  - flags: --delete-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --delete-off
+    description: disable logging for delete requests
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+  name: set
+  description: Set the logging properties of the storage service
+  usage: '[options]'
+name: logging
+description: Commands to manage your Storage logging properties
+usage: '[options] [command]'

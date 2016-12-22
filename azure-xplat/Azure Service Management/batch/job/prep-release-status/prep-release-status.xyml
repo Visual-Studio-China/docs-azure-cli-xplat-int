@@ -1,0 +1,61 @@
+commands:
+- filePath: commands/batch/batch.job._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --select-clause <select-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --select-clause
+    description: list of a subset of properties to select
+  - flags: --filter-clause <filter-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --filter-clause
+    description: an OData expression by which the results will be filtered
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+  name: list
+  description: Lists the execution status of the job preparation and job release task for the specified job across the compute nodes where the job has run
+  usage: '[options] <jobId>'
+name: prep-release-status
+description: Commands to manage the status of your job preparation and release tasks
+usage: '[options] [command]'

@@ -1,0 +1,396 @@
+commands:
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: list
+  description: List storage accounts
+  usage: '[options]'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: show
+  description: Show a storage account
+  usage: '[options] <name>'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --type <type>
+    required: -8
+    optional: 0
+    bool: True
+    long: --type
+    description: the account type(LRS/ZRS/GRS/RAGRS/PLRS)
+  - flags: -e, --label <label>
+    required: -13
+    optional: 0
+    bool: True
+    short: -e
+    long: --label
+    description: the storage account label
+  - flags: -d, --description <description>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: the storage account description
+  - flags: -a, --affinity-group <affinityGroup>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --affinity-group
+    description: the affinity group
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: create
+  description: Create a storage account
+  usage: '[options] <name>'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --type <type>
+    required: -8
+    optional: 0
+    bool: True
+    long: --type
+    description: the account type(LRS/GRS/RAGRS)
+  - flags: -e, --label <label>
+    required: -13
+    optional: 0
+    bool: True
+    short: -e
+    long: --label
+    description: the storage account label
+  - flags: -d, --description <description>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: the storage account description
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: set
+  description: Update a storage account
+  usage: '[options] <name>'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  name: delete
+  description: Delete a storage account
+  usage: '[options] <name>'
+- filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  name: check
+  description: Check whether the account name is valid and is not in use.
+  usage: '[options] <name>'
+- filePath: commands/asm/storage.generated/storageAccount._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: abort-migration
+  description: Abort storage account migration api validates and aborts the given storage account for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+- filePath: commands/asm/storage.generated/storageAccount._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: commit-migration
+  description: Commit storage account migration api validates and commits the given storage account for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+- filePath: commands/asm/storage.generated/storageAccount._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: prepare-migration
+  description: Prepare storage account migration api validates and prepares the given storage account for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+- filePath: commands/asm/storage.generated/storageAccount._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: validate-migration
+  description: Validate storage account migration api validates the given storage account for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+name: account
+description: 'Commands to manage your storage account.  '
+usage: '[options] [command]'

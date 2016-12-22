@@ -1,0 +1,4 @@
+commands: []
+name: dns
+description: Commands to manage DNS
+usage: '[options]'

@@ -1,0 +1,115 @@
+commands:
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the frontend IP configuration
+  - flags: -t, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --type
+    description: the type, supported values are [Private], default value is Private
+  - flags: -i, --static-ip-address <static-ip-address>
+    required: -25
+    optional: 0
+    bool: True
+    short: -i
+    long: --static-ip-address
+    description: the static IP address
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: add
+  description: Add a frontend ip configuration to an Application Gateway
+  usage: '[options] <gateway-name> <name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the frontend IP configuration
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: remove
+  description: Remove a frontend ip configuration from an Application Gateway
+  usage: '[options] <gateway-name> <name>'
+name: frontend-ip
+description: Commands to manage Application Gateway frontend ip
+usage: '[options] [command]'

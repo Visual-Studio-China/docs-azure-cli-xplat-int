@@ -1,0 +1,230 @@
+commands:
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -t, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --type
+    description: >-
+      the gateway type, valid values are:
+             [StaticRouting,DynamicRouting],
+             default is StaticRouting
+  - flags: -k, --sku <sku>
+    required: -11
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: >-
+      the gateway SKU, valid values are:
+             [Default,HighPerformance],
+             default is Default
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Create a virtual network gateway
+  usage: '[options] <vnet-name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Get a virtual network gateway
+  usage: '[options] <vnet-name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete a virtual network gateway
+  usage: '[options] <vnet-name>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -k, --sku <sku>
+    required: -11
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: >-
+      the SKU that the existing gateway will be resized to,
+             valid values are [Default or HighPerformance]
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: resize
+  description: Resize a virtual network gateway
+  usage: '[options] <vnet-name> <sku>'
+- filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: reset
+  description: Reset a virtual network gateway
+  usage: '[options] <vnet-name>'
+name: vpn-gateway
+description: Commands to manage VPN Gateways
+usage: '[options] [command]'

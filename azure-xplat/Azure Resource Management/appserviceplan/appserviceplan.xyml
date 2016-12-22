@@ -1,0 +1,297 @@
+commands:
+- filePath: commands/arm/appserviceplan/appserviceplan._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: Name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the App Service Plan to create
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: "the geographic region to create the App Service Plan, \n					   locations found at https://azure.microsoft.com/en-us/status/"
+  - flags: -k --sku <sku>
+    required: -10
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: >
+      sku of the App Service Plan
+      	eg:
+      		 F1 (Free),           D1 (Shared),
+      		 B1 (Basic Small),    B2 (Basic Medium),    B3 (Basic Large),
+      		 S1 (Standard Small), S2 (Standard Medium), S3 (Standard Large),
+      		 P1 (Premium Small),  P2 (Premium Medium),  P3 (Premium Large)
+  - flags: -i --instances <instances>
+    required: -16
+    optional: 0
+    bool: True
+    short: -i
+    long: --instances
+    description: the number of instances in the App Service Plan, Default is 1
+  - flags: -x --islinux <islinux>
+    required: -14
+    optional: 0
+    bool: True
+    short: -x
+    long: --islinux
+    description: enables a linux App Service Plan, E.g --islinux true
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  - flags: -t --tier <tier>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --tier
+    description: to be deprecated, please use --sku option
+  name: create
+  description: Create an App Service Plan
+  usage: '[options] <resource-group> <name> <location> <sku>'
+- filePath: commands/arm/appserviceplan/appserviceplan._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: Name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the App Service Plan to delete
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete an App Service Plan
+  usage: '[options] <resource-group> <name>'
+- filePath: commands/arm/appserviceplan/appserviceplan._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: List your App Service Plans
+  usage: '[options] <resource-group>'
+- filePath: commands/arm/appserviceplan/appserviceplan._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the App Service Plan to show
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Get an App Service Plan
+  usage: '[options] <resource-group> <name>'
+- filePath: commands/arm/appserviceplan/appserviceplan._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: Name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the App Service Plan to update
+  - flags: -k --sku <sku>
+    required: -10
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: >
+      sku of the App Service Plan
+      	eg:
+      		 F1 (Free),           D1 (Shared),
+      		 B1 (Basic Small),    B2 (Basic Medium),    B3 (Basic Large),
+      		 S1 (Standard Small), S2 (Standard Medium), S3 (Standard Large),
+      		 P1 (Premium Small),  P2 (Premium Medium),  P3 (Premium Large)
+  - flags: -i --instances <instances>
+    required: -16
+    optional: 0
+    bool: True
+    short: -i
+    long: --instances
+    description: the number of instances in the App Service Plan, Default is 1
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  - flags: -t --tier <tier>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --tier
+    description: to be deprecated, please use --sku option
+  name: set
+  description: Update App Service Plan Configurations
+  usage: '[options] <resource-group> <name>'
+name: appserviceplan
+description: Commands to manage your Azure appserviceplans
+usage: '[options] [command]'

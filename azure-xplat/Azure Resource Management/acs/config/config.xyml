@@ -1,0 +1,88 @@
+commands:
+- filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  name: create
+  description: Generate containerServiceCreateOrUpdate parameter string or files.
+  usage: '[options]'
+- filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --operation <operation>
+    required: -13
+    optional: 0
+    bool: True
+    long: --operation
+    description: 'The JSON patch operation: add, remove, or replace.'
+  - flags: --path <path>
+    required: -8
+    optional: 0
+    bool: True
+    long: --path
+    description: 'The JSON data path, e.g.: "foo/1".'
+  - flags: --value <value>
+    required: -9
+    optional: 0
+    bool: True
+    long: --value
+    description: The JSON value.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the JSON value to object.
+  name: patch
+  description: Command to patch containerServiceCreateOrUpdate parameter JSON file.
+  usage: '[options]'
+name: config
+description: Commands to manage configuration of container-service in the parameter file.
+usage: '[options] [command]'

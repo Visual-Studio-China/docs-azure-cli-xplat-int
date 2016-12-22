@@ -1,0 +1,106 @@
+commands:
+- filePath: commands/arm/powerbiembedded/powerbiembedded._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: Name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of workspace collection
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: list
+  description: Get access keys for a workspace collection
+  usage: '[options] <resourceGroup> <name>'
+- filePath: commands/arm/powerbiembedded/powerbiembedded._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: Name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of workspace collection
+  - flags: --primary
+    required: 0
+    optional: 0
+    bool: True
+    long: --primary
+    description: Renew the Primary key
+  - flags: --secondary
+    required: 0
+    optional: 0
+    bool: True
+    long: --secondary
+    description: Renew the Secondary key
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  name: renew
+  description: Get access keys for a workspace collection
+  usage: '[options] <resourceGroup> <name>'
+name: keys
+description: Commands to manage your Power BI Workspace Collection keys
+usage: '[options] [command]'

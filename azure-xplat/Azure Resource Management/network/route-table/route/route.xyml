@@ -1,0 +1,314 @@
+commands:
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -a, --address-prefix <address-prefix>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --address-prefix
+    description: the route address prefix e.g. 0.0.0.0/0
+  - flags: -y, --next-hop-type <next-hop-type>
+    required: -21
+    optional: 0
+    bool: True
+    short: -y
+    long: --next-hop-type
+    description: >-
+      the route next hop type, valid values are:
+             [VirtualAppliance,VirtualNetworkGateway,VNETLocal,Internet,None]
+  - flags: -p, --next-hop-ip-address [next-hop-ip-address]
+    required: 0
+    optional: -27
+    bool: True
+    short: -p
+    long: --next-hop-ip-address
+    description: >-
+      the route next hop ip addresses, this parameter is valid
+             only for next hop type VirtualAppliance
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: create
+  description: Create route in a Route Table
+  usage: '[options] <resource-group> <route-table-name> <name> <address-prefix> <next-hop-type>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -a, --address-prefix [address-prefix]
+    required: 0
+    optional: -22
+    bool: True
+    short: -a
+    long: --address-prefix
+    description: the route address prefix e.g. 0.0.0.0/0
+  - flags: -y, --next-hop-type [next-hop-type]
+    required: 0
+    optional: -21
+    bool: True
+    short: -y
+    long: --next-hop-type
+    description: >-
+      the route next hop type, valid values are:
+             [VirtualAppliance,VirtualNetworkGateway,VNETLocal,Internet,None]
+  - flags: -p, --next-hop-ip-address [next-hop-ip-address]
+    required: 0
+    optional: -27
+    bool: True
+    short: -p
+    long: --next-hop-ip-address
+    description: >-
+      the route next hop ip addresses, this parameter is valid
+             only for next hop type VirualAppliance
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: set
+  description: Set route in a Route Table
+  usage: '[options] <resource-group> <route-table-name> <name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: list
+  description: List all routes in a Route Table
+  usage: '[options] <resource-group> <route-table-name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: show
+  description: Show details about route in a Route Table
+  usage: '[options] <resource-group> <route-table-name> <name>'
+- filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  name: delete
+  description: Delete route from a Route Table
+  usage: '[options] <resource-group> <route-table-name> <name>'
+name: route
+description: Commands to manage Route Table routes
+usage: '[options] [command]'

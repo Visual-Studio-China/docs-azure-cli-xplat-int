@@ -1,0 +1,4 @@
+commands: []
+name: sql
+description: Commands to manage your SQL Server accounts
+usage: '[options]'

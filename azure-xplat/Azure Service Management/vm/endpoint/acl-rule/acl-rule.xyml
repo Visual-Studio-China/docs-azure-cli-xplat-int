@@ -1,0 +1,289 @@
+commands:
+- filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vm-name <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --vm-name
+    description: the VM name
+  - flags: -e, --endpoint-name <name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: the ACL rule name
+  - flags: -o, --order <id>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --order
+    description: the ACL rule order
+  - flags: -a, --action  <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -a
+    long: --action
+    description: the ACL rule action
+  - flags: -t, --remote-subnet  <subnet>
+    required: -22
+    optional: 0
+    bool: True
+    short: -t
+    long: --remote-subnet
+    description: the ACL rule remote subnet
+  - flags: -r, --description <description>
+    required: -19
+    optional: 0
+    bool: True
+    short: -r
+    long: --description
+    description: the ACL rule rule description
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: filter VMs for the specified DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: create
+  description: Create an ACL rule for a VM endpoint
+  usage: '[options] [vm-name] [endpoint-name] [order] [action] [remote-subnet]'
+- filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vm-name <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --vm-name
+    description: the VM name
+  - flags: -e, --endpoint-name <name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: the ACL rule name
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: filter VMs for the specified DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: list
+  description: List ACL rules defined for a VM endpoint
+  usage: '[options] [vm-name] [endpoint-name]'
+- filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vm-name <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --vm-name
+    description: the VM name
+  - flags: -e, --endpoint-name <name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: the ACL rule name
+  - flags: -o, --order <id>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --order
+    description: the ACL rule order
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: filter VMs for the specified DNS name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: delete
+  description: Delete an ACL rule for a VM endpoint
+  usage: '[options] [vm-name] [endpoint-name] [order]'
+- filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vm-name <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --vm-name
+    description: the VM name
+  - flags: -e, --endpoint-name <name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: the ACL rule name
+  - flags: -o, --order <id>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --order
+    description: the ACL rule order
+  - flags: -w, --new-order <id>
+    required: -17
+    optional: 0
+    bool: True
+    short: -w
+    long: --new-order
+    description: the new order for the ACL
+  - flags: -a, --action  <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -a
+    long: --action
+    description: the new action for the ACL
+  - flags: -t, --remote-subnet  <subnet>
+    required: -22
+    optional: 0
+    bool: True
+    short: -t
+    long: --remote-subnet
+    description: the new remote subnet for the ACL rule
+  - flags: -r, --description  <name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -r
+    long: --description
+    description: the new description for the ACL
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: filter VMs for the specified DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  name: set
+  description: Update an ACL rule defined for a VM endpoint
+  usage: '[options] [vm-name] [endpoint-name] [order]'
+name: acl-rule
+description: Commands to manage your Virtual Machine endpoint's ACL rules
+usage: '[options] [command]'
