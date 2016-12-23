@@ -3,7 +3,7 @@
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.xyml", "**/*.yml"
+          "**/*.md","**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -17,7 +17,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		  "breadcrumb.json"
+          "breadcrumb.json"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,8 +29,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-	  "breadcrumb_path": "/azure-xplat/breadcrumb.json"
-	},
+        "breadcrumb_path": "/azure-xplat/breadcrumb.json",
+        "brand": "azure"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "azure-xplat-cli-poc"

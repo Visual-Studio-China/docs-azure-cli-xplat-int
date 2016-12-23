@@ -15,9 +15,10 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-		"AzureXplatCli": "Content"
+        "AzureXplatCli": "Content"
       },
       "build_entry_point": "docs",
+      "template_folder": "_themes",
       "customized_template_paths": [
         "azurexplatcli/azurexplatcli"
       ]
@@ -30,7 +31,8 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "azurerelease"
+      "branch": "azurerelease",
+      "branch_mapping": {}
     }
   ],
   "need_generate_pdf_url_template": false,
