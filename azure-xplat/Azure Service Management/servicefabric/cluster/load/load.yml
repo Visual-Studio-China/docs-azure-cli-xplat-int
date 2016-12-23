@@ -1,0 +1,35 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show load information
+  usage: '[options]'
+  filePath: commands/servicefabric/serviceFabricCluster._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+name: load
+description: Commands to manage your cluster load information
+usage: '[options] [command]'

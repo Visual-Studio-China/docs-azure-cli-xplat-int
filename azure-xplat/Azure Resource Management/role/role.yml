@@ -1,0 +1,307 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Lists Azure RBAC roles available for assignment. Use this command to determine what actions on what resource types an Azure RBAC role allows.
+  usage: >
+    [scope]
+
+               -----    Example 1   -------
+               azure role list
+               Lists all RBAC role definitions.
+  filePath: commands/arm/role/role.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --custom
+    required: 0
+    optional: 0
+    bool: True
+    long: --custom
+    description: If specified, display only the custom role definitions instead of all role definitions.
+  - flags: --scope <scope>
+    required: -9
+    optional: 0
+    bool: True
+    long: --scope
+    description: Role definition scope. For e.g. /subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f
+  - flags: --atScopeAndBelow
+    required: 0
+    optional: 0
+    bool: True
+    long: --atScopeAndBelow
+    description: If specified, displays all role definitions.
+  - flags: -d --detailed
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --detailed
+    description: If specified, displays all the properties of a role definition
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: Name or identifier of the subscription to list the roles for.
+- name: show
+  description: Search for a role definition with role name or id to view its details. To inspect individual operations that a role grants access to, review the Actions and NotActions properties of the role.
+  usage: >
+    [name] [id] [scope]
+
+               -----    Example 1   -------
+               azure role show --name Reader
+               Get the Reader role definition.
+               -----    Example 2   -------
+               azure role show --id 52a6cc13-ff92-47a8-a39b-2a8205c3087e
+               Get the Reader role definition.
+  filePath: commands/arm/role/role.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Role definition name. For e.g. Reader, Contributor, Virtual Machine Contributor.
+  - flags: --id <id>
+    required: -6
+    optional: 0
+    bool: True
+    long: --id
+    description: Role definition Id.
+  - flags: --scope <scope>
+    required: -9
+    optional: 0
+    bool: True
+    long: --scope
+    description: Role definition scope. For e.g. /subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f
+  - flags: --atScopeAndBelow
+    required: 0
+    optional: 0
+    bool: True
+    long: --atScopeAndBelow
+    description: If specified, displays all role definitions.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: Name or identifier of the subscription to search the role definition in.
+- name: create
+  description: "Creates a custom role in Azure RBAC. Provide either a JSON role definition file or a JSON-formatted string containing the role definition as input.\n     The input role definition MUST contain the following properties:\n     1) DisplayName: the name of the custom role\n     2) Description: a short description of the role that summarizes the access that the role grants.\n     3) Actions: the set of operations to which the custom role grants access. Use \"azure provider operations show\" with operationSearchString to get the operation for Azure resource providers that can be secured using Azure RBAC. Following are some valid operation strings\n       - \"*/read\" grants access to read operations of all Azure resource providers.\n       - \"Microsoft.Network/*/read\" grants access to read operations for all resource types in the Microsoft.Network resource provider of Azure.\n       - \"Microsoft.Compute/virtualMachines/*\" grants access to all operations of virtual machines and its child resource types.\n     4) AssignableScopes: the set of scopes (Azure subscriptions or resource groups) in which the custom role will be available for assignment. Using AssignableScopes you can make the custom role available for assignment in only the subscriptions or resource groups that need it, and not clutter the user experience for the rest of the subscriptions or resource groups. Following are some valid assignable scopes\n       - \"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e\", \"/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624\": makes the role available for assignment in two subscriptions.\n       - \"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e\": makes the role available for assignment in a single subscription.\n       - \"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network\": makes the role available for assignment only in the Network resource group.\n\n     The input role definition MAY contain the following properties:\n     1) NotActions: the set of operations that must be excluded from the Actions to determine the effective actions for the custom role. If there is a specific operation that you do not wish to grant access to in a custom role, it is convenient to use NotActions to exclude it, rather than specifying all operations other than that specific operation in Actions.\n\n     NOTE: If a user is assigned a role that specifies an operation in NotActions and also assigned another role grants access to the same operation, the user will be able to perform that operation. NotActions is not a deny rule, it is simply a convenient way to create a set of allowed operations when specific operations need to be excluded.\n\n     Following is a sample json role definition that can be provided as input: \n     {\n     \"Name\": \"Contoso On-call\",\n     \"Description\": \"Can monitor compute, network and storage, and restart virtual machines\",\n     \"Actions\": [\n       \"Microsoft.Compute/*/read\",\n       \"Microsoft.Compute/virtualMachines/start/action\",\n       \"Microsoft.Compute/virtualMachines/restart/action\",\n       \"Microsoft.Compute/virtualMachines/downloadRemoteDesktopConnectionFile/action\",\n       \"Microsoft.Network/*/read\",\n       \"Microsoft.Storage/*/read\",\n       \"Microsoft.Authorization/*/read\",\n       \"Microsoft.Resources/subscriptions/resourceGroups/read\",\n       \"Microsoft.Resources/subscriptions/resourceGroups/resources/read\",\n       \"Microsoft.Insights/alertRules/*\",\n       \"Microsoft.Support/*\"\n     ],\n     \"AssignableScopes\": [\"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\",\"/subscriptions/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy\"]\n     }"
+  usage: >-
+    [inputfile] [roledefinition]
+         --------------------------  Create using JSON file  --------------------------
+         azure role create --inputfile C:\Temp\roleDefinition.json
+  filePath: commands/arm/role/role.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -f --inputfile <inputfile>
+    required: -16
+    optional: 0
+    bool: True
+    short: -f
+    long: --inputfile
+    description: File name containing a single role definition.
+  - flags: -r --roledefinition <roledefinition>
+    required: -21
+    optional: 0
+    bool: True
+    short: -r
+    long: --roledefinition
+    description: A JSON-formatted string containing the role definition.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier
+- name: set
+  description: >-
+    Modifies a custom role in Azure RBAC. Provide the modified role definition either as a JSON file or as a JSON-formatted string containing the role definition.
+         The role definition for the updated custom role MUST contain the Id and all other required properties of the role even if they are not updated: Name, Description, Actions, AssignableScopes. NotActions is optional.
+
+         Following is a sample updated role definition json that can be provided as input:
+
+         {
+         "Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e",
+         "Name": "Updated Role",
+         "Description": "Can monitor all resources and start and restart virtual machines",
+         "Actions": [
+           "*/read",
+           "Microsoft.ClassicCompute/virtualmachines/restart/action",
+           "Microsoft.ClassicCompute/virtualmachines/start/action"
+         ],
+         "AssignableScopes": ["/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f"]
+         }
+  usage: >-
+    [inputfile] [roledefinition]
+         --------------------------  Create using JSON file  --------------------------
+         azure role set --inputfile C:\Temp\roleDefinition.json
+  filePath: commands/arm/role/role.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -f --inputfile <inputfile>
+    required: -16
+    optional: 0
+    bool: True
+    short: -f
+    long: --inputfile
+    description: File name containing a single json role definition to be updated. Id, Name, Description, Actions and AssignableScopes are required.
+  - flags: -r --roledefinition <roledefinition>
+    required: -21
+    optional: 0
+    bool: True
+    short: -r
+    long: --roledefinition
+    description: 'A JSON-formatted string containing the role definition. For e.g. {"Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e","Description": "Updated role","Actions": ["Microsoft.Support/*/read"],"Notactions": [],"AssignableScopes": ["/subscriptions/5004a9fd-d58e-48dc-aeb2-4a4aec58606f"]}'
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier
+- name: delete
+  description: Deletes a custom role in Azure RBAC. The role to be deleted is specified using the Id or Name property of the role. Delete will fail if there are existing role assignments made to the custom role.
+  usage: >-
+    [id] [name] [scope]
+
+         --------------------------  Example 1  --------------------------
+         azure role delete --name "Contoso On-call"
+
+         --------------------------  Example 2  --------------------------
+         azure role delete --id "52a6cc13-ff92-47a8-a39b-2a8205c3087e"
+  filePath: commands/arm/role/role.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --id <id>
+    required: -6
+    optional: 0
+    bool: True
+    long: --id
+    description: Id of the Role definition to be deleted
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the Role definition to be deleted.
+  - flags: --scope <scope>
+    required: -9
+    optional: 0
+    bool: True
+    long: --scope
+    description: Role definition scope.  For e.g. /subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: If set, does not prompt for a confirmation before deleting the custom role
+  - flags: --passthru
+    required: 0
+    optional: 0
+    bool: True
+    long: --passthru
+    description: If set, displays the properties of deleted custom role
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier
+name: role
+description: Commands to manage role definitions
+usage: '[options] [command]'

@@ -1,0 +1,50 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List metric definitions for a resource.
+  usage: '[options] <resourceId>'
+  filePath: commands/arm/insights/insights.metrics.definition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i --resourceId <resourceId>
+    required: -17
+    optional: 0
+    bool: True
+    short: -i
+    long: --resourceId
+    description: The resource Id.
+  - flags: -n --metricNames <metricNames>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --metricNames
+    description: The list of metric names.
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+name: definition
+description: Retrieves metric definitions for a resource
+usage: '[options] [command]'

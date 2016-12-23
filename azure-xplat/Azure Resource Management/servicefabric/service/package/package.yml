@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: package
+description: Commands to send your service package
+usage: '[options]'

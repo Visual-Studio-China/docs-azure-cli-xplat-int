@@ -1,0 +1,286 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show application upgrade
+  usage: '[options] [applicationName]'
+  filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+- name: start
+  description: 'Start application upgrade, Example: azure servicefabric application upgrade start --application-name fabric:/app --target-application-type-version 1.1 --rolling-upgrade-mode Monitored --force-restart true'
+  usage: '[options] [applicationName] [targetApplicationTypeVersion] [rollingUpgradeMode]'
+  filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -t --target-application-type-version <targetApplicationTypeVersion>
+    required: -38
+    optional: 0
+    bool: True
+    short: -t
+    long: --target-application-type-version
+    description: the version of the target application type
+  - flags: -p --parameters <parameters>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --parameters
+    description: 'the parameters, json string "{"Key": "key1", "Value": "value1"}"'
+  - flags: -m --rolling-upgrade-mode <rollingUpgradeMode>
+    required: -27
+    optional: 0
+    bool: True
+    short: -m
+    long: --rolling-upgrade-mode
+    description: the mode of the rolling upgrade, values are [UnmonitoredAuto|UnmonitoredManual|Monitored]
+  - flags: -r --upgrade-replica-set-check-timeout-in-seconds <upgradeReplicaSetCheckTimeoutInSeconds>
+    required: -51
+    optional: 0
+    bool: True
+    short: -r
+    long: --upgrade-replica-set-check-timeout-in-seconds
+    description: the name of the upgrade domain
+  - flags: -f --force-restart
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --force-restart
+    description: the force restart
+  - flags: -o --monitoring-policy <monitoringPolicy>
+    required: -24
+    optional: 0
+    bool: True
+    short: -o
+    long: --monitoring-policy
+    description: the policy of the monitoring
+  - flags: -a --application-health-policy <applicationHealthPolicy>
+    required: -32
+    optional: 0
+    bool: True
+    short: -a
+    long: --application-health-policy
+    description: the policy of the health application
+- name: update
+  description: 'Update application upgrade, Example: azure servicefabric application upgrade update --application-name fabric:/app --rolling-upgrade-mode Monitored'
+  usage: '[options] [applicationName]'
+  filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -m --rolling-upgrade-mode <rollingUpgradeMode>
+    required: -27
+    optional: 0
+    bool: True
+    short: -m
+    long: --rolling-upgrade-mode
+    description: the mode of the rolling upgrade, values are [UnmonitoredAuto|UnmonitoredManual|Monitored]
+  - flags: -r --force-restart
+    required: 0
+    optional: 0
+    bool: True
+    short: -r
+    long: --force-restart
+    description: the boolean of the force restart
+  - flags: -a --failure-action <failureAction>
+    required: -21
+    optional: 0
+    bool: True
+    short: -a
+    long: --failure-action
+    description: the mode of the failure action, values are [Rollback|Manual]
+  - flags: -i --upgrade-replica-set-check-timeout-in-seconds <upgradeReplicaSetCheckTimeoutInSeconds>
+    required: -51
+    optional: 0
+    bool: True
+    short: -i
+    long: --upgrade-replica-set-check-timeout-in-seconds
+    description: the mode of the rolling upgrade
+  - flags: -d --health-check-wait-duration-in-milliseconds <healthCheckWaitDurationInMilliseconds>
+    required: -49
+    optional: 0
+    bool: True
+    short: -d
+    long: --health-check-wait-duration-in-milliseconds
+    description: the mode of the rolling upgrade
+  - flags: -c --health-check-stable-duration-in-milliseconds <healthCheckStableDurationInMilliseconds>
+    required: -51
+    optional: 0
+    bool: True
+    short: -c
+    long: --health-check-stable-duration-in-milliseconds
+    description: the mode of the rolling upgrade
+  - flags: -e --health-check-retry-timeout-in-milliseconds <healthCheckRetryTimeoutInMilliseconds>
+    required: -49
+    optional: 0
+    bool: True
+    short: -e
+    long: --health-check-retry-timeout-in-milliseconds
+    description: the mode of the rolling upgrade
+  - flags: -u --upgrade-timeout-in-milliseconds <upgradeTimeoutInMilliseconds>
+    required: -38
+    optional: 0
+    bool: True
+    short: -u
+    long: --upgrade-timeout-in-milliseconds
+    description: the mode of the rolling upgrade
+  - flags: -p --upgrade-domain-timeout-in-milliseconds <upgradeDomainTimeoutInMilliseconds>
+    required: -45
+    optional: 0
+    bool: True
+    short: -p
+    long: --upgrade-domain-timeout-in-milliseconds
+    description: the mode of the rolling upgrade
+  - flags: -l --application-health-policy <applicationHealthPolicy>
+    required: -32
+    optional: 0
+    bool: True
+    short: -l
+    long: --application-health-policy
+    description: the policy of the health application
+- name: resume
+  description: Resume application upgrade
+  usage: '[options] [applicationName] [upgradeDomainName]'
+  filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -d --upgrade-domain-name <upgradeDomainName>
+    required: -26
+    optional: 0
+    bool: True
+    short: -d
+    long: --upgrade-domain-name
+    description: the name of the upgrade domain
+- name: rollback
+  description: Start application upgrade rollback
+  usage: '[options] [applicationName]'
+  filePath: commands/servicefabric/serviceFabricApplication._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+name: upgrade
+description: Commands to manage your application upgrade
+usage: '[options] [command]'

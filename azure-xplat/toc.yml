@@ -32,1199 +32,670 @@
       href: ../Azure/azure-xplat/Conceptual/Writing-Test.md
       items:
 - name: Azure Resource Management
-  href: ../Azure/azure-xplat/Azure Resource Management/Azure Resource Management.xyml
   items:
     - name: account
-      href: ../Azure/azure-xplat/Azure Resource Management/account/account.xyml
       items:
         - name: env
-          href: ../Azure/azure-xplat/Azure Resource Management/account/env/env.xyml
     - name: acs
-      href: ../Azure/azure-xplat/Azure Resource Management/acs/acs.xyml
       items:
         - name: config
-          href: ../Azure/azure-xplat/Azure Resource Management/acs/config/config.xyml
           items:
             - name: agent-pool-profiles
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/agent-pool-profiles/agent-pool-profiles.xyml
             - name: container-service
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/container-service/container-service.xyml
             - name: diagnostics-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/diagnostics-profile/diagnostics-profile.xyml
             - name: linux-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/linux-profile/linux-profile.xyml
             - name: master-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/master-profile/master-profile.xyml
             - name: orchestrator-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/orchestrator-profile/orchestrator-profile.xyml
             - name: public-keys
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/public-keys/public-keys.xyml
             - name: ssh
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/ssh/ssh.xyml
             - name: vm-diagnostics
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/vm-diagnostics/vm-diagnostics.xyml
             - name: windows-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/acs/config/windows-profile/windows-profile.xyml
     - name: ad
-      href: ../Azure/azure-xplat/Azure Resource Management/ad/ad.xyml
       items:
         - name: app
-          href: ../Azure/azure-xplat/Azure Resource Management/ad/app/app.xyml
         - name: group
-          href: ../Azure/azure-xplat/Azure Resource Management/ad/group/group.xyml
           items:
             - name: member
-              href: ../Azure/azure-xplat/Azure Resource Management/ad/group/member/member.xyml
         - name: sp
-          href: ../Azure/azure-xplat/Azure Resource Management/ad/sp/sp.xyml
         - name: user
-          href: ../Azure/azure-xplat/Azure Resource Management/ad/user/user.xyml
           items:
             - name: memberGroups
-              href: ../Azure/azure-xplat/Azure Resource Management/ad/user/memberGroups/memberGroups.xyml
     - name: appserviceplan
-      href: ../Azure/azure-xplat/Azure Resource Management/appserviceplan/appserviceplan.xyml
     - name: availset
-      href: ../Azure/azure-xplat/Azure Resource Management/availset/availset.xyml
     - name: batch
-      href: ../Azure/azure-xplat/Azure Resource Management/batch/batch.xyml
       items:
         - name: account
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/account/account.xyml
           items:
             - name: keys
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/account/keys/keys.xyml
         - name: application
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/application/application.xyml
           items:
             - name: package
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/application/package/package.xyml
         - name: certificate
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/certificate/certificate.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/job/job.xyml
           items:
             - name: prep-release-status
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/job/prep-release-status/prep-release-status.xyml
         - name: job-schedule
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/job-schedule/job-schedule.xyml
         - name: location
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/location/location.xyml
           items:
             - name: quotas
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/location/quotas/quotas.xyml
         - name: node
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/node/node.xyml
           items:
             - name: remote-desktop
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/node/remote-desktop/remote-desktop.xyml
             - name: remote-login-settings
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/node/remote-login-settings/remote-login-settings.xyml
             - name: scheduling
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/node/scheduling/scheduling.xyml
         - name: node-file
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/node-file/node-file.xyml
         - name: node-user
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/node-user/node-user.xyml
         - name: pool
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/pool/pool.xyml
           items:
             - name: all-stats
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/pool/all-stats/all-stats.xyml
             - name: autoscale
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/pool/autoscale/autoscale.xyml
             - name: node-agent-skus
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/pool/node-agent-skus/node-agent-skus.xyml
             - name: usage-metrics
-              href: ../Azure/azure-xplat/Azure Resource Management/batch/pool/usage-metrics/usage-metrics.xyml
         - name: task
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/task/task.xyml
         - name: task-file
-          href: ../Azure/azure-xplat/Azure Resource Management/batch/task-file/task-file.xyml
     - name: cdn
-      href: ../Azure/azure-xplat/Azure Resource Management/cdn/cdn.xyml
       items:
         - name: customDomain
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/customDomain/customDomain.xyml
         - name: endpoint
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/endpoint/endpoint.xyml
         - name: geofilter
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/geofilter/geofilter.xyml
         - name: origin
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/origin/origin.xyml
         - name: profile
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/profile/profile.xyml
         - name: ssouri
-          href: ../Azure/azure-xplat/Azure Resource Management/cdn/ssouri/ssouri.xyml
     - name: config
-      href: ../Azure/azure-xplat/Azure Resource Management/config/config.xyml
     - name: datalake
-      href: ../Azure/azure-xplat/Azure Resource Management/datalake/datalake.xyml
       items:
         - name: analytics
-          href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/analytics.xyml
           items:
             - name: account
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/account/account.xyml
               items:
                 - name: datasource
-                  href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/account/datasource/datasource.xyml
             - name: catalog
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/catalog/catalog.xyml
               items:
                 - name: credential
-                  href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/catalog/credential/credential.xyml
                 - name: secret
-                  href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/catalog/secret/secret.xyml
             - name: job
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/analytics/job/job.xyml
         - name: store
-          href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/store.xyml
           items:
             - name: account
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/account/account.xyml
             - name: filesystem
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/filesystem/filesystem.xyml
               items:
                 - name: expiry
-                  href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/filesystem/expiry/expiry.xyml
             - name: firewall
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/firewall/firewall.xyml
             - name: permissions
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/permissions/permissions.xyml
               items:
                 - name: entry
-                  href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/permissions/entry/entry.xyml
             - name: provider
-              href: ../Azure/azure-xplat/Azure Resource Management/datalake/store/provider/provider.xyml
     - name: feature
-      href: ../Azure/azure-xplat/Azure Resource Management/feature/feature.xyml
     - name: group
-      href: ../Azure/azure-xplat/Azure Resource Management/group/group.xyml
       items:
         - name: deployment
-          href: ../Azure/azure-xplat/Azure Resource Management/group/deployment/deployment.xyml
           items:
             - name: operation
-              href: ../Azure/azure-xplat/Azure Resource Management/group/deployment/operation/operation.xyml
             - name: template
-              href: ../Azure/azure-xplat/Azure Resource Management/group/deployment/template/template.xyml
         - name: log
-          href: ../Azure/azure-xplat/Azure Resource Management/group/log/log.xyml
         - name: template
-          href: ../Azure/azure-xplat/Azure Resource Management/group/template/template.xyml
     - name: hdinsight
-      href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/hdinsight.xyml
       items:
         - name: cluster
-          href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/cluster/cluster.xyml
         - name: config
-          href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/config/config.xyml
         - name: script-action
-          href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/script-action/script-action.xyml
           items:
             - name: history
-              href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/script-action/history/history.xyml
             - name: persisted
-              href: ../Azure/azure-xplat/Azure Resource Management/hdinsight/script-action/persisted/persisted.xyml
     - name: insights
-      href: ../Azure/azure-xplat/Azure Resource Management/insights/insights.xyml
       items:
         - name: alerts
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/alerts.xyml
           items:
             - name: actions
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/actions/actions.xyml
               items:
                 - name: email
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/actions/email/email.xyml
                 - name: webhook
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/actions/webhook/webhook.xyml
             - name: rule
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/rule/rule.xyml
               items:
                 - name: log
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/rule/log/log.xyml
                 - name: metric
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/rule/metric/metric.xyml
                 - name: webtest
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/alerts/rule/webtest/webtest.xyml
         - name: autoscale
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/autoscale.xyml
           items:
             - name: notifications
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/notifications/notifications.xyml
               items:
                 - name: webhook
-                  href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/notifications/webhook/webhook.xyml
             - name: profile
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/profile/profile.xyml
             - name: rule
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/rule/rule.xyml
             - name: setting
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/autoscale/setting/setting.xyml
         - name: diagnostic
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/diagnostic/diagnostic.xyml
         - name: logprofile
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/logprofile/logprofile.xyml
         - name: logs
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/logs/logs.xyml
         - name: metrics
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/metrics/metrics.xyml
           items:
             - name: definition
-              href: ../Azure/azure-xplat/Azure Resource Management/insights/metrics/definition/definition.xyml
         - name: usage
-          href: ../Azure/azure-xplat/Azure Resource Management/insights/usage/usage.xyml
     - name: iothub
-      href: ../Azure/azure-xplat/Azure Resource Management/iothub/iothub.xyml
       items:
         - name: cloud-to-device-properties
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/cloud-to-device-properties/cloud-to-device-properties.xyml
         - name: connectionstring
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/connectionstring/connectionstring.xyml
         - name: device
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/device/device.xyml
         - name: device-to-cloud-properties
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/device-to-cloud-properties/device-to-cloud-properties.xyml
         - name: ehconsumergroup
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/ehconsumergroup/ehconsumergroup.xyml
         - name: file-upload-properties
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/file-upload-properties/file-upload-properties.xyml
         - name: ipfilter-rules
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/ipfilter-rules/ipfilter-rules.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/job/job.xyml
         - name: key
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/key/key.xyml
         - name: opmon
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/opmon/opmon.xyml
         - name: sku
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/sku/sku.xyml
         - name: tags
-          href: ../Azure/azure-xplat/Azure Resource Management/iothub/tags/tags.xyml
     - name: keyvault
-      href: ../Azure/azure-xplat/Azure Resource Management/keyvault/keyvault.xyml
       items:
         - name: certificate
-          href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/certificate.xyml
           items:
             - name: administrator
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/administrator/administrator.xyml
             - name: contact
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/contact/contact.xyml
             - name: issuer
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/issuer/issuer.xyml
             - name: operation
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/operation/operation.xyml
             - name: organization
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/organization/organization.xyml
             - name: policy
-              href: ../Azure/azure-xplat/Azure Resource Management/keyvault/certificate/policy/policy.xyml
         - name: key
-          href: ../Azure/azure-xplat/Azure Resource Management/keyvault/key/key.xyml
         - name: secret
-          href: ../Azure/azure-xplat/Azure Resource Management/keyvault/secret/secret.xyml
     - name: lab
-      href: ../Azure/azure-xplat/Azure Resource Management/lab/lab.xyml
       items:
         - name: auto-shutdown-policy
-          href: ../Azure/azure-xplat/Azure Resource Management/lab/auto-shutdown-policy/auto-shutdown-policy.xyml
         - name: auto-start-policy
-          href: ../Azure/azure-xplat/Azure Resource Management/lab/auto-start-policy/auto-start-policy.xyml
         - name: vm-size-policy
-          href: ../Azure/azure-xplat/Azure Resource Management/lab/vm-size-policy/vm-size-policy.xyml
         - name: vms-per-lab-policy
-          href: ../Azure/azure-xplat/Azure Resource Management/lab/vms-per-lab-policy/vms-per-lab-policy.xyml
         - name: vms-per-user-policy
-          href: ../Azure/azure-xplat/Azure Resource Management/lab/vms-per-user-policy/vms-per-user-policy.xyml
     - name: location
-      href: ../Azure/azure-xplat/Azure Resource Management/location/location.xyml
     - name: network
-      href: ../Azure/azure-xplat/Azure Resource Management/network/network.xyml
       items:
         - name: application-gateway
-          href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/application-gateway.xyml
           items:
             - name: address-pool
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/address-pool/address-pool.xyml
             - name: auth-cert
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/auth-cert/auth-cert.xyml
             - name: backend-health
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/backend-health/backend-health.xyml
             - name: frontend-ip
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/frontend-ip/frontend-ip.xyml
             - name: frontend-port
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/frontend-port/frontend-port.xyml
             - name: http-listener
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/http-listener/http-listener.xyml
             - name: http-settings
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/http-settings/http-settings.xyml
             - name: probe
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/probe/probe.xyml
             - name: rule
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/rule/rule.xyml
             - name: ssl-cert
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/ssl-cert/ssl-cert.xyml
             - name: ssl-policy
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/ssl-policy/ssl-policy.xyml
             - name: url-path-map
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/url-path-map/url-path-map.xyml
               items:
                 - name: rule
-                  href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/url-path-map/rule/rule.xyml
             - name: waf-config
-              href: ../Azure/azure-xplat/Azure Resource Management/network/application-gateway/waf-config/waf-config.xyml
         - name: dns
-          href: ../Azure/azure-xplat/Azure Resource Management/network/dns/dns.xyml
           items:
             - name: record-set
-              href: ../Azure/azure-xplat/Azure Resource Management/network/dns/record-set/record-set.xyml
             - name: zone
-              href: ../Azure/azure-xplat/Azure Resource Management/network/dns/zone/zone.xyml
         - name: express-route
-          href: ../Azure/azure-xplat/Azure Resource Management/network/express-route/express-route.xyml
           items:
             - name: authorization
-              href: ../Azure/azure-xplat/Azure Resource Management/network/express-route/authorization/authorization.xyml
             - name: circuit
-              href: ../Azure/azure-xplat/Azure Resource Management/network/express-route/circuit/circuit.xyml
             - name: peering
-              href: ../Azure/azure-xplat/Azure Resource Management/network/express-route/peering/peering.xyml
             - name: provider
-              href: ../Azure/azure-xplat/Azure Resource Management/network/express-route/provider/provider.xyml
         - name: lb
-          href: ../Azure/azure-xplat/Azure Resource Management/network/lb/lb.xyml
           items:
             - name: address-pool
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/address-pool/address-pool.xyml
             - name: frontend-ip
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/frontend-ip/frontend-ip.xyml
             - name: inbound-nat-pool
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/inbound-nat-pool/inbound-nat-pool.xyml
             - name: inbound-nat-rule
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/inbound-nat-rule/inbound-nat-rule.xyml
             - name: probe
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/probe/probe.xyml
             - name: rule
-              href: ../Azure/azure-xplat/Azure Resource Management/network/lb/rule/rule.xyml
         - name: local-gateway
-          href: ../Azure/azure-xplat/Azure Resource Management/network/local-gateway/local-gateway.xyml
         - name: nic
-          href: ../Azure/azure-xplat/Azure Resource Management/network/nic/nic.xyml
           items:
             - name: effective-nsg
-              href: ../Azure/azure-xplat/Azure Resource Management/network/nic/effective-nsg/effective-nsg.xyml
             - name: effective-route-table
-              href: ../Azure/azure-xplat/Azure Resource Management/network/nic/effective-route-table/effective-route-table.xyml
             - name: ip-config
-              href: ../Azure/azure-xplat/Azure Resource Management/network/nic/ip-config/ip-config.xyml
               items:
                 - name: address-pool
-                  href: ../Azure/azure-xplat/Azure Resource Management/network/nic/ip-config/address-pool/address-pool.xyml
                 - name: inbound-nat-rule
-                  href: ../Azure/azure-xplat/Azure Resource Management/network/nic/ip-config/inbound-nat-rule/inbound-nat-rule.xyml
         - name: nsg
-          href: ../Azure/azure-xplat/Azure Resource Management/network/nsg/nsg.xyml
           items:
             - name: rule
-              href: ../Azure/azure-xplat/Azure Resource Management/network/nsg/rule/rule.xyml
         - name: public-ip
-          href: ../Azure/azure-xplat/Azure Resource Management/network/public-ip/public-ip.xyml
         - name: route-table
-          href: ../Azure/azure-xplat/Azure Resource Management/network/route-table/route-table.xyml
           items:
             - name: route
-              href: ../Azure/azure-xplat/Azure Resource Management/network/route-table/route/route.xyml
         - name: traffic-manager
-          href: ../Azure/azure-xplat/Azure Resource Management/network/traffic-manager/traffic-manager.xyml
           items:
             - name: endpoint
-              href: ../Azure/azure-xplat/Azure Resource Management/network/traffic-manager/endpoint/endpoint.xyml
             - name: profile
-              href: ../Azure/azure-xplat/Azure Resource Management/network/traffic-manager/profile/profile.xyml
         - name: usage
-          href: ../Azure/azure-xplat/Azure Resource Management/network/usage/usage.xyml
         - name: vnet
-          href: ../Azure/azure-xplat/Azure Resource Management/network/vnet/vnet.xyml
           items:
             - name: peering
-              href: ../Azure/azure-xplat/Azure Resource Management/network/vnet/peering/peering.xyml
             - name: subnet
-              href: ../Azure/azure-xplat/Azure Resource Management/network/vnet/subnet/subnet.xyml
         - name: vpn-connection
-          href: ../Azure/azure-xplat/Azure Resource Management/network/vpn-connection/vpn-connection.xyml
           items:
             - name: shared-key
-              href: ../Azure/azure-xplat/Azure Resource Management/network/vpn-connection/shared-key/shared-key.xyml
         - name: vpn-gateway
-          href: ../Azure/azure-xplat/Azure Resource Management/network/vpn-gateway/vpn-gateway.xyml
           items:
             - name: revoked-cert
-              href: ../Azure/azure-xplat/Azure Resource Management/network/vpn-gateway/revoked-cert/revoked-cert.xyml
             - name: root-cert
-              href: ../Azure/azure-xplat/Azure Resource Management/network/vpn-gateway/root-cert/root-cert.xyml
     - name: policy
-      href: ../Azure/azure-xplat/Azure Resource Management/policy/policy.xyml
       items:
         - name: assignment
-          href: ../Azure/azure-xplat/Azure Resource Management/policy/assignment/assignment.xyml
         - name: definition
-          href: ../Azure/azure-xplat/Azure Resource Management/policy/definition/definition.xyml
     - name: powerbi
-      href: ../Azure/azure-xplat/Azure Resource Management/powerbi/powerbi.xyml
       items:
         - name: keys
-          href: ../Azure/azure-xplat/Azure Resource Management/powerbi/keys/keys.xyml
         - name: workspaces
-          href: ../Azure/azure-xplat/Azure Resource Management/powerbi/workspaces/workspaces.xyml
     - name: provider
-      href: ../Azure/azure-xplat/Azure Resource Management/provider/provider.xyml
       items:
         - name: operations
-          href: ../Azure/azure-xplat/Azure Resource Management/provider/operations/operations.xyml
     - name: quotas
-      href: ../Azure/azure-xplat/Azure Resource Management/quotas/quotas.xyml
     - name: rediscache
-      href: ../Azure/azure-xplat/Azure Resource Management/rediscache/rediscache.xyml
     - name: resource
-      href: ../Azure/azure-xplat/Azure Resource Management/resource/resource.xyml
     - name: role
-      href: ../Azure/azure-xplat/Azure Resource Management/role/role.xyml
       items:
         - name: assignment
-          href: ../Azure/azure-xplat/Azure Resource Management/role/assignment/assignment.xyml
           items:
             - name: changelog
-              href: ../Azure/azure-xplat/Azure Resource Management/role/assignment/changelog/changelog.xyml
     - name: servermanagement
-      href: ../Azure/azure-xplat/Azure Resource Management/servermanagement/servermanagement.xyml
       items:
         - name: gateway
-          href: ../Azure/azure-xplat/Azure Resource Management/servermanagement/gateway/gateway.xyml
         - name: node
-          href: ../Azure/azure-xplat/Azure Resource Management/servermanagement/node/node.xyml
         - name: powershell
-          href: ../Azure/azure-xplat/Azure Resource Management/servermanagement/powershell/powershell.xyml
         - name: session
-          href: ../Azure/azure-xplat/Azure Resource Management/servermanagement/session/session.xyml
     - name: servicefabric
-      href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/servicefabric.xyml
       items:
         - name: application
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/application.xyml
           items:
             - name: deployed
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/deployed/deployed.xyml
               items:
                 - name: health
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/deployed/health/health.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/health/health.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/manifest/manifest.xyml
             - name: package
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/package/package.xyml
             - name: type
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/type/type.xyml
             - name: upgrade
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/application/upgrade/upgrade.xyml
         - name: cluster
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/cluster/cluster.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/cluster/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/cluster/load/load.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/cluster/manifest/manifest.xyml
             - name: upgrade
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/cluster/upgrade/upgrade.xyml
         - name: code
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/code/code.xyml
           items:
             - name: package
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/code/package/package.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/code/package/deployed/deployed.xyml
         - name: node
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/node/node.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/node/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/node/load/load.xyml
             - name: state
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/node/state/state.xyml
         - name: partition
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/partition/partition.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/partition/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/partition/load/load.xyml
         - name: replica
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/replica/replica.xyml
           items:
             - name: deployed
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/replica/deployed/deployed.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/replica/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/replica/load/load.xyml
         - name: service
-          href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/service.xyml
           items:
             - name: description
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/description/description.xyml
             - name: group
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/group/group.xyml
               items:
                 - name: description
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/group/description/description.xyml
                 - name: member
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/group/member/member.xyml
                 - name: template
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/group/template/template.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/health/health.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/manifest/manifest.xyml
             - name: package
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/package/package.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/package/deployed/deployed.xyml
                   items:
                     - name: health
-                      href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/package/deployed/health/health.xyml
             - name: template
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/template/template.xyml
             - name: type
-              href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/type/type.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Resource Management/servicefabric/service/type/deployed/deployed.xyml
     - name: storage
-      href: ../Azure/azure-xplat/Azure Resource Management/storage/storage.xyml
       items:
         - name: account
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/account/account.xyml
           items:
             - name: connectionstring
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/account/connectionstring/connectionstring.xyml
             - name: keys
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/account/keys/keys.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/account/sas/sas.xyml
             - name: usage
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/account/usage/usage.xyml
         - name: blob
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/blob/blob.xyml
           items:
             - name: copy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/blob/copy/copy.xyml
             - name: lease
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/blob/lease/lease.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/blob/sas/sas.xyml
         - name: container
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/container/container.xyml
           items:
             - name: lease
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/container/lease/lease.xyml
             - name: policy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/container/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/container/sas/sas.xyml
         - name: cors
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/cors/cors.xyml
         - name: directory
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/directory/directory.xyml
         - name: file
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/file/file.xyml
           items:
             - name: copy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/file/copy/copy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/file/sas/sas.xyml
         - name: logging
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/logging/logging.xyml
         - name: metrics
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/metrics/metrics.xyml
         - name: queue
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/queue/queue.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/queue/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/queue/sas/sas.xyml
         - name: share
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/share/share.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/share/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/share/sas/sas.xyml
         - name: table
-          href: ../Azure/azure-xplat/Azure Resource Management/storage/table/table.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/table/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Resource Management/storage/table/sas/sas.xyml
     - name: tag
-      href: ../Azure/azure-xplat/Azure Resource Management/tag/tag.xyml
     - name: usage
-      href: ../Azure/azure-xplat/Azure Resource Management/usage/usage.xyml
     - name: vm
-      href: ../Azure/azure-xplat/Azure Resource Management/vm/vm.xyml
       items:
         - name: disk
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/disk/disk.xyml
         - name: docker
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/docker/docker.xyml
         - name: extension
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/extension/extension.xyml
         - name: extension-image
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/extension-image/extension-image.xyml
         - name: image
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/image/image.xyml
         - name: secret
-          href: ../Azure/azure-xplat/Azure Resource Management/vm/secret/secret.xyml
     - name: vmss
-      href: ../Azure/azure-xplat/Azure Resource Management/vmss/vmss.xyml
       items:
         - name: config
-          href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/config.xyml
           items:
             - name: additional-unattend-content
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/additional-unattend-content/additional-unattend-content.xyml
             - name: application-gateway-backend-address-pools
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/application-gateway-backend-address-pools/application-gateway-backend-address-pools.xyml
             - name: extension-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/extension-profile/extension-profile.xyml
             - name: extensions
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/extensions/extensions.xyml
             - name: image
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/image/image.xyml
             - name: image-reference
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/image-reference/image-reference.xyml
             - name: ip-configurations
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/ip-configurations/ip-configurations.xyml
             - name: linux-configuration
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/linux-configuration/linux-configuration.xyml
             - name: listeners
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/listeners/listeners.xyml
             - name: load-balancer-backend-address-pools
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/load-balancer-backend-address-pools/load-balancer-backend-address-pools.xyml
             - name: load-balancer-inbound-nat-pools
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/load-balancer-inbound-nat-pools/load-balancer-inbound-nat-pools.xyml
             - name: network-interface-configurations
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/network-interface-configurations/network-interface-configurations.xyml
             - name: network-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/network-profile/network-profile.xyml
             - name: os-disk
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/os-disk/os-disk.xyml
             - name: os-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/os-profile/os-profile.xyml
             - name: public-keys
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/public-keys/public-keys.xyml
             - name: secrets
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/secrets/secrets.xyml
             - name: sku
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/sku/sku.xyml
             - name: source-vault
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/source-vault/source-vault.xyml
             - name: ssh
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/ssh/ssh.xyml
             - name: storage-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/storage-profile/storage-profile.xyml
             - name: subnet
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/subnet/subnet.xyml
             - name: upgrade-policy
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/upgrade-policy/upgrade-policy.xyml
             - name: vault-certificates
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/vault-certificates/vault-certificates.xyml
             - name: vhd-containers
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/vhd-containers/vhd-containers.xyml
             - name: virtual-machine-profile
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/virtual-machine-profile/virtual-machine-profile.xyml
             - name: virtual-machine-scale-set
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/virtual-machine-scale-set/virtual-machine-scale-set.xyml
             - name: win-rm
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/win-rm/win-rm.xyml
             - name: windows-configuration
-              href: ../Azure/azure-xplat/Azure Resource Management/vmss/config/windows-configuration/windows-configuration.xyml
     - name: vmssvm
-      href: ../Azure/azure-xplat/Azure Resource Management/vmssvm/vmssvm.xyml
     - name: webapp
-      href: ../Azure/azure-xplat/Azure Resource Management/webapp/webapp.xyml
       items:
         - name: config
-          href: ../Azure/azure-xplat/Azure Resource Management/webapp/config/config.xyml
           items:
             - name: appsettings
-              href: ../Azure/azure-xplat/Azure Resource Management/webapp/config/appsettings/appsettings.xyml
             - name: container
-              href: ../Azure/azure-xplat/Azure Resource Management/webapp/config/container/container.xyml
             - name: hostnames
-              href: ../Azure/azure-xplat/Azure Resource Management/webapp/config/hostnames/hostnames.xyml
         - name: publishingprofile
-          href: ../Azure/azure-xplat/Azure Resource Management/webapp/publishingprofile/publishingprofile.xyml
 - name: Azure Service Management
-  href: ../Azure/azure-xplat/Azure Service Management/Azure Service Management.xyml
   items:
     - name: account
-      href: ../Azure/azure-xplat/Azure Service Management/account/account.xyml
       items:
         - name: affinity-group
-          href: ../Azure/azure-xplat/Azure Service Management/account/affinity-group/affinity-group.xyml
         - name: cert
-          href: ../Azure/azure-xplat/Azure Service Management/account/cert/cert.xyml
         - name: env
-          href: ../Azure/azure-xplat/Azure Service Management/account/env/env.xyml
     - name: batch
-      href: ../Azure/azure-xplat/Azure Service Management/batch/batch.xyml
       items:
         - name: account
-          href: ../Azure/azure-xplat/Azure Service Management/batch/account/account.xyml
           items:
             - name: keys
-              href: ../Azure/azure-xplat/Azure Service Management/batch/account/keys/keys.xyml
         - name: application
-          href: ../Azure/azure-xplat/Azure Service Management/batch/application/application.xyml
           items:
             - name: package
-              href: ../Azure/azure-xplat/Azure Service Management/batch/application/package/package.xyml
         - name: certificate
-          href: ../Azure/azure-xplat/Azure Service Management/batch/certificate/certificate.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Service Management/batch/job/job.xyml
           items:
             - name: prep-release-status
-              href: ../Azure/azure-xplat/Azure Service Management/batch/job/prep-release-status/prep-release-status.xyml
         - name: job-schedule
-          href: ../Azure/azure-xplat/Azure Service Management/batch/job-schedule/job-schedule.xyml
         - name: location
-          href: ../Azure/azure-xplat/Azure Service Management/batch/location/location.xyml
           items:
             - name: quotas
-              href: ../Azure/azure-xplat/Azure Service Management/batch/location/quotas/quotas.xyml
         - name: node
-          href: ../Azure/azure-xplat/Azure Service Management/batch/node/node.xyml
           items:
             - name: remote-desktop
-              href: ../Azure/azure-xplat/Azure Service Management/batch/node/remote-desktop/remote-desktop.xyml
             - name: remote-login-settings
-              href: ../Azure/azure-xplat/Azure Service Management/batch/node/remote-login-settings/remote-login-settings.xyml
             - name: scheduling
-              href: ../Azure/azure-xplat/Azure Service Management/batch/node/scheduling/scheduling.xyml
         - name: node-file
-          href: ../Azure/azure-xplat/Azure Service Management/batch/node-file/node-file.xyml
         - name: node-user
-          href: ../Azure/azure-xplat/Azure Service Management/batch/node-user/node-user.xyml
         - name: pool
-          href: ../Azure/azure-xplat/Azure Service Management/batch/pool/pool.xyml
           items:
             - name: all-stats
-              href: ../Azure/azure-xplat/Azure Service Management/batch/pool/all-stats/all-stats.xyml
             - name: autoscale
-              href: ../Azure/azure-xplat/Azure Service Management/batch/pool/autoscale/autoscale.xyml
             - name: node-agent-skus
-              href: ../Azure/azure-xplat/Azure Service Management/batch/pool/node-agent-skus/node-agent-skus.xyml
             - name: usage-metrics
-              href: ../Azure/azure-xplat/Azure Service Management/batch/pool/usage-metrics/usage-metrics.xyml
         - name: task
-          href: ../Azure/azure-xplat/Azure Service Management/batch/task/task.xyml
         - name: task-file
-          href: ../Azure/azure-xplat/Azure Service Management/batch/task-file/task-file.xyml
     - name: config
-      href: ../Azure/azure-xplat/Azure Service Management/config/config.xyml
     - name: hdinsight
-      href: ../Azure/azure-xplat/Azure Service Management/hdinsight/hdinsight.xyml
       items:
         - name: cluster
-          href: ../Azure/azure-xplat/Azure Service Management/hdinsight/cluster/cluster.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Service Management/hdinsight/job/job.xyml
     - name: mobile
-      href: ../Azure/azure-xplat/Azure Service Management/mobile/mobile.xyml
       items:
         - name: api
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/api/api.xyml
         - name: appsetting
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/appsetting/appsetting.xyml
         - name: auth
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/auth.xyml
           items:
             - name: aad
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/aad/aad.xyml
               items:
                 - name: tenant
-                  href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/aad/tenant/tenant.xyml
             - name: facebook
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/facebook/facebook.xyml
             - name: google
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/google/google.xyml
             - name: microsoftaccount
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/microsoftaccount/microsoftaccount.xyml
             - name: twitter
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/auth/twitter/twitter.xyml
         - name: cert
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/cert/cert.xyml
         - name: config
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/config/config.xyml
         - name: data
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/data/data.xyml
         - name: domain
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/domain/domain.xyml
           items:
             - name: ssl
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/domain/ssl/ssl.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/job/job.xyml
         - name: key
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/key/key.xyml
         - name: preview
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/preview/preview.xyml
         - name: push
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/push/push.xyml
           items:
             - name: apns
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/push/apns/apns.xyml
             - name: gcm
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/push/gcm/gcm.xyml
             - name: mpns
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/push/mpns/mpns.xyml
             - name: nh
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/push/nh/nh.xyml
             - name: wns
-              href: ../Azure/azure-xplat/Azure Service Management/mobile/push/wns/wns.xyml
         - name: scale
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/scale/scale.xyml
         - name: script
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/script/script.xyml
         - name: table
-          href: ../Azure/azure-xplat/Azure Service Management/mobile/table/table.xyml
     - name: network
-      href: ../Azure/azure-xplat/Azure Service Management/network/network.xyml
       items:
         - name: application-gateway
-          href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/application-gateway.xyml
           items:
             - name: address-pool
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/address-pool/address-pool.xyml
             - name: config
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/config/config.xyml
             - name: frontend-ip
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/frontend-ip/frontend-ip.xyml
             - name: frontend-port
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/frontend-port/frontend-port.xyml
             - name: http-listener
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/http-listener/http-listener.xyml
             - name: http-settings
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/http-settings/http-settings.xyml
             - name: lb-rule
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/lb-rule/lb-rule.xyml
             - name: ssl-cert
-              href: ../Azure/azure-xplat/Azure Service Management/network/application-gateway/ssl-cert/ssl-cert.xyml
         - name: dns-server
-          href: ../Azure/azure-xplat/Azure Service Management/network/dns-server/dns-server.xyml
         - name: local-network
-          href: ../Azure/azure-xplat/Azure Service Management/network/local-network/local-network.xyml
         - name: nsg
-          href: ../Azure/azure-xplat/Azure Service Management/network/nsg/nsg.xyml
           items:
             - name: rule
-              href: ../Azure/azure-xplat/Azure Service Management/network/nsg/rule/rule.xyml
             - name: subnet
-              href: ../Azure/azure-xplat/Azure Service Management/network/nsg/subnet/subnet.xyml
         - name: reserved-ip
-          href: ../Azure/azure-xplat/Azure Service Management/network/reserved-ip/reserved-ip.xyml
         - name: route-table
-          href: ../Azure/azure-xplat/Azure Service Management/network/route-table/route-table.xyml
           items:
             - name: route
-              href: ../Azure/azure-xplat/Azure Service Management/network/route-table/route/route.xyml
         - name: traffic-manager
-          href: ../Azure/azure-xplat/Azure Service Management/network/traffic-manager/traffic-manager.xyml
           items:
             - name: profile
-              href: ../Azure/azure-xplat/Azure Service Management/network/traffic-manager/profile/profile.xyml
               items:
                 - name: endpoint
-                  href: ../Azure/azure-xplat/Azure Service Management/network/traffic-manager/profile/endpoint/endpoint.xyml
         - name: vnet
-          href: ../Azure/azure-xplat/Azure Service Management/network/vnet/vnet.xyml
           items:
             - name: local-network
-              href: ../Azure/azure-xplat/Azure Service Management/network/vnet/local-network/local-network.xyml
             - name: static-ip
-              href: ../Azure/azure-xplat/Azure Service Management/network/vnet/static-ip/static-ip.xyml
             - name: subnet
-              href: ../Azure/azure-xplat/Azure Service Management/network/vnet/subnet/subnet.xyml
               items:
                 - name: route-table
-                  href: ../Azure/azure-xplat/Azure Service Management/network/vnet/subnet/route-table/route-table.xyml
         - name: vpn-gateway
-          href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/vpn-gateway.xyml
           items:
             - name: connection
-              href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/connection/connection.xyml
             - name: default-site
-              href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/default-site/default-site.xyml
             - name: device
-              href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/device/device.xyml
             - name: diagnostics
-              href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/diagnostics/diagnostics.xyml
             - name: shared-key
-              href: ../Azure/azure-xplat/Azure Service Management/network/vpn-gateway/shared-key/shared-key.xyml
     - name: sb
-      href: ../Azure/azure-xplat/Azure Service Management/sb/sb.xyml
       items:
         - name: namespace
-          href: ../Azure/azure-xplat/Azure Service Management/sb/namespace/namespace.xyml
           items:
             - name: location
-              href: ../Azure/azure-xplat/Azure Service Management/sb/namespace/location/location.xyml
     - name: service
-      href: ../Azure/azure-xplat/Azure Service Management/service/service.xyml
       items:
         - name: cert
-          href: ../Azure/azure-xplat/Azure Service Management/service/cert/cert.xyml
         - name: deployment
-          href: ../Azure/azure-xplat/Azure Service Management/service/deployment/deployment.xyml
         - name: internal-load-balancer
-          href: ../Azure/azure-xplat/Azure Service Management/service/internal-load-balancer/internal-load-balancer.xyml
         - name: load-balanced-set
-          href: ../Azure/azure-xplat/Azure Service Management/service/load-balanced-set/load-balanced-set.xyml
     - name: servicefabric
-      href: ../Azure/azure-xplat/Azure Service Management/servicefabric/servicefabric.xyml
       items:
         - name: application
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/application.xyml
           items:
             - name: deployed
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/deployed/deployed.xyml
               items:
                 - name: health
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/deployed/health/health.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/health/health.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/manifest/manifest.xyml
             - name: package
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/package/package.xyml
             - name: type
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/type/type.xyml
             - name: upgrade
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/application/upgrade/upgrade.xyml
         - name: cluster
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/cluster/cluster.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/cluster/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/cluster/load/load.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/cluster/manifest/manifest.xyml
             - name: upgrade
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/cluster/upgrade/upgrade.xyml
         - name: code
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/code/code.xyml
           items:
             - name: package
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/code/package/package.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/code/package/deployed/deployed.xyml
         - name: node
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/node/node.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/node/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/node/load/load.xyml
             - name: state
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/node/state/state.xyml
         - name: partition
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/partition/partition.xyml
           items:
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/partition/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/partition/load/load.xyml
         - name: replica
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/replica/replica.xyml
           items:
             - name: deployed
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/replica/deployed/deployed.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/replica/health/health.xyml
             - name: load
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/replica/load/load.xyml
         - name: service
-          href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/service.xyml
           items:
             - name: description
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/description/description.xyml
             - name: group
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/group/group.xyml
               items:
                 - name: description
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/group/description/description.xyml
                 - name: member
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/group/member/member.xyml
                 - name: template
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/group/template/template.xyml
             - name: health
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/health/health.xyml
             - name: manifest
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/manifest/manifest.xyml
             - name: package
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/package/package.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/package/deployed/deployed.xyml
                   items:
                     - name: health
-                      href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/package/deployed/health/health.xyml
             - name: template
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/template/template.xyml
             - name: type
-              href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/type/type.xyml
               items:
                 - name: deployed
-                  href: ../Azure/azure-xplat/Azure Service Management/servicefabric/service/type/deployed/deployed.xyml
     - name: site
-      href: ../Azure/azure-xplat/Azure Service Management/site/site.xyml
       items:
         - name: appsetting
-          href: ../Azure/azure-xplat/Azure Service Management/site/appsetting/appsetting.xyml
         - name: config
-          href: ../Azure/azure-xplat/Azure Service Management/site/config/config.xyml
         - name: connectionstring
-          href: ../Azure/azure-xplat/Azure Service Management/site/connectionstring/connectionstring.xyml
         - name: defaultdocument
-          href: ../Azure/azure-xplat/Azure Service Management/site/defaultdocument/defaultdocument.xyml
         - name: deployment
-          href: ../Azure/azure-xplat/Azure Service Management/site/deployment/deployment.xyml
           items:
             - name: user
-              href: ../Azure/azure-xplat/Azure Service Management/site/deployment/user/user.xyml
         - name: domain
-          href: ../Azure/azure-xplat/Azure Service Management/site/domain/domain.xyml
         - name: handler
-          href: ../Azure/azure-xplat/Azure Service Management/site/handler/handler.xyml
         - name: job
-          href: ../Azure/azure-xplat/Azure Service Management/site/job/job.xyml
           items:
             - name: history
-              href: ../Azure/azure-xplat/Azure Service Management/site/job/history/history.xyml
         - name: location
-          href: ../Azure/azure-xplat/Azure Service Management/site/location/location.xyml
         - name: log
-          href: ../Azure/azure-xplat/Azure Service Management/site/log/log.xyml
         - name: repository
-          href: ../Azure/azure-xplat/Azure Service Management/site/repository/repository.xyml
         - name: scale
-          href: ../Azure/azure-xplat/Azure Service Management/site/scale/scale.xyml
     - name: sql
-      href: ../Azure/azure-xplat/Azure Service Management/sql/sql.xyml
       items:
         - name: db
-          href: ../Azure/azure-xplat/Azure Service Management/sql/db/db.xyml
         - name: firewallrule
-          href: ../Azure/azure-xplat/Azure Service Management/sql/firewallrule/firewallrule.xyml
         - name: server
-          href: ../Azure/azure-xplat/Azure Service Management/sql/server/server.xyml
     - name: storage
-      href: ../Azure/azure-xplat/Azure Service Management/storage/storage.xyml
       items:
         - name: account
-          href: ../Azure/azure-xplat/Azure Service Management/storage/account/account.xyml
           items:
             - name: connectionstring
-              href: ../Azure/azure-xplat/Azure Service Management/storage/account/connectionstring/connectionstring.xyml
             - name: keys
-              href: ../Azure/azure-xplat/Azure Service Management/storage/account/keys/keys.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/account/sas/sas.xyml
         - name: blob
-          href: ../Azure/azure-xplat/Azure Service Management/storage/blob/blob.xyml
           items:
             - name: copy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/blob/copy/copy.xyml
             - name: lease
-              href: ../Azure/azure-xplat/Azure Service Management/storage/blob/lease/lease.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/blob/sas/sas.xyml
         - name: container
-          href: ../Azure/azure-xplat/Azure Service Management/storage/container/container.xyml
           items:
             - name: lease
-              href: ../Azure/azure-xplat/Azure Service Management/storage/container/lease/lease.xyml
             - name: policy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/container/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/container/sas/sas.xyml
         - name: cors
-          href: ../Azure/azure-xplat/Azure Service Management/storage/cors/cors.xyml
         - name: directory
-          href: ../Azure/azure-xplat/Azure Service Management/storage/directory/directory.xyml
         - name: file
-          href: ../Azure/azure-xplat/Azure Service Management/storage/file/file.xyml
           items:
             - name: copy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/file/copy/copy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/file/sas/sas.xyml
         - name: logging
-          href: ../Azure/azure-xplat/Azure Service Management/storage/logging/logging.xyml
         - name: metrics
-          href: ../Azure/azure-xplat/Azure Service Management/storage/metrics/metrics.xyml
         - name: queue
-          href: ../Azure/azure-xplat/Azure Service Management/storage/queue/queue.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/queue/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/queue/sas/sas.xyml
         - name: share
-          href: ../Azure/azure-xplat/Azure Service Management/storage/share/share.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/share/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/share/sas/sas.xyml
         - name: table
-          href: ../Azure/azure-xplat/Azure Service Management/storage/table/table.xyml
           items:
             - name: policy
-              href: ../Azure/azure-xplat/Azure Service Management/storage/table/policy/policy.xyml
             - name: sas
-              href: ../Azure/azure-xplat/Azure Service Management/storage/table/sas/sas.xyml
     - name: vm
-      href: ../Azure/azure-xplat/Azure Service Management/vm/vm.xyml
       items:
         - name: disk
-          href: ../Azure/azure-xplat/Azure Service Management/vm/disk/disk.xyml
         - name: docker
-          href: ../Azure/azure-xplat/Azure Service Management/vm/docker/docker.xyml
         - name: endpoint
-          href: ../Azure/azure-xplat/Azure Service Management/vm/endpoint/endpoint.xyml
           items:
             - name: acl-rule
-              href: ../Azure/azure-xplat/Azure Service Management/vm/endpoint/acl-rule/acl-rule.xyml
         - name: extension
-          href: ../Azure/azure-xplat/Azure Service Management/vm/extension/extension.xyml
         - name: image
-          href: ../Azure/azure-xplat/Azure Service Management/vm/image/image.xyml
         - name: location
-          href: ../Azure/azure-xplat/Azure Service Management/vm/location/location.xyml
         - name: public-ip
-          href: ../Azure/azure-xplat/Azure Service Management/vm/public-ip/public-ip.xyml
         - name: static-ip
-          href: ../Azure/azure-xplat/Azure Service Management/vm/static-ip/static-ip.xyml

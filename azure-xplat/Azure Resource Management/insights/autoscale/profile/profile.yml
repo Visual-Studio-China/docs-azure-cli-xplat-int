@@ -1,0 +1,127 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create or set an autoscale profile.
+  usage: '[options] <profileType> <profileName> <defaultCapacity> <maximumCapacity> <minimumCapacity> <rules>'
+  filePath: commands/arm/insights/insights.autoscale.profile.js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -y --profileType <profileType>
+    required: -18
+    optional: 0
+    bool: True
+    short: -y
+    long: --profileType
+    description: 'The type of the profile: NoSchedule, FixedDate, Recurrent (the value case insensitive)'
+  - flags: -n --profileName <profileName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --profileName
+    description: The name of the profile.
+  - flags: -d --defaultCapacity <defaultCapacity>
+    required: -22
+    optional: 0
+    bool: True
+    short: -d
+    long: --defaultCapacity
+    description: The default capacity of the profile.
+  - flags: -a --maximumCapacity <maximumCapacity>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --maximumCapacity
+    description: The maximum capacity of the profile.
+  - flags: -m --minimumCapacity <minimumCapacity>
+    required: -22
+    optional: 0
+    bool: True
+    short: -m
+    long: --minimumCapacity
+    description: The minimum capacity of the profile.
+  - flags: -l --rules <rules>
+    required: -12
+    optional: 0
+    bool: True
+    short: -l
+    long: --rules
+    description: The rules of the profile. A json string containing a listing of scale rules.
+  - flags: -b --startTimeWindow <startTimeWindow>
+    required: -22
+    optional: 0
+    bool: True
+    short: -b
+    long: --startTimeWindow
+    description: The start time window of a fixed date schedule.
+  - flags: -e --endTimeWindow <endTimeWindow>
+    required: -20
+    optional: 0
+    bool: True
+    short: -e
+    long: --endTimeWindow
+    description: The end time window of a fixed date schedule.
+  - flags: -z --timeWindowTimeZone <timeWindowTimeZone>
+    required: -25
+    optional: 0
+    bool: True
+    short: -z
+    long: --timeWindowTimeZone
+    description: The time window timezone of a fixed date schedule.
+  - flags: -f --recurrenceFrequency <recurrenceFrequency>
+    required: -26
+    optional: 0
+    bool: True
+    short: -f
+    long: --recurrenceFrequency
+    description: 'The recurrence frequency of a recurrent schedule: None, Second, Minute, Hour, Day, Week, Month, Year (the value is case insensitive)'
+  - flags: -g --scheduleDays <scheduleDays>
+    required: -19
+    optional: 0
+    bool: True
+    short: -g
+    long: --scheduleDays
+    description: The list of schedule days a recurrent schedule. Values are comma-separated.
+  - flags: -o --scheduleHours <scheduleHours>
+    required: -20
+    optional: 0
+    bool: True
+    short: -o
+    long: --scheduleHours
+    description: The list of schedule hours a recurrent schedule. Values are comma-separated.
+  - flags: -u --scheduleMinutes <scheduleMinutes>
+    required: -22
+    optional: 0
+    bool: True
+    short: -u
+    long: --scheduleMinutes
+    description: The list of schedule minutes a recurrent schedule. Values are comma-separated.
+  - flags: -x --scheduleTimeZone <scheduleTimeZone>
+    required: -23
+    optional: 0
+    bool: True
+    short: -x
+    long: --scheduleTimeZone
+    description: The list of schedule timezone a recurrent schedule.
+name: profile
+description: Manages autoscale profiles
+usage: '[options] [command]'

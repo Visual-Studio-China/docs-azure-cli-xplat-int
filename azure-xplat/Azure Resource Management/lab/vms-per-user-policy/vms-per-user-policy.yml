@@ -1,0 +1,147 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set allowed virtual machines per user policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -c, --vm-count <vm-count>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --vm-count
+    description: the total vms allowed in the lab
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get allowed virtual machines per user policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete allowed virtual machines per user policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: vms-per-user-policy
+description: Commands to manage max allowed virtual machines per user policy
+usage: '[options] [command]'

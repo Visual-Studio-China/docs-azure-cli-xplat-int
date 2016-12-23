@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: push
+description: Commands to manage your Mobile Service Push Settings
+usage: '[options]'

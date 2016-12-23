@@ -1,0 +1,225 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set the CORS rules of the storage service
+  usage: '[options]'
+  filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: set CORS rules for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: set CORS rules for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: set CORS rules for queue service
+  - flags: --file
+    required: 0
+    optional: 0
+    bool: True
+    long: --file
+    description: set CORS rules for file service
+  - flags: --cors <cors>
+    required: -8
+    optional: 0
+    bool: True
+    long: --cors
+    description: the CORS rules array in json format
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: show
+  description: Show the CORS rules of the storage service
+  usage: '[options]'
+  filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: show CORS rules for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: show CORS rules for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: show CORS rules for queue service
+  - flags: --file
+    required: 0
+    optional: 0
+    bool: True
+    long: --file
+    description: show CORS rules for file service
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: delete
+  description: Delete all the CORS rules of the storage service
+  usage: '[options]'
+  filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: delete CORS rules for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: delete CORS rules for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: delete CORS rules for queue service
+  - flags: --file
+    required: 0
+    optional: 0
+    bool: True
+    long: --file
+    description: delete CORS rules for file service
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: delete the CORS rules without confirmation
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+name: cors
+description: Commands to manage your Storage CORS (Cross-Origin Resource Sharing)
+usage: '[options] [command]'

@@ -1,0 +1,112 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Create a webtest alert rule.
+  usage: '[options] <ruleName> <location> <resourceGroup> <windowSize> <failedLocationCount> <metricName> <webtestResourceUri>'
+  filePath: commands/arm/insights/insights.alerts.rule.webtest._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -x --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -x
+    long: --disable
+    description: Flag to disable the rule.
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+  - flags: -n --ruleName <ruleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --ruleName
+    description: The name of the rule.
+  - flags: -d --description <description>
+    required: -18
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: The description of the rule.
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: The location.
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: -m --metricName <metricName>
+    required: -17
+    optional: 0
+    bool: True
+    short: -m
+    long: --metricName
+    description: The metric name.
+  - flags: --windowSize <windowSize>
+    required: -14
+    optional: 0
+    bool: True
+    long: --windowSize
+    description: The time window size. Expected format hh:mm:ss.
+  - flags: -f --failedLocationCount <failedLocationCount>
+    required: -26
+    optional: 0
+    bool: True
+    short: -f
+    long: --failedLocationCount
+    description: The failed location.
+  - flags: -i --webtestResourceUri <webtestResourceUri>
+    required: -25
+    optional: 0
+    bool: True
+    short: -i
+    long: --webtestResourceUri
+    description: The webtest resource Id.
+  - flags: -y --metricNamespace <metricNamespace>
+    required: -22
+    optional: 0
+    bool: True
+    short: -y
+    long: --metricNamespace
+    description: The metric namespace.
+  - flags: -z --actions <actions>
+    required: -14
+    optional: 0
+    bool: True
+    short: -z
+    long: --actions
+    description: 'The list of alert rule actions. The list must be a json object (string) of an array. Example: "[{\"customEmails\":[\"gu@ms.com\"]},{\"serviceUri\":\"http://foo.com\",\"properties\":[{\"key\":\"key1\",\"value\":\"value1\"},{\"key\":\"value1\",\"value\":\"key2\"}]}]"'
+name: webtest
+description: Creates webtest alerts rules
+usage: '[options] [command]'

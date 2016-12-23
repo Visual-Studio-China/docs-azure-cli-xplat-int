@@ -1,4 +1,0 @@
-commands: []
-name: batch
-description: Commands to manage your Batch objects
-usage: '[options]'

@@ -1,0 +1,383 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: abort-migration
+  description: Abort Virtual Network migration api validates and aborts the given virtual network for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+  filePath: commands/asm/network.generated/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: commit-migration
+  description: Commit Virtual Network migration api validates and commits the given virtual network for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+  filePath: commands/asm/network.generated/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: prepare-migration
+  description: Prepare Virtual Network migration api validates and prepare the given virtual network for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+  filePath: commands/asm/network.generated/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: validate-migration
+  description: Validate Virtual Network migration api validates the given virtual network for IaaS Classic to ARM migration.
+  usage: '[options] <name>'
+  filePath: commands/asm/network.generated/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: create
+  description: Create a virtual network
+  usage: '[options] <vnet>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --vnet <vnet>
+    required: -8
+    optional: 0
+    bool: True
+    long: --vnet
+    description: the name of the virtual network
+  - flags: -e, --address-space <ipv4>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --address-space
+    description: the address space for the virtual network
+  - flags: -m, --max-vm-count <number>
+    required: -20
+    optional: 0
+    bool: True
+    short: -m
+    long: --max-vm-count
+    description: the maximum number of VMs in the address space
+  - flags: -i, --cidr <number>
+    required: -12
+    optional: 0
+    bool: True
+    short: -i
+    long: --cidr
+    description: the address space network mask in CIDR format
+  - flags: -p, --subnet-start-ip <ipv4>
+    required: -23
+    optional: 0
+    bool: True
+    short: -p
+    long: --subnet-start-ip
+    description: the start IP address of subnet
+  - flags: -n, --subnet-name <name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name for the subnet
+  - flags: -c, --subnet-vm-count <number>
+    required: -23
+    optional: 0
+    bool: True
+    short: -c
+    long: --subnet-vm-count
+    description: the maximum number of VMs in the subnet
+  - flags: -r, --subnet-cidr <number>
+    required: -19
+    optional: 0
+    bool: True
+    short: -r
+    long: --subnet-cidr
+    description: the subnet network mask in CIDR format
+  - flags: -l, --location <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -f, --create-new-affinity-group
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --create-new-affinity-group
+    description: creates a new affinity group at the location specified in --location
+  - flags: -a, --affinity-group <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --affinity-group
+    description: the affinity group
+  - flags: -d, --dns-server-id <dns-id>
+    required: -21
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-server-id
+    description: the name identifier of the DNS server
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: list
+  description: List your virtual networks
+  usage: '[options]'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show details about a virtual network
+  usage: <vnet> [options]
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --vnet <vnet>
+    required: -8
+    optional: 0
+    bool: True
+    long: --vnet
+    description: the name of the virtual network
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a virtual network
+  usage: '[options] <vnet>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --vnet <vnet>
+    required: -8
+    optional: 0
+    bool: True
+    long: --vnet
+    description: the name of the virtual network
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: vnet
+description: Commands to manage your virtual networks
+usage: '[options] [command]'

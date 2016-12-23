@@ -1,0 +1,43 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: copy
+  description: 'Copy application package, Example: azure servicefabric application package copy --application-package-path /tmp/package1 --image-store-connection-string fabric:ImageStore'
+  usage: '[options] [applicationPackagePath] [imageStoreConnectionString]'
+  filePath: commands/servicefabric/serviceFabricPackage._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p --application-package-path <applicationPackagePath>
+    required: -31
+    optional: 0
+    bool: True
+    short: -p
+    long: --application-package-path
+    description: the path of the application package
+  - flags: -c --image-store-connection-string <imageStoreConnectionString>
+    required: -36
+    optional: 0
+    bool: True
+    short: -c
+    long: --image-store-connection-string
+    description: the string of the image store connection
+name: package
+description: Commands to manage your application package
+usage: '[options] [command]'

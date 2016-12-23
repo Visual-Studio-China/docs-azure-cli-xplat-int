@@ -1,0 +1,131 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set windows-configuration in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"windowsConfiguration\" : {\r\n             \"provisionVMAgent\":null,\r\n             \"enableAutomaticUpdates\":null,\r\n             \"timeZone\":\"\",\r\n             \"additionalUnattendContent\":[\r\n               {\r\n                 \"passName\":null,\r\n                 \"componentName\":null,\r\n                 \"settingName\":null,\r\n                 \"content\":\"\"\r\n               }\r\n             ],\r\n             \"winRM\":{\r\n               \"listeners\":[\r\n                 {\r\n                   \"protocol\":null,\r\n                   \"certificateUrl\":\"\"\r\n                 }\r\n               ]\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --provision-vm-agent <provisionVMAgent>
+    required: -22
+    optional: 0
+    bool: True
+    long: --provision-vm-agent
+    description: Set the provision-vm-agent value.
+  - flags: --enable-automatic-updates <enableAutomaticUpdates>
+    required: -28
+    optional: 0
+    bool: True
+    long: --enable-automatic-updates
+    description: Set the enable-automatic-updates value.
+  - flags: --time-zone <timeZone>
+    required: -13
+    optional: 0
+    bool: True
+    long: --time-zone
+    description: Set the time-zone value.
+  - flags: --additional-unattend-content <additionalUnattendContent>
+    required: -31
+    optional: 0
+    bool: True
+    long: --additional-unattend-content
+    description: Set the additional-unattend-content value.
+  - flags: --win-rm <winRM>
+    required: -10
+    optional: 0
+    bool: True
+    long: --win-rm
+    description: Set the win-rm value.
+- name: delete
+  description: "Remove windows-configuration in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"windowsConfiguration\" : {\r\n             \"provisionVMAgent\":null,\r\n             \"enableAutomaticUpdates\":null,\r\n             \"timeZone\":\"\",\r\n             \"additionalUnattendContent\":[\r\n               {\r\n                 \"passName\":null,\r\n                 \"componentName\":null,\r\n                 \"settingName\":null,\r\n                 \"content\":\"\"\r\n               }\r\n             ],\r\n             \"winRM\":{\r\n               \"listeners\":[\r\n                 {\r\n                   \"protocol\":null,\r\n                   \"certificateUrl\":\"\"\r\n                 }\r\n               ]\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --provision-vm-agent
+    required: 0
+    optional: 0
+    bool: True
+    long: --provision-vm-agent
+    description: Remove the provision-vm-agent value.
+  - flags: --enable-automatic-updates
+    required: 0
+    optional: 0
+    bool: True
+    long: --enable-automatic-updates
+    description: Remove the enable-automatic-updates value.
+  - flags: --time-zone
+    required: 0
+    optional: 0
+    bool: True
+    long: --time-zone
+    description: Remove the time-zone value.
+  - flags: --additional-unattend-content
+    required: 0
+    optional: 0
+    bool: True
+    long: --additional-unattend-content
+    description: Remove the additional-unattend-content value.
+  - flags: --win-rm
+    required: 0
+    optional: 0
+    bool: True
+    long: --win-rm
+    description: Remove the win-rm value.
+name: windows-configuration
+description: Commands to configure windows-configuration of vmss in config file.
+usage: '[options] [command]'

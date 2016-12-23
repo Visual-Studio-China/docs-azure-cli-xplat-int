@@ -1,0 +1,95 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Get all supported `on premise network devices` that can connect to the gateway
+  usage: '[options]'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: get-script
+  description: Get script to configure local VPN device to connect to the virtual network gateway
+  usage: '[options] <vnet-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -o, --vendor <vendor>
+    required: -14
+    optional: 0
+    bool: True
+    short: -o
+    long: --vendor
+    description: the vendor of the VPN device
+  - flags: -p, --platform <platform>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --platform
+    description: the platform of the VPN device
+  - flags: -f, --os-family <os-family>
+    required: -17
+    optional: 0
+    bool: True
+    short: -f
+    long: --os-family
+    description: the OS family of the VPN device
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: device
+description: Commands to manage VPN Gateway device
+usage: '[options] [command]'

@@ -1,0 +1,57 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates an autoscale notification.
+  usage: '[options]'
+  filePath: commands/arm/insights/insights.autoscale.notifications.js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -e --customEmails <customEmails>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --customEmails
+    description: A string with the list of custom e-mails in comma-separated format.
+  - flags: -o --sendEmailToSubscriptionAdministrator
+    required: 0
+    optional: 0
+    bool: True
+    short: -o
+    long: --sendEmailToSubscriptionAdministrator
+    description: Flag to send em-mail to the subscription administrator when the rule fires.
+  - flags: -p --sendEmailToSubscriptionCoAdministrators
+    required: 0
+    optional: 0
+    bool: True
+    short: -p
+    long: --sendEmailToSubscriptionCoAdministrators
+    description: Flag to send em-mail to the subscription coadministrators when the alert fires.
+  - flags: -w --webhooks <webhooks>
+    required: -15
+    optional: 0
+    bool: True
+    short: -w
+    long: --webhooks
+    description: List of webhooks in the escaped json format
+name: notifications
+description: Creates autoscale notifications
+usage: '[options] [command]'

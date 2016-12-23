@@ -1,0 +1,170 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: Add Route Table to a subnet
+  usage: '[options] <vnet-name> <subnet-name> <route-table-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -t, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -n, --subnet-name <subnet-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name of the subnet
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table that needs to be applied to the subnet
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Remove Route Table from a subnet
+  usage: '[options] <vnet-name> <subnet-name> <route-table-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -t, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -n, --subnet-name <subnet-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name of the subnet
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table that needs to be applied to the subnet
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Get Route Table for a subnet
+  usage: '[options] <vnet-name> <subnet-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -t, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -n, --subnet-name <subnet-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name of the subnet
+  - flags: -d, --detailed
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --detailed
+    description: >-
+      get full details of the Route Table, without this flag only
+           Route Table name will be shown
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: route-table
+description: Commands to manage subnet Route Tables
+usage: '[options] [command]'

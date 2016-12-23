@@ -1,0 +1,183 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a VM
+  usage: '[options] <dns-name> <image> <user-name> [password]'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p, --docker-port [port]
+    required: 0
+    optional: -19
+    bool: True
+    short: -p
+    long: --docker-port
+    description: Port to use for docker [2376]
+  - flags: -C, --docker-cert-dir [dir]
+    required: 0
+    optional: -23
+    bool: True
+    short: -C
+    long: --docker-cert-dir
+    description: Directory containing docker certs [~/.docker/]
+  - flags: -N, --docker-cert-cn [CN]
+    required: 0
+    optional: -22
+    bool: True
+    short: -N
+    long: --docker-cert-cn
+    description: Docker server certificate's CN. Can be set if you are using --tlsverify option for Docker connections. Default value is [*.cloudapp.net]
+  - flags: -o, --community
+    required: 0
+    optional: 0
+    bool: True
+    short: -o
+    long: --community
+    description: the <image> is a community image
+  - flags: -c, --connect
+    required: 0
+    optional: 0
+    bool: True
+    short: -c
+    long: --connect
+    description: connect to existing VMs
+  - flags: -l, --location <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -a, --affinity-group <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --affinity-group
+    description: the affinity group
+  - flags: -u, --blob-url <url>
+    required: -16
+    optional: 0
+    bool: True
+    short: -u
+    long: --blob-url
+    description: the blob url for OS disk
+  - flags: -z, --vm-size <size>
+    required: -15
+    optional: 0
+    bool: True
+    short: -z
+    long: --vm-size
+    description: the virtual machine size [Small]
+  - flags: -n, --vm-name <name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --vm-name
+    description: the virtual machine name
+  - flags: -e, --ssh [port]
+    required: 0
+    optional: -11
+    bool: True
+    short: -e
+    long: --ssh
+    description: the ssh port to enable [22]
+  - flags: -t, --ssh-cert <pem-file|fingerprint>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --ssh-cert
+    description: the SSH certificate
+  - flags: -P, --no-ssh-password
+    required: 0
+    optional: 0
+    bool: False
+    short: -P
+    long: --no-ssh-password
+    description: indicates that the password should be removed when using --ssh-cert
+  - flags: -E, --no-ssh-endpoint
+    required: 0
+    optional: 0
+    bool: False
+    short: -E
+    long: --no-ssh-endpoint
+    description: indicates that no public SSH endpoint should be created
+  - flags: -G, --generate-ssh-keys
+    required: 0
+    optional: 0
+    bool: True
+    short: -G
+    long: --generate-ssh-keys
+    description: Auto generate SSH keys, will be ignored if --ssh-cert is specified.
+  - flags: -w, --virtual-network-name <name>
+    required: -28
+    optional: 0
+    bool: True
+    short: -w
+    long: --virtual-network-name
+    description: the virtual network name
+  - flags: -b, --subnet-names <list>
+    required: -20
+    optional: 0
+    bool: True
+    short: -b
+    long: --subnet-names
+    description: the comma-delimited subnet names
+  - flags: -S, --static-ip <ip-address>
+    required: -17
+    optional: 0
+    bool: True
+    short: -S
+    long: --static-ip
+    description: the static IP address assigned to the virtual machine
+  - flags: -R, --reserved-ip <name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -R
+    long: --reserved-ip
+    description: the name of the reserved IP address assigned to the virtual machine
+  - flags: -A, --availability-set <name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -A
+    long: --availability-set
+    description: the name of availability set to create or use
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  - flags: -d, --custom-data <custom-data-file>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --custom-data
+    description: CustomData file
+name: docker
+description: Commands to manage your Docker Virtual Machine
+usage: '[options] [command]'

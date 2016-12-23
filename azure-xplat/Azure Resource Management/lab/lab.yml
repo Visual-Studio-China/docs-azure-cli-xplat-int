@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: lab
+description: Commands to manage your DevTest Labs
+usage: '[options]'

@@ -1,4 +1,0 @@
-commands: []
-name: express-route
-description: Commands to manage express routes
-usage: '[options]'

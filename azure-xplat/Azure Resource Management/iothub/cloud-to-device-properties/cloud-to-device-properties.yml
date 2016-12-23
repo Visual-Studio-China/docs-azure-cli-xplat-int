@@ -1,0 +1,85 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set the Cloud to Device properties of an IoT hub
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -d --c2d-max-delivery-count [c2dMaxDeliveryCount]
+    required: 0
+    optional: -29
+    bool: True
+    short: -d
+    long: --c2d-max-delivery-count
+    description: The number of times the IoT hub will attempt to deliver a cloud-to-device message to a device, between 1 and 100
+  - flags: -c --c2d-ttl [c2dTtl]
+    required: 0
+    optional: -14
+    bool: True
+    short: -c
+    long: --c2d-ttl
+    description: The amount of time for which a mesage is available for the device to consume before it is expired by IoT hub, between 1 and 48 hours
+  - flags: -f --feedback-lock-duration [feedbackLockDuration]
+    required: 0
+    optional: -29
+    bool: True
+    short: -f
+    long: --feedback-lock-duration
+    description: The lock duration of the feedback messages, between 5 seconds and 5 minutes
+  - flags: -F --feedback-ttl [feedbackTtl]
+    required: 0
+    optional: -19
+    bool: True
+    short: -F
+    long: --feedback-ttl
+    description: The amount of time a feedback mesage is available for the device to consume before it is expired by IoT hub, between 1 and 48 hours
+  - flags: -m --feedback-max-delivery-count [feedbackMaxDeliveryCount]
+    required: 0
+    optional: -34
+    bool: True
+    short: -m
+    long: --feedback-max-delivery-count
+    description: The number of times the IoT hub will attempt to deliver a cloud-device feedback message to a device, between 1 and 100
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+name: cloud-to-device-properties
+description: Commands to manage the Cloud to Device Properties of an IoT hub
+usage: '[options] [command]'

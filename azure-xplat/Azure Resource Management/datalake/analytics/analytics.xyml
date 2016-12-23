@@ -1,4 +1,0 @@
-commands: []
-name: analytics
-description: Commands to manage your Data Lake Analytics objects
-usage: '[options]'

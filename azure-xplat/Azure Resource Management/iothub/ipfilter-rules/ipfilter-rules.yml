@@ -1,0 +1,109 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List the IoT hub IP filter rules
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  - flags: -f --output-file [output-file]
+    required: 0
+    optional: -18
+    bool: True
+    short: -f
+    long: --output-file
+    description: the path to the JSON-formatted output IP filter rules file in the file system
+- name: set
+  description: set the IoT hub IP filter rules
+  usage: <resourceGroup> <name> <inputFile> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+  - flags: -f --input-file <inputFile>
+    required: -17
+    optional: 0
+    bool: True
+    short: -f
+    long: --input-file
+    description: the path to the JSON-formatted input IP filter rules file in the file system
+name: ipfilter-rules
+description: Commands to manage the IP filter rules of an IoT hub
+usage: '[options] [command]'

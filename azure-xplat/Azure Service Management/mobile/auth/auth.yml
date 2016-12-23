@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: auth
+description: Commands to manage authentication settings for mobile service
+usage: '[options]'

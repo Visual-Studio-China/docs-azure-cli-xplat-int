@@ -1,0 +1,70 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List Batch pool usage metrics
+  usage: '[options]'
+  filePath: commands/batch/batch.pool._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --start-time <start-time>
+    required: -18
+    optional: 0
+    bool: True
+    short: -s
+    long: --start-time
+    description: the earliest time from which to include metrics
+  - flags: -e, --end-time <end-time>
+    required: -16
+    optional: 0
+    bool: True
+    short: -e
+    long: --end-time
+    description: the latest time from which to include metrics
+  - flags: --filter-clause <filter-clause>
+    required: -17
+    optional: 0
+    bool: True
+    long: --filter-clause
+    description: an OData expression by which the results will be filtered
+  - flags: -a, --account-name <account-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the Batch account name
+  - flags: -k, --account-key <account-key>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the Batch account key
+  - flags: -u, --account-endpoint <account-endpoint>
+    required: -24
+    optional: 0
+    bool: True
+    short: -u
+    long: --account-endpoint
+    description: the Batch account URL
+name: usage-metrics
+description: Commands to manage usage metrics of your Batch pools
+usage: '[options] [command]'

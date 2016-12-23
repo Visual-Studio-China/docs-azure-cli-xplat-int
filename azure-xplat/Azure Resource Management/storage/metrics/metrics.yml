@@ -1,0 +1,191 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: 'Show the metrics properties of the storage services '
+  usage: '[options]'
+  filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: show metrics properties for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: show metrics properties for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: show metrics properties for queue service
+  - flags: --file
+    required: 0
+    optional: 0
+    bool: True
+    long: --file
+    description: show metrics properties for file service
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: set
+  description: Set the metrics properties of the storage service
+  usage: '[options]'
+  filePath: commands/storage/storage.service._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --blob
+    required: 0
+    optional: 0
+    bool: True
+    long: --blob
+    description: set metrics properties for blob service
+  - flags: --table
+    required: 0
+    optional: 0
+    bool: True
+    long: --table
+    description: set metrics properties for table service
+  - flags: --queue
+    required: 0
+    optional: 0
+    bool: True
+    long: --queue
+    description: set metrics properties for queue service
+  - flags: --file
+    required: 0
+    optional: 0
+    bool: True
+    long: --file
+    description: set metrics properties for file service
+  - flags: --version <version>
+    required: -11
+    optional: 0
+    bool: True
+    long: --version
+    description: the version string
+  - flags: --retention <retention>
+    required: -13
+    optional: 0
+    bool: True
+    long: --retention
+    description: set metrics retention in days
+  - flags: --hour
+    required: 0
+    optional: 0
+    bool: True
+    long: --hour
+    description: set hourly metrics properties
+  - flags: --hour-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --hour-off
+    description: turn off hourly metrics properties
+  - flags: --minute
+    required: 0
+    optional: 0
+    bool: True
+    long: --minute
+    description: set minute metrics properties
+  - flags: --minute-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --minute-off
+    description: turn off minute metrics properties
+  - flags: --api
+    required: 0
+    optional: 0
+    bool: True
+    long: --api
+    description: 'include API in metrics '
+  - flags: --api-off
+    required: 0
+    optional: 0
+    bool: True
+    long: --api-off
+    description: exclude API from metrics
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+name: metrics
+description: Commands to manage your Storage metrics properties
+usage: '[options] [command]'

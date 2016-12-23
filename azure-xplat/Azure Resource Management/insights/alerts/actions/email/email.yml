@@ -1,0 +1,43 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates an alert rule e-mail action.
+  usage: '[options]'
+  filePath: commands/arm/insights/insights.alerts.actions.js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -e --customEmails <customEmails>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --customEmails
+    description: A string with the list of custom e-mails in comma-separated format.
+  - flags: -o --sendToServiceOwners
+    required: 0
+    optional: 0
+    bool: True
+    short: -o
+    long: --sendToServiceOwners
+    description: Flag to send em-mail to the service owners when the alert fires.
+name: email
+description: Creates alert rule e-mail actions
+usage: '[options] [command]'

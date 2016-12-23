@@ -1,0 +1,49 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: export
+  description: Exports the publish settings file as a PEM file
+  usage: '[options]'
+  filePath: commands/asm/account.cert._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -f, --file <file>
+    required: -12
+    optional: 0
+    bool: True
+    short: -f
+    long: --file
+    description: the name of the cert file. If not specified, generate a file in pwd using the subscription ID as the file name
+  - flags: -p, --publishsettings <publishsettings>
+    required: -23
+    optional: 0
+    bool: True
+    short: -p
+    long: --publishsettings
+    description: the publish settings file
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the Name or ID for the subscription whose cert you want to export. If not specified, use the current subscription
+name: cert
+description: Commands to manage your account certificates
+usage: '[options] [command]'

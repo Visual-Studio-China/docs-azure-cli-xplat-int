@@ -1,0 +1,95 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set linux-profile in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"linuxProfile\" : {\r\n             \"adminUsername\":\"\",\r\n             \"ssh\":{\r\n               \"publicKeys\":[\r\n                 {\r\n                   \"keyData\":\"\"\r\n                 }\r\n               ]\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --admin-username <adminUsername>
+    required: -18
+    optional: 0
+    bool: True
+    long: --admin-username
+    description: Set the admin-username value.
+  - flags: --ssh <ssh>
+    required: -7
+    optional: 0
+    bool: True
+    long: --ssh
+    description: Set the ssh value.
+- name: delete
+  description: "Remove linux-profile in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"linuxProfile\" : {\r\n             \"adminUsername\":\"\",\r\n             \"ssh\":{\r\n               \"publicKeys\":[\r\n                 {\r\n                   \"keyData\":\"\"\r\n                 }\r\n               ]\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --admin-username
+    required: 0
+    optional: 0
+    bool: True
+    long: --admin-username
+    description: Remove the admin-username value.
+  - flags: --ssh
+    required: 0
+    optional: 0
+    bool: True
+    long: --ssh
+    description: Remove the ssh value.
+name: linux-profile
+description: Commands to configure linux-profile of acs in config file.
+usage: '[options] [command]'

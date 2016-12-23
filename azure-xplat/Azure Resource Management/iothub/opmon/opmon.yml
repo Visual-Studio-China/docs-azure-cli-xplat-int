@@ -1,0 +1,109 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show the operations monitoring properties of an IoT hub
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: set
+  description: Update the operations monitoring properties for an IoT hub
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IotHub
+  - flags: -c --opmon-category <opmonCategory>
+    required: -21
+    optional: 0
+    bool: True
+    short: -c
+    long: --opmon-category
+    description: The name of the operations monitoring category. One of Connections, DeviceTelemetry, C2DCommands, DeviceIdentityOperations, FileUploadOperations
+  - flags: -l --diagnostic-level <diagnosticLevel>
+    required: -23
+    optional: 0
+    bool: True
+    short: -l
+    long: --diagnostic-level
+    description: The diagnostic level. None, Error, Information.
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+name: opmon
+description: Commands to manage the operations monitoring related properties of an IoT hub
+usage: '[options] [command]'

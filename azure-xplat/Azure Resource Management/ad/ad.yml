@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: ad
+description: Commands to display Active Directory objects
+usage: '[options]'

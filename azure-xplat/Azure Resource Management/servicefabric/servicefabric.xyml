@@ -1,4 +1,0 @@
-commands: []
-name: servicefabric
-description: Commands to manage your Azure Service Fabric
-usage: '[options]'

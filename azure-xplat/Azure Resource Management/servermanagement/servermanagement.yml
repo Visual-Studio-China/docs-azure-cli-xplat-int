@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: servermanagement
+description: Commands to manage Azure Server Managment resources
+usage: '[options]'

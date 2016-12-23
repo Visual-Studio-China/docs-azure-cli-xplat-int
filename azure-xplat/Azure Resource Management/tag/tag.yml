@@ -1,0 +1,172 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: add a tag
+  usage: '[options] <name> <value>'
+  filePath: commands/arm/tag/tag._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the tag. If the tag name doesn't exist, create the tag name; Otherwise, add the value to the existing tag name.
+  - flags: --value <value>
+    required: -9
+    optional: 0
+    bool: True
+    long: --value
+    description: Value of the tag. If specified, add the tag value to the tag name; Otherwise, keep the tag values unchanged.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier.
+- name: delete
+  description: Remove an entire tag or a tag value
+  usage: '[options] <name> <value>'
+  filePath: commands/arm/tag/tag._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the tag to remove.
+  - flags: --value <value>
+    required: -9
+    optional: 0
+    bool: True
+    long: --value
+    description: Value of the tag to remove. If not specified, remove the entire tag. If specified, only remove the tag value.
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: If not specified, will prompt for confirmation. If specified, won't prompt.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier.
+- name: list
+  description: Lists the tag information
+  usage: '[options]'
+  filePath: commands/arm/tag/tag._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --details
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --details
+    description: Show tag values information as well.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier.
+- name: show
+  description: Get a tag
+  usage: '[options] [name]'
+  filePath: commands/arm/tag/tag._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The tag name.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: The subscription identifier.
+name: tag
+description: Commands to manage your resource manager tags
+usage: '[options] [command]'

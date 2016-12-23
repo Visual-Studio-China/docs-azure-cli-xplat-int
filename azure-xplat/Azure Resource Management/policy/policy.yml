@@ -1,0 +1,5 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: policy
+description: Commands to manage your policies on ARM Resources.
+usage: '[options]'

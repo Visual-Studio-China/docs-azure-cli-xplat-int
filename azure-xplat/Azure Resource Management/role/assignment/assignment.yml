@@ -1,0 +1,370 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Assigns the specified RBAC role to the specified principal, at the specified scope.
+  usage: >
+    [objectId] [signInName] [spn] [roleName] [roleId] [scope] [resource-group] [resource-type] [resource-name]
+
+               -----    Example 1   -------
+               azure role assignment create --resource-group testRG --signInName john.doe@contoso.com
+               Grant access to a user at a resource group scope.
+
+               -----    Example 2   -------
+               azure ad group show --search "Christine Koch Team"
+               + Getting group list
+               data:    Display Name:      Christine Koch Team
+               data:    ObjectId:          2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb
+               data:    Security Enabled:  true
+               data:    Mail Enabled:
+
+               azure role assignment create --objectId 2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb --roleName Contributor --resource-group testRG
+               Grants access to a security group.
+
+               -----    Example 3   -------
+               azure role assignment create --signInName john.doe@contoso.com --roleName Owner --scope "/subscriptions/96231a05-34ce-4eb4-aa6a-70759cbb5e83/resourcegroups/rg1/providers/Microsoft.Web/sites/site1"
+               Grants access to a user at a resource 'site1' (website) scope.
+
+               -----    Example 4   -------
+               azure role assignment create --objectId 5ac84765-1c8c-4994-94b2-629461bd191b --roleName "Virtual Machine Contributor" --resouce-name Devices-Engineering-ProjectRND --resource-type Microsoft.Network/virtualNetworks/subnets --parent virtualNetworks/VNET-EASTUS-01 --resource-group Network
+               Grant access to a group at a nested resource (subnet)
+  filePath: commands/arm/role/role.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --objectId <objectId>
+    required: -12
+    optional: 0
+    bool: True
+    long: --objectId
+    description: Azure AD Objectid of the user, group or service principal
+  - flags: --signInName <signInName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --signInName
+    description: The email address or the user principal name of the user.
+  - flags: --spn <spn>
+    required: -7
+    optional: 0
+    bool: True
+    long: --spn
+    description: The ServicePrincipalName of the Azure AD application.
+  - flags: -o --roleName <roleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --roleName
+    description: The Name of the RBAC role that needs to be assigned to the principal i.e. Reader, Contributor, Virtual Network Administrator, etc.
+  - flags: -d --roleId <roleId>
+    required: -13
+    optional: 0
+    bool: True
+    short: -d
+    long: --roleId
+    description: The Id of the RBAC role that needs to be assigned to the principal.
+  - flags: -c --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -c
+    long: --scope
+    description: The Scope of the role assignment. In the format of relative URI. For e.g. "/subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG". If not specified, will create the role assignment at subscription level. If specified, it should start with "/subscriptions/{id}".
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group name. Creates an assignment that is effective at the specified resource group. When used in conjunction with resource-name, resource-type and (optionally)parent parameters, the command constructs a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: -r --resource-type <resource-type>
+    required: -20
+    optional: 0
+    bool: True
+    short: -r
+    long: --resource-type
+    description: The resource type. For e.g. Microsoft.Network/virtualNetworks. Should only be used in conjunction with resource-name, resource-group and (optionally)parent parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: -u --resource-name <resource-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -u
+    long: --resource-name
+    description: The resource name. For e.g. storageaccountprod. Should only be used in conjunction with resource-type, resource-group and (optionally)parent parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: --parent <parent>
+    required: -10
+    optional: 0
+    bool: True
+    long: --parent
+    description: The parent resource in the hierarchy of the resource specified using resource-name parameter. Must be used in conjunction with resource-name, resource-type and resource-group parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: Name or identifier of the subscription where the role assignment will be created.
+- name: list
+  description: "Lists Azure RBAC role assignments at the specified scope. \n         By default it lists all role assignments in the selected Azure subscription. Use respective parameters to list assignments to a specific user, or to list assignments on a specific resource group or resource. \n         The Azure RBAC role that is assigned dictates what type of resources the user is allowed to manage in the scope, and what actions the user is allowed to perform on those resources. Use 'azure role list' or 'azure role show' commands to list actions that a given role allows. "
+  usage: >
+    [objectId] [signInName] [spn] [roleName] [roleId] [scope] [resource-group] [resource-type] [resource-name]
+
+               -----    Example 1   -------
+               azure role assignment list
+               List all role assignments in the subscription
+
+               -----    Example 2   -------
+               azure role assignment list --resource-group testRG --signInName john.doe@contoso.com -e
+               Gets all role assignments made to user john.doe@contoso.com  and the groups of which he is member  at the testRG scope or above.
+
+               -----    Example 3   -------
+               azure role assignment list --spn "http://testapp1.com"
+               Gets all role assignments of the specified service principal.
+
+               -----    Example 4   -------
+               azure role assignment list --scope "/subscriptions/96231a05-34ce-4eb4-aa6a-70759cbb5e83/resourcegroups/rg1/providers/Microsoft.Web/sites/site1"
+               Gets role assignments at the 'site1' website scope.
+  filePath: commands/arm/role/role.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --objectId <objectId>
+    required: -12
+    optional: 0
+    bool: True
+    long: --objectId
+    description: The Azure AD ObjectId of the User, Group or Service Principal. Filters all assignments that are made to the specified principal.
+  - flags: --signInName <signInName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --signInName
+    description: The email address or the user principal name of the user. Filters all assignments that are made to the specified user.
+  - flags: --spn <spn>
+    required: -7
+    optional: 0
+    bool: True
+    long: --spn
+    description: The ServicePrincipalName of the service principal. Filters all assignments that are made to the specified Azure AD application.
+  - flags: -o --roleName <roleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --roleName
+    description: Name of the Role that is assigned to the principal i.e. Reader, Contributor, Virtual Network Administrator, etc.
+  - flags: -d --roleId <roleId>
+    required: -13
+    optional: 0
+    bool: True
+    short: -d
+    long: --roleId
+    description: Id of the Role that is assigned to the principal
+  - flags: -c --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -c
+    long: --scope
+    description: The Scope of the role assignment. In the format of relative URI. For e.g. /subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG. It must start with "/subscriptions/{id}". The command filters all assignments that are effective at that scope.
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group name. Lists role assignments that are effective at the specified resource group. When used in conjunction with resource-name, resource-type and (optionally)parent parameters, the command lists assignments effective at resources within the resource group.
+  - flags: -r --resource-type <resource-type>
+    required: -20
+    optional: 0
+    bool: True
+    short: -r
+    long: --resource-type
+    description: The resource type. For e.g. Microsoft.Network/virtualNetworks. Must be used in conjunction with resource-name, resource-group and (optionally)parent parameters.
+  - flags: -u --resource-name <resource-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -u
+    long: --resource-name
+    description: The resource name. For e.g. storageaccountprod. Must be used in conjunction with resource-group, resource-type and (optionally)parent parameters.
+  - flags: --parent <parent>
+    required: -10
+    optional: 0
+    bool: True
+    long: --parent
+    description: The parent resource in the hierarchy of the resource specified using --resource-name parameter. Must be used in conjunction with resource-name, resource-type and resource-group parameters.
+  - flags: -e --expandPrincipalGroups
+    required: 0
+    optional: 0
+    bool: True
+    short: -e
+    long: --expandPrincipalGroups
+    description: If specified, returns roles directly assigned to the user and to the groups of which the user is a member (transitively). Supported only for a user principal.
+  - flags: -a --includeClassicAdministrators
+    required: 0
+    optional: 0
+    bool: True
+    short: -a
+    long: --includeClassicAdministrators
+    description: If specified, also lists subscription classic administrators (co-admins, service admins, etc.) role assignments.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: Name or identifier of the subscription to search the role assignments.
+- name: delete
+  description: Removes a role assignment to the specified principal who is assigned to a particular role at a particular scope. Use the 'azure role assignment list' command to retrieve assignments under the subscription
+  usage: >
+    [objectId] [signInName] [spn] [roleName] [roleId] [scope] [resource-group] [resource-type] [resource-name]
+
+               -----    Example 1   -------
+               azure role assignment delete --resource-group testRG --signInName john.doe@contoso.com --roleName Reader
+               Removes a role assignment for john.doe@contoso.com who is assigned to the Reader role at the testRG resourcegroup scope
+
+               -----    Example 2   -------
+               azure role assignment delete --objectId 2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb --roleName Reader
+               Removes the role assignment to the group principal identified by the ObjectId and assigned to the Reader role. Defaults to using the current subscription as the scope to find the assignment to be deleted.
+  filePath: commands/arm/role/role.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --objectId <objectId>
+    required: -12
+    optional: 0
+    bool: True
+    long: --objectId
+    description: Azure AD Objectid of the user, group or service principal
+  - flags: --signInName <signInName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --signInName
+    description: The email address or the user principal name of the user.
+  - flags: --spn <spn>
+    required: -7
+    optional: 0
+    bool: True
+    long: --spn
+    description: The ServicePrincipalName of the Azure AD application.
+  - flags: -o --roleName <roleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --roleName
+    description: The Name of the RBAC role for which the assignment needs to be deleted i.e. Reader, Contributor, Virtual Network   Administrator, etc.
+  - flags: -d --roleId <roleId>
+    required: -13
+    optional: 0
+    bool: True
+    short: -d
+    long: --roleId
+    description: The Id of the RBAC role for which the assignment needs to be deleted.
+  - flags: -c --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -c
+    long: --scope
+    description: The Scope of the role assignment to be deleted. In the format of relative URI. For e.g. "/subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG". If not specified, will attempt to delete the role assignment at subscription level. If specified, it should start with "/subscriptions/{id}".
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group name. Attempts to delete an assignment at the specified resource group scope. When used in conjunction with resource-name, resource-type and (optionally)parent parameters, the command constructs a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: -r --resource-type <resource-type>
+    required: -20
+    optional: 0
+    bool: True
+    short: -r
+    long: --resource-type
+    description: The resource type. For e.g. Microsoft.Network/virtualNetworks. Should only be used in conjunction with resource-name, resource-group and (optionally)parent parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: -u --resource-name <resource-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -u
+    long: --resource-name
+    description: The resource name. For e.g. storageaccountprod. Should only be used in conjunction with resource-type, resource-group and (optionally)parent parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: --parent <parent>
+    required: -10
+    optional: 0
+    bool: True
+    long: --parent
+    description: The parent resource in the hierarchy of the resource specified using --resource-name parameter, if any. Must be used in conjunction with resource-name, resource-type and resource-group parameters to construct a hierarchical scope in the form of a relative URI that identifies a resource.
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: If specified, the command does not prompt for a confirmation before deleting the role assignment.
+  - flags: --passthru
+    required: 0
+    optional: 0
+    bool: True
+    long: --passthru
+    description: If specified, displays the deleted role assignment
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: Name or identifier of the subscription to delete the role assignment
+name: assignment
+description: Commands to manage role assignments
+usage: '[options] [command]'

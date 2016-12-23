@@ -1,0 +1,50 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set the deployment credentials
+  usage: '[options] [username] [pass]'
+  filePath: commands/asm/site.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --username <gitUsername>
+    required: -16
+    optional: 0
+    bool: True
+    short: -u
+    long: --username
+    description: the new git username
+  - flags: -p, --pass <gitPassword>
+    required: -12
+    optional: 0
+    bool: True
+    short: -p
+    long: --pass
+    description: the new git password
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: user
+description: Commands to manage your Web Site deployment users
+usage: '[options] [command]'

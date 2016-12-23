@@ -1,0 +1,73 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show partition load information
+  usage: '[options] [partitionId]'
+  filePath: commands/servicefabric/serviceFabricPartition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i --partition-id <partitionId>
+    required: -19
+    optional: 0
+    bool: True
+    short: -i
+    long: --partition-id
+    description: the id of the partition
+  - flags: --select <fields>
+    required: -10
+    optional: 0
+    bool: True
+    long: --select
+    description: select fields to show, call without this parameter to see all fields
+- name: reset
+  description: Reset partition
+  usage: '[options] [partitionId]'
+  filePath: commands/servicefabric/serviceFabricPartition._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i --partition-id <partitionId>
+    required: -19
+    optional: 0
+    bool: True
+    short: -i
+    long: --partition-id
+    description: the id of the partition
+name: load
+description: Commands to manage your partition load information
+usage: '[options] [command]'

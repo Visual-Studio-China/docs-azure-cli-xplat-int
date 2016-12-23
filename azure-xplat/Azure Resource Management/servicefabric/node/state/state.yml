@@ -1,0 +1,36 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: delete
+  description: Delete node state
+  usage: '[options] [nodeName]'
+  filePath: commands/servicefabric/serviceFabricNode._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --node-name <nodeName>
+    required: -16
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the node
+name: state
+description: Commands to manage your node load state
+usage: '[options] [command]'

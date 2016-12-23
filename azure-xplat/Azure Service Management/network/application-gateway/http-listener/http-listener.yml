@@ -1,0 +1,130 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: Add a http listener to an Application Gateway
+  usage: '[options] <gateway-name> <name> <frontend-port-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the HTTP listener
+  - flags: -i, --frontend-ip-name <frontend-ip-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -i
+    long: --frontend-ip-name
+    description: the name of an existing frontend ip configuration
+  - flags: -p, --frontend-port-name <frontend-port-name>
+    required: -26
+    optional: 0
+    bool: True
+    short: -p
+    long: --frontend-port-name
+    description: the name of an existing frontend port
+  - flags: -t, --protocol <protocol>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --protocol
+    description: the protocol, supported values are [Http, Https], default is Http
+  - flags: -c, --ssl-cert <ssl-cert>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --ssl-cert
+    description: the name of an existing SSL certificate, this parameter is required when --protocol is Https
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: remove
+  description: Remove a http listener from an Application Gateway
+  usage: '[options] <gateway-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the HTTP listener
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: http-listener
+description: Commands to manage Application Gateway http listener
+usage: '[options] [command]'

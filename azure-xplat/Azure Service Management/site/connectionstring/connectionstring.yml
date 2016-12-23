@@ -1,0 +1,195 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Show your site application settings
+  usage: '[options] [name]'
+  filePath: commands/asm/site.connectionstring._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: add
+  description: Add a connection string to your site
+  usage: '[options] <connectionname> <value> <type> [name]'
+  filePath: commands/asm/site.connectionstring._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -c, --connectionname <connectionname>
+    required: -22
+    optional: 0
+    bool: True
+    short: -c
+    long: --connectionname
+    description: the connection string name
+  - flags: -v, --value <value>
+    required: -13
+    optional: 0
+    bool: True
+    short: -v
+    long: --value
+    description: the connection string value
+  - flags: -t, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -t
+    long: --type
+    description: the connection string type
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a connection string for your site
+  usage: '[options] <connectionname> [name]'
+  filePath: commands/asm/site.connectionstring._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -c, --connectionname <connectionname>
+    required: -22
+    optional: 0
+    bool: True
+    short: -c
+    long: --connectionname
+    description: the connection string name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show a connection string for your site
+  usage: '[options] <connectionname> [name]'
+  filePath: commands/asm/site.connectionstring._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -c, --connectionname <connectionname>
+    required: -22
+    optional: 0
+    bool: True
+    short: -c
+    long: --connectionname
+    description: the connection string name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: connectionstring
+description: Commands to manage your Web Site connection strings
+usage: '[options] [command]'

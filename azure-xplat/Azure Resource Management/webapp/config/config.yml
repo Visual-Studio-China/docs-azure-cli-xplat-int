@@ -1,0 +1,219 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: "Get webapp configuration \nexample:  webapp config show RGName WebAppName"
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/webapp/webapp.config._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the webapp to show
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: >-
+    Set webapp configuration
+
+    example:  webapp config set RGName WebAppName --alwayson true --numberofworkers 1
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/webapp/webapp.config._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the webapp to update
+  - flags: -j --jsonInput <jsonInput>
+    required: -16
+    optional: 0
+    bool: True
+    short: -j
+    long: --jsonInput
+    description: the json config object string
+  - flags: --phpversion <phpversion>
+    required: -14
+    optional: 0
+    bool: True
+    long: --phpversion
+    description: php version of webapp
+  - flags: --pythonversion <pythonversion>
+    required: -17
+    optional: 0
+    bool: True
+    long: --pythonversion
+    description: python version of webapp
+  - flags: --nodeversion <nodeversion>
+    required: -15
+    optional: 0
+    bool: True
+    long: --nodeversion
+    description: node version of webapp
+  - flags: --numberofworkers <numberofworkers>
+    required: -19
+    optional: 0
+    bool: True
+    long: --numberofworkers
+    description: number of workers
+  - flags: --appcommandline <appcommandline>
+    required: -18
+    optional: 0
+    bool: True
+    long: --appcommandline
+    description: app command line
+  - flags: --netframeworkversion <netframeworkversion>
+    required: -23
+    optional: 0
+    bool: True
+    long: --netframeworkversion
+    description: net framwork version of webapp
+  - flags: --requesttracingenabled <requesttracingenabled>
+    required: -25
+    optional: 0
+    bool: True
+    long: --requesttracingenabled
+    description: request tracing enabled option
+  - flags: --remotedebuggingenabled <remotedebuggingenabled>
+    required: -26
+    optional: 0
+    bool: True
+    long: --remotedebuggingenabled
+    description: remote debugging enabled option
+  - flags: --httploggingenabled <httploggingenabled>
+    required: -22
+    optional: 0
+    bool: True
+    long: --httploggingenabled
+    description: http logging enabled option
+  - flags: --detailederrorloggingenabled <detailederrorloggingenabled>
+    required: -31
+    optional: 0
+    bool: True
+    long: --detailederrorloggingenabled
+    description: detailed error logging enabled option
+  - flags: --websocketenabled <websocketenabled>
+    required: -20
+    optional: 0
+    bool: True
+    long: --websocketenabled
+    description: web socket enabled option
+  - flags: --use32bitworkerprocess <use32bitworkerprocess>
+    required: -25
+    optional: 0
+    bool: True
+    long: --use32bitworkerprocess
+    description: use 32 bit process option
+  - flags: --alwayson <alwayson>
+    required: -12
+    optional: 0
+    bool: True
+    long: --alwayson
+    description: always on option
+  - flags: --autohealenabled <autohealenabled>
+    required: -19
+    optional: 0
+    bool: True
+    long: --autohealenabled
+    description: auto heal enabled option
+  - flags: --javaversion <javaversion>
+    required: -15
+    optional: 0
+    bool: True
+    long: --javaversion
+    description: java version of webapp
+  - flags: --javacontainer <javacontainer>
+    required: -17
+    optional: 0
+    bool: True
+    long: --javacontainer
+    description: java container of webapp
+  - flags: --javacontainerversion <javacontainerversion>
+    required: -24
+    optional: 0
+    bool: True
+    long: --javacontainerversion
+    description: java container version of webapp
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: config
+description: Commands to manage your Azure webapps configurations
+usage: '[options] [command]'

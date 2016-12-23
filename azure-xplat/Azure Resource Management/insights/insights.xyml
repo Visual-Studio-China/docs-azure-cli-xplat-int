@@ -1,4 +1,0 @@
-commands: []
-name: insights
-description: Commands related to monitoring Insights (events, alert rules, autoscale settings, metrics)
-usage: '[options]'
