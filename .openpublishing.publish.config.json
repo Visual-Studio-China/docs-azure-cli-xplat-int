@@ -15,10 +15,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "AzureCli": "Content",
 		"AzureXplatCli": "Content"
       },
       "build_entry_point": "docs",
+      "customized_template_paths": [
+        "azurexplatcli/azurexplatcli"
+      ]
     }
   ],
   "notification_subscribers": [],
