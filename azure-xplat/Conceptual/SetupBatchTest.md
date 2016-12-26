@@ -1,9 +1,9 @@
 ---
-updated_at: 12/26/2016 8:07 AM
+updated_at: 12/26/2016 8:33 AM
 ms.date: 12/26/2016
 content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/SetupBatchTest.md
 original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/SetupBatchTest.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6160027b77dbfdec40c6aee3f83b1ab23cc14628/azure-xplat/Conceptual/SetupBatchTest.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6e1e5d8c04f7446d91fcaca88663dcd6cdef9a3a/azure-xplat/Conceptual/SetupBatchTest.md
 ---
 ###Setup Instructions
 

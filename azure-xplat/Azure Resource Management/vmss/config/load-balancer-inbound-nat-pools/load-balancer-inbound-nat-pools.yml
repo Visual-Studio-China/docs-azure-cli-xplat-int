@@ -125,13 +125,7 @@ description: Commands to configure load-balancer-inbound-nat-pools of vmss in co
 usage: '[options] [command]'
 Metadata:
   content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/vmss/config/load-balancer-inbound-nat-pools/load-balancer-inbound-nat-pools.yml
-  update_at: 12/26/2016 8:07 AM
+  update_at: 12/26/2016 8:33 AM
   ms.date: 12/26/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6160027b77dbfdec40c6aee3f83b1ab23cc14628/azure-xplat/Azure%20Resource%20Management/vmss/config/load-balancer-inbound-nat-pools/load-balancer-inbound-nat-pools.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6e1e5d8c04f7446d91fcaca88663dcd6cdef9a3a/azure-xplat/Azure%20Resource%20Management/vmss/config/load-balancer-inbound-nat-pools/load-balancer-inbound-nat-pools.yml
   ms.topic: reference
-  ms.prod: 
-  ms.technology: 
-  author
-  ms.author
-  keywords
-  manager
