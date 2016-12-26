@@ -177,11 +177,10 @@ name: member
 description: Commands to provide an Active Directory sub group or member info
 usage: '[options] [command]'
 Metadata:
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/ad/group/member/member.yml
   content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/ad/group/member/member.yml
-  update_at: 12/26/2016 5:40 AM
+  update_at: 12/26/2016 8:07 AM
   ms.date: 12/26/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1f9f2de97a35fb1e5a719e3e38a2f2848bfe692/azure-xplat/Azure%20Resource%20Management/ad/group/member/member.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6160027b77dbfdec40c6aee3f83b1ab23cc14628/azure-xplat/Azure%20Resource%20Management/ad/group/member/member.yml
   ms.topic: reference
   ms.prod: 
   ms.technology: 
