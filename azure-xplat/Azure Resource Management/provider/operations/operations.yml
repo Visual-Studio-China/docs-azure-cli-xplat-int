@@ -51,3 +51,9 @@ commands:
 name: operations
 description: Commands to get the operations or actions allowed by an Azure resource provider.
 usage: '[options] [command]'
+Metadata:
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/provider/operations/operations.yml
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/provider/operations/operations.yml
+  update_at: 12/26/2016 5:26 AM
+  ms.date: 12/26/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ae01dbd5c15db8c858fc982274228402c00f8eda/azure-xplat/Azure%20Resource%20Management/provider/operations/operations.yml

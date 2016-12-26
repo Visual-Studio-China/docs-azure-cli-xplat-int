@@ -374,3 +374,9 @@ commands:
 name: job
 description: "Commands to manage HDInsight jobs. \nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
 usage: '[options] [command]'
+Metadata:
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/hdinsight/job/job.yml
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/hdinsight/job/job.yml
+  update_at: 12/26/2016 5:26 AM
+  ms.date: 12/26/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ae01dbd5c15db8c858fc982274228402c00f8eda/azure-xplat/Azure%20Service%20Management/hdinsight/job/job.yml

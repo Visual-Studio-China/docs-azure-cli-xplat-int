@@ -57,3 +57,9 @@ commands:
 name: changelog
 description: Gets access change history for the selected subscription for the specified time range i.e. role assignments that were added or removed, including classic administrators (co-administrators and service administrators). Maximum duration that can be queried is 15 days (going back up to past 90 days).
 usage: '[options] [command]'
+Metadata:
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/role/assignment/changelog/changelog.yml
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/role/assignment/changelog/changelog.yml
+  update_at: 12/26/2016 5:26 AM
+  ms.date: 12/26/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ae01dbd5c15db8c858fc982274228402c00f8eda/azure-xplat/Azure%20Resource%20Management/role/assignment/changelog/changelog.yml
