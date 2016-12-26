@@ -1,3 +1,10 @@
+---
+updated_at: 12/23/2016 7:23 AM
+ms.date: 12/23/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/CorporateProxy.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/CorporateProxy.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/c29f628b699de74d7657823cc403091201b30c26/azure-xplat/Conceptual/CorporateProxy.md
+---
 # Supporting Corporate Proxy
 ## Issue
 For now due to the authentication schematics of Azure Service, the cross-platform CLI needs to pass an authentication payload through the HTTPS request, which will be denied at authentication time at your corporate proxy.

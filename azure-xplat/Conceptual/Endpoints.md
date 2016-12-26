@@ -1,3 +1,10 @@
+---
+updated_at: 12/23/2016 7:23 AM
+ms.date: 12/23/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Endpoints.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Endpoints.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/c29f628b699de74d7657823cc403091201b30c26/azure-xplat/Conceptual/Endpoints.md
+---
 ### Getting Endpoints for Azure
 
 - **Listing different public environments**
