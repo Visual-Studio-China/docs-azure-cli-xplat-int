@@ -1,7 +1,6 @@
-log/
 obj/
 _site/
 .optemp/
 _themes*/
-
+!azure-xplat/*.yml
 .openpublishing.buildcore.ps1
