@@ -1,0 +1,127 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Create or set an event-based alert rule.
+  usage: '[options] <ruleName> <location> <resourceGroup> <operationName>'
+  filePath: commands/arm/insights/insights.alerts.rule.log._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -x --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -x
+    long: --disable
+    description: Flag to disable the rule.
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+  - flags: -n --ruleName <ruleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --ruleName
+    description: The name of the rule.
+  - flags: -d --description <description>
+    required: -18
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: The description of the rule.
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: The location.
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: -p --operationName <operationName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --operationName
+    description: The operation name.
+  - flags: -z --actions <actions>
+    required: -14
+    optional: 0
+    bool: True
+    short: -z
+    long: --actions
+    description: 'The list of alert rule actions. The list must be a json object (string) of an array. Example: "[{\"customEmails\":[\"gu@ms.com\"]},{\"serviceUri\":\"http://foo.com\",\"properties\":[{\"key\":\"key1\",\"value\":\"value1\"},{\"key\":\"value1\",\"value\":\"key2\"}]}]"'
+  - flags: -i --targetResourceId <targetResourceId>
+    required: -23
+    optional: 0
+    bool: True
+    short: -i
+    long: --targetResourceId
+    description: The target resource Id.
+  - flags: -k --targetResourceProvider <targetResourceProvider>
+    required: -29
+    optional: 0
+    bool: True
+    short: -k
+    long: --targetResourceProvider
+    description: The target resource provider.
+  - flags: -z --targetResourceGroup <targetResourceGroup>
+    required: -26
+    optional: 0
+    bool: True
+    short: -z
+    long: --targetResourceGroup
+    description: The target resource group.
+  - flags: -f --level <level>
+    required: -12
+    optional: 0
+    bool: True
+    short: -f
+    long: --level
+    description: The level for the rule.
+  - flags: -u --status <status>
+    required: -13
+    optional: 0
+    bool: True
+    short: -u
+    long: --status
+    description: The status.
+  - flags: -b --subStatus <subStatus>
+    required: -16
+    optional: 0
+    bool: True
+    short: -b
+    long: --subStatus
+    description: The substatus.
+name: log
+description: Creates event-based alerts rules
+usage: '[options] [command]'

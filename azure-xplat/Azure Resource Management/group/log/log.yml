@@ -1,0 +1,64 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Retrieves and shows logs for resource group operations
+  usage: '[options] [name]'
+  filePath: commands/arm/group/group._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the resource group name
+  - flags: -a --all
+    required: 0
+    optional: 0
+    bool: True
+    short: -a
+    long: --all
+    description: returns logs for all operations (including CRUD and deployment)
+  - flags: -l --last-deployment
+    required: 0
+    optional: 0
+    bool: True
+    short: -l
+    long: --last-deployment
+    description: returns logs for the last deployment
+  - flags: -d --deployment <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -d
+    long: --deployment
+    description: the name of the deployment whose logs you want to see
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: log
+description: Commands to manage resource group logs
+usage: '[options] [command]'

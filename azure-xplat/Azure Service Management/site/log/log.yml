@@ -1,0 +1,220 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: download
+  description: Download diagnostic log
+  usage: '[options] [name]'
+  filePath: commands/asm/site.log._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -o, --output <path>
+    required: -14
+    optional: 0
+    bool: True
+    short: -o
+    long: --output
+    description: the output path, default is local folder
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: tail
+  description: Live diagnostic log
+  usage: '[options] [name]'
+  filePath: commands/asm/site.log._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p, --path <path>
+    required: -12
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the log path under LogFiles folder
+  - flags: -f, --filter <filter>
+    required: -14
+    optional: 0
+    bool: True
+    short: -f
+    long: --filter
+    description: the filter matching line
+  - flags: --log
+    required: 0
+    optional: 0
+    bool: True
+    long: --log
+    description: indicates to write output as log data
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: set
+  description: Configure diagnostics
+  usage: '[options] [name]'
+  filePath: commands/asm/site.log._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --application
+    required: 0
+    optional: 0
+    bool: True
+    short: -a
+    long: --application
+    description: use this flag to enable application diagnostics.
+  - flags: -A, --disable-application
+    required: 0
+    optional: 0
+    bool: True
+    short: -A
+    long: --disable-application
+    description: use this flag to disable application diagnostics.
+  - flags: -w, --web-server-logging
+    required: 0
+    optional: 0
+    bool: True
+    short: -w
+    long: --web-server-logging
+    description: use this flag to enable web server logging.
+  - flags: -W, --disable-web-server-logging
+    required: 0
+    optional: 0
+    bool: True
+    short: -W
+    long: --disable-web-server-logging
+    description: use this flag to disable web server logging.
+  - flags: -e, --detailed-error-messages
+    required: 0
+    optional: 0
+    bool: True
+    short: -e
+    long: --detailed-error-messages
+    description: use this flag to enable detailed error messages.
+  - flags: -E, --disable-detailed-error-messages
+    required: 0
+    optional: 0
+    bool: True
+    short: -E
+    long: --disable-detailed-error-messages
+    description: use this flag to disable detailed error messages.
+  - flags: -f, --failed-request-tracing
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --failed-request-tracing
+    description: use this flag to enable failed request tracing.
+  - flags: -F, --disable-failed-request-tracing
+    required: 0
+    optional: 0
+    bool: True
+    short: -F
+    long: --disable-failed-request-tracing
+    description: use this flag to disable failed request tracing.
+  - flags: -o, --out <out>
+    required: -11
+    optional: 0
+    bool: True
+    short: -o
+    long: --out
+    description: takes file or storage. When -a is specified, use this parameter to specify the output of the log.
+  - flags: -l, --level <level>
+    required: -13
+    optional: 0
+    bool: True
+    short: -l
+    long: --level
+    description: takes error, warning, verbose or info. When -a is specified, use this parameter to specify the log level. But default is error.
+  - flags: -t, --storage-account <storage-account>
+    required: -23
+    optional: 0
+    bool: True
+    short: -t
+    long: --storage-account
+    description: use this parameter to specify the storage account where the log will be stored.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: log
+description: Commands to manage your Web Site diagnostics
+usage: '[options] [command]'
