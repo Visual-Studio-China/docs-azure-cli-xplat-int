@@ -26,7 +26,7 @@
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": "specs/*.md",
     "externalReference": [],
     "globalMetadata": {
         "breadcrumb_path": "/azure-xplat/breadcrumb.json",
