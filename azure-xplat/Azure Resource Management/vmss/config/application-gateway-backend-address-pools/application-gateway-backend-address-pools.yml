@@ -125,7 +125,7 @@ description: Commands to configure application-gateway-backend-address-pools of 
 usage: '[options] [command]'
 Metadata:
   content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/vmss/config/application-gateway-backend-address-pools/application-gateway-backend-address-pools.yml
-  update_at: 12/26/2016 8:33 AM
+  update_at: 12/26/2016 8:43 AM
   ms.date: 12/26/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6e1e5d8c04f7446d91fcaca88663dcd6cdef9a3a/azure-xplat/Azure%20Resource%20Management/vmss/config/application-gateway-backend-address-pools/application-gateway-backend-address-pools.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/2531b56dcebc9655773ee843d66f033cf4c7bcf5/azure-xplat/Azure%20Resource%20Management/vmss/config/application-gateway-backend-address-pools/application-gateway-backend-address-pools.yml
   ms.topic: reference

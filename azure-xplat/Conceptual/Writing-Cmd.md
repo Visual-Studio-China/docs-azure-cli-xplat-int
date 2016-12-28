@@ -1,9 +1,9 @@
 ---
-updated_at: 12/26/2016 8:33 AM
+updated_at: 12/26/2016 8:43 AM
 ms.date: 12/26/2016
 content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Writing-Cmd.md
 original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Writing-Cmd.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6e1e5d8c04f7446d91fcaca88663dcd6cdef9a3a/azure-xplat/Conceptual/Writing-Cmd.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/2531b56dcebc9655773ee843d66f033cf4c7bcf5/azure-xplat/Conceptual/Writing-Cmd.md
 ---
 ## Where to put your code
 Depends on what mode your cmds in choose appropriate folder:
