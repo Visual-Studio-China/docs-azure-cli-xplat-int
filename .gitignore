@@ -2,5 +2,8 @@ obj/
 _site/
 .optemp/
 _themes*/
-!azure-xplat/*.yml
+azurexplatcli/
+azure-xplat-poc/
+log/*.txt
+log/*.tsv
 .openpublishing.buildcore.ps1
