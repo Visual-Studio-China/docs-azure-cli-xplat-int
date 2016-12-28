@@ -30,8 +30,8 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "preview",
+      "url": "https://github.com/Visual-Studio-China/templates.docs.msft",
+      "branch": "qisun-latest-prerelease",
       "branch_mapping": {}
     }
   ],
