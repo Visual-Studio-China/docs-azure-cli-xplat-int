@@ -15,6 +15,7 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
+        "AzureCli": "content",
         "AzureXplatCli": "Content"
       },
       "build_entry_point": "docs",
