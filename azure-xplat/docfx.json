@@ -29,7 +29,7 @@
     "overwrite": "specs/*.md",
     "externalReference": [],
     "globalMetadata": {
-        "breadcrumb_path": "/azure-xplat/breadcrumb.json",
+        "breadcrumb_path": "/azure-xplat-cli-poc/breadcrumb.json",
         "brand": "azure"
     },
     "fileMetadata": {},

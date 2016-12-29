@@ -1,0 +1,33 @@
+[{  
+        "toc_title":"Docs",
+        "href":"/",
+        "level":1,
+        "children":[{  
+                "href":"/azure-xplat-cli-poc/",
+                "homepage":"/azure-xplat-cli-poc/",
+                "toc_title":"Azure Xplat Cli Reference",
+                "level":2,
+                "children":[
+                    {
+                        "href":"/azure-xplat-cli-poc/Conceptual/",
+                        "homepage":"/azure-xplat-cli-poc/Conceptual/",
+                        "toc_title":"Conceptual Documents",
+                        "level":3
+                    },
+                    {
+                        "href":"/azure-xplat-cli-poc/Azure Resource Management/",
+                        "homepage":"/azure-xplat-cli-poc/Azure Resource Management/",
+                        "toc_title":"Azure Resource Management",
+                        "level":3
+                    },
+                    {
+                        "href":"/azure-xplat-cli-poc/Azure Service Management/",
+                        "homepage":"/azure-xplat-cli-poc/Azure Service Management/",
+                        "toc_title":"Azure Service Management",
+                        "level":3
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1228,4 +1228,3 @@
           href: ./Azure Service Management/vm/public-ip/public-ip.yml
         - name: static-ip
           href: ./Azure Service Management/vm/static-ip/static-ip.yml
-- name: specs
