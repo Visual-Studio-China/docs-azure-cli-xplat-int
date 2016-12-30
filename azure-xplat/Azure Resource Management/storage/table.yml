@@ -212,12 +212,10 @@ commands:
     bool: True
     long: -vv
     description: run storage command in debug mode
+metadata:
+  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.table._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.table._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.table._js  open_to_public_contributors: true
+  ms.date: 12/30/2016
+  ms.topic: reference
 name: table
 description: Commands to manage your Storage tables
 usage: '[options] [command]'
-Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/storage/table.yml
-  update_at: 12/30/2016 4:45 AM
-  ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Resource%20Management/storage/table.yml
-  ms.topic: reference

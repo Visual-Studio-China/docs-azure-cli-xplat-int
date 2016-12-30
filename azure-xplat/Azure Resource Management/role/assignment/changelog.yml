@@ -54,12 +54,10 @@ commands:
     short: -s
     long: --subscription
     description: Name or identifier of the subscription where the changelog is to be retrieved.
+metadata:
+  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/role/role.assignment.audit._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/role/role.assignment.audit._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/role/role.assignment.audit._js  open_to_public_contributors: true
+  ms.date: 12/30/2016
+  ms.topic: reference
 name: changelog
 description: Gets access change history for the selected subscription for the specified time range i.e. role assignments that were added or removed, including classic administrators (co-administrators and service administrators). Maximum duration that can be queried is 15 days (going back up to past 90 days).
 usage: '[options] [command]'
-Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/role/assignment/changelog.yml
-  update_at: 12/30/2016 4:45 AM
-  ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Resource%20Management/role/assignment/changelog.yml
-  ms.topic: reference

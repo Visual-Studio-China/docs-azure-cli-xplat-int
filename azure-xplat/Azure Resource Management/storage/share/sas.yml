@@ -87,12 +87,10 @@ commands:
     bool: True
     long: -vv
     description: run storage command in debug mode
+metadata:
+  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.file._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.file._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.file._js  open_to_public_contributors: true
+  ms.date: 12/30/2016
+  ms.topic: reference
 name: sas
 description: Commands to manage shared access signatures of your Storage file shares
 usage: '[options] [command]'
-Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/storage/share/sas.yml
-  update_at: 12/30/2016 4:45 AM
-  ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Resource%20Management/storage/share/sas.yml
-  ms.topic: reference

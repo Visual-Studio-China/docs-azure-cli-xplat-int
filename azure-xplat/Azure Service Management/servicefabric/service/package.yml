@@ -1,11 +1,11 @@
 ### YamlMime:AzureXplatCli
 commands: []
+metadata: {}
 name: package
 description: Commands to send your service package
 usage: '[options]'
 Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/servicefabric/service/package.yml
-  update_at: 12/30/2016 4:45 AM
+  update_at: 12/30/2016 4:53 AM
+  open_to_public_contributors: false
   ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Service%20Management/servicefabric/service/package.yml
   ms.topic: reference

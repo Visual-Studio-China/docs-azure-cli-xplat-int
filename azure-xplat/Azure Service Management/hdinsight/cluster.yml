@@ -225,12 +225,10 @@ commands:
     bool: True
     long: --json
     description: use json output
+metadata:
+  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/asm/hdinsight._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/asm/hdinsight._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/asm/hdinsight._js  open_to_public_contributors: true
+  ms.date: 12/30/2016
+  ms.topic: reference
 name: cluster
 description: "Commands to manage HDInsight clusters.\nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
 usage: '[options] [command]'
-Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/hdinsight/cluster.yml
-  update_at: 12/30/2016 4:45 AM
-  ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Service%20Management/hdinsight/cluster.yml
-  ms.topic: reference

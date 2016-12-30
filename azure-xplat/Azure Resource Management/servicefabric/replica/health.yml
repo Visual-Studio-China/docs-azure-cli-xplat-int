@@ -138,12 +138,10 @@ commands:
     short: -w
     long: --remove-when-expired
     description: the boolean of the remove when expired
+metadata:
+  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricReplica._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricReplica._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricReplica._js  open_to_public_contributors: true
+  ms.date: 12/30/2016
+  ms.topic: reference
 name: health
 description: Commands to manage your replica health
 usage: '[options] [command]'
-Metadata:
-  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/servicefabric/replica/health.yml
-  update_at: 12/30/2016 4:45 AM
-  ms.date: 12/30/2016
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Resource%20Management/servicefabric/replica/health.yml
-  ms.topic: reference
