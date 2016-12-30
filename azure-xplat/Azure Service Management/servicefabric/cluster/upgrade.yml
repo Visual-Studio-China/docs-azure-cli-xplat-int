@@ -25,7 +25,8 @@ commands:
     long: --json
     description: use json output
 metadata:
-  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:00 AM
+  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricCluster._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: upgrade

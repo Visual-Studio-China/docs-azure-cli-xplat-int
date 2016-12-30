@@ -53,7 +53,8 @@ commands:
     long: --webhooks
     description: List of webhooks in the escaped json format
 metadata:
-  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:00 AM
+  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.autoscale.notifications.js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: notifications

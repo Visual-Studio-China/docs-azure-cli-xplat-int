@@ -1,9 +1,9 @@
 ---
-updated_at: 12/30/2016 4:53 AM
+updated_at: 12/30/2016 7:00 AM
 ms.date: 12/30/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/devDocumentaion/TestModes.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/devDocumentaion/TestModes.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/d85c8a58551fa48c628b7c5c74e4b4da9fb0e7c2Documentaion/TestModes.md
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/TestModes.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/TestModes.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/63bb3c97748d96ba59b23538e72ab1cd1925410a/Documentaion/TestModes.md
 ---
 ## Test Modes
 

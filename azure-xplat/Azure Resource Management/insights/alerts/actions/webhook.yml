@@ -39,7 +39,8 @@ commands:
     long: --properties
     description: 'A string with the list of key / value pairs in comma-separated format. Example: "key1=value1;key2=value2".'
 metadata:
-  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:00 AM
+  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.actions.js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: webhook

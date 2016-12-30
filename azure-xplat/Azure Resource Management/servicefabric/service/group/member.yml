@@ -45,7 +45,8 @@ commands:
     long: --select
     description: select fields to show, call without this parameter to see all fields
 metadata:
-  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:00 AM
+  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/servicefabric/serviceFabricServiceGroup._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: member

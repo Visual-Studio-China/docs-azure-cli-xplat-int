@@ -5,7 +5,7 @@ name: analytics
 description: Commands to manage your Data Lake Analytics objects
 usage: '[options]'
 Metadata:
-  update_at: 12/30/2016 4:53 AM
+  update_at: 12/30/2016 7:00 AM
   open_to_public_contributors: false
   ms.date: 12/30/2016
   ms.topic: reference

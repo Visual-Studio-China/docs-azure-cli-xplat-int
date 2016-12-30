@@ -39,7 +39,8 @@ commands:
     long: --securityEnabledOnly
     description: 'If true, only membership in security enabled groups will be checked. Otherwise membership in all groups will be checked. Default: false'
 metadata:
-  update_at: 12/30/2016 4:53 AM  git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  original_git_content_url:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  gitcommit:git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:00 AM
+  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/arm/ad/ad.users._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: memberGroups
