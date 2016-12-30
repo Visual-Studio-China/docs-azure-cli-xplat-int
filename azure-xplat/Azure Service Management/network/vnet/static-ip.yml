@@ -36,5 +36,7 @@ description: Commands to manage your virtual network static IP addresses
 usage: '[options] [command]'
 Metadata:
   content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/vnet/static-ip.yml
-  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/vnet/static-ip.yml
+  update_at: 12/30/2016 4:45 AM
+  ms.date: 12/30/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a279321f0a73c72eb40e8107a6580f28e289cd66/azure-xplat/Azure%20Service%20Management/network/vnet/static-ip.yml
   ms.topic: reference
