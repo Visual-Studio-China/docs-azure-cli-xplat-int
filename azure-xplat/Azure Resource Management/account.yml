@@ -132,7 +132,7 @@ commands:
     long: --quiet
     description: quiet mode, do not ask for delete confirmation
 metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/account._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/account._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/account._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference

@@ -108,7 +108,7 @@ commands:
     long: --actions
     description: 'The list of alert rule actions. The list must be a json object (string) of an array. Example: "[{\"customEmails\":[\"gu@ms.com\"]},{\"serviceUri\":\"http://foo.com\",\"properties\":[{\"key\":\"key1\",\"value\":\"value1\"},{\"key\":\"value1\",\"value\":\"key2\"}]}]"'
 metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.rule.webtest._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.rule.webtest._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/arm/insights/insights.alerts.rule.webtest._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference

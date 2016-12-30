@@ -5,7 +5,7 @@ name: traffic-manager
 description: Commands to manage Traffic Manager
 usage: '[options]'
 Metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   open_to_public_contributors: false
   ms.date: 12/30/2016
   ms.topic: reference

@@ -201,7 +201,7 @@ commands:
     long: --account-endpoint
     description: the Batch account URL
 metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/batch/batch.pool._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/batch/batch.pool._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/batch/batch.pool._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference

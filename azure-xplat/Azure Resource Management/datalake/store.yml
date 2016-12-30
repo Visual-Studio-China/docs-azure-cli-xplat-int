@@ -5,7 +5,7 @@ name: store
 description: Commands to manage your Data Lake Storage objects
 usage: '[options]'
 Metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   open_to_public_contributors: false
   ms.date: 12/30/2016
   ms.topic: reference

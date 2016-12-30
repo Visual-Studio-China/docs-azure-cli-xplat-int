@@ -91,7 +91,7 @@ commands:
     long: --ssh
     description: Remove the ssh value.
 metadata:
-  update_at: 12/30/2016 7:00 AM
+  update_at: 12/30/2016 7:23 AM
   git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/compute/containerService._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/arm/compute/containerService._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/arm/compute/containerService._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
