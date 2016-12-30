@@ -346,8 +346,8 @@ commands:
     long: -vv
     description: run storage command in debug mode
 metadata:
-  update_at: 12/30/2016 7:23 AM
-  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.blob._js  original_git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.blob._js  gitcommit: https://github.com/azure/azure-xplat-cli/lib/commands/storage/storage.blob._js  open_to_public_contributors: true
+  update_at: 12/30/2016 7:30 AM
+  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.blob._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.blob._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/storage/storage.blob._js  open_to_public_contributors: true
   ms.date: 12/30/2016
   ms.topic: reference
 name: policy
