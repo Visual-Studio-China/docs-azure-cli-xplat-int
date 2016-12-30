@@ -1,0 +1,195 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set virtual-machine-scale-set in config string or files, e.g. \r\n{\r\n  \"sku\":{\r\n    \"name\":\"\",\r\n    \"tier\":\"\",\r\n    \"capacity\":null\r\n  },\r\n  \"upgradePolicy\":{\r\n    \"mode\":null\r\n  },\r\n  \"virtualMachineProfile\":{\r\n    \"osProfile\":{\r\n      \"computerNamePrefix\":\"\",\r\n      \"adminUsername\":\"\",\r\n      \"adminPassword\":\"\",\r\n      \"customData\":\"\",\r\n      \"windowsConfiguration\":{\r\n        \"provisionVMAgent\":null,\r\n        \"enableAutomaticUpdates\":null,\r\n        \"timeZone\":\"\",\r\n        \"additionalUnattendContent\":[\r\n          {\r\n            \"passName\":null,\r\n            \"componentName\":null,\r\n            \"settingName\":null,\r\n            \"content\":\"\"\r\n          }\r\n        ],\r\n        \"winRM\":{\r\n          \"listeners\":[\r\n            {\r\n              \"protocol\":null,\r\n              \"certificateUrl\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"linuxConfiguration\":{\r\n        \"disablePasswordAuthentication\":null,\r\n        \"ssh\":{\r\n          \"publicKeys\":[\r\n            {\r\n              \"path\":\"\",\r\n              \"keyData\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\":[\r\n        {\r\n          \"sourceVault\":{\r\n            \"id\":\"\"\r\n          },\r\n          \"vaultCertificates\":[\r\n            {\r\n              \"certificateUrl\":\"\",\r\n              \"certificateStore\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    \"storageProfile\":{\r\n      \"imageReference\":{\r\n        \"publisher\":\"\",\r\n        \"offer\":\"\",\r\n        \"sku\":\"\",\r\n        \"version\":\"\"\r\n      },\r\n      \"osDisk\":{\r\n        \"name\":\"\",\r\n        \"caching\":null,\r\n        \"createOption\":\"\",\r\n        \"osType\":null,\r\n        \"image\":{\r\n          \"uri\":\"\"\r\n        },\r\n        \"vhdContainers\":[\r\n          \"\"\r\n        ]\r\n      }\r\n    },\r\n    \"networkProfile\":{\r\n      \"networkInterfaceConfigurations\":[\r\n        {\r\n          \"name\":\"\",\r\n          \"primary\":null,\r\n          \"ipConfigurations\":[\r\n            {\r\n              \"name\":\"\",\r\n              \"subnet\":{\r\n                \"id\":\"\"\r\n              },\r\n              \"applicationGatewayBackendAddressPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"loadBalancerBackendAddressPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"loadBalancerInboundNatPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"id\":\"\"\r\n            }\r\n          ],\r\n          \"id\":\"\"\r\n        }\r\n      ]\r\n    },\r\n    \"extensionProfile\":{\r\n      \"extensions\":[\r\n        {\r\n          \"name\":\"\",\r\n          \"publisher\":\"\",\r\n          \"type\":\"\",\r\n          \"typeHandlerVersion\":\"\",\r\n          \"autoUpgradeMinorVersion\":null,\r\n          \"settings\":{\r\n          },\r\n          \"protectedSettings\":{\r\n          },\r\n          \"provisioningState\":\"\",\r\n          \"id\":\"\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"provisioningState\":\"\",\r\n  \"overProvision\":null,\r\n  \"id\":null,\r\n  \"name\":null,\r\n  \"type\":null,\r\n  \"location\":\"\",\r\n  \"tags\":{\r\n  }\r\n}\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --sku <sku>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sku
+    description: Set the sku value.
+  - flags: --upgrade-policy <upgradePolicy>
+    required: -18
+    optional: 0
+    bool: True
+    long: --upgrade-policy
+    description: Set the upgrade-policy value.
+  - flags: --virtual-machine-profile <virtualMachineProfile>
+    required: -27
+    optional: 0
+    bool: True
+    long: --virtual-machine-profile
+    description: Set the virtual-machine-profile value.
+  - flags: --provisioning-state <provisioningState>
+    required: -22
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Set the provisioning-state value.
+  - flags: --over-provision <overProvision>
+    required: -18
+    optional: 0
+    bool: True
+    long: --over-provision
+    description: Set the over-provision value.
+  - flags: --id <id>
+    required: -6
+    optional: 0
+    bool: True
+    long: --id
+    description: Set the id value.
+  - flags: --name <name>
+    required: -8
+    optional: 0
+    bool: True
+    long: --name
+    description: Set the name value.
+  - flags: --type <type>
+    required: -8
+    optional: 0
+    bool: True
+    long: --type
+    description: Set the type value.
+  - flags: --location <location>
+    required: -12
+    optional: 0
+    bool: True
+    long: --location
+    description: Set the location value.
+  - flags: --tags <tags>
+    required: -8
+    optional: 0
+    bool: True
+    long: --tags
+    description: Set the tags value.
+- name: delete
+  description: "Remove virtual-machine-scale-set in config string or files, e.g. \r\n{\r\n  \"sku\":{\r\n    \"name\":\"\",\r\n    \"tier\":\"\",\r\n    \"capacity\":null\r\n  },\r\n  \"upgradePolicy\":{\r\n    \"mode\":null\r\n  },\r\n  \"virtualMachineProfile\":{\r\n    \"osProfile\":{\r\n      \"computerNamePrefix\":\"\",\r\n      \"adminUsername\":\"\",\r\n      \"adminPassword\":\"\",\r\n      \"customData\":\"\",\r\n      \"windowsConfiguration\":{\r\n        \"provisionVMAgent\":null,\r\n        \"enableAutomaticUpdates\":null,\r\n        \"timeZone\":\"\",\r\n        \"additionalUnattendContent\":[\r\n          {\r\n            \"passName\":null,\r\n            \"componentName\":null,\r\n            \"settingName\":null,\r\n            \"content\":\"\"\r\n          }\r\n        ],\r\n        \"winRM\":{\r\n          \"listeners\":[\r\n            {\r\n              \"protocol\":null,\r\n              \"certificateUrl\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"linuxConfiguration\":{\r\n        \"disablePasswordAuthentication\":null,\r\n        \"ssh\":{\r\n          \"publicKeys\":[\r\n            {\r\n              \"path\":\"\",\r\n              \"keyData\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      },\r\n      \"secrets\":[\r\n        {\r\n          \"sourceVault\":{\r\n            \"id\":\"\"\r\n          },\r\n          \"vaultCertificates\":[\r\n            {\r\n              \"certificateUrl\":\"\",\r\n              \"certificateStore\":\"\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    \"storageProfile\":{\r\n      \"imageReference\":{\r\n        \"publisher\":\"\",\r\n        \"offer\":\"\",\r\n        \"sku\":\"\",\r\n        \"version\":\"\"\r\n      },\r\n      \"osDisk\":{\r\n        \"name\":\"\",\r\n        \"caching\":null,\r\n        \"createOption\":\"\",\r\n        \"osType\":null,\r\n        \"image\":{\r\n          \"uri\":\"\"\r\n        },\r\n        \"vhdContainers\":[\r\n          \"\"\r\n        ]\r\n      }\r\n    },\r\n    \"networkProfile\":{\r\n      \"networkInterfaceConfigurations\":[\r\n        {\r\n          \"name\":\"\",\r\n          \"primary\":null,\r\n          \"ipConfigurations\":[\r\n            {\r\n              \"name\":\"\",\r\n              \"subnet\":{\r\n                \"id\":\"\"\r\n              },\r\n              \"applicationGatewayBackendAddressPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"loadBalancerBackendAddressPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"loadBalancerInboundNatPools\":[\r\n                {\r\n                  \"id\":\"\"\r\n                }\r\n              ],\r\n              \"id\":\"\"\r\n            }\r\n          ],\r\n          \"id\":\"\"\r\n        }\r\n      ]\r\n    },\r\n    \"extensionProfile\":{\r\n      \"extensions\":[\r\n        {\r\n          \"name\":\"\",\r\n          \"publisher\":\"\",\r\n          \"type\":\"\",\r\n          \"typeHandlerVersion\":\"\",\r\n          \"autoUpgradeMinorVersion\":null,\r\n          \"settings\":{\r\n          },\r\n          \"protectedSettings\":{\r\n          },\r\n          \"provisioningState\":\"\",\r\n          \"id\":\"\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"provisioningState\":\"\",\r\n  \"overProvision\":null,\r\n  \"id\":null,\r\n  \"name\":null,\r\n  \"type\":null,\r\n  \"location\":\"\",\r\n  \"tags\":{\r\n  }\r\n}\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --sku
+    required: 0
+    optional: 0
+    bool: True
+    long: --sku
+    description: Remove the sku value.
+  - flags: --upgrade-policy
+    required: 0
+    optional: 0
+    bool: True
+    long: --upgrade-policy
+    description: Remove the upgrade-policy value.
+  - flags: --virtual-machine-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --virtual-machine-profile
+    description: Remove the virtual-machine-profile value.
+  - flags: --provisioning-state
+    required: 0
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Remove the provisioning-state value.
+  - flags: --over-provision
+    required: 0
+    optional: 0
+    bool: True
+    long: --over-provision
+    description: Remove the over-provision value.
+  - flags: --id
+    required: 0
+    optional: 0
+    bool: True
+    long: --id
+    description: Remove the id value.
+  - flags: --name
+    required: 0
+    optional: 0
+    bool: True
+    long: --name
+    description: Remove the name value.
+  - flags: --type
+    required: 0
+    optional: 0
+    bool: True
+    long: --type
+    description: Remove the type value.
+  - flags: --location
+    required: 0
+    optional: 0
+    bool: True
+    long: --location
+    description: Remove the location value.
+  - flags: --tags
+    required: 0
+    optional: 0
+    bool: True
+    long: --tags
+    description: Remove the tags value.
+name: virtual-machine-scale-set
+description: Commands to configure virtual-machine-scale-set of vmss in config file.
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/vmss/config/virtual-machine-scale-set.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/vmss/config/virtual-machine-scale-set.yml
+  ms.topic: reference

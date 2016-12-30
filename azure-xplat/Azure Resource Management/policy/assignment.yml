@@ -1,0 +1,250 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates a new policy assignment
+  usage: '[options] <name> <policyDefinitionId> <scope>'
+  filePath: commands/arm/policy/policy.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the policy assignment name
+  - flags: -p --policy-definition-id <policyDefinitionId>
+    required: -27
+    optional: 0
+    bool: True
+    short: -p
+    long: --policy-definition-id
+    description: 'the fully qualified id of existing policy definition. For example: /subscriptions/{mySubId}/providers/Microsoft.Authorization/policyDefinitions/{myPolicy}. Use policy definition list to get a list of existing policy definitions. More information here: https://azure.microsoft.com/en-us/documentation/articles/resource-manager-policy/'
+  - flags: -s --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -s
+    long: --scope
+    description: the scope for policy assignment. For example, /subscriptions/{mySubId}/resourceGroups/{myGroup}
+  - flags: -d --display-name <display-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --display-name
+    description: the display name for policy assignment.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Updates a policy assignment
+  usage: '[options] <name> <scope>'
+  filePath: commands/arm/policy/policy.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the policy assignment name
+  - flags: -p --policy-definition-id <policyDefinitionId>
+    required: -27
+    optional: 0
+    bool: True
+    short: -p
+    long: --policy-definition-id
+    description: 'the fully qualified id of existing policy definition. For example: /subscriptions/{mySubId}/providers/Microsoft.Authorization/policyDefinitions/{myPolicy}. Use policy definition list to get a list of existing policy definitions. More information here: https://azure.microsoft.com/en-us/documentation/articles/resource-manager-policy/'
+  - flags: -s --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -s
+    long: --scope
+    description: the scope for policy assignment. For example, /subscriptions/{mySubId}/resourceGroups/{myGroup}
+  - flags: -d --display-name <display-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --display-name
+    description: the display name for policy assignment.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Lists all the policy assignments in the subscription.
+  usage: '[options]'
+  filePath: commands/arm/policy/policy.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Shows a policy assignment
+  usage: '[options] <name> <scope>'
+  filePath: commands/arm/policy/policy.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the policy assignment name
+  - flags: -s --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -s
+    long: --scope
+    description: the scope for policy assignment. For example, /subscriptions/{mySubId}/resourceGroups/{myGroup}
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Deletes a policy assignment
+  usage: '[options] <name> <scope>'
+  filePath: commands/arm/policy/policy.assignment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the policy definition name
+  - flags: -s --scope <scope>
+    required: -12
+    optional: 0
+    bool: True
+    short: -s
+    long: --scope
+    description: the scope for policy assignment. For example, /subscriptions/{mySubId}/resourceGroups/{myGroup}
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+name: assignment
+description: Commands to manage your policy assignments.
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/policy/assignment.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/policy/assignment.yml
+  ms.topic: reference

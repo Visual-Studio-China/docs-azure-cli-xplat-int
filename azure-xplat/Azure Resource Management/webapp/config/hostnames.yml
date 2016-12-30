@@ -1,0 +1,170 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: >-
+    Add a hostname bindings for a webapp (using comma seperated names)
+
+    example:  webapp config hostnames add RGName WebAppName www.site1.com,www.site2.co.uk
+  usage: '[options] <resource-group> <name> <hostnames>'
+  filePath: commands/arm/webapp/webapp.config._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the web app
+  - flags: -o --hostnames <hostname>
+    required: -16
+    optional: 0
+    bool: True
+    short: -o
+    long: --hostnames
+    description: the list of hostnames to bind
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: >-
+    Delete a hostname binding for a webapp(using comma seperated names)
+
+    example:  webapp config hostnames delete RGName WebAppName www.site1.com,www.site2.co.uk
+  usage: '[options] <resource-group> <name> <hostnames>'
+  filePath: commands/arm/webapp/webapp.config._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the web app
+  - flags: -o --hostnames <hostname>
+    required: -16
+    optional: 0
+    bool: True
+    short: -o
+    long: --hostnames
+    description: the list of hostnames to unbind
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: List hostname bindings under a webapp
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/webapp/webapp.config._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the web app
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: hostnames
+description: Commands to manage your Azure webapps hostnames
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/webapp/config/hostnames.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/webapp/config/hostnames.yml
+  ms.topic: reference

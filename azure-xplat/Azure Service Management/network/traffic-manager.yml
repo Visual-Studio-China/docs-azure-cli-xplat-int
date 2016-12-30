@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: traffic-manager
+description: Commands to manage Traffic Manager
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/traffic-manager.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/traffic-manager.yml
+  ms.topic: reference

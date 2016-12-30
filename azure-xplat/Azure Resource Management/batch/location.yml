@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: location
+description: Commands to manage Batch service options for a subscription at the region level
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/batch/location.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/batch/location.yml
+  ms.topic: reference

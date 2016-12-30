@@ -1,0 +1,53 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create sso uri of the profile
+  usage: '[options] <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -n
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+name: ssouri
+description: Commands to generate sso uri of your Azure cdn profiles
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/cdn/ssouri.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/cdn/ssouri.yml
+  ms.topic: reference

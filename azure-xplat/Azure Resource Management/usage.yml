@@ -1,0 +1,76 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List the usage aggregates for a provided time range. When --json flag is used, it will get the information from all the pages and then provide the final json array.
+  usage: '[options] [reportedStartTime] [reportedEndTime]'
+  filePath: commands/arm/usage/usage._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --reportedStartTime <datetime>
+    required: -21
+    optional: 0
+    bool: True
+    long: --reportedStartTime
+    description: The start of the time range to retrieve data for, in 'yyyy-mm-dd' format.
+  - flags: --reportedEndTime <datetime>
+    required: -19
+    optional: 0
+    bool: True
+    long: --reportedEndTime
+    description: The end of the time range to retrieve data for, in 'yyyy-mm-dd' format.
+  - flags: --granularity <daily/hourly>
+    required: -15
+    optional: 0
+    bool: True
+    long: --granularity
+    description: Value is either daily (default) or hourly to tell the API how to return the results grouped by day or hour.
+  - flags: --showDetails
+    required: 0
+    optional: 0
+    bool: True
+    long: --showDetails
+    description: When this boolean flag is provided, the aggregates are broken down into the instance metadata which is more granular.
+  - flags: --continuationToken <url>
+    required: -21
+    optional: 0
+    bool: True
+    long: --continuationToken
+    description: Retrieved from previous calls, this is the bookmark used for progress when the responses are paged.
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  - flags: '| more'
+    required: 0
+    optional: 0
+    bool: True
+    short: ''
+    long: more
+    description: Provides paging support. Press 'Enter' for more information.
+name: usage
+description: Command to view your aggregated Azure usage data
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/usage.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/usage.yml
+  ms.topic: reference

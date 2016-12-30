@@ -1,0 +1,33 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List locations available for your account
+  usage: '[options]'
+  filePath: commands/asm/site._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+name: location
+description: Commands to manage your Web Site locations
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/site/location.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/site/location.yml
+  ms.topic: reference

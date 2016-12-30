@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: batch
+description: Commands to manage your Batch objects
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/batch.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/batch.yml
+  ms.topic: reference

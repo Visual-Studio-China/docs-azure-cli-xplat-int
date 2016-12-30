@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: actions
+description: Creates alert rules actions
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/insights/alerts/actions.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/insights/alerts/actions.yml
+  ms.topic: reference

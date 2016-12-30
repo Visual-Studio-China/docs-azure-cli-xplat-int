@@ -1,0 +1,376 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create an endpoint in Traffic Manager profile
+  usage: '[options] <resource-group> <profile-name> <name> <type>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -f, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --profile-name
+    description: the profile name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the endpoint
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: >-
+      the endpoint type, valid values are:
+             [ExternalEndpoints,AzureEndpoints,NestedEndpoints], where ExternalEndpoints represents endpoint
+             for a service with FQDN external to Azure
+             e.g. foobar.contoso.com
+  - flags: -l, --location [location]
+    required: 0
+    optional: -16
+    bool: True
+    short: -l
+    long: --location
+    description: >-
+      the endpoint location. This is only used if the Traffic Manager profile is configured to use the "Performance" traffic-routing method.
+             This should only be specified on endpoints of type "ExternalEndpoints" and "NestedEndpoints".
+             It is not applicable for endpoints of type "AzureEndpoints", since the location is taken from the resource specified in "--target-resource-id".
+  - flags: -u, --status [status]
+    required: 0
+    optional: -14
+    bool: True
+    short: -u
+    long: --status
+    description: >-
+      the endpoint status, valid values are:
+             [Enabled,Disabled] Default is Enabled
+  - flags: -t, --target [target]
+    required: 0
+    optional: -14
+    bool: True
+    short: -t
+    long: --target
+    description: >-
+      the domain name target of the endpoint,
+             e.g. foobar.contoso.com. Only applicable to endpoints of type "ExternalEndpoints"
+  - flags: -i, --target-resource-id [target-resource-id]
+    required: 0
+    optional: -26
+    bool: True
+    short: -i
+    long: --target-resource-id
+    description: the Azure Resource URI of the endpoint. Not applicable to endpoints of type "ExternalEndpoints"
+  - flags: -w, --weight [weight]
+    required: 0
+    optional: -14
+    bool: True
+    short: -w
+    long: --weight
+    description: >-
+      the endpoint weight used in the traffic-routing method,
+             valid range is [1, 1000] This is only used if the Traffic Manager profile is configured to use the "Weighted" traffic-routing method
+  - flags: -p, --priority [priority]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --priority
+    description: >-
+      the endpoint priority used in the traffic-routing method,
+             valid range is [1, 1000] This is only used if the Traffic Manager profile is configured to use the "Priority" traffic-routing method.
+             Lower values represent higher priority
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set an endpoint in a Traffic Manager profile
+  usage: '[options] <resource-group> <profile-name> <name> <type>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -f, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --profile-name
+    description: the profile name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the endpoint
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: >-
+      the endpoint type, valid values are:
+             [ExternalEndpoints,AzureEndpoints,NestedEndpoints], where ExternalEndpoints represents endpoint
+             for a service with FQDN external to Azure
+             e.g. foobar.contoso.com
+  - flags: -l, --location [location]
+    required: 0
+    optional: -16
+    bool: True
+    short: -l
+    long: --location
+    description: >-
+      the endpoint location. This is only used if the Traffic Manager profile is configured to use the "Performance" traffic-routing method.
+             This should only be specified on endpoints of type "ExternalEndpoints" and "NestedEndpoints".
+             It is not applicable for endpoints of type "AzureEndpoints", since the location is taken from the resource specified in "--target-resource-id".
+  - flags: -u, --status [status]
+    required: 0
+    optional: -14
+    bool: True
+    short: -u
+    long: --status
+    description: >-
+      the endpoint status, valid values are:
+             [Enabled,Disabled] Default is Enabled
+  - flags: -t, --target [target]
+    required: 0
+    optional: -14
+    bool: True
+    short: -t
+    long: --target
+    description: >-
+      the domain name target of the endpoint,
+             e.g. foobar.contoso.com. Only applicable to endpoints of type "ExternalEndpoints"
+  - flags: -i, --target-resource-id [target-resource-id]
+    required: 0
+    optional: -26
+    bool: True
+    short: -i
+    long: --target-resource-id
+    description: the Azure Resource URI of the endpoint. Not applicable to endpoints of type "ExternalEndpoints"
+  - flags: -w, --weight [weight]
+    required: 0
+    optional: -14
+    bool: True
+    short: -w
+    long: --weight
+    description: >-
+      the endpoint weight used in the traffic-routing method,
+             valid range is [1, 1000] This is only used if the Traffic Manager profile is configured to use the "Weighted" traffic-routing method
+  - flags: -p, --priority [priority]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --priority
+    description: >-
+      the endpoint priority used in the traffic-routing method,
+             valid range is [1, 1000] This is only used if the Traffic Manager profile is configured to use the "Priority" traffic-routing method.
+             Lower values represent higher priority
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get an endpoint in Traffic Manager profile
+  usage: '[options] <resource-group> <profile-name> <name> <type>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -f, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --profile-name
+    description: the profile name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the endpoint
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: >-
+      the endpoint type, valid values are:
+             [ExternalEndpoints,AzureEndpoints,NestedEndpoints], where ExternalEndpoints represents endpoint
+             for a service with FQDN external to Azure
+             e.g. foobar.contoso.com
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete an endpoint from a Traffic Manager profile
+  usage: '[options] <resource-group> <profile-name> <name> <type>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -f, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --profile-name
+    description: the profile name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the endpoint
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: >-
+      the endpoint type, valid values are:
+             [ExternalEndpoints,AzureEndpoints,NestedEndpoints], where ExternalEndpoints represents endpoint
+             for a service with FQDN external to Azure
+             e.g. foobar.contoso.com
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: endpoint
+description: Commands to manage Traffic Manager endpoints
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/network/traffic-manager/endpoint.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/network/traffic-manager/endpoint.yml
+  ms.topic: reference

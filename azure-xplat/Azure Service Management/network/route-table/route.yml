@@ -1,0 +1,131 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set route in a Route Table
+  usage: '[options] <route-table-name> <name> <address-prefix> <next-hop-type>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -a, --address-prefix <address-prefix>
+    required: -22
+    optional: 0
+    bool: True
+    short: -a
+    long: --address-prefix
+    description: the route address prefix e.g. 0.0.0.0/0
+  - flags: -t, --next-hop-type <next-hop-type>
+    required: -21
+    optional: 0
+    bool: True
+    short: -t
+    long: --next-hop-type
+    description: >-
+      the route next hop type, valid values are:
+             [VirtualAppliance,VPNGateway]
+  - flags: -p, --next-hop-ip-address <next-hop-ip-address>
+    required: -27
+    optional: 0
+    bool: True
+    short: -p
+    long: --next-hop-ip-address
+    description: >-
+      the route next hop ip addresses, this parameter is valid
+             only for next hop type VirtualAppliance
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete route from a Route Table
+  usage: '[options] <route-table-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -r, --route-table-name <route-table-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --route-table-name
+    description: the name of the Route Table
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the route
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: route
+description: Commands to manage Route Table routes
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/route-table/route.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/route-table/route.yml
+  ms.topic: reference

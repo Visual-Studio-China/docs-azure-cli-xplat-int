@@ -1,0 +1,45 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: list the available locations
+  usage: '[options]'
+  filePath: commands/arm/location/location._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+  - flags: --details
+    required: 0
+    optional: 0
+    bool: True
+    long: --details
+    description: shows full provider list with latitude and longitude
+name: location
+description: Commands to get the available locations
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/location.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/location.yml
+  ms.topic: reference

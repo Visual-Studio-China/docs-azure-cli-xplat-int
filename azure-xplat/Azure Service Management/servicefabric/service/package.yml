@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: package
+description: Commands to send your service package
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/servicefabric/service/package.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/servicefabric/service/package.yml
+  ms.topic: reference

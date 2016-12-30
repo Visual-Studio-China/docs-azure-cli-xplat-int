@@ -1,0 +1,172 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Gets the specified Data Lake Store folder ACL
+  usage: '[options] <accountName> <path>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name to execute the action on
+  - flags: -p --path <path>
+    required: -11
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the full path to the folder or file to get (e.g. /someFolder or /someFolder/someFile.txt)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Deletes the entire ACL associated with a folder (not including un-named ACL entries)
+  usage: '[options] <accountName> <path>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name to execute the action on
+  - flags: -p --path <path>
+    required: -11
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the full path to the folder to remove ACLs from (e.g. /someFolder)
+  - flags: -d --defaultAcl
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --defaultAcl
+    description: optionally indicates that the default ACL should be removed instead of the regular ACL. Default is false.
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: sets the specified Data Lake Store folder ACL (overwriting the previous ACL entries)
+  usage: '[options] <accountName> <path> <aclSpec>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name to execute the action on
+  - flags: -p --path <path>
+    required: -11
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the full path to the folder to remove ACLs from (e.g. /someFolder)
+  - flags: -a --aclSpec <aclSpec>
+    required: -14
+    optional: 0
+    bool: True
+    short: -a
+    long: --aclSpec
+    description: a comma delimited list of fully qualified ACL entries to set in the format [default:]<user>|<group>:<object Id>:<permissions> (e.g 'user:5546499e-795f-4f5f-b411-8179051f8b0a:r-x' or 'default:group:5546499e-795f-4f5f-b411-8179051f8b0a:rwx'). This list must also include default entries (no object ID in the middle)
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for overwrite confirmation)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: permissions
+description: Commands to manage your Data Lake Storage FileSystem Permissions
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/datalake/store/permissions.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/datalake/store/permissions.yml
+  ms.topic: reference

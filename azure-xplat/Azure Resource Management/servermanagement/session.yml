@@ -1,0 +1,179 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a server management session
+  usage: '[options] <resource-group> <node-name> <name>'
+  filePath: commands/arm/servermanagement/servermanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --node-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the server management node
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the session on the node
+  - flags: -u, --user-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -u
+    long: --user-name
+    description: the account user name to use to connect to the node
+  - flags: -p, --password <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --password
+    description: the account password to use to connect to the node
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Show detailed session information
+  usage: '[options] <resource-group> <node-name> <name>'
+  filePath: commands/arm/servermanagement/servermanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --node-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the server management node
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the session on the node
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a session
+  usage: '[options] <resource-group> <node-name> <name>'
+  filePath: commands/arm/servermanagement/servermanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --node-name <name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --node-name
+    description: the name of the server management node
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the session on the node
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: session
+description: Commands to manage Azure Server Management Tools Sessions
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/servermanagement/session.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/servermanagement/session.yml
+  ms.topic: reference

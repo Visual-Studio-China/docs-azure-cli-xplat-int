@@ -1,0 +1,302 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a virtual network
+  usage: '[options] <resource-group> <name> <location>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -a, --address-prefixes [address-prefixes]
+    required: 0
+    optional: -24
+    bool: True
+    short: -a
+    long: --address-prefixes
+    description: >-
+      the comma separated list of address prefixes for this virtual network.
+           For example, -a "10.0.0.0/24,10.0.1.0/24"
+           Default value is 10.0.0.0/8
+  - flags: -d, --dns-servers [dns-servers]
+    required: 0
+    optional: -19
+    bool: True
+    short: -d
+    long: --dns-servers
+    description: the comma separated list of DNS servers IP addresses
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set virtual network
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network
+  - flags: -a, --address-prefixes [address-prefixes]
+    required: 0
+    optional: -24
+    bool: True
+    short: -a
+    long: --address-prefixes
+    description: >-
+      the comma separated list of address prefixes for this virtual network.
+           For example, -a "10.0.0.0/24,10.0.1.0/24"
+           This list will be appended to the current list of address prefixes.
+           The address prefixes in this list should not overlap between them.
+           The address prefixes in this list should not overlap with existing address prefixes in the vnet.
+  - flags: -d, --dns-servers [dns-servers]
+    required: 0
+    optional: -19
+    bool: True
+    short: -d
+    long: --dns-servers
+    description: >-
+      the comma separated list of DNS servers IP addresses.
+           This list will be appended to the current list of DNS server IP addresses.
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           Existing tag values will be replaced by the values specified.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Get all virtual networks
+  usage: '[options] [resource-group]'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group [resource-group]
+    required: 0
+    optional: -22
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get a virtual network
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a virtual network
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: vnet
+description: Commands to manage virtual network peerings
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/network/vnet.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/network/vnet.yml
+  ms.topic: reference

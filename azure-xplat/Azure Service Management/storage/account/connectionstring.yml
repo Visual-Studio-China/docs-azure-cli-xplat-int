@@ -1,0 +1,70 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show the connection string for your account
+  usage: '[options] <name>'
+  filePath: commands/storage/storage.account._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  - flags: --use-http
+    required: 0
+    optional: 0
+    bool: True
+    long: --use-http
+    description: Use http as default endpoints protocol
+  - flags: --blob-endpoint <blobEndpoint>
+    required: -17
+    optional: 0
+    bool: True
+    long: --blob-endpoint
+    description: the blob endpoint
+  - flags: --queue-endpoint <queueEndpoint>
+    required: -18
+    optional: 0
+    bool: True
+    long: --queue-endpoint
+    description: the queue endpoint
+  - flags: --table-endpoint <tableEndpoint>
+    required: -18
+    optional: 0
+    bool: True
+    long: --table-endpoint
+    description: the table endpoint
+  - flags: --file-endpoint <fileEndpoint>
+    required: -17
+    optional: 0
+    bool: True
+    long: --file-endpoint
+    description: the file endpoint
+name: connectionstring
+description: Commands to show your Storage connection string
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/storage/account/connectionstring.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/storage/account/connectionstring.yml
+  ms.topic: reference

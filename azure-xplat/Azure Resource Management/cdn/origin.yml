@@ -1,0 +1,146 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Get origin by origin name, endpoint name, profile name, and resource group
+  usage: '[options] <name> <endpoint-name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the origin
+  - flags: -e, --endpoint-name <endpoint-name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Update origin of the given origin name, endpoint name, profile name, and resource group
+  usage: '[options] <name> <endpoint-name> <profile-name> <resource-group> [host-name] [http-port] [https-port]'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the origin
+  - flags: -e, --endpoint-name <endpoint-name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --endpoint-name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: -o, --host-name [host-name]
+    required: 0
+    optional: -17
+    bool: True
+    short: -o
+    long: --host-name
+    description: Host name
+  - flags: -r, --http-port [http-port]
+    required: 0
+    optional: -17
+    bool: True
+    short: -r
+    long: --http-port
+    description: Http port
+  - flags: -w, --https-port [https-port]
+    required: 0
+    optional: -18
+    bool: True
+    short: -w
+    long: --https-port
+    description: Https port
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+name: origin
+description: Commands to manage Azure cdn profile endpoint origin
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/cdn/origin.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/cdn/origin.yml
+  ms.topic: reference

@@ -1,0 +1,219 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set container-service in config string or files, e.g. \r\n{\r\n  \"provisioningState\":\"\",\r\n  \"orchestratorProfile\":{\r\n    \"orchestratorType\":null\r\n  },\r\n  \"masterProfile\":{\r\n    \"count\":null,\r\n    \"dnsPrefix\":\"\",\r\n    \"fqdn\":\"\"\r\n  },\r\n  \"agentPoolProfiles\":[\r\n    {\r\n      \"name\":\"\",\r\n      \"count\":null,\r\n      \"vmSize\":\"\",\r\n      \"dnsPrefix\":\"\",\r\n      \"fqdn\":\"\"\r\n    }\r\n  ],\r\n  \"windowsProfile\":{\r\n    \"adminUsername\":\"\",\r\n    \"adminPassword\":\"\"\r\n  },\r\n  \"linuxProfile\":{\r\n    \"adminUsername\":\"\",\r\n    \"ssh\":{\r\n      \"publicKeys\":[\r\n        {\r\n          \"keyData\":\"\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"diagnosticsProfile\":{\r\n    \"vmDiagnostics\":{\r\n      \"enabled\":null,\r\n      \"storageUri\":\"\"\r\n    }\r\n  },\r\n  \"id\":null,\r\n  \"name\":null,\r\n  \"type\":null,\r\n  \"location\":\"\",\r\n  \"tags\":{\r\n  }\r\n}\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --provisioning-state <provisioningState>
+    required: -22
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Set the provisioning-state value.
+  - flags: --orchestrator-profile <orchestratorProfile>
+    required: -24
+    optional: 0
+    bool: True
+    long: --orchestrator-profile
+    description: Set the orchestrator-profile value.
+  - flags: --master-profile <masterProfile>
+    required: -18
+    optional: 0
+    bool: True
+    long: --master-profile
+    description: Set the master-profile value.
+  - flags: --agent-pool-profiles <agentPoolProfiles>
+    required: -23
+    optional: 0
+    bool: True
+    long: --agent-pool-profiles
+    description: Set the agent-pool-profiles value.
+  - flags: --windows-profile <windowsProfile>
+    required: -19
+    optional: 0
+    bool: True
+    long: --windows-profile
+    description: Set the windows-profile value.
+  - flags: --linux-profile <linuxProfile>
+    required: -17
+    optional: 0
+    bool: True
+    long: --linux-profile
+    description: Set the linux-profile value.
+  - flags: --diagnostics-profile <diagnosticsProfile>
+    required: -23
+    optional: 0
+    bool: True
+    long: --diagnostics-profile
+    description: Set the diagnostics-profile value.
+  - flags: --id <id>
+    required: -6
+    optional: 0
+    bool: True
+    long: --id
+    description: Set the id value.
+  - flags: --name <name>
+    required: -8
+    optional: 0
+    bool: True
+    long: --name
+    description: Set the name value.
+  - flags: --type <type>
+    required: -8
+    optional: 0
+    bool: True
+    long: --type
+    description: Set the type value.
+  - flags: --location <location>
+    required: -12
+    optional: 0
+    bool: True
+    long: --location
+    description: Set the location value.
+  - flags: --tags <tags>
+    required: -8
+    optional: 0
+    bool: True
+    long: --tags
+    description: Set the tags value.
+- name: delete
+  description: "Remove container-service in config string or files, e.g. \r\n{\r\n  \"provisioningState\":\"\",\r\n  \"orchestratorProfile\":{\r\n    \"orchestratorType\":null\r\n  },\r\n  \"masterProfile\":{\r\n    \"count\":null,\r\n    \"dnsPrefix\":\"\",\r\n    \"fqdn\":\"\"\r\n  },\r\n  \"agentPoolProfiles\":[\r\n    {\r\n      \"name\":\"\",\r\n      \"count\":null,\r\n      \"vmSize\":\"\",\r\n      \"dnsPrefix\":\"\",\r\n      \"fqdn\":\"\"\r\n    }\r\n  ],\r\n  \"windowsProfile\":{\r\n    \"adminUsername\":\"\",\r\n    \"adminPassword\":\"\"\r\n  },\r\n  \"linuxProfile\":{\r\n    \"adminUsername\":\"\",\r\n    \"ssh\":{\r\n      \"publicKeys\":[\r\n        {\r\n          \"keyData\":\"\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"diagnosticsProfile\":{\r\n    \"vmDiagnostics\":{\r\n      \"enabled\":null,\r\n      \"storageUri\":\"\"\r\n    }\r\n  },\r\n  \"id\":null,\r\n  \"name\":null,\r\n  \"type\":null,\r\n  \"location\":\"\",\r\n  \"tags\":{\r\n  }\r\n}\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --provisioning-state
+    required: 0
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Remove the provisioning-state value.
+  - flags: --orchestrator-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --orchestrator-profile
+    description: Remove the orchestrator-profile value.
+  - flags: --master-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --master-profile
+    description: Remove the master-profile value.
+  - flags: --agent-pool-profiles
+    required: 0
+    optional: 0
+    bool: True
+    long: --agent-pool-profiles
+    description: Remove the agent-pool-profiles value.
+  - flags: --windows-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --windows-profile
+    description: Remove the windows-profile value.
+  - flags: --linux-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --linux-profile
+    description: Remove the linux-profile value.
+  - flags: --diagnostics-profile
+    required: 0
+    optional: 0
+    bool: True
+    long: --diagnostics-profile
+    description: Remove the diagnostics-profile value.
+  - flags: --id
+    required: 0
+    optional: 0
+    bool: True
+    long: --id
+    description: Remove the id value.
+  - flags: --name
+    required: 0
+    optional: 0
+    bool: True
+    long: --name
+    description: Remove the name value.
+  - flags: --type
+    required: 0
+    optional: 0
+    bool: True
+    long: --type
+    description: Remove the type value.
+  - flags: --location
+    required: 0
+    optional: 0
+    bool: True
+    long: --location
+    description: Remove the location value.
+  - flags: --tags
+    required: 0
+    optional: 0
+    bool: True
+    long: --tags
+    description: Remove the tags value.
+name: container-service
+description: Commands to configure container-service of acs in config file.
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/acs/config/container-service.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/acs/config/container-service.yml
+  ms.topic: reference

@@ -1,0 +1,47 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates an alert rule webhook action.
+  usage: '[options] <serviceUri>'
+  filePath: commands/arm/insights/insights.alerts.actions.js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -e --serviceUri <serviceUri>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --serviceUri
+    description: The service Uri.
+  - flags: -o --properties <properties>
+    required: -17
+    optional: 0
+    bool: True
+    short: -o
+    long: --properties
+    description: 'A string with the list of key / value pairs in comma-separated format. Example: "key1=value1;key2=value2".'
+name: webhook
+description: Creates alert rule webhook actions
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/insights/alerts/actions/webhook.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/insights/alerts/actions/webhook.yml
+  ms.topic: reference

@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: analytics
+description: Commands to manage your Data Lake Analytics objects
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/datalake/analytics.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/datalake/analytics.yml
+  ms.topic: reference

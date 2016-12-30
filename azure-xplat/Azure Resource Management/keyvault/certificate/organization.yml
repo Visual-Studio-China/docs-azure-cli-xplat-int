@@ -1,0 +1,60 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates a new certificate organization JSON object. This organization object can be used as input to other certificate commands such as issuer create.
+  usage: '[options] [id] [file]'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -i, --id <id>
+    required: -10
+    optional: 0
+    bool: True
+    short: -i
+    long: --id
+    description: organization identifier
+  - flags: -a --certificate-administrator <certificate-administrator>
+    required: -32
+    optional: 0
+    bool: True
+    short: -a
+    long: --certificate-administrator
+    description: a JSON-formatted string containing a certificate administrator or an array of certificate administrators
+  - flags: -e --certificate-administrator-file <certificate-administrator-file>
+    required: -37
+    optional: 0
+    bool: True
+    short: -e
+    long: --certificate-administrator-file
+    description: a file containing a certificate administrator or an array of certificate administrator. Mutually exclusive with --certificate-administrator.
+  - flags: --file <file>
+    required: -8
+    optional: 0
+    bool: True
+    long: --file
+    description: the file to receive certificate organization object; the file must not exist otherwise the command fails
+name: organization
+description: Commands to manage certificate organization in the Azure Key Vault service
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/keyvault/certificate/organization.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/keyvault/certificate/organization.yml
+  ms.topic: reference

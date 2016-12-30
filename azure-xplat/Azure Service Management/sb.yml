@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: sb
+description: Commands to manage your Service Bus configuration
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/sb.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/sb.yml
+  ms.topic: reference

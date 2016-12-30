@@ -1,0 +1,659 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List endpoints by profile and resource group
+  usage: '[options] <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -n
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get endpoint by endpoint name, profile name, and resource group
+  usage: '[options] <name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: create
+  description: Create endpoint with given name and properties.
+  usage: '[options] <name> <profile-name> <resource-group> <location> <origin-name> <origin-host-name> [origin-host-header] [origin-path] [content-type-to-compress] [is-compression-enabled] [is-http-allowed] [is-https-allowed] [query-string-caching-behavior]  [http-port] [https-port] [tags]'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: The location of the Cdn endpoint
+  - flags: -o, --origin-name <origin-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -o
+    long: --origin-name
+    description: The name of the origin used to identify the origin
+  - flags: -r, --origin-host-name <origin-host-name>
+    required: -24
+    optional: 0
+    bool: True
+    short: -r
+    long: --origin-host-name
+    description: The host name of the origin
+  - flags: -e, --origin-host-header [origin-host-header]
+    required: 0
+    optional: -26
+    bool: True
+    short: -e
+    long: --origin-host-header
+    description: The origin host header of the Azure Cdn Endpoint
+  - flags: -i, --origin-path [origin-path]
+    required: 0
+    optional: -19
+    bool: True
+    short: -i
+    long: --origin-path
+    description: The origin path Azure Cdn Endpoint
+  - flags: -c, --content-types-to-compress [content-types-to-compress]
+    required: 0
+    optional: -33
+    bool: True
+    short: -c
+    long: --content-types-to-compress
+    description: The list of mime types that need to be compressed by Cdn edge nodes
+  - flags: -d, --is-compression-enabled [is-compression-enabled]
+    required: 0
+    optional: -30
+    bool: True
+    short: -d
+    long: --is-compression-enabled
+    description: 'Is the compression enabled for the Cdn. Valid input: -d [true|false]'
+  - flags: -w, --is-http-allowed [is-http-allowed]
+    required: 0
+    optional: -23
+    bool: True
+    short: -w
+    long: --is-http-allowed
+    description: 'Is the http traffic allowed for the Cdn. Valid input: -w [true|false]'
+  - flags: -a, --is-https-allowed [is-https-allowed]
+    required: 0
+    optional: -24
+    bool: True
+    short: -a
+    long: --is-https-allowed
+    description: 'Is the https traffic allowed for the Cdn. Valid input: -a [true|false]'
+  - flags: -q, --query-string-caching-behavior [query-string-caching-behavior]
+    required: 0
+    optional: -37
+    bool: True
+    short: -q
+    long: --query-string-caching-behavior
+    description: The way Cdn handles requests with query string
+  - flags: -u, --http-port [http-port]
+    required: 0
+    optional: -17
+    bool: True
+    short: -u
+    long: --http-port
+    description: The port http traffic used on the origin server
+  - flags: -f, --https-port [https-port]
+    required: 0
+    optional: -18
+    bool: True
+    short: -f
+    long: --https-port
+    description: The port https traffic used on the origin server
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: The tags to associate with the Azure Cdn Endpoint
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Update endpoint with given properties.
+  usage: '[options] <name> <profile-name> <resource-group> [origin-host-header] [origin-path] [content-type-to-compress] [is-compression-enabled] [is-http-allowed] [is-https-allowed] [query-string-caching-behavior] [tags]'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: -e, --origin-host-header [origin-host-header]
+    required: 0
+    optional: -26
+    bool: True
+    short: -e
+    long: --origin-host-header
+    description: The origin host header of the Azure Cdn Endpoint
+  - flags: -i, --origin-path [origin-path]
+    required: 0
+    optional: -19
+    bool: True
+    short: -i
+    long: --origin-path
+    description: The origin path Azure Cdn Endpoint
+  - flags: -c, --content-types-to-compress [content-types-to-compress]
+    required: 0
+    optional: -33
+    bool: True
+    short: -c
+    long: --content-types-to-compress
+    description: The list of mime types that need to be compressed by Cdn edge nodes
+  - flags: -d, --is-compression-enabled [is-compression-enabled]
+    required: 0
+    optional: -30
+    bool: True
+    short: -d
+    long: --is-compression-enabled
+    description: 'Is the compression enabled for the Cdn. Valid input: -d [true|false]'
+  - flags: -u, --is-http-allowed [is-http-allowed]
+    required: 0
+    optional: -23
+    bool: True
+    short: -u
+    long: --is-http-allowed
+    description: 'Is the http traffic allowed for the Cdn. Valid input: -u [true|false]'
+  - flags: -w, --is-https-allowed [is-https-allowed]
+    required: 0
+    optional: -24
+    bool: True
+    short: -w
+    long: --is-https-allowed
+    description: 'Is the https traffic allowed for the Cdn. Valid input: -w [true|false]'
+  - flags: -q, --query-string-caching-behavior [query-string-caching-behavior]
+    required: 0
+    optional: -37
+    bool: True
+    short: -q
+    long: --query-string-caching-behavior
+    description: The way Cdn handles requests with query string
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: The tags to associate with the Azure Cdn Endpoint
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete an endpoint by endpoint name, profile name, and resource group
+  usage: '[options] <ename> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: start
+  description: Start an endpoint by endpoint name, profile name, and resource group
+  usage: '[options] <name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: stop
+  description: Stop an endpoint by endpoint name, profile name, and resource group
+  usage: '[options] <name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: purge
+  description: Purge the content of the given paths in the endpoint
+  usage: '[options] <name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: -c, --content-paths <content-paths>
+    required: -21
+    optional: 0
+    bool: True
+    short: -c
+    long: --content-paths
+    description: Content paths to be purged
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: load
+  description: Load the content of the given paths in the endpoint
+  usage: '[options] <name> <profile-name> <resource-group>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: Name of the endpoint
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: Name of the profile
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The resource group of the Azure Cdn Profile
+  - flags: -c, --content-paths <content-paths>
+    required: -21
+    optional: 0
+    bool: True
+    short: -c
+    long: --content-paths
+    description: Content paths to be purged
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+- name: check
+  description: Check if the endpoint name has been used or not
+  usage: '[options] <endpoint-name>'
+  filePath: commands/arm/cdnmanagement/cdnmanagement._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --endpoint-name <endpoint-name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -n
+    long: --endpoint-name
+    description: Endpoint name
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+name: endpoint
+description: Commands to manage Azure cdn profile endpoints
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/cdn/endpoint.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/cdn/endpoint.yml
+  ms.topic: reference

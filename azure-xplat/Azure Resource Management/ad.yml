@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: ad
+description: Commands to display Active Directory objects
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/ad.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/ad.yml
+  ms.topic: reference

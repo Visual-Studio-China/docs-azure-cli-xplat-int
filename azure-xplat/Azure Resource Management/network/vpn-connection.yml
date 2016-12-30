@@ -1,0 +1,350 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a gateway connection
+  usage: '[options] <resource-group> <name> <location> <vnet-gateway1>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the gateway connection
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -i, --vnet-gateway1 <vnet-gateway1>
+    required: -21
+    optional: 0
+    bool: True
+    short: -i
+    long: --vnet-gateway1
+    description: the name of the virtual network gateway
+  - flags: -r, --vnet-gateway1-group [vnet-gateway1-group]
+    required: 0
+    optional: -27
+    bool: True
+    short: -r
+    long: --vnet-gateway1-group
+    description: the resource group name of the virtual network gateway
+  - flags: -e, --vnet-gateway2 [vnet-gateway2]
+    required: 0
+    optional: -21
+    bool: True
+    short: -e
+    long: --vnet-gateway2
+    description: the name of the connected virtual network gateway
+  - flags: -m, --vnet-gateway2-group [vnet-gateway2-group]
+    required: 0
+    optional: -27
+    bool: True
+    short: -m
+    long: --vnet-gateway2-group
+    description: the resource group name of the connected virtual network gateway
+  - flags: -d, --lnet-gateway2 [lnet-gateway2]
+    required: 0
+    optional: -21
+    bool: True
+    short: -d
+    long: --lnet-gateway2
+    description: the name of the connected local network gateway
+  - flags: -z, --lnet-gateway2-group [lnet-gateway2-group]
+    required: 0
+    optional: -27
+    bool: True
+    short: -z
+    long: --lnet-gateway2-group
+    description: the resource group name of the connected local network gateway
+  - flags: -p, --peer-name [peer-name]
+    required: 0
+    optional: -17
+    bool: True
+    short: -p
+    long: --peer-name
+    description: the name of the connected express route circuit
+  - flags: -x, --peer-group [peer-group]
+    required: 0
+    optional: -18
+    bool: True
+    short: -x
+    long: --peer-group
+    description: the resource group of the connected express route circuit
+  - flags: -y, --type [type]
+    required: 0
+    optional: -12
+    bool: True
+    short: -y
+    long: --type
+    description: >-
+      the connection type
+           Valid values are [Vnet2Vnet,IPsec,ExpressRoute]
+  - flags: -w, --routing-weight [routing-weight]
+    required: 0
+    optional: -22
+    bool: True
+    short: -w
+    long: --routing-weight
+    description: the routing weight
+  - flags: -k, --shared-key [shared-key]
+    required: 0
+    optional: -18
+    bool: True
+    short: -k
+    long: --shared-key
+    description: the IPsec shared key
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           For example, -t "tag1=value1;tag2"
+- name: set
+  description: Set a gateway connection
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the gateway connection
+  - flags: -w, --routing-weight [routing-weight]
+    required: 0
+    optional: -22
+    bool: True
+    short: -w
+    long: --routing-weight
+    description: the routing weight
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           Existing tag values will be replaced by the values specified.
+           For example, -t "tag1=value1;tag2"
+- name: list
+  description: Get all gateway connections
+  usage: '[options] <resource-group>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get details about gateway connection
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the gateway connection
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a gateway connection
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the gateway connection
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: vpn-connection
+description: Commands to manage gateway connections
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/network/vpn-connection.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/network/vpn-connection.yml
+  ms.topic: reference

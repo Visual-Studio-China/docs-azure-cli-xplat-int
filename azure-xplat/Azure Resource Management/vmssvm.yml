@@ -1,0 +1,470 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: deallocate
+  description: Allows you to deallocate a virtual machine virtual machine scale set.Shuts down the virtual machine and releases the compute resources. You are not billed for the compute resources that this virtual machine uses.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: delete
+  description: Allows you to delete a virtual machine scale set.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: show
+  description: Displays information about a virtual machine scale set virtual machine.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: get-instance-view
+  description: Displays the status of a virtual machine scale set virtual machine.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: list
+  description: Lists all virtual machines in a VM scale sets.
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: power-off
+  description: Allows you to power off (stop) a virtual machine in a VM scale set.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: reimage
+  description: Allows you to re-image(update the version of the installed operating system) a virtual machine scale set instance.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: restart
+  description: Allows you to restart a virtual machine in a VM scale set.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: start
+  description: Allows you to start a virtual machine in a VM scale set.
+  usage: '[options] <resource-group> <name> <instance-id>'
+  filePath: commands/arm/compute/virtualMachineScaleSetVMs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: resource-group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -d, --instance-id <instance-id>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --instance-id
+    description: instance-id
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+name: vmssvm
+description: 'Commands to manage your virtual machine scale set vm.  '
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/vmssvm.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/vmssvm.yml
+  ms.topic: reference

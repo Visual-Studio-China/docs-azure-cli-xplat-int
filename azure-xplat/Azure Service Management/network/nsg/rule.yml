@@ -1,0 +1,346 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a network security group rule
+  usage: '[options] <nsg-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -p, --protocol <protocol>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --protocol
+    description: the protocol
+  - flags: -f, --source-address-prefix <source-address-prefix>
+    required: -29
+    optional: 0
+    bool: True
+    short: -f
+    long: --source-address-prefix
+    description: the source address prefix
+  - flags: -o, --source-port-range <source-port-range>
+    required: -25
+    optional: 0
+    bool: True
+    short: -o
+    long: --source-port-range
+    description: the source port range
+  - flags: -e, --destination-address-prefix <destination-address-prefix>
+    required: -34
+    optional: 0
+    bool: True
+    short: -e
+    long: --destination-address-prefix
+    description: the destination address prefix
+  - flags: -u, --destination-port-range <destination-port-range>
+    required: -30
+    optional: 0
+    bool: True
+    short: -u
+    long: --destination-port-range
+    description: the destination port range
+  - flags: -c, --action <action>
+    required: -14
+    optional: 0
+    bool: True
+    short: -c
+    long: --action
+    description: the action mode [Allow, Deny]
+  - flags: -y, --priority <priority>
+    required: -16
+    optional: 0
+    bool: True
+    short: -y
+    long: --priority
+    description: the priority
+  - flags: -r, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -r
+    long: --type
+    description: the type
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: set
+  description: Set a network security group rule
+  usage: '[options] <nsg-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -p, --protocol <protocol>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --protocol
+    description: the protocol
+  - flags: -f, --source-address-prefix <source-address-prefix>
+    required: -29
+    optional: 0
+    bool: True
+    short: -f
+    long: --source-address-prefix
+    description: the source address prefix
+  - flags: -o, --source-port-range <source-port-range>
+    required: -25
+    optional: 0
+    bool: True
+    short: -o
+    long: --source-port-range
+    description: the source port range
+  - flags: -e, --destination-address-prefix <destination-address-prefix>
+    required: -34
+    optional: 0
+    bool: True
+    short: -e
+    long: --destination-address-prefix
+    description: the destination address prefix
+  - flags: -u, --destination-port-range <destination-port-range>
+    required: -30
+    optional: 0
+    bool: True
+    short: -u
+    long: --destination-port-range
+    description: the destination port range
+  - flags: -c, --action <action>
+    required: -14
+    optional: 0
+    bool: True
+    short: -c
+    long: --action
+    description: the action mode [Allow, Deny]
+  - flags: -y, --priority <priority>
+    required: -16
+    optional: 0
+    bool: True
+    short: -y
+    long: --priority
+    description: the priority
+  - flags: -r, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -r
+    long: --type
+    description: the type
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: list
+  description: List rules in a network security group
+  usage: '[options] <nsg-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show rule in a network security group
+  usage: '[options] <nsg-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a network security group rule
+  usage: '[options] <nsg-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: rule
+description: Commands to manage network security group rules
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/nsg/rule.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/nsg/rule.yml
+  ms.topic: reference

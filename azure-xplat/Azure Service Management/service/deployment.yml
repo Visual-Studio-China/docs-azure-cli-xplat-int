@@ -1,0 +1,235 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: abort-migration
+  description: The Abort Deployment Operation validates and aborts your deployment for IaaS Classic to ARM migration.
+  usage: '[options] <service-name> <name>'
+  filePath: commands/asm/compute/deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --service-name <service-name>
+    required: -16
+    optional: 0
+    bool: True
+    long: --service-name
+    description: service-name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: commit-migration
+  description: The Commit Deployment Operation validates and commits your deployment for IaaS Classic to ARM migration.
+  usage: '[options] <service-name> <name>'
+  filePath: commands/asm/compute/deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --service-name <service-name>
+    required: -16
+    optional: 0
+    bool: True
+    long: --service-name
+    description: service-name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: prepare-migration
+  description: The Prepare Deployment Operation validates and prepares your deployment for IaaS Classic to ARM migration.
+  usage: '[options] <service-name> <name> <destination-virtual-network> <resource-group-name> <subnet-name> <virtual-network-name>'
+  filePath: commands/asm/compute/deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --service-name <service-name>
+    required: -16
+    optional: 0
+    bool: True
+    long: --service-name
+    description: service-name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: --destination-virtual-network <destination-virtual-network>
+    required: -31
+    optional: 0
+    bool: True
+    long: --destination-virtual-network
+    description: destination-virtual-network
+  - flags: -g, --resource-group-name <resource-group-name>
+    required: -27
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group-name
+    description: resource-group-name
+  - flags: --subnet-name <subnet-name>
+    required: -15
+    optional: 0
+    bool: True
+    long: --subnet-name
+    description: subnet-name
+  - flags: --virtual-network-name <virtual-network-name>
+    required: -24
+    optional: 0
+    bool: True
+    long: --virtual-network-name
+    description: virtual-network-name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: validate-migration
+  description: The Validate Deployment Operation validates your deployment for IaaS Classic to ARM migration.
+  usage: '[options] <service-name> <name> <destination-virtual-network> <resource-group-name> <subnet-name> <virtual-network-name>'
+  filePath: commands/asm/compute/deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --service-name <service-name>
+    required: -16
+    optional: 0
+    bool: True
+    long: --service-name
+    description: service-name
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: name
+  - flags: --destination-virtual-network <destination-virtual-network>
+    required: -31
+    optional: 0
+    bool: True
+    long: --destination-virtual-network
+    description: destination-virtual-network
+  - flags: -g, --resource-group-name <resource-group-name>
+    required: -27
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group-name
+    description: resource-group-name
+  - flags: --subnet-name <subnet-name>
+    required: -15
+    optional: 0
+    bool: True
+    long: --subnet-name
+    description: subnet-name
+  - flags: --virtual-network-name <virtual-network-name>
+    required: -24
+    optional: 0
+    bool: True
+    long: --virtual-network-name
+    description: virtual-network-name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+name: deployment
+description: 'Commands to manage your deployment.  '
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/service/deployment.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/service/deployment.yml
+  ms.topic: reference

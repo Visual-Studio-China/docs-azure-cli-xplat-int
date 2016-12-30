@@ -1,0 +1,269 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list-publishers
+  description: Lists virtual machines image publishers
+  usage: '[options] <location>'
+  filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list-offers
+  description: Lists virtual machines image offers by a publisher
+  usage: '[options] <location> <publisher>'
+  filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list-skus
+  description: Lists virtual machines image skus for a specific offer from a publisher
+  usage: '[options] <location> <publisher> <offer>'
+  filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -o, --offer <offer>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --offer
+    description: the offer
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Lists the virtual machines images
+  usage: '[options] <location> <publisher> [offer] [sku]'
+  filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -o, --offer <offer>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --offer
+    description: the offer
+  - flags: -k, --sku <sku>
+    required: -11
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: the sku
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Lists the virtual machines images
+  usage: '[options] <location> <publisher> [offer] [sku]'
+  filePath: commands/arm/vm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -p, --publisher <publisher>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher name
+  - flags: -o, --offer <offer>
+    required: -13
+    optional: 0
+    bool: True
+    short: -o
+    long: --offer
+    description: the offer
+  - flags: -k, --sku <sku>
+    required: -11
+    optional: 0
+    bool: True
+    short: -k
+    long: --sku
+    description: the sku
+  - flags: -e, --version <version>
+    required: -15
+    optional: 0
+    bool: True
+    short: -e
+    long: --version
+    description: the version
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: image
+description: Commands to manage VM images
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/vm/image.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/vm/image.yml
+  ms.topic: reference

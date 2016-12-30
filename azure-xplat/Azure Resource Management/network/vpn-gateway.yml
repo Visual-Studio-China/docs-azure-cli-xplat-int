@@ -1,0 +1,399 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a virtual network gateway
+  usage: '[options] <resource-group> <name> <location>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network gateway
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -w, --gateway-type [gateway-type]
+    required: 0
+    optional: -20
+    bool: True
+    short: -w
+    long: --gateway-type
+    description: >-
+      the gateway type
+           Valid values are [Vpn,ExpressRoute]
+           Default is Vpn
+  - flags: -y, --vpn-type [vpn-type]
+    required: 0
+    optional: -16
+    bool: True
+    short: -y
+    long: --vpn-type
+    description: >-
+      the vpn type
+           Valid values are [RouteBased,PolicyBased,Dedicated]
+           Default is RouteBased
+  - flags: -k, --sku-name [sku-name]
+    required: 0
+    optional: -16
+    bool: True
+    short: -k
+    long: --sku-name
+    description: >-
+      the SKU name
+           Valid values are [Basic,HighPerformance,Standard]
+           Default is Basic
+  - flags: -u, --public-ip-id [public-ip-id]
+    required: 0
+    optional: -20
+    bool: True
+    short: -u
+    long: --public-ip-id
+    description: >-
+      the public ip identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/publicIPAddresses/<public-ip-name>
+  - flags: -p, --public-ip-name [public-ip-name]
+    required: 0
+    optional: -22
+    bool: True
+    short: -p
+    long: --public-ip-name
+    description: "the public ip name. This public ip must exists in the same resource group as the vnet gateway. \n     Please use public-ip-id if that is not the case."
+  - flags: -f, --subnet-id [subnet-id]
+    required: 0
+    optional: -17
+    bool: True
+    short: -f
+    long: --subnet-id
+    description: >-
+      the subnet identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/VirtualNetworks/<vnet-name>/subnets/<subnet-name>
+  - flags: -m, --vnet-name [vnet-name]
+    required: 0
+    optional: -17
+    bool: True
+    short: -m
+    long: --vnet-name
+    description: "the virtual network name. This virtual network must exists in the same resource group as the vnet gateway. \n     Please use subnet-id if that is not the case."
+  - flags: -e, --subnet-name [subnet-name]
+    required: 0
+    optional: -19
+    bool: True
+    short: -e
+    long: --subnet-name
+    description: the subnet name which exists in vnet. Default value is "GatewaySubnet"
+  - flags: -d, --default-site-name [default-site-name]
+    required: 0
+    optional: -25
+    bool: True
+    short: -d
+    long: --default-site-name
+    description: "the Local Network Gateway name. This Local Network Gateway must exists in the same resource group as the vnet gateway. \n     Please use default-site-id if that is not the case."
+  - flags: -i, --default-site-id [default-site-id]
+    required: 0
+    optional: -23
+    bool: True
+    short: -i
+    long: --default-site-id
+    description: >-
+      Local Network Gateway identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/localNetworkGateways/<local-gateway-name>
+  - flags: -f, --address-prefixes [address-prefixes]
+    required: 0
+    optional: -24
+    bool: True
+    short: -f
+    long: --address-prefixes
+    description: >-
+      the comma separated list of address prefixes.
+           For example, -f "10.0.0.0/24,10.0.1.0/24"
+  - flags: -b, --enable-bgp [enable-bgp]
+    required: 0
+    optional: -18
+    bool: True
+    short: -b
+    long: --enable-bgp
+    description: enable bgp [true, false]
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set a virtual network gateway
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network gateway
+  - flags: -k, --sku-name [sku-name]
+    required: 0
+    optional: -16
+    bool: True
+    short: -k
+    long: --sku-name
+    description: >-
+      the SKU name
+           Valid values are [Basic,HighPerformance,Standard]
+  - flags: -d, --default-site-name [default-site-name]
+    required: 0
+    optional: -25
+    bool: True
+    short: -d
+    long: --default-site-name
+    description: "the Local Network Gateway name. This Local Network Gateway must exists in the same resource group as the vnet gateway. \n     Please use default-site-id if that is not the case."
+  - flags: -i, --default-site-id [default-site-id]
+    required: 0
+    optional: -23
+    bool: True
+    short: -i
+    long: --default-site-id
+    description: >-
+      Local Network Gateway identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/localNetworkGateways/<local-gateway-name>
+  - flags: -f, --address-prefixes [address-prefixes]
+    required: 0
+    optional: -24
+    bool: True
+    short: -f
+    long: --address-prefixes
+    description: >-
+      the comma separated list of address prefixes.
+           For example, -f "10.0.0.0/24,10.0.1.0/24"
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           Existing tag values will be replaced by the values specified.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: List virtual network gateways
+  usage: '[options] <resource-group>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get a virtual network gateway
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network gateway
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a virtual network gateway
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the virtual network gateway
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: vpn-gateway
+description: Commands to manage Virtual Network Gateways
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/network/vpn-gateway.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/network/vpn-gateway.yml
+  ms.topic: reference

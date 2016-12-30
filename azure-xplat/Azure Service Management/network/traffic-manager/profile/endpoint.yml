@@ -1,0 +1,221 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create an endpoint in a Traffic Manager profile
+  usage: '[options] <profile-name> <name> <type>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: the name of the profile
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the endpoint domain name
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: 'the endpoint type, valid values are: TrafficManager,CloudService,AzureWebsite,Any'
+  - flags: -l, --endpoint-location <endpoint-location>
+    required: -25
+    optional: 0
+    bool: True
+    short: -l
+    long: --endpoint-location
+    description: "the location of the endpoint. Required when profile load-balancing\n     method is set to Performance and endpoint type is set to \n     Any or TrafficManager. Specifies the name of the Azure region"
+  - flags: -u, --endpoint-status <endpoint-status>
+    required: -23
+    optional: 0
+    bool: True
+    short: -u
+    long: --endpoint-status
+    description: 'the endpoint status, valid values are: Enabled,Disabled Default is Enabled'
+  - flags: -w, --weight <weight>
+    required: -14
+    optional: 0
+    bool: True
+    short: -w
+    long: --weight
+    description: the endpoint weight used in the load balancing algorithm
+  - flags: -e, --min-child-endpoint <min-child-endpoint>
+    required: -26
+    optional: 0
+    bool: True
+    short: -e
+    long: --min-child-endpoint
+    description: the minimum number of child endpoints, can be specified when Type is set to TrafficManager
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set an endpoint in a Traffic Manager profile
+  usage: '[options] <profile-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: the name of the profile
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the endpoint domain name
+  - flags: -y, --type <type>
+    required: -12
+    optional: 0
+    bool: True
+    short: -y
+    long: --type
+    description: 'the endpoint type, valid values are: TrafficManager,CloudService,AzureWebsite,Any'
+  - flags: -l, --endpoint-location <endpoint-location>
+    required: -25
+    optional: 0
+    bool: True
+    short: -l
+    long: --endpoint-location
+    description: "the location of the endpoint. Required when profile load-balancing\n     method is set to Performance and endpoint type is set to \n     Any or TrafficManager. Specifies the name of the Azure region"
+  - flags: -u, --endpoint-status <endpoint-status>
+    required: -23
+    optional: 0
+    bool: True
+    short: -u
+    long: --endpoint-status
+    description: 'the endpoint status, valid values are: Enabled,Disabled Default is Enabled'
+  - flags: -w, --weight <weight>
+    required: -14
+    optional: 0
+    bool: True
+    short: -w
+    long: --weight
+    description: the endpoint weight used in the load balancing algorithm
+  - flags: -e, --min-child-endpoint <min-child-endpoint>
+    required: -26
+    optional: 0
+    bool: True
+    short: -e
+    long: --min-child-endpoint
+    description: the minimum number of child endpoints, can be specified when Type is set to TrafficManager
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete an endpoint from a Traffic Manager profile
+  usage: '[options] <profile-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -p, --profile-name <profile-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -p
+    long: --profile-name
+    description: the name of the profile
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the endpoint domain name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: endpoint
+description: Commands to manage Traffic Manager profile endpoint
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/traffic-manager/profile/endpoint.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/traffic-manager/profile/endpoint.yml
+  ms.topic: reference

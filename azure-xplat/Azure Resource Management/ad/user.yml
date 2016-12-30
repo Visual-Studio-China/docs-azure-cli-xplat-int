@@ -1,0 +1,255 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Get all Active Directory users in current subscription's tenant. When --json flag is used, it will get the information from all the pages and then provide the final json array.
+  usage: '[options]'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: '| more'
+    required: 0
+    optional: 0
+    bool: True
+    short: ''
+    long: more
+    description: Provides paging support. Press 'Enter' for more information.
+- name: show
+  description: Get an Active Directory user
+  usage: '[options]'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u --upn <upn>
+    required: -10
+    optional: 0
+    bool: True
+    short: -u
+    long: --upn
+    description: the principal name of the user to return
+  - flags: -o --objectId <objectId>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --objectId
+    description: the object id of the user to return
+  - flags: -c --search <search>
+    required: -13
+    optional: 0
+    bool: True
+    short: -c
+    long: --search
+    description: search users with display name starting with the provided value
+- name: delete
+  description: Deletes Active Directory user (work/school account also popularly known as org-id).
+  usage: '[options] <upn-or-objectId>'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u --upn-or-objectId <upn-or-objectId>
+    required: -22
+    optional: 0
+    bool: True
+    short: -u
+    long: --upn-or-objectId
+    description: the user principal name or the objectId.
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation).
+- name: create
+  description: 'Create Active Directory user (work/school account also popularly known as org-id). For more information: https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#CreateUser'
+  usage: '[options] <upn> <display-name> <mail-nickname> <password>'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u --upn <upn>
+    required: -10
+    optional: 0
+    bool: True
+    short: -u
+    long: --upn
+    description: the user principal name. example - 'someuser@contoso.com'.
+  - flags: -i --immutableId <immutableId>
+    required: -18
+    optional: 0
+    bool: True
+    short: -i
+    long: --immutableId
+    description: It needs to be specified only if you are using a federated domain for the user's user principal name (upn) property.
+  - flags: -d --display-name <display-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --display-name
+    description: the name to display in the address book for the user. example 'Alex Wu'
+  - flags: -m --mail-nickname <mail-nickname>
+    required: -20
+    optional: 0
+    bool: True
+    short: -m
+    long: --mail-nickname
+    description: "the mail alias for the user. example: 'Alexw'."
+  - flags: -p --password <password>
+    required: -15
+    optional: 0
+    bool: True
+    short: -p
+    long: --password
+    description: password for the user. It must meet the tenant's password complexity requirements. It is recommended to set a strong password.
+  - flags: -f --force-change-password-next-login
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --force-change-password-next-login
+    description: It must be specified if the user must change the password on the next successful login (true). Default behavior is (false) to not change the password on the next successful login.
+- name: set
+  description: 'Update an existing Active Directory user (work/school account also popularly known as org-id). For more information: https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser'
+  usage: '[options] <upn-or-objectId>'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u --upn-or-objectId <upn-or-objectId>
+    required: -22
+    optional: 0
+    bool: True
+    short: -u
+    long: --upn-or-objectId
+    description: the user principal name ('someuser@contoso.com') or the objectId (a Guid) for which the properties need to be updated.
+  - flags: -a --enable-account <enable-account>
+    required: -21
+    optional: 0
+    bool: True
+    short: -a
+    long: --enable-account
+    description: true for enabling the account; otherwise, false.
+  - flags: -d --display-name <display-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --display-name
+    description: new name to display in the address book for the user. example 'Alex Wu'
+  - flags: -m --mail-nickname <mail-nickname>
+    required: -20
+    optional: 0
+    bool: True
+    short: -m
+    long: --mail-nickname
+    description: "new mail alias for the user. example: 'Alexw'."
+  - flags: -p --password <password>
+    required: -15
+    optional: 0
+    bool: True
+    short: -p
+    long: --password
+    description: new password for the user. It must meet the tenant's password complexity requirements. It is recommended to set a strong password.
+  - flags: -f --force-change-password-next-login
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --force-change-password-next-login
+    description: It must be specified only when you are updating the password. Otherwise it will be ignored. It must be specified if the user must change the password on the next successful login (true). Default behavior is (false) to not change the password on the next successful login.
+name: user
+description: Commands to display Active Directory users
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/ad/user.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/ad/user.yml
+  ms.topic: reference

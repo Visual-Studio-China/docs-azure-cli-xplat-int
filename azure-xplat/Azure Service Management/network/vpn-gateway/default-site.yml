@@ -1,0 +1,92 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set local network default site for a virtual network gateway
+  usage: '[options] <vnet-name> <site-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -k, --site-name <site-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -k
+    long: --site-name
+    description: the local network default site for this virtual network gateway
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: remove
+  description: Remove local network default site configured in a virtual network gateway
+  usage: '[options] <vnet-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: default-site
+description: Commands to manage VPN Gateway default site
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/network/vpn-gateway/default-site.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/network/vpn-gateway/default-site.yml
+  ms.topic: reference

@@ -1,0 +1,193 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Lists gallery resource group templates
+  usage: '[options]'
+  filePath: commands/arm/group/group.template._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -c --category [category]
+    required: 0
+    optional: -15
+    bool: True
+    short: -c
+    long: --category
+    description: the category of the templates to list
+  - flags: -p --publisher [publisher]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --publisher
+    description: the publisher of the templates to list
+- name: show
+  description: Shows a gallery resource group template
+  usage: '[options] <name>'
+  filePath: commands/arm/group/group.template._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of template to show
+- name: download
+  description: Downloads a gallery resource group template
+  usage: '[options] [name] [directory]'
+  filePath: commands/arm/group/group.template._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the template to download
+  - flags: -d --directory <directory>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --directory
+    description: the name of the destination directory
+  - flags: -q --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not prompt for overwrite if output file exists)
+- name: validate
+  description: Validates a template to see whether it's using the right syntax, resource providers, resource types, etc.
+  usage: '[options] <resource-group>'
+  filePath: commands/arm/group/group.template._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -f --template-file <template-file>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --template-file
+    description: the path to the template file in the file system
+  - flags: --template-uri <template-uri>
+    required: -16
+    optional: 0
+    bool: True
+    long: --template-uri
+    description: the uri to the remote template file
+  - flags: --template-version <template-version>
+    required: -20
+    optional: 0
+    bool: True
+    long: --template-version
+    description: the content version of the template
+  - flags: -p --parameters <parameters>
+    required: -17
+    optional: 0
+    bool: True
+    short: -p
+    long: --parameters
+    description: a JSON-formatted string containing parameters
+  - flags: -e --parameters-file <parametersFile>
+    required: -22
+    optional: 0
+    bool: True
+    short: -e
+    long: --parameters-file
+    description: a file containing parameters
+  - flags: --subscription <subscription>
+    required: -16
+    optional: 0
+    bool: True
+    long: --subscription
+    description: the subscription identifier
+name: template
+description: Commands to manage your local or gallery resource group template
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/group/template.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/group/template.yml
+  ms.topic: reference

@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: storage
+description: Commands to invoke service management operations.
+usage: '[options]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Service%20Management/storage.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Service%20Management/storage.yml
+  ms.topic: reference

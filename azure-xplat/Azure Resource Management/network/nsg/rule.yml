@@ -1,0 +1,395 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a network security group rule
+  usage: '[options] <resource-group> <nsg-name> <name> <priority>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -d, --description [description]
+    required: 0
+    optional: -19
+    bool: True
+    short: -d
+    long: --description
+    description: the description
+  - flags: -p, --protocol [protocol]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --protocol
+    description: the protocol [*,Tcp,Udp]. Default value is "*"
+  - flags: -f, --source-address-prefix [source-address-prefix]
+    required: 0
+    optional: -29
+    bool: True
+    short: -f
+    long: --source-address-prefix
+    description: the source address prefix
+  - flags: -o, --source-port-range [source-port-range]
+    required: 0
+    optional: -25
+    bool: True
+    short: -o
+    long: --source-port-range
+    description: the source port range [0-65535]. Default value is "*"
+  - flags: -e, --destination-address-prefix [destination-address-prefix]
+    required: 0
+    optional: -34
+    bool: True
+    short: -e
+    long: --destination-address-prefix
+    description: the destination address prefix
+  - flags: -u, --destination-port-range [destination-port-range]
+    required: 0
+    optional: -30
+    bool: True
+    short: -u
+    long: --destination-port-range
+    description: the destination port range [0-65535]. Default value is "80"
+  - flags: -c, --access [access]
+    required: 0
+    optional: -14
+    bool: True
+    short: -c
+    long: --access
+    description: the access mode [Allow,Deny]. Default value is "Allow"
+  - flags: -y, --priority [priority]
+    required: 0
+    optional: -16
+    bool: True
+    short: -y
+    long: --priority
+    description: the priority [100-4096]. Default value is "100"
+  - flags: -r, --direction [direction]
+    required: 0
+    optional: -17
+    bool: True
+    short: -r
+    long: --direction
+    description: the direction [Inbound,Outbound]. Default value is "Inbound"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set a network security group rule
+  usage: '[options] <resource-group> <nsg-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -d, --description [description]
+    required: 0
+    optional: -19
+    bool: True
+    short: -d
+    long: --description
+    description: the description
+  - flags: -p, --protocol [protocol]
+    required: 0
+    optional: -16
+    bool: True
+    short: -p
+    long: --protocol
+    description: the protocol [*,Tcp,Udp]
+  - flags: -f, --source-address-prefix [source-address-prefix]
+    required: 0
+    optional: -29
+    bool: True
+    short: -f
+    long: --source-address-prefix
+    description: the source address prefix
+  - flags: -o, --source-port-range [source-port-range]
+    required: 0
+    optional: -25
+    bool: True
+    short: -o
+    long: --source-port-range
+    description: the source port range [0-65535]
+  - flags: -e, --destination-address-prefix [destination-address-prefix]
+    required: 0
+    optional: -34
+    bool: True
+    short: -e
+    long: --destination-address-prefix
+    description: the destination address prefix
+  - flags: -u, --destination-port-range [destination-port-range]
+    required: 0
+    optional: -30
+    bool: True
+    short: -u
+    long: --destination-port-range
+    description: the destination port range [0-65535]
+  - flags: -c, --access [access]
+    required: 0
+    optional: -14
+    bool: True
+    short: -c
+    long: --access
+    description: the access mode [Allow,Deny]
+  - flags: -y, --priority [priority]
+    required: 0
+    optional: -16
+    bool: True
+    short: -y
+    long: --priority
+    description: the priority [undefined-undefined]
+  - flags: -r, --direction [direction]
+    required: 0
+    optional: -17
+    bool: True
+    short: -r
+    long: --direction
+    description: the direction [Inbound,Outbound]
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Get all rules in a network security group
+  usage: '[options] <resource-group> <nsg-name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get a rule in a network security group
+  usage: '[options] <resource-group> <nsg-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a rule in a network security group
+  usage: '[options] <resource-group> <nsg-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the rule
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: rule
+description: Commands to manage network security group rules
+usage: '[options] [command]'
+Metadata:
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Azure%20Resource%20Management/network/nsg/rule.yml
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob//azure-xplat/Azure%20Resource%20Management/network/nsg/rule.yml
+  ms.topic: reference
