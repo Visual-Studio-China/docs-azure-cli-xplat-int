@@ -210,3 +210,7 @@ commands:
 name: azure-cli
 description: Microsoft Azure Cross Platform Command Line tool
 usage: '[options] [command]  [help]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

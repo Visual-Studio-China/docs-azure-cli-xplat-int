@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/SetupRepo.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/SetupRepo.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/SetupRepo.md
+updated_at: 5/9/2016 5:13 PM
+ms.date: 5/9/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/SetupRepo.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/SetupRepo.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/4ec5cc62befb35714570d0e5efe1d32a6d86d168/Documentation/SetupRepo.md
+open_to_public_contributors: true
 ---
 Setting up the Xplat CLI repo
 

@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/RunTests.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/RunTests.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/RunTests.md
+updated_at: 4/1/2015 11:35 PM
+ms.date: 4/1/2015
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/RunTests.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/RunTests.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6733bd461b400eb98a514dabe03bab88cbaa3077/Documentation/RunTests.md
+open_to_public_contributors: true
 ---
 ## Running Xplat CLI Tests
 

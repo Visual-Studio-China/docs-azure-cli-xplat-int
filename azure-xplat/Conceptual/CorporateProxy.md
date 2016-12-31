@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/CorporateProxy.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/CorporateProxy.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/CorporateProxy.md
+updated_at: 3/27/2015 12:50 AM
+ms.date: 3/27/2015
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/CorporateProxy.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/CorporateProxy.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/15b99c7c2282c3ede1774e349faf2ac338b2d3d1/Documentation/CorporateProxy.md
+open_to_public_contributors: true
 ---
 # Supporting Corporate Proxy
 ## Issue

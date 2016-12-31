@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/BestPractices-Testing.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/BestPractices-Testing.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/BestPractices-Testing.md
+updated_at: 3/31/2015 3:33 AM
+ms.date: 3/31/2015
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/BestPractices-Testing.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/BestPractices-Testing.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/d9a5f4fe3d4aad36647efe850d463134beb8003a/Documentation/BestPractices-Testing.md
+open_to_public_contributors: true
 ---
 ### Best Practices for writing tests
 

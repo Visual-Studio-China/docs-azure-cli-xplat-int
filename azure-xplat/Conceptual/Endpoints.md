@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Endpoints.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Endpoints.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/Endpoints.md
+updated_at: 2/11/2016 5:17 AM
+ms.date: 2/11/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Endpoints.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Endpoints.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/345bc9265bb612c4cf80e2b0f6c7198ab056acb3/Documentation/Endpoints.md
+open_to_public_contributors: true
 ---
 ### Getting Endpoints for Azure
 

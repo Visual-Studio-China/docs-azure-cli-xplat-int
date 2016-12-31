@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/DummyCerts.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/DummyCerts.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/DummyCerts.md
+updated_at: 3/27/2015 6:30 PM
+ms.date: 3/27/2015
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/DummyCerts.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/DummyCerts.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/770c48dd9b5c4069ef24410dc5391595195e3a1a/Documentation/DummyCerts.md
+open_to_public_contributors: true
 ---
 ###Creating dummy certificates for testing purpose.
 

@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Writing-Test.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Writing-Test.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/Writing-Test.md
+updated_at: 5/24/2016 9:04 PM
+ms.date: 5/24/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Writing-Test.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Writing-Test.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/86a37b033520e31ce482130f06dfd2065b5d048f/Documentation/Writing-Test.md
+open_to_public_contributors: true
 ---
 #### Where to put a test in the repository
 

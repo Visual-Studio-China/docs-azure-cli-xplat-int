@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Debugging.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Debugging.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/Debugging.md
+updated_at: 5/16/2016 6:50 PM
+ms.date: 5/16/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Debugging.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Debugging.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a292e474e584eba79d31b7fbe9f83965f69e933c/Documentation/Debugging.md
+open_to_public_contributors: true
 ---
 Different ways to debug azure-xplat-cli commands
 

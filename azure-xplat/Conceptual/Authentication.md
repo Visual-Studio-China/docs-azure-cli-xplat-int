@@ -1,9 +1,10 @@
 ---
-updated_at: 12/31/2016 4:39 AM
-ms.date: 12/31/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Authentication.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/Authentication.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/Authentication.md
+updated_at: 3/31/2015 3:42 AM
+ms.date: 3/31/2015
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Authentication.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentation/Authentication.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/62684b7a91d187929485bd6c2a43ea3eefc3cdbb/Documentation/Authentication.md
+open_to_public_contributors: true
 ---
 ## Authentication
 
