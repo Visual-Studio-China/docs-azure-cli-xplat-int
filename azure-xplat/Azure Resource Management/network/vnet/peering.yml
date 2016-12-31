@@ -343,7 +343,11 @@ name: peering
 description: Commands to manage virtual network peerings
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/virtualNetworkPeerings._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/virtualNetworkPeerings._js
+  update_at: 9/28/2016 11:20 AM
+  ms.date: 9/28/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/be9b11eedc3ae754334487aae2397a99a9b01d87/lib/commands/arm/network/virtualNetworkPeerings._js
+

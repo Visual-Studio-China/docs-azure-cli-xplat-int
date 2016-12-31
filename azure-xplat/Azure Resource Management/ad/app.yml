@@ -300,7 +300,11 @@ name: app
 description: Commands to display Active Directory applications
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.application._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.application._js
+  update_at: 9/23/2016 3:25 AM
+  ms.date: 9/23/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/531013b4684b17915ae4a2363937c05feaafeca6/lib/commands/arm/ad/ad.application._js
+

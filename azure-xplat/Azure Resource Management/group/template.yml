@@ -188,7 +188,11 @@ name: template
 description: Commands to manage your local or gallery resource group template
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group.template._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group.template._js
+  update_at: 3/25/2016 1:21 AM
+  ms.date: 3/25/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1876ec08fdee48ce73607ee1c29c5825ad2e25c3/lib/commands/arm/group/group.template._js
+

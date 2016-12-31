@@ -177,7 +177,11 @@ name: member
 description: Commands to provide an Active Directory sub group or member info
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.groups._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.groups._js
+  update_at: 10/28/2016 2:28 AM
+  ms.date: 10/28/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7c71f782208ab7537b6fe3eab3f05ab03e10d9d0/lib/commands/arm/ad/ad.groups._js
+

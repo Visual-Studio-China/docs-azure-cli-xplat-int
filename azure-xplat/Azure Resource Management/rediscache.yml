@@ -507,7 +507,11 @@ name: rediscache
 description: Commands to manage your Azure Redis Cache(s)
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/rediscache/rediscache._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/rediscache/rediscache._js
+  update_at: 2/23/2016 7:14 PM
+  ms.date: 2/23/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/eb132d0dd1386f1c1b79373f0feaa617b7491096/lib/commands/arm/rediscache/rediscache._js
+

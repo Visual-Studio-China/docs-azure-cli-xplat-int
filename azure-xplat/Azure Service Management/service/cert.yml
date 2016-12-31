@@ -166,7 +166,11 @@ name: cert
 description: Commands to manage your Cloud Services certificates
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/service.cert._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/service.cert._js
+  update_at: 4/20/2016 8:59 PM
+  ms.date: 4/20/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a4489efd930943357412ac196df5bcb3f36cb37e/lib/commands/asm/service.cert._js
+

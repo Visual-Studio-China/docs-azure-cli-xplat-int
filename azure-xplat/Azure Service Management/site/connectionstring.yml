@@ -194,7 +194,11 @@ name: connectionstring
 description: Commands to manage your Web Site connection strings
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.connectionstring._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.connectionstring._js
+  update_at: 12/5/2014 8:25 PM
+  ms.date: 12/5/2014
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dde63008904e0dc32a8d0582b49136fb39ed8583/lib/commands/asm/site.connectionstring._js
+

@@ -187,7 +187,11 @@ name: namespace
 description: Commands to manage your Service Bus namespaces
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sb._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sb._js
+  update_at: 5/4/2015 3:24 AM
+  ms.date: 5/4/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7ac34733fd2f4b4e2a3d60f3b1dbefa0bd3c43c7/lib/commands/asm/sb._js
+

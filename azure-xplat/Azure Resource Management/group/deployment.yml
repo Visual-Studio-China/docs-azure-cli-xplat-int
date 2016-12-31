@@ -297,7 +297,11 @@ name: deployment
 description: Commands to manage your deployment in a resource group
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group.deployment._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group.deployment._js
+  update_at: 12/1/2016 8:44 PM
+  ms.date: 12/1/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/61216f7da49ecdd5ce7b1cb62a20f38d39cb1d83/lib/commands/arm/group/group.deployment._js
+

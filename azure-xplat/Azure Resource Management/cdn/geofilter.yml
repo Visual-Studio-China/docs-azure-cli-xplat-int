@@ -257,7 +257,11 @@ name: geofilter
 description: Commands to manage Azure cdn profile endpoint geo filters
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/cdnmanagement/cdnmanagement._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/cdnmanagement/cdnmanagement._js
+  update_at: 12/5/2016 10:55 PM
+  ms.date: 12/5/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/13d6e7e3776495a1b8f04f3f55d077acb3d58c77/lib/commands/arm/cdnmanagement/cdnmanagement._js
+

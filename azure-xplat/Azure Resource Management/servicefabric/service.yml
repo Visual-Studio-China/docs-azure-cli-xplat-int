@@ -360,7 +360,11 @@ name: service
 description: Commands to manage your service
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricService._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricService._js
+  update_at: 12/6/2016 9:25 PM
+  ms.date: 12/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/543dd7e8aac6fcc89531e68edf1ac50cf4eb265c/lib/commands/servicefabric/serviceFabricService._js
+

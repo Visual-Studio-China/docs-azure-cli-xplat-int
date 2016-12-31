@@ -49,7 +49,6 @@ name: all-stats
 description: Commands to manage all the pools under your Batch account
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: false
+

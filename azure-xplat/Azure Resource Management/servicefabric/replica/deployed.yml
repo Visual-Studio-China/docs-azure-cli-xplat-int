@@ -99,7 +99,11 @@ name: deployed
 description: Commands to manage your deployed replica
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricReplica._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricReplica._js
+  update_at: 9/27/2016 7:53 PM
+  ms.date: 9/27/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/9c973be94e818004c7bcbc686e45bbf474cb03e5/lib/commands/servicefabric/serviceFabricReplica._js
+

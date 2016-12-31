@@ -153,7 +153,11 @@ name: repository
 description: Commands to manage your Web Site repositories
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.repository._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.repository._js
+  update_at: 7/29/2016 1:56 AM
+  ms.date: 7/29/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f23023a7e794c49d3d1b28940cd2540823d02c36/lib/commands/asm/site.repository._js
+

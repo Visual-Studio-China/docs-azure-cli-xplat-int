@@ -299,7 +299,11 @@ name: job
 description: Commands to manage your Web Site WebJobs
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  update_at: 3/29/2015 4:31 AM
+  ms.date: 3/29/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1c23942cd12df3e279ffea7338fff79a401ff13/lib/commands/asm/site.jobs._js
+

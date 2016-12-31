@@ -230,7 +230,11 @@ name: deployment
 description: 'Commands to manage your deployment.  '
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/compute/deployment._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/compute/deployment._js
+  update_at: 7/7/2016 9:26 PM
+  ms.date: 7/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8e36b5e8d831c54c769105b844957f385db00be7/lib/commands/asm/compute/deployment._js
+

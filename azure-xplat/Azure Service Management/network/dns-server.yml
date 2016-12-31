@@ -132,7 +132,11 @@ name: dns-server
 description: Commands to manage your DNS servers
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  update_at: 2/16/2016 8:20 AM
+  ms.date: 2/16/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ad831194034c67c12c577182ff8519f2a62f3200/lib/commands/asm/network/network._js
+

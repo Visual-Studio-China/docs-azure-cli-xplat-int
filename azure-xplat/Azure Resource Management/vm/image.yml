@@ -264,7 +264,11 @@ name: image
 description: Commands to manage VM images
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/vm/vm._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/vm/vm._js
+  update_at: 11/24/2016 1:35 AM
+  ms.date: 11/24/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/02f036822b256760f3f96f911891f8603b1f1cf2/lib/commands/arm/vm/vm._js
+

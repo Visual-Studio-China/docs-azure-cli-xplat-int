@@ -149,7 +149,11 @@ name: health
 description: Commands to manage your deployed application health
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricApplication._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricApplication._js
+  update_at: 9/27/2016 11:09 PM
+  ms.date: 9/27/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/bbc8b77e316312c275483886fab4817ccde67579/lib/commands/servicefabric/serviceFabricApplication._js
+

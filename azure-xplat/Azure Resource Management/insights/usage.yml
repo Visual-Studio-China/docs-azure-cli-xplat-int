@@ -63,7 +63,6 @@ name: usage
 description: Retrieve usage metrics for a resource.
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: false
+

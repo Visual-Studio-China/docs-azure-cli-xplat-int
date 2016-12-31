@@ -146,7 +146,11 @@ name: auto-shutdown-policy
 description: Commands to manage auto-shutdown policy
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/devtestlabs/devTestLabs._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/devtestlabs/devTestLabs._js
+  update_at: 7/11/2016 11:00 PM
+  ms.date: 7/11/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1bae301a86173fd6bf2b6ff28c4dc4252d87fe00/lib/commands/arm/devtestlabs/devTestLabs._js
+

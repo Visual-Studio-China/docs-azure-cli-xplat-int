@@ -124,7 +124,11 @@ name: load-balancer-backend-address-pools
 description: Commands to configure load-balancer-backend-address-pools of vmss in config file.
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  update_at: 7/1/2016 11:36 PM
+  ms.date: 7/1/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1520512f3f9011a1a0e6c2038953d5808a20ccc8/lib/commands/arm/compute/virtualMachineScaleSets._js
+

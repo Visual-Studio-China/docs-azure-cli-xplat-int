@@ -92,7 +92,11 @@ name: keys
 description: Commands to manage your Batch account keys
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.batchAccount._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.batchAccount._js
+  update_at: 10/6/2016 8:15 PM
+  ms.date: 10/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f0127621f58044a1c9042589b1be65098eac959e/lib/commands/batch/batch.batchAccount._js
+

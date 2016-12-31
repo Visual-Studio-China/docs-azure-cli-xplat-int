@@ -135,7 +135,11 @@ name: account
 description: Commands to manage your account information and publish settings
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/account._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/account._js
+  update_at: 2/13/2016 5:53 AM
+  ms.date: 2/13/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/239c445162b09b67e49a3ff4208291eb456ee5e8/lib/commands/account._js
+

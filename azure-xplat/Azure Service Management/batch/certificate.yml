@@ -268,7 +268,11 @@ name: certificate
 description: Commands to manage your Batch certificate
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.certificate._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.certificate._js
+  update_at: 5/4/2016 6:54 PM
+  ms.date: 5/4/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/97ad6265563c41a2ed1958ccc03fd2787fe3e1ca/lib/commands/batch/batch.certificate._js
+

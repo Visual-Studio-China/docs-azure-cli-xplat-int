@@ -97,7 +97,11 @@ name: aad
 description: Manage azure Active Directory settings for mobile service
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/mobile._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/mobile._js
+  update_at: 12/8/2016 6:17 PM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/620513b6c8a708e9a5459b832fb4f67489566770/lib/commands/asm/mobile._js
+

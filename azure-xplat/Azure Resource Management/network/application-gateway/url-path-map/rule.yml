@@ -359,7 +359,11 @@ name: rule
 description: Commands to manage application gateway url path map rules
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  update_at: 12/7/2016 11:31 AM
+  ms.date: 12/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8f95a9647009830e06df64a6fef19075df64748e/lib/commands/arm/network/network._js
+

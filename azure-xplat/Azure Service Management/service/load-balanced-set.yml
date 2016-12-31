@@ -216,7 +216,11 @@ name: load-balanced-set
 description: Commands to manage load balanced set for a Cloud Service Deployment
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/service.lbset._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/service.lbset._js
+  update_at: 6/23/2015 7:04 PM
+  ms.date: 6/23/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/9ab149fceebea8f22e8bf8b786bd5444cd51eec8/lib/commands/asm/service.lbset._js
+

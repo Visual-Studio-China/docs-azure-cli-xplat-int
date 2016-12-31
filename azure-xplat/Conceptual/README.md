@@ -1,9 +1,9 @@
 ---
-updated_at: 12/30/2016 7:37 AM
-ms.date: 12/30/2016
-content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/README.md
-original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/README.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/aa1cfaf527dc977de03028c8758404a4889fc5da/Documentaion/README.md
+updated_at: 12/31/2016 4:39 AM
+ms.date: 12/31/2016
+content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/README.md
+original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/azure-xplat/Conceptual/README.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/92dd27e278d52f264586965cecc1a686475d3cfe/azure-xplat/Conceptual/README.md
 ---
 # Azure-Xplat-CLI Documentation
 

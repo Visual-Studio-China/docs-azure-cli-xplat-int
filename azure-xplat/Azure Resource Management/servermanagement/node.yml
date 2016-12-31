@@ -223,7 +223,11 @@ name: node
 description: Commands to manage Azure Server Management Tools Node instances
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/servermanagement/servermanagement._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/servermanagement/servermanagement._js
+  update_at: 5/16/2016 9:29 PM
+  ms.date: 5/16/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/0e89fe00659f485aef37aa5e62968599974e61ff/lib/commands/arm/servermanagement/servermanagement._js
+

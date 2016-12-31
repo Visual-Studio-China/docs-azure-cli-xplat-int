@@ -52,7 +52,6 @@ name: operations
 description: Commands to get the operations or actions allowed by an Azure resource provider.
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: false
+

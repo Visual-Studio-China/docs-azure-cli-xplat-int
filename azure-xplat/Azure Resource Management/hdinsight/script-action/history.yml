@@ -101,7 +101,11 @@ name: history
 description: Commands to manage HDInsight script action history
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/hdinsight/hdinsight._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/hdinsight/hdinsight._js
+  update_at: 10/24/2016 5:02 PM
+  ms.date: 10/24/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/616cc19813f5ea627bcea9970039285eea9dca49/lib/commands/arm/hdinsight/hdinsight._js
+

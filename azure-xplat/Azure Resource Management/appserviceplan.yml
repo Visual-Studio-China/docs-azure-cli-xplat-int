@@ -297,7 +297,11 @@ name: appserviceplan
 description: Commands to manage your Azure appserviceplans
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/appserviceplan/appserviceplan._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/appserviceplan/appserviceplan._js
+  update_at: 10/7/2016 4:13 PM
+  ms.date: 10/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/82771ab13bfc2764558fb37b8ecfa62a0fb8f0af/lib/commands/arm/appserviceplan/appserviceplan._js
+

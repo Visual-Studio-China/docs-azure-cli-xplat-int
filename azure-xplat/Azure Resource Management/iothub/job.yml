@@ -101,7 +101,11 @@ name: job
 description: Commands to manage the jobs of an IoT hub
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/iothub/iothub._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/iothub/iothub._js
+  update_at: 10/20/2016 1:45 AM
+  ms.date: 10/20/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/eea6992a75fca6a96fcb02718ca0fe14ce17509c/lib/commands/arm/iothub/iothub._js
+

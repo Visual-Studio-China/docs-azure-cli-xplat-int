@@ -306,7 +306,11 @@ name: role
 description: Commands to manage role definitions
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/role/role.definition._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/role/role.definition._js
+  update_at: 12/3/2015 10:26 PM
+  ms.date: 12/3/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ef7194b51d2ba4f2241b0c059cb0040366d0b978/lib/commands/arm/role/role.definition._js
+

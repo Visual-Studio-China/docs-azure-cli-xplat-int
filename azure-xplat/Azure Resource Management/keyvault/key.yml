@@ -508,7 +508,11 @@ name: key
 description: Commands to manage keys in the Azure Key Vault service
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.key._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.key._js
+  update_at: 8/31/2016 2:07 AM
+  ms.date: 8/31/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/c5bd2b43182555c2e7fe2c4f67bf8730b27c10d2/lib/commands/arm/keyvault/keyvault.key._js
+

@@ -191,7 +191,11 @@ name: issuer
 description: Commands to manage certificate issuers in the Azure Key Vault service
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  update_at: 10/11/2016 5:10 PM
+  ms.date: 10/11/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/2d353bf83a4d051fc1fbb452b112cf28b20a0e2d/lib/commands/arm/keyvault/keyvault.certificate._js
+

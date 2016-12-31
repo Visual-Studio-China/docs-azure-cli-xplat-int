@@ -100,7 +100,11 @@ name: config
 description: Commands to manage your local settings
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/config.js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/config.js
+  update_at: 5/2/2016 1:16 PM
+  ms.date: 5/2/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b98d2efc1588cf9e5b663f5bb29706dd3f97c4ce/lib/commands/config.js
+

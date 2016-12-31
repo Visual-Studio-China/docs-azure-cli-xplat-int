@@ -185,7 +185,11 @@ name: container
 description: Commands to manage your Azure webapps container configurations
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/webapp/webapp.config._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/webapp/webapp.config._js
+  update_at: 12/8/2016 7:27 PM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/a56ee5654589623f8fc7d0907e9d646d64e9dcbb/lib/commands/arm/webapp/webapp.config._js
+

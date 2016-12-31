@@ -698,7 +698,11 @@ name: job-schedule
 description: Commands to manage your Batch job schedules
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.jobSchedule._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.jobSchedule._js
+  update_at: 9/6/2016 8:40 PM
+  ms.date: 9/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/47235856069fe4c6b5319ed90a918d6b0b18b93c/lib/commands/batch/batch.jobSchedule._js
+

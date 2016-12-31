@@ -650,7 +650,11 @@ name: task
 description: Commands to manage your Batch tasks
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.task._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.task._js
+  update_at: 9/14/2016 9:56 PM
+  ms.date: 9/14/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7e13ad8fb8c7c5c2c01a49e82c6096d1b3653fe4/lib/commands/batch/batch.task._js
+

@@ -148,7 +148,11 @@ name: agent-pool-profiles
 description: Commands to configure agent-pool-profiles of acs in config file.
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/containerService._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/containerService._js
+  update_at: 4/22/2016 10:11 PM
+  ms.date: 4/22/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/22bdde5abbc14c459e3dcaa698646cd0f7e56f41/lib/commands/arm/compute/containerService._js
+

@@ -486,7 +486,11 @@ name: resource
 description: Commands to manage your resources
 usage: '[options] [command]'
 Metadata:
-  update_at: 12/30/2016 7:37 AM
-  open_to_public_contributors: false
-  ms.date: 12/30/2016
   ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/resource/resource._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/resource/resource._js
+  update_at: 12/6/2016 10:22 PM
+  ms.date: 12/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ecbb0b29485ebc7aa2fcc5acac631c7b0c5f8e64/lib/commands/arm/resource/resource._js
+
