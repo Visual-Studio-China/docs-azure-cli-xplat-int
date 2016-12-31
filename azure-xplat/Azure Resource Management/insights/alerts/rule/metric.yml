@@ -113,11 +113,11 @@ commands:
     short: -z
     long: --actions
     description: 'The list of alert rule actions. The list must be a json object (string) of an array. Example: "[{\"customEmails\":[\"gu@ms.com\"]},{\"serviceUri\":\"http://foo.com\",\"properties\":[{\"key\":\"key1\",\"value\":\"value1\"},{\"key\":\"value1\",\"value\":\"key2\"}]}]"'
-metadata:
-  update_at: 12/30/2016 7:30 AM
-  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.alerts.rule.metric._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.alerts.rule.metric._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/arm/insights/insights.alerts.rule.metric._js  open_to_public_contributors: true
-  ms.date: 12/30/2016
-  ms.topic: reference
 name: metric
 description: Creates metric-based alerts rules
 usage: '[options] [command]'
+Metadata:
+  update_at: 12/30/2016 7:37 AM
+  open_to_public_contributors: false
+  ms.date: 12/30/2016
+  ms.topic: reference

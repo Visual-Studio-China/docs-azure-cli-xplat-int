@@ -371,11 +371,11 @@ commands:
     short: -s
     long: --subscription
     description: the subscription id
-metadata:
-  update_at: 12/30/2016 7:30 AM
-  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/hdinsight._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/hdinsight._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/asm/hdinsight._js  open_to_public_contributors: true
-  ms.date: 12/30/2016
-  ms.topic: reference
 name: job
 description: "Commands to manage HDInsight jobs. \nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
 usage: '[options] [command]'
+Metadata:
+  update_at: 12/30/2016 7:37 AM
+  open_to_public_contributors: false
+  ms.date: 12/30/2016
+  ms.topic: reference

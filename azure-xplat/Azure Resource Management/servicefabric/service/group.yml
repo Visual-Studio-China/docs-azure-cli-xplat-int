@@ -275,11 +275,11 @@ commands:
     short: -e
     long: --service-name
     description: the name of the service
-metadata:
-  update_at: 12/30/2016 7:30 AM
-  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricServiceGroup._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricServiceGroup._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/servicefabric/serviceFabricServiceGroup._js  open_to_public_contributors: true
-  ms.date: 12/30/2016
-  ms.topic: reference
 name: group
 description: Commands to manage your service group
 usage: '[options] [command]'
+Metadata:
+  update_at: 12/30/2016 7:37 AM
+  open_to_public_contributors: false
+  ms.date: 12/30/2016
+  ms.topic: reference

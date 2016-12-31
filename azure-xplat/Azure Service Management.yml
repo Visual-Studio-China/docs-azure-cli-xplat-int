@@ -207,8 +207,6 @@ commands:
     short: -d
     long: --disable
     description: use this flag to disable telemetry
-metadata:
-  git_content_url: https://github.com/azure/azure-xplat-cli/lib/commands/help.js
 name: azure-cli
 description: Microsoft Azure Cross Platform Command Line tool
 usage: '[options] [command]  [help]'

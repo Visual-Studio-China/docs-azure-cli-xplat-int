@@ -237,11 +237,11 @@ commands:
     bool: True
     long: --subscription
     description: the subscription identifier
-metadata:
-  update_at: 12/30/2016 7:30 AM
-  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/policy/policy.definition._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/policy/policy.definition._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/arm/policy/policy.definition._js  open_to_public_contributors: true
-  ms.date: 12/30/2016
-  ms.topic: reference
 name: definition
 description: Commands to manage your policy definitions.
 usage: '[options] [command]'
+Metadata:
+  update_at: 12/30/2016 7:37 AM
+  open_to_public_contributors: false
+  ms.date: 12/30/2016
+  ms.topic: reference

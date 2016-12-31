@@ -1,9 +1,9 @@
 ---
-updated_at: 12/30/2016 7:30 AM
+updated_at: 12/30/2016 7:37 AM
 ms.date: 12/30/2016
 content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/EnvironmentVariables.md
 original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/EnvironmentVariables.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/Documentaion/EnvironmentVariables.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/aa1cfaf527dc977de03028c8758404a4889fc5da/Documentaion/EnvironmentVariables.md
 ---
 ##Supported environment variables for using the CLI
 

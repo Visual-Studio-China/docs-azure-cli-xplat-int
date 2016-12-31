@@ -51,11 +51,11 @@ commands:
     short: -s
     long: --subscription
     description: the subscription identifier
-metadata:
-  update_at: 12/30/2016 7:30 AM
-  git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/webapp/webapp.config._js  original_git_content_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/webapp/webapp.config._js  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/lib/commands/arm/webapp/webapp.config._js  open_to_public_contributors: true
-  ms.date: 12/30/2016
-  ms.topic: reference
 name: publishingprofile
 description: Command to get your Azure webapps publishing profile
 usage: '[options] [command]'
+Metadata:
+  update_at: 12/30/2016 7:37 AM
+  open_to_public_contributors: false
+  ms.date: 12/30/2016
+  ms.topic: reference

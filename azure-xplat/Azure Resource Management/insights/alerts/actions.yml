@@ -1,11 +1,10 @@
 ### YamlMime:AzureXplatCli
 commands: []
-metadata: {}
 name: actions
 description: Creates alert rules actions
 usage: '[options]'
 Metadata:
-  update_at: 12/30/2016 7:30 AM
+  update_at: 12/30/2016 7:37 AM
   open_to_public_contributors: false
   ms.date: 12/30/2016
   ms.topic: reference

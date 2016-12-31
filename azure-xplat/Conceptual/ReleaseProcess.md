@@ -1,9 +1,9 @@
 ---
-updated_at: 12/30/2016 7:30 AM
+updated_at: 12/30/2016 7:37 AM
 ms.date: 12/30/2016
 content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/ReleaseProcess.md
 original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/Documentaion/ReleaseProcess.md
-gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/e782dc553e60b534e9d419a4511a9c54b4a47815/Documentaion/ReleaseProcess.md
+gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/aa1cfaf527dc977de03028c8758404a4889fc5da/Documentaion/ReleaseProcess.md
 ---
 ## What We're Doing
 The xplat CLI has a dependency on the Node SDK. In order to make sure that partners can easily keep their copies of the xplat CLI and Node SDK in sync, we need to finagle things a little as we get ready for release.
