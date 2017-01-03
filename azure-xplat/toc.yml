@@ -39,6 +39,53 @@
       items:
         - name: env
           href: ./Azure Resource Management/account/env.yml
+    - name: acs
+      href: ./Azure Resource Management/acs.yml
+      items:
+        - name: config
+          href: ./Azure Resource Management/acs/config.yml
+          items:
+            - name: agent-pool-profiles
+              href: ./Azure Resource Management/acs/config/agent-pool-profiles.yml
+            - name: container-service
+              href: ./Azure Resource Management/acs/config/container-service.yml
+            - name: diagnostics-profile
+              href: ./Azure Resource Management/acs/config/diagnostics-profile.yml
+            - name: linux-profile
+              href: ./Azure Resource Management/acs/config/linux-profile.yml
+            - name: master-profile
+              href: ./Azure Resource Management/acs/config/master-profile.yml
+            - name: orchestrator-profile
+              href: ./Azure Resource Management/acs/config/orchestrator-profile.yml
+            - name: public-keys
+              href: ./Azure Resource Management/acs/config/public-keys.yml
+            - name: ssh
+              href: ./Azure Resource Management/acs/config/ssh.yml
+            - name: vm-diagnostics
+              href: ./Azure Resource Management/acs/config/vm-diagnostics.yml
+            - name: windows-profile
+              href: ./Azure Resource Management/acs/config/windows-profile.yml
+    - name: ad
+      href: ./Azure Resource Management/ad.yml
+      items:
+        - name: app
+          href: ./Azure Resource Management/ad/app.yml
+        - name: group
+          href: ./Azure Resource Management/ad/group.yml
+          items:
+            - name: member
+              href: ./Azure Resource Management/ad/group/member.yml
+        - name: sp
+          href: ./Azure Resource Management/ad/sp.yml
+        - name: user
+          href: ./Azure Resource Management/ad/user.yml
+          items:
+            - name: memberGroups
+              href: ./Azure Resource Management/ad/user/memberGroups.yml
+    - name: appserviceplan
+      href: ./Azure Resource Management/appserviceplan.yml
+    - name: availset
+      href: ./Azure Resource Management/availset.yml
     - name: batch
       href: ./Azure Resource Management/batch.yml
       items:
@@ -54,14 +101,688 @@
               href: ./Azure Resource Management/batch/application/package.yml
         - name: certificate
           href: ./Azure Resource Management/batch/certificate.yml
+        - name: job-schedule
+          href: ./Azure Resource Management/batch/job-schedule.yml
+        - name: job
+          href: ./Azure Resource Management/batch/job.yml
+          items:
+            - name: prep-release-status
+              href: ./Azure Resource Management/batch/job/prep-release-status.yml
+        - name: location
+          href: ./Azure Resource Management/batch/location.yml
+          items:
+            - name: quotas
+              href: ./Azure Resource Management/batch/location/quotas.yml
+        - name: node-file
+          href: ./Azure Resource Management/batch/node-file.yml
+        - name: node-user
+          href: ./Azure Resource Management/batch/node-user.yml
+        - name: node
+          href: ./Azure Resource Management/batch/node.yml
+          items:
+            - name: remote-desktop
+              href: ./Azure Resource Management/batch/node/remote-desktop.yml
+            - name: remote-login-settings
+              href: ./Azure Resource Management/batch/node/remote-login-settings.yml
+            - name: scheduling
+              href: ./Azure Resource Management/batch/node/scheduling.yml
+        - name: pool
+          href: ./Azure Resource Management/batch/pool.yml
+          items:
+            - name: all-stats
+              href: ./Azure Resource Management/batch/pool/all-stats.yml
+            - name: autoscale
+              href: ./Azure Resource Management/batch/pool/autoscale.yml
+            - name: node-agent-skus
+              href: ./Azure Resource Management/batch/pool/node-agent-skus.yml
+            - name: usage-metrics
+              href: ./Azure Resource Management/batch/pool/usage-metrics.yml
+        - name: task-file
+          href: ./Azure Resource Management/batch/task-file.yml
+        - name: task
+          href: ./Azure Resource Management/batch/task.yml
+    - name: cdn
+      href: ./Azure Resource Management/cdn.yml
+      items:
+        - name: customDomain
+          href: ./Azure Resource Management/cdn/customDomain.yml
+        - name: endpoint
+          href: ./Azure Resource Management/cdn/endpoint.yml
+        - name: geofilter
+          href: ./Azure Resource Management/cdn/geofilter.yml
+        - name: origin
+          href: ./Azure Resource Management/cdn/origin.yml
+        - name: profile
+          href: ./Azure Resource Management/cdn/profile.yml
+        - name: ssouri
+          href: ./Azure Resource Management/cdn/ssouri.yml
     - name: config
       href: ./Azure Resource Management/config.yml
+    - name: datalake
+      href: ./Azure Resource Management/datalake.yml
+      items:
+        - name: analytics
+          href: ./Azure Resource Management/datalake/analytics.yml
+          items:
+            - name: account
+              href: ./Azure Resource Management/datalake/analytics/account.yml
+              items:
+                - name: datasource
+                  href: ./Azure Resource Management/datalake/analytics/account/datasource.yml
+            - name: catalog
+              href: ./Azure Resource Management/datalake/analytics/catalog.yml
+              items:
+                - name: credential
+                  href: ./Azure Resource Management/datalake/analytics/catalog/credential.yml
+                - name: secret
+                  href: ./Azure Resource Management/datalake/analytics/catalog/secret.yml
+            - name: job
+              href: ./Azure Resource Management/datalake/analytics/job.yml
+        - name: store
+          href: ./Azure Resource Management/datalake/store.yml
+          items:
+            - name: account
+              href: ./Azure Resource Management/datalake/store/account.yml
+            - name: filesystem
+              href: ./Azure Resource Management/datalake/store/filesystem.yml
+              items:
+                - name: expiry
+                  href: ./Azure Resource Management/datalake/store/filesystem/expiry.yml
+            - name: firewall
+              href: ./Azure Resource Management/datalake/store/firewall.yml
+            - name: permissions
+              href: ./Azure Resource Management/datalake/store/permissions.yml
+              items:
+                - name: entry
+                  href: ./Azure Resource Management/datalake/store/permissions/entry.yml
+            - name: provider
+              href: ./Azure Resource Management/datalake/store/provider.yml
+    - name: feature
+      href: ./Azure Resource Management/feature.yml
+    - name: group
+      href: ./Azure Resource Management/group.yml
+      items:
+        - name: deployment
+          href: ./Azure Resource Management/group/deployment.yml
+          items:
+            - name: operation
+              href: ./Azure Resource Management/group/deployment/operation.yml
+            - name: template
+              href: ./Azure Resource Management/group/deployment/template.yml
+        - name: log
+          href: ./Azure Resource Management/group/log.yml
+        - name: template
+          href: ./Azure Resource Management/group/template.yml
+    - name: hdinsight
+      href: ./Azure Resource Management/hdinsight.yml
+      items:
+        - name: cluster
+          href: ./Azure Resource Management/hdinsight/cluster.yml
+        - name: config
+          href: ./Azure Resource Management/hdinsight/config.yml
+        - name: script-action
+          href: ./Azure Resource Management/hdinsight/script-action.yml
+          items:
+            - name: history
+              href: ./Azure Resource Management/hdinsight/script-action/history.yml
+            - name: persisted
+              href: ./Azure Resource Management/hdinsight/script-action/persisted.yml
+    - name: insights
+      href: ./Azure Resource Management/insights.yml
+      items:
+        - name: alerts
+          href: ./Azure Resource Management/insights/alerts.yml
+          items:
+            - name: actions
+              href: ./Azure Resource Management/insights/alerts/actions.yml
+              items:
+                - name: email
+                  href: ./Azure Resource Management/insights/alerts/actions/email.yml
+                - name: webhook
+                  href: ./Azure Resource Management/insights/alerts/actions/webhook.yml
+            - name: rule
+              href: ./Azure Resource Management/insights/alerts/rule.yml
+              items:
+                - name: log
+                  href: ./Azure Resource Management/insights/alerts/rule/log.yml
+                - name: metric
+                  href: ./Azure Resource Management/insights/alerts/rule/metric.yml
+                - name: webtest
+                  href: ./Azure Resource Management/insights/alerts/rule/webtest.yml
+        - name: autoscale
+          href: ./Azure Resource Management/insights/autoscale.yml
+          items:
+            - name: notifications
+              href: ./Azure Resource Management/insights/autoscale/notifications.yml
+              items:
+                - name: webhook
+                  href: ./Azure Resource Management/insights/autoscale/notifications/webhook.yml
+            - name: profile
+              href: ./Azure Resource Management/insights/autoscale/profile.yml
+            - name: rule
+              href: ./Azure Resource Management/insights/autoscale/rule.yml
+            - name: setting
+              href: ./Azure Resource Management/insights/autoscale/setting.yml
+        - name: diagnostic
+          href: ./Azure Resource Management/insights/diagnostic.yml
+        - name: logprofile
+          href: ./Azure Resource Management/insights/logprofile.yml
+        - name: logs
+          href: ./Azure Resource Management/insights/logs.yml
+        - name: metrics
+          href: ./Azure Resource Management/insights/metrics.yml
+          items:
+            - name: definition
+              href: ./Azure Resource Management/insights/metrics/definition.yml
+        - name: usage
+          href: ./Azure Resource Management/insights/usage.yml
+    - name: iothub
+      href: ./Azure Resource Management/iothub.yml
+      items:
+        - name: cloud-to-device-properties
+          href: ./Azure Resource Management/iothub/cloud-to-device-properties.yml
+        - name: connectionstring
+          href: ./Azure Resource Management/iothub/connectionstring.yml
+        - name: device-to-cloud-properties
+          href: ./Azure Resource Management/iothub/device-to-cloud-properties.yml
+        - name: device
+          href: ./Azure Resource Management/iothub/device.yml
+        - name: ehconsumergroup
+          href: ./Azure Resource Management/iothub/ehconsumergroup.yml
+        - name: file-upload-properties
+          href: ./Azure Resource Management/iothub/file-upload-properties.yml
+        - name: ipfilter-rules
+          href: ./Azure Resource Management/iothub/ipfilter-rules.yml
+        - name: job
+          href: ./Azure Resource Management/iothub/job.yml
+        - name: key
+          href: ./Azure Resource Management/iothub/key.yml
+        - name: opmon
+          href: ./Azure Resource Management/iothub/opmon.yml
+        - name: sku
+          href: ./Azure Resource Management/iothub/sku.yml
+        - name: tags
+          href: ./Azure Resource Management/iothub/tags.yml
+    - name: keyvault
+      href: ./Azure Resource Management/keyvault.yml
+      items:
+        - name: certificate
+          href: ./Azure Resource Management/keyvault/certificate.yml
+          items:
+            - name: administrator
+              href: ./Azure Resource Management/keyvault/certificate/administrator.yml
+            - name: contact
+              href: ./Azure Resource Management/keyvault/certificate/contact.yml
+            - name: issuer
+              href: ./Azure Resource Management/keyvault/certificate/issuer.yml
+            - name: operation
+              href: ./Azure Resource Management/keyvault/certificate/operation.yml
+            - name: organization
+              href: ./Azure Resource Management/keyvault/certificate/organization.yml
+            - name: policy
+              href: ./Azure Resource Management/keyvault/certificate/policy.yml
+        - name: key
+          href: ./Azure Resource Management/keyvault/key.yml
+        - name: secret
+          href: ./Azure Resource Management/keyvault/secret.yml
+    - name: lab
+      href: ./Azure Resource Management/lab.yml
+      items:
+        - name: auto-shutdown-policy
+          href: ./Azure Resource Management/lab/auto-shutdown-policy.yml
+        - name: auto-start-policy
+          href: ./Azure Resource Management/lab/auto-start-policy.yml
+        - name: vm-size-policy
+          href: ./Azure Resource Management/lab/vm-size-policy.yml
+        - name: vms-per-lab-policy
+          href: ./Azure Resource Management/lab/vms-per-lab-policy.yml
+        - name: vms-per-user-policy
+          href: ./Azure Resource Management/lab/vms-per-user-policy.yml
+    - name: location
+      href: ./Azure Resource Management/location.yml
+    - name: network
+      href: ./Azure Resource Management/network.yml
+      items:
+        - name: application-gateway
+          href: ./Azure Resource Management/network/application-gateway.yml
+          items:
+            - name: address-pool
+              href: ./Azure Resource Management/network/application-gateway/address-pool.yml
+            - name: auth-cert
+              href: ./Azure Resource Management/network/application-gateway/auth-cert.yml
+            - name: backend-health
+              href: ./Azure Resource Management/network/application-gateway/backend-health.yml
+            - name: frontend-ip
+              href: ./Azure Resource Management/network/application-gateway/frontend-ip.yml
+            - name: frontend-port
+              href: ./Azure Resource Management/network/application-gateway/frontend-port.yml
+            - name: http-listener
+              href: ./Azure Resource Management/network/application-gateway/http-listener.yml
+            - name: http-settings
+              href: ./Azure Resource Management/network/application-gateway/http-settings.yml
+            - name: probe
+              href: ./Azure Resource Management/network/application-gateway/probe.yml
+            - name: rule
+              href: ./Azure Resource Management/network/application-gateway/rule.yml
+            - name: ssl-cert
+              href: ./Azure Resource Management/network/application-gateway/ssl-cert.yml
+            - name: ssl-policy
+              href: ./Azure Resource Management/network/application-gateway/ssl-policy.yml
+            - name: url-path-map
+              href: ./Azure Resource Management/network/application-gateway/url-path-map.yml
+              items:
+                - name: rule
+                  href: ./Azure Resource Management/network/application-gateway/url-path-map/rule.yml
+            - name: waf-config
+              href: ./Azure Resource Management/network/application-gateway/waf-config.yml
+        - name: dns
+          href: ./Azure Resource Management/network/dns.yml
+          items:
+            - name: record-set
+              href: ./Azure Resource Management/network/dns/record-set.yml
+            - name: zone
+              href: ./Azure Resource Management/network/dns/zone.yml
+        - name: express-route
+          href: ./Azure Resource Management/network/express-route.yml
+          items:
+            - name: authorization
+              href: ./Azure Resource Management/network/express-route/authorization.yml
+            - name: circuit
+              href: ./Azure Resource Management/network/express-route/circuit.yml
+            - name: peering
+              href: ./Azure Resource Management/network/express-route/peering.yml
+            - name: provider
+              href: ./Azure Resource Management/network/express-route/provider.yml
+        - name: lb
+          href: ./Azure Resource Management/network/lb.yml
+          items:
+            - name: address-pool
+              href: ./Azure Resource Management/network/lb/address-pool.yml
+            - name: frontend-ip
+              href: ./Azure Resource Management/network/lb/frontend-ip.yml
+            - name: inbound-nat-pool
+              href: ./Azure Resource Management/network/lb/inbound-nat-pool.yml
+            - name: inbound-nat-rule
+              href: ./Azure Resource Management/network/lb/inbound-nat-rule.yml
+            - name: probe
+              href: ./Azure Resource Management/network/lb/probe.yml
+            - name: rule
+              href: ./Azure Resource Management/network/lb/rule.yml
+        - name: local-gateway
+          href: ./Azure Resource Management/network/local-gateway.yml
+        - name: nic
+          href: ./Azure Resource Management/network/nic.yml
+          items:
+            - name: effective-nsg
+              href: ./Azure Resource Management/network/nic/effective-nsg.yml
+            - name: effective-route-table
+              href: ./Azure Resource Management/network/nic/effective-route-table.yml
+            - name: ip-config
+              href: ./Azure Resource Management/network/nic/ip-config.yml
+              items:
+                - name: address-pool
+                  href: ./Azure Resource Management/network/nic/ip-config/address-pool.yml
+                - name: inbound-nat-rule
+                  href: ./Azure Resource Management/network/nic/ip-config/inbound-nat-rule.yml
+        - name: nsg
+          href: ./Azure Resource Management/network/nsg.yml
+          items:
+            - name: rule
+              href: ./Azure Resource Management/network/nsg/rule.yml
+        - name: public-ip
+          href: ./Azure Resource Management/network/public-ip.yml
+        - name: route-table
+          href: ./Azure Resource Management/network/route-table.yml
+          items:
+            - name: route
+              href: ./Azure Resource Management/network/route-table/route.yml
+        - name: traffic-manager
+          href: ./Azure Resource Management/network/traffic-manager.yml
+          items:
+            - name: endpoint
+              href: ./Azure Resource Management/network/traffic-manager/endpoint.yml
+            - name: profile
+              href: ./Azure Resource Management/network/traffic-manager/profile.yml
+        - name: usage
+          href: ./Azure Resource Management/network/usage.yml
+        - name: vnet
+          href: ./Azure Resource Management/network/vnet.yml
+          items:
+            - name: peering
+              href: ./Azure Resource Management/network/vnet/peering.yml
+            - name: subnet
+              href: ./Azure Resource Management/network/vnet/subnet.yml
+        - name: vpn-connection
+          href: ./Azure Resource Management/network/vpn-connection.yml
+          items:
+            - name: shared-key
+              href: ./Azure Resource Management/network/vpn-connection/shared-key.yml
+        - name: vpn-gateway
+          href: ./Azure Resource Management/network/vpn-gateway.yml
+          items:
+            - name: revoked-cert
+              href: ./Azure Resource Management/network/vpn-gateway/revoked-cert.yml
+            - name: root-cert
+              href: ./Azure Resource Management/network/vpn-gateway/root-cert.yml
+    - name: policy
+      href: ./Azure Resource Management/policy.yml
+      items:
+        - name: assignment
+          href: ./Azure Resource Management/policy/assignment.yml
+        - name: definition
+          href: ./Azure Resource Management/policy/definition.yml
+    - name: powerbi
+      href: ./Azure Resource Management/powerbi.yml
+      items:
+        - name: keys
+          href: ./Azure Resource Management/powerbi/keys.yml
+        - name: workspaces
+          href: ./Azure Resource Management/powerbi/workspaces.yml
+    - name: provider
+      href: ./Azure Resource Management/provider.yml
+      items:
+        - name: operations
+          href: ./Azure Resource Management/provider/operations.yml
+    - name: quotas
+      href: ./Azure Resource Management/quotas.yml
+    - name: rediscache
+      href: ./Azure Resource Management/rediscache.yml
+    - name: resource
+      href: ./Azure Resource Management/resource.yml
+    - name: role
+      href: ./Azure Resource Management/role.yml
+      items:
+        - name: assignment
+          href: ./Azure Resource Management/role/assignment.yml
+          items:
+            - name: changelog
+              href: ./Azure Resource Management/role/assignment/changelog.yml
+    - name: servermanagement
+      href: ./Azure Resource Management/servermanagement.yml
+      items:
+        - name: gateway
+          href: ./Azure Resource Management/servermanagement/gateway.yml
+        - name: node
+          href: ./Azure Resource Management/servermanagement/node.yml
+        - name: powershell
+          href: ./Azure Resource Management/servermanagement/powershell.yml
+        - name: session
+          href: ./Azure Resource Management/servermanagement/session.yml
+    - name: servicefabric
+      href: ./Azure Resource Management/servicefabric.yml
+      items:
+        - name: application
+          href: ./Azure Resource Management/servicefabric/application.yml
+          items:
+            - name: deployed
+              href: ./Azure Resource Management/servicefabric/application/deployed.yml
+              items:
+                - name: health
+                  href: ./Azure Resource Management/servicefabric/application/deployed/health.yml
+            - name: health
+              href: ./Azure Resource Management/servicefabric/application/health.yml
+            - name: manifest
+              href: ./Azure Resource Management/servicefabric/application/manifest.yml
+            - name: package
+              href: ./Azure Resource Management/servicefabric/application/package.yml
+            - name: type
+              href: ./Azure Resource Management/servicefabric/application/type.yml
+            - name: upgrade
+              href: ./Azure Resource Management/servicefabric/application/upgrade.yml
+        - name: cluster
+          href: ./Azure Resource Management/servicefabric/cluster.yml
+          items:
+            - name: health
+              href: ./Azure Resource Management/servicefabric/cluster/health.yml
+            - name: load
+              href: ./Azure Resource Management/servicefabric/cluster/load.yml
+            - name: manifest
+              href: ./Azure Resource Management/servicefabric/cluster/manifest.yml
+            - name: upgrade
+              href: ./Azure Resource Management/servicefabric/cluster/upgrade.yml
+        - name: code
+          href: ./Azure Resource Management/servicefabric/code.yml
+          items:
+            - name: package
+              href: ./Azure Resource Management/servicefabric/code/package.yml
+              items:
+                - name: deployed
+                  href: ./Azure Resource Management/servicefabric/code/package/deployed.yml
+        - name: node
+          href: ./Azure Resource Management/servicefabric/node.yml
+          items:
+            - name: health
+              href: ./Azure Resource Management/servicefabric/node/health.yml
+            - name: load
+              href: ./Azure Resource Management/servicefabric/node/load.yml
+            - name: state
+              href: ./Azure Resource Management/servicefabric/node/state.yml
+        - name: partition
+          href: ./Azure Resource Management/servicefabric/partition.yml
+          items:
+            - name: health
+              href: ./Azure Resource Management/servicefabric/partition/health.yml
+            - name: load
+              href: ./Azure Resource Management/servicefabric/partition/load.yml
+        - name: replica
+          href: ./Azure Resource Management/servicefabric/replica.yml
+          items:
+            - name: deployed
+              href: ./Azure Resource Management/servicefabric/replica/deployed.yml
+            - name: health
+              href: ./Azure Resource Management/servicefabric/replica/health.yml
+            - name: load
+              href: ./Azure Resource Management/servicefabric/replica/load.yml
+        - name: service
+          href: ./Azure Resource Management/servicefabric/service.yml
+          items:
+            - name: description
+              href: ./Azure Resource Management/servicefabric/service/description.yml
+            - name: group
+              href: ./Azure Resource Management/servicefabric/service/group.yml
+              items:
+                - name: description
+                  href: ./Azure Resource Management/servicefabric/service/group/description.yml
+                - name: member
+                  href: ./Azure Resource Management/servicefabric/service/group/member.yml
+                - name: template
+                  href: ./Azure Resource Management/servicefabric/service/group/template.yml
+            - name: health
+              href: ./Azure Resource Management/servicefabric/service/health.yml
+            - name: manifest
+              href: ./Azure Resource Management/servicefabric/service/manifest.yml
+            - name: package
+              href: ./Azure Resource Management/servicefabric/service/package.yml
+              items:
+                - name: deployed
+                  href: ./Azure Resource Management/servicefabric/service/package/deployed.yml
+                  items:
+                    - name: health
+                      href: ./Azure Resource Management/servicefabric/service/package/deployed/health.yml
+            - name: template
+              href: ./Azure Resource Management/servicefabric/service/template.yml
+            - name: type
+              href: ./Azure Resource Management/servicefabric/service/type.yml
+              items:
+                - name: deployed
+                  href: ./Azure Resource Management/servicefabric/service/type/deployed.yml
+    - name: storage
+      href: ./Azure Resource Management/storage.yml
+      items:
+        - name: account
+          href: ./Azure Resource Management/storage/account.yml
+          items:
+            - name: connectionstring
+              href: ./Azure Resource Management/storage/account/connectionstring.yml
+            - name: keys
+              href: ./Azure Resource Management/storage/account/keys.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/account/sas.yml
+            - name: usage
+              href: ./Azure Resource Management/storage/account/usage.yml
+        - name: blob
+          href: ./Azure Resource Management/storage/blob.yml
+          items:
+            - name: copy
+              href: ./Azure Resource Management/storage/blob/copy.yml
+            - name: lease
+              href: ./Azure Resource Management/storage/blob/lease.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/blob/sas.yml
+        - name: container
+          href: ./Azure Resource Management/storage/container.yml
+          items:
+            - name: lease
+              href: ./Azure Resource Management/storage/container/lease.yml
+            - name: policy
+              href: ./Azure Resource Management/storage/container/policy.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/container/sas.yml
+        - name: cors
+          href: ./Azure Resource Management/storage/cors.yml
+        - name: directory
+          href: ./Azure Resource Management/storage/directory.yml
+        - name: file
+          href: ./Azure Resource Management/storage/file.yml
+          items:
+            - name: copy
+              href: ./Azure Resource Management/storage/file/copy.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/file/sas.yml
+        - name: logging
+          href: ./Azure Resource Management/storage/logging.yml
+        - name: metrics
+          href: ./Azure Resource Management/storage/metrics.yml
+        - name: queue
+          href: ./Azure Resource Management/storage/queue.yml
+          items:
+            - name: policy
+              href: ./Azure Resource Management/storage/queue/policy.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/queue/sas.yml
+        - name: share
+          href: ./Azure Resource Management/storage/share.yml
+          items:
+            - name: policy
+              href: ./Azure Resource Management/storage/share/policy.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/share/sas.yml
+        - name: table
+          href: ./Azure Resource Management/storage/table.yml
+          items:
+            - name: policy
+              href: ./Azure Resource Management/storage/table/policy.yml
+            - name: sas
+              href: ./Azure Resource Management/storage/table/sas.yml
+    - name: tag
+      href: ./Azure Resource Management/tag.yml
+    - name: usage
+      href: ./Azure Resource Management/usage.yml
+    - name: vm
+      href: ./Azure Resource Management/vm.yml
+      items:
+        - name: disk
+          href: ./Azure Resource Management/vm/disk.yml
+        - name: docker
+          href: ./Azure Resource Management/vm/docker.yml
+        - name: extension-image
+          href: ./Azure Resource Management/vm/extension-image.yml
+        - name: extension
+          href: ./Azure Resource Management/vm/extension.yml
+        - name: image
+          href: ./Azure Resource Management/vm/image.yml
+        - name: secret
+          href: ./Azure Resource Management/vm/secret.yml
+    - name: vmss
+      href: ./Azure Resource Management/vmss.yml
+      items:
+        - name: config
+          href: ./Azure Resource Management/vmss/config.yml
+          items:
+            - name: additional-unattend-content
+              href: ./Azure Resource Management/vmss/config/additional-unattend-content.yml
+            - name: application-gateway-backend-address-pools
+              href: ./Azure Resource Management/vmss/config/application-gateway-backend-address-pools.yml
+            - name: extension-profile
+              href: ./Azure Resource Management/vmss/config/extension-profile.yml
+            - name: extensions
+              href: ./Azure Resource Management/vmss/config/extensions.yml
+            - name: image-reference
+              href: ./Azure Resource Management/vmss/config/image-reference.yml
+            - name: image
+              href: ./Azure Resource Management/vmss/config/image.yml
+            - name: ip-configurations
+              href: ./Azure Resource Management/vmss/config/ip-configurations.yml
+            - name: linux-configuration
+              href: ./Azure Resource Management/vmss/config/linux-configuration.yml
+            - name: listeners
+              href: ./Azure Resource Management/vmss/config/listeners.yml
+            - name: load-balancer-backend-address-pools
+              href: ./Azure Resource Management/vmss/config/load-balancer-backend-address-pools.yml
+            - name: load-balancer-inbound-nat-pools
+              href: ./Azure Resource Management/vmss/config/load-balancer-inbound-nat-pools.yml
+            - name: network-interface-configurations
+              href: ./Azure Resource Management/vmss/config/network-interface-configurations.yml
+            - name: network-profile
+              href: ./Azure Resource Management/vmss/config/network-profile.yml
+            - name: os-disk
+              href: ./Azure Resource Management/vmss/config/os-disk.yml
+            - name: os-profile
+              href: ./Azure Resource Management/vmss/config/os-profile.yml
+            - name: public-keys
+              href: ./Azure Resource Management/vmss/config/public-keys.yml
+            - name: secrets
+              href: ./Azure Resource Management/vmss/config/secrets.yml
+            - name: sku
+              href: ./Azure Resource Management/vmss/config/sku.yml
+            - name: source-vault
+              href: ./Azure Resource Management/vmss/config/source-vault.yml
+            - name: ssh
+              href: ./Azure Resource Management/vmss/config/ssh.yml
+            - name: storage-profile
+              href: ./Azure Resource Management/vmss/config/storage-profile.yml
+            - name: subnet
+              href: ./Azure Resource Management/vmss/config/subnet.yml
+            - name: upgrade-policy
+              href: ./Azure Resource Management/vmss/config/upgrade-policy.yml
+            - name: vault-certificates
+              href: ./Azure Resource Management/vmss/config/vault-certificates.yml
+            - name: vhd-containers
+              href: ./Azure Resource Management/vmss/config/vhd-containers.yml
+            - name: virtual-machine-profile
+              href: ./Azure Resource Management/vmss/config/virtual-machine-profile.yml
+            - name: virtual-machine-scale-set
+              href: ./Azure Resource Management/vmss/config/virtual-machine-scale-set.yml
+            - name: win-rm
+              href: ./Azure Resource Management/vmss/config/win-rm.yml
+            - name: windows-configuration
+              href: ./Azure Resource Management/vmss/config/windows-configuration.yml
+    - name: vmssvm
+      href: ./Azure Resource Management/vmssvm.yml
+    - name: webapp
+      href: ./Azure Resource Management/webapp.yml
+      items:
+        - name: config
+          href: ./Azure Resource Management/webapp/config.yml
+          items:
+            - name: appsettings
+              href: ./Azure Resource Management/webapp/config/appsettings.yml
+            - name: container
+              href: ./Azure Resource Management/webapp/config/container.yml
+            - name: hostnames
+              href: ./Azure Resource Management/webapp/config/hostnames.yml
+        - name: publishingprofile
+          href: ./Azure Resource Management/webapp/publishingprofile.yml
 - name: Azure Service Management
   href: ./Azure Service Management.yml
   items:
     - name: account
       href: ./Azure Service Management/account.yml
       items:
+        - name: affinity-group
+          href: ./Azure Service Management/account/affinity-group.yml
+        - name: cert
+          href: ./Azure Service Management/account/cert.yml
         - name: env
           href: ./Azure Service Management/account/env.yml
     - name: batch
@@ -79,5 +800,431 @@
               href: ./Azure Service Management/batch/application/package.yml
         - name: certificate
           href: ./Azure Service Management/batch/certificate.yml
+        - name: job-schedule
+          href: ./Azure Service Management/batch/job-schedule.yml
+        - name: job
+          href: ./Azure Service Management/batch/job.yml
+          items:
+            - name: prep-release-status
+              href: ./Azure Service Management/batch/job/prep-release-status.yml
+        - name: location
+          href: ./Azure Service Management/batch/location.yml
+          items:
+            - name: quotas
+              href: ./Azure Service Management/batch/location/quotas.yml
+        - name: node-file
+          href: ./Azure Service Management/batch/node-file.yml
+        - name: node-user
+          href: ./Azure Service Management/batch/node-user.yml
+        - name: node
+          href: ./Azure Service Management/batch/node.yml
+          items:
+            - name: remote-desktop
+              href: ./Azure Service Management/batch/node/remote-desktop.yml
+            - name: remote-login-settings
+              href: ./Azure Service Management/batch/node/remote-login-settings.yml
+            - name: scheduling
+              href: ./Azure Service Management/batch/node/scheduling.yml
+        - name: pool
+          href: ./Azure Service Management/batch/pool.yml
+          items:
+            - name: all-stats
+              href: ./Azure Service Management/batch/pool/all-stats.yml
+            - name: autoscale
+              href: ./Azure Service Management/batch/pool/autoscale.yml
+            - name: node-agent-skus
+              href: ./Azure Service Management/batch/pool/node-agent-skus.yml
+            - name: usage-metrics
+              href: ./Azure Service Management/batch/pool/usage-metrics.yml
+        - name: task-file
+          href: ./Azure Service Management/batch/task-file.yml
+        - name: task
+          href: ./Azure Service Management/batch/task.yml
     - name: config
       href: ./Azure Service Management/config.yml
+    - name: hdinsight
+      href: ./Azure Service Management/hdinsight.yml
+      items:
+        - name: cluster
+          href: ./Azure Service Management/hdinsight/cluster.yml
+        - name: job
+          href: ./Azure Service Management/hdinsight/job.yml
+    - name: mobile
+      href: ./Azure Service Management/mobile.yml
+      items:
+        - name: api
+          href: ./Azure Service Management/mobile/api.yml
+        - name: appsetting
+          href: ./Azure Service Management/mobile/appsetting.yml
+        - name: auth
+          href: ./Azure Service Management/mobile/auth.yml
+          items:
+            - name: aad
+              href: ./Azure Service Management/mobile/auth/aad.yml
+              items:
+                - name: tenant
+                  href: ./Azure Service Management/mobile/auth/aad/tenant.yml
+            - name: facebook
+              href: ./Azure Service Management/mobile/auth/facebook.yml
+            - name: google
+              href: ./Azure Service Management/mobile/auth/google.yml
+            - name: microsoftaccount
+              href: ./Azure Service Management/mobile/auth/microsoftaccount.yml
+            - name: twitter
+              href: ./Azure Service Management/mobile/auth/twitter.yml
+        - name: cert
+          href: ./Azure Service Management/mobile/cert.yml
+        - name: config
+          href: ./Azure Service Management/mobile/config.yml
+        - name: data
+          href: ./Azure Service Management/mobile/data.yml
+        - name: domain
+          href: ./Azure Service Management/mobile/domain.yml
+          items:
+            - name: ssl
+              href: ./Azure Service Management/mobile/domain/ssl.yml
+        - name: job
+          href: ./Azure Service Management/mobile/job.yml
+        - name: key
+          href: ./Azure Service Management/mobile/key.yml
+        - name: preview
+          href: ./Azure Service Management/mobile/preview.yml
+        - name: push
+          href: ./Azure Service Management/mobile/push.yml
+          items:
+            - name: apns
+              href: ./Azure Service Management/mobile/push/apns.yml
+            - name: gcm
+              href: ./Azure Service Management/mobile/push/gcm.yml
+            - name: mpns
+              href: ./Azure Service Management/mobile/push/mpns.yml
+            - name: nh
+              href: ./Azure Service Management/mobile/push/nh.yml
+            - name: wns
+              href: ./Azure Service Management/mobile/push/wns.yml
+        - name: scale
+          href: ./Azure Service Management/mobile/scale.yml
+        - name: script
+          href: ./Azure Service Management/mobile/script.yml
+        - name: table
+          href: ./Azure Service Management/mobile/table.yml
+    - name: network
+      href: ./Azure Service Management/network.yml
+      items:
+        - name: application-gateway
+          href: ./Azure Service Management/network/application-gateway.yml
+          items:
+            - name: address-pool
+              href: ./Azure Service Management/network/application-gateway/address-pool.yml
+            - name: config
+              href: ./Azure Service Management/network/application-gateway/config.yml
+            - name: frontend-ip
+              href: ./Azure Service Management/network/application-gateway/frontend-ip.yml
+            - name: frontend-port
+              href: ./Azure Service Management/network/application-gateway/frontend-port.yml
+            - name: http-listener
+              href: ./Azure Service Management/network/application-gateway/http-listener.yml
+            - name: http-settings
+              href: ./Azure Service Management/network/application-gateway/http-settings.yml
+            - name: lb-rule
+              href: ./Azure Service Management/network/application-gateway/lb-rule.yml
+            - name: ssl-cert
+              href: ./Azure Service Management/network/application-gateway/ssl-cert.yml
+        - name: dns-server
+          href: ./Azure Service Management/network/dns-server.yml
+        - name: local-network
+          href: ./Azure Service Management/network/local-network.yml
+        - name: nsg
+          href: ./Azure Service Management/network/nsg.yml
+          items:
+            - name: rule
+              href: ./Azure Service Management/network/nsg/rule.yml
+            - name: subnet
+              href: ./Azure Service Management/network/nsg/subnet.yml
+        - name: reserved-ip
+          href: ./Azure Service Management/network/reserved-ip.yml
+        - name: route-table
+          href: ./Azure Service Management/network/route-table.yml
+          items:
+            - name: route
+              href: ./Azure Service Management/network/route-table/route.yml
+        - name: traffic-manager
+          href: ./Azure Service Management/network/traffic-manager.yml
+          items:
+            - name: profile
+              href: ./Azure Service Management/network/traffic-manager/profile.yml
+              items:
+                - name: endpoint
+                  href: ./Azure Service Management/network/traffic-manager/profile/endpoint.yml
+        - name: vnet
+          href: ./Azure Service Management/network/vnet.yml
+          items:
+            - name: local-network
+              href: ./Azure Service Management/network/vnet/local-network.yml
+            - name: static-ip
+              href: ./Azure Service Management/network/vnet/static-ip.yml
+            - name: subnet
+              href: ./Azure Service Management/network/vnet/subnet.yml
+              items:
+                - name: route-table
+                  href: ./Azure Service Management/network/vnet/subnet/route-table.yml
+        - name: vpn-gateway
+          href: ./Azure Service Management/network/vpn-gateway.yml
+          items:
+            - name: connection
+              href: ./Azure Service Management/network/vpn-gateway/connection.yml
+            - name: default-site
+              href: ./Azure Service Management/network/vpn-gateway/default-site.yml
+            - name: device
+              href: ./Azure Service Management/network/vpn-gateway/device.yml
+            - name: diagnostics
+              href: ./Azure Service Management/network/vpn-gateway/diagnostics.yml
+            - name: shared-key
+              href: ./Azure Service Management/network/vpn-gateway/shared-key.yml
+    - name: sb
+      href: ./Azure Service Management/sb.yml
+      items:
+        - name: namespace
+          href: ./Azure Service Management/sb/namespace.yml
+          items:
+            - name: location
+              href: ./Azure Service Management/sb/namespace/location.yml
+    - name: service
+      href: ./Azure Service Management/service.yml
+      items:
+        - name: cert
+          href: ./Azure Service Management/service/cert.yml
+        - name: deployment
+          href: ./Azure Service Management/service/deployment.yml
+        - name: internal-load-balancer
+          href: ./Azure Service Management/service/internal-load-balancer.yml
+        - name: load-balanced-set
+          href: ./Azure Service Management/service/load-balanced-set.yml
+    - name: servicefabric
+      href: ./Azure Service Management/servicefabric.yml
+      items:
+        - name: application
+          href: ./Azure Service Management/servicefabric/application.yml
+          items:
+            - name: deployed
+              href: ./Azure Service Management/servicefabric/application/deployed.yml
+              items:
+                - name: health
+                  href: ./Azure Service Management/servicefabric/application/deployed/health.yml
+            - name: health
+              href: ./Azure Service Management/servicefabric/application/health.yml
+            - name: manifest
+              href: ./Azure Service Management/servicefabric/application/manifest.yml
+            - name: package
+              href: ./Azure Service Management/servicefabric/application/package.yml
+            - name: type
+              href: ./Azure Service Management/servicefabric/application/type.yml
+            - name: upgrade
+              href: ./Azure Service Management/servicefabric/application/upgrade.yml
+        - name: cluster
+          href: ./Azure Service Management/servicefabric/cluster.yml
+          items:
+            - name: health
+              href: ./Azure Service Management/servicefabric/cluster/health.yml
+            - name: load
+              href: ./Azure Service Management/servicefabric/cluster/load.yml
+            - name: manifest
+              href: ./Azure Service Management/servicefabric/cluster/manifest.yml
+            - name: upgrade
+              href: ./Azure Service Management/servicefabric/cluster/upgrade.yml
+        - name: code
+          href: ./Azure Service Management/servicefabric/code.yml
+          items:
+            - name: package
+              href: ./Azure Service Management/servicefabric/code/package.yml
+              items:
+                - name: deployed
+                  href: ./Azure Service Management/servicefabric/code/package/deployed.yml
+        - name: node
+          href: ./Azure Service Management/servicefabric/node.yml
+          items:
+            - name: health
+              href: ./Azure Service Management/servicefabric/node/health.yml
+            - name: load
+              href: ./Azure Service Management/servicefabric/node/load.yml
+            - name: state
+              href: ./Azure Service Management/servicefabric/node/state.yml
+        - name: partition
+          href: ./Azure Service Management/servicefabric/partition.yml
+          items:
+            - name: health
+              href: ./Azure Service Management/servicefabric/partition/health.yml
+            - name: load
+              href: ./Azure Service Management/servicefabric/partition/load.yml
+        - name: replica
+          href: ./Azure Service Management/servicefabric/replica.yml
+          items:
+            - name: deployed
+              href: ./Azure Service Management/servicefabric/replica/deployed.yml
+            - name: health
+              href: ./Azure Service Management/servicefabric/replica/health.yml
+            - name: load
+              href: ./Azure Service Management/servicefabric/replica/load.yml
+        - name: service
+          href: ./Azure Service Management/servicefabric/service.yml
+          items:
+            - name: description
+              href: ./Azure Service Management/servicefabric/service/description.yml
+            - name: group
+              href: ./Azure Service Management/servicefabric/service/group.yml
+              items:
+                - name: description
+                  href: ./Azure Service Management/servicefabric/service/group/description.yml
+                - name: member
+                  href: ./Azure Service Management/servicefabric/service/group/member.yml
+                - name: template
+                  href: ./Azure Service Management/servicefabric/service/group/template.yml
+            - name: health
+              href: ./Azure Service Management/servicefabric/service/health.yml
+            - name: manifest
+              href: ./Azure Service Management/servicefabric/service/manifest.yml
+            - name: package
+              href: ./Azure Service Management/servicefabric/service/package.yml
+              items:
+                - name: deployed
+                  href: ./Azure Service Management/servicefabric/service/package/deployed.yml
+                  items:
+                    - name: health
+                      href: ./Azure Service Management/servicefabric/service/package/deployed/health.yml
+            - name: template
+              href: ./Azure Service Management/servicefabric/service/template.yml
+            - name: type
+              href: ./Azure Service Management/servicefabric/service/type.yml
+              items:
+                - name: deployed
+                  href: ./Azure Service Management/servicefabric/service/type/deployed.yml
+    - name: site
+      href: ./Azure Service Management/site.yml
+      items:
+        - name: appsetting
+          href: ./Azure Service Management/site/appsetting.yml
+        - name: config
+          href: ./Azure Service Management/site/config.yml
+        - name: connectionstring
+          href: ./Azure Service Management/site/connectionstring.yml
+        - name: defaultdocument
+          href: ./Azure Service Management/site/defaultdocument.yml
+        - name: deployment
+          href: ./Azure Service Management/site/deployment.yml
+          items:
+            - name: user
+              href: ./Azure Service Management/site/deployment/user.yml
+        - name: domain
+          href: ./Azure Service Management/site/domain.yml
+        - name: handler
+          href: ./Azure Service Management/site/handler.yml
+        - name: job
+          href: ./Azure Service Management/site/job.yml
+          items:
+            - name: history
+              href: ./Azure Service Management/site/job/history.yml
+        - name: location
+          href: ./Azure Service Management/site/location.yml
+        - name: log
+          href: ./Azure Service Management/site/log.yml
+        - name: repository
+          href: ./Azure Service Management/site/repository.yml
+        - name: scale
+          href: ./Azure Service Management/site/scale.yml
+    - name: sql
+      href: ./Azure Service Management/sql.yml
+      items:
+        - name: db
+          href: ./Azure Service Management/sql/db.yml
+        - name: firewallrule
+          href: ./Azure Service Management/sql/firewallrule.yml
+        - name: server
+          href: ./Azure Service Management/sql/server.yml
+    - name: storage
+      href: ./Azure Service Management/storage.yml
+      items:
+        - name: account
+          href: ./Azure Service Management/storage/account.yml
+          items:
+            - name: connectionstring
+              href: ./Azure Service Management/storage/account/connectionstring.yml
+            - name: keys
+              href: ./Azure Service Management/storage/account/keys.yml
+            - name: sas
+              href: ./Azure Service Management/storage/account/sas.yml
+        - name: blob
+          href: ./Azure Service Management/storage/blob.yml
+          items:
+            - name: copy
+              href: ./Azure Service Management/storage/blob/copy.yml
+            - name: lease
+              href: ./Azure Service Management/storage/blob/lease.yml
+            - name: sas
+              href: ./Azure Service Management/storage/blob/sas.yml
+        - name: container
+          href: ./Azure Service Management/storage/container.yml
+          items:
+            - name: lease
+              href: ./Azure Service Management/storage/container/lease.yml
+            - name: policy
+              href: ./Azure Service Management/storage/container/policy.yml
+            - name: sas
+              href: ./Azure Service Management/storage/container/sas.yml
+        - name: cors
+          href: ./Azure Service Management/storage/cors.yml
+        - name: directory
+          href: ./Azure Service Management/storage/directory.yml
+        - name: file
+          href: ./Azure Service Management/storage/file.yml
+          items:
+            - name: copy
+              href: ./Azure Service Management/storage/file/copy.yml
+            - name: sas
+              href: ./Azure Service Management/storage/file/sas.yml
+        - name: logging
+          href: ./Azure Service Management/storage/logging.yml
+        - name: metrics
+          href: ./Azure Service Management/storage/metrics.yml
+        - name: queue
+          href: ./Azure Service Management/storage/queue.yml
+          items:
+            - name: policy
+              href: ./Azure Service Management/storage/queue/policy.yml
+            - name: sas
+              href: ./Azure Service Management/storage/queue/sas.yml
+        - name: share
+          href: ./Azure Service Management/storage/share.yml
+          items:
+            - name: policy
+              href: ./Azure Service Management/storage/share/policy.yml
+            - name: sas
+              href: ./Azure Service Management/storage/share/sas.yml
+        - name: table
+          href: ./Azure Service Management/storage/table.yml
+          items:
+            - name: policy
+              href: ./Azure Service Management/storage/table/policy.yml
+            - name: sas
+              href: ./Azure Service Management/storage/table/sas.yml
+    - name: vm
+      href: ./Azure Service Management/vm.yml
+      items:
+        - name: disk
+          href: ./Azure Service Management/vm/disk.yml
+        - name: docker
+          href: ./Azure Service Management/vm/docker.yml
+        - name: endpoint
+          href: ./Azure Service Management/vm/endpoint.yml
+          items:
+            - name: acl-rule
+              href: ./Azure Service Management/vm/endpoint/acl-rule.yml
+        - name: extension
+          href: ./Azure Service Management/vm/extension.yml
+        - name: image
+          href: ./Azure Service Management/vm/image.yml
+        - name: location
+          href: ./Azure Service Management/vm/location.yml
+        - name: public-ip
+          href: ./Azure Service Management/vm/public-ip.yml
+        - name: static-ip
+          href: ./Azure Service Management/vm/static-ip.yml

@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: policy
+description: Commands to manage your policies on ARM Resources.
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

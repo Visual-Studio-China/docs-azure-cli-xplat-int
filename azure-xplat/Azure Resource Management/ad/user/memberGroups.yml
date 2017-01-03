@@ -1,0 +1,47 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Provides a lit of Object IDs of the groups of which the user is a member.
+  usage: '[options] <objectId>'
+  filePath: commands/arm/ad/ad.users._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -o --objectId <objectId>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --objectId
+    description: the objectId of the user
+  - flags: -e --securityEnabledOnly
+    required: 0
+    optional: 0
+    bool: True
+    short: -e
+    long: --securityEnabledOnly
+    description: 'If true, only membership in security enabled groups will be checked. Otherwise membership in all groups will be checked. Default: false'
+name: memberGroups
+description: Commands to display member groups of the Active Directory user.
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

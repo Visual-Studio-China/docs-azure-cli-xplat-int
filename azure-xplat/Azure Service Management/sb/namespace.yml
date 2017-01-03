@@ -1,0 +1,197 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List currently defined service bus namespaces
+  usage: '[options]'
+  filePath: commands/asm/sb._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Get detailed information about a single service bus namespace
+  usage: '[options] [name]'
+  filePath: commands/asm/sb._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: check
+  description: Check that a service bus namespace is legal and available
+  usage: '[options] <name>'
+  filePath: commands/asm/sb._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: create
+  description: Create a service bus namespace
+  usage: '[options] <namespace> <region>'
+  filePath: commands/asm/sb._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --namespace <namespace>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --namespace
+    description: the namespace name
+  - flags: -r, --region <region>
+    required: -14
+    optional: 0
+    bool: True
+    short: -r
+    long: --region
+    description: the region to create the namespace in
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a service bus namespace
+  usage: '[options] [namespace]'
+  filePath: commands/asm/sb._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --namespace <namespace>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --namespace
+    description: the namespace name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: namespace
+description: Commands to manage your Service Bus namespaces
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sb._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sb._js
+  update_at: 5/4/2015 3:24 AM
+  ms.date: 5/4/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7ac34733fd2f4b4e2a3d60f3b1dbefa0bd3c43c7/lib/commands/asm/sb._js
+

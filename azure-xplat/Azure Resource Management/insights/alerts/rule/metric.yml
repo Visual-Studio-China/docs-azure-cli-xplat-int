@@ -1,0 +1,122 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Create or set a metric alert rule.
+  usage: '[options] <ruleName> <location> <resourceGroup> <windowSize> <operator> <threshold> <targetResourceId> <metricName> <timeAggregationOperator>'
+  filePath: commands/arm/insights/insights.alerts.rule.metric._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -x --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -x
+    long: --disable
+    description: Flag to disable the rule.
+  - flags: -s --subscription <subscription>
+    required: -19
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+  - flags: -n --ruleName <ruleName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -n
+    long: --ruleName
+    description: The name of the rule.
+  - flags: -d --description <description>
+    required: -18
+    optional: 0
+    bool: True
+    short: -d
+    long: --description
+    description: The description of the rule.
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: The location.
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: --windowSize <windowSize>
+    required: -14
+    optional: 0
+    bool: True
+    long: --windowSize
+    description: The time window size. Expected format hh:mm:ss.
+  - flags: -o --operator <operator>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --operator
+    description: 'The condition operator: GreaterThan, GreaterThanOrEqual, LessThan, LessThanOrEqual. Value is case insensitive.'
+  - flags: -a --threshold <threshold>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --threshold
+    description: The threshold.
+  - flags: -i --targetResourceId <targetResourceId>
+    required: -23
+    optional: 0
+    bool: True
+    short: -i
+    long: --targetResourceId
+    description: The target resource Id.
+  - flags: -m --metricName <metricName>
+    required: -17
+    optional: 0
+    bool: True
+    short: -m
+    long: --metricName
+    description: The metric name.
+  - flags: --timeAggregationOperator <timeAggregationOperator>
+    required: -27
+    optional: 0
+    bool: True
+    long: --timeAggregationOperator
+    description: 'The time aggregation operator: Average, Minimum, Maximum, Total. Value is case insensitve.'
+  - flags: -z --actions <actions>
+    required: -14
+    optional: 0
+    bool: True
+    short: -z
+    long: --actions
+    description: 'The list of alert rule actions. The list must be a json object (string) of an array. Example: "[{\"customEmails\":[\"gu@ms.com\"]},{\"serviceUri\":\"http://foo.com\",\"properties\":[{\"key\":\"key1\",\"value\":\"value1\"},{\"key\":\"value1\",\"value\":\"key2\"}]}]"'
+name: metric
+description: Creates metric-based alerts rules
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

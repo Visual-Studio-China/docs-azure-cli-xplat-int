@@ -1,0 +1,170 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Add a backend address pool to the load balancer
+  usage: '[options] <resource-group> <lb-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the backend address pool
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Get all backend address pools in the load balancer
+  usage: '[options] <resource-group> <lb-name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete a backend address pool from a load balancer
+  usage: '[options] <resource-group> <lb-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -l, --lb-name <lb-name>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --lb-name
+    description: the name of the load balancer
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the backend address pool
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: address-pool
+description: Commands to manage backend address pools of a load balancer
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  update_at: 12/7/2016 11:31 AM
+  ms.date: 12/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8f95a9647009830e06df64a6fef19075df64748e/lib/commands/arm/network/network._js
+

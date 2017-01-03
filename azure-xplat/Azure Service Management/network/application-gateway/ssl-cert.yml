@@ -1,0 +1,125 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: Add Application Gateway SSL certificate
+  usage: '[options] <name> <cert-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Application Gateway
+  - flags: -c, --cert-name <cert-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -c
+    long: --cert-name
+    description: the name of the certificate
+  - flags: -t, --cert-file <cert-file>
+    required: -17
+    optional: 0
+    bool: True
+    short: -t
+    long: --cert-file
+    description: the path to the certificate
+  - flags: -p, --password <password>
+    required: -16
+    optional: 0
+    bool: True
+    short: -p
+    long: --password
+    description: the certificate password
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: remove
+  description: Remove Application Gateway SSL certificate
+  usage: '[options] <name> <cert-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the Application Gateway
+  - flags: -c, --cert-name <cert-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -c
+    long: --cert-name
+    description: the name of the certificate
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: ssl-cert
+description: Commands to manage Application Gateway SSL certificates
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  update_at: 2/16/2016 8:20 AM
+  ms.date: 2/16/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ad831194034c67c12c577182ff8519f2a62f3200/lib/commands/asm/network/network._js
+

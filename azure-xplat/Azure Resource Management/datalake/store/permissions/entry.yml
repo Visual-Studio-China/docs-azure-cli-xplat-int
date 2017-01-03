@@ -1,0 +1,132 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: delete
+  description: deletes the specific ACE entry or entries from the path
+  usage: '[options] <accountName> <path> <aclEntries>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name to execute the action on
+  - flags: -p --path <path>
+    required: -11
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the full path to the folder to remove ACEs from (e.g. /someFolder)
+  - flags: -a --aclEntries <aclEntries>
+    required: -17
+    optional: 0
+    bool: True
+    short: -a
+    long: --aclEntries
+    description: a comma delimited list of the fully qualified ACE entry or entries to delete in the format [default:]<user>|<group>:<object Id> (e.g 'user:5546499e-795f-4f5f-b411-8179051f8b0a' or 'default:group:5546499e-795f-4f5f-b411-8179051f8b0a')
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: sets the specified Data Lake Store folder ACE entry or entries
+  usage: '[options] <accountName> <path> <aclEntries>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name to execute the action on
+  - flags: -p --path <path>
+    required: -11
+    optional: 0
+    bool: True
+    short: -p
+    long: --path
+    description: the full path to the folder to set ACEs on (e.g. /someFolder)
+  - flags: -a --aclEntries <aclEntries>
+    required: -17
+    optional: 0
+    bool: True
+    short: -a
+    long: --aclEntries
+    description: a comma delimited list of the fully qualified ACE entries to set in the format [default:]<user>|<group>:<object Id>:<permissions> (e.g 'user:5546499e-795f-4f5f-b411-8179051f8b0a:r-x' or 'default:group:5546499e-795f-4f5f-b411-8179051f8b0a:rwx')
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for overwrite confirmation)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: entry
+description: Commands to manage your Data Lake Storage FileSystem granular permissions entries
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakestore/datalakestore._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakestore/datalakestore._js
+  update_at: 12/8/2016 2:19 AM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/fe837089a4ac131960cec086dd0e75215e5dacf9/lib/commands/arm/datalakestore/datalakestore._js
+

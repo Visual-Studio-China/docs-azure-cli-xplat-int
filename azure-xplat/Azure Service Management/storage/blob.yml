@@ -1,0 +1,604 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List storage blob in the specified storage container use wildcard and blob name prefix
+  usage: '[options] [container] [prefix]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -p, --prefix <prefix>
+    required: -14
+    optional: 0
+    bool: True
+    short: -p
+    long: --prefix
+    description: the blob name prefix
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: show
+  description: Show details of the specified storage blob
+  usage: '[options] [container] [blob]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: --snapshot <snapshotTimestamp>
+    required: -12
+    optional: 0
+    bool: True
+    long: --snapshot
+    description: the snapshot timestamp
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: delete
+  description: Delete the specified storage blob
+  usage: '[options] [container] [blob]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: --snapshot <snapshotTimestamp>
+    required: -12
+    optional: 0
+    bool: True
+    long: --snapshot
+    description: the snapshot timestamp
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: --delete-snapshots <deleteSnapshots>
+    required: -20
+    optional: 0
+    bool: True
+    long: --delete-snapshots
+    description: "'include' to delete the base blob and all of its snapshots. 'only' to delete only the blob's snapshots and not the blob itself"
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: remove the specified storage blob without confirmation
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: upload
+  description: Upload the specified file to storage blob
+  usage: '[options] [file] [container] [blob]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -f, --file <file>
+    required: -12
+    optional: 0
+    bool: True
+    short: -f
+    long: --file
+    description: the local file path
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: -t, --blobtype <blobtype>
+    required: -16
+    optional: 0
+    bool: True
+    short: -t
+    long: --blobtype
+    description: the storage blob type(block, page, append)
+  - flags: -p, --properties <properties>
+    required: -18
+    optional: 0
+    bool: True
+    short: -p
+    long: --properties
+    description: the storage blob properties for uploaded file. Properties are key=value pairs and separated with semicolon(;). Available properties are contentType, contentEncoding, contentLanguage, cacheControl, contentDisposition, contentMD5
+  - flags: -m, --metadata <metadata>
+    required: -16
+    optional: 0
+    bool: True
+    short: -m
+    long: --metadata
+    description: the storage blob metadata for uploaded file. Metadata are key=value pairs and separated with semicolon(;)
+  - flags: --concurrenttaskcount <concurrenttaskcount>
+    required: -23
+    optional: 0
+    bool: True
+    long: --concurrenttaskcount
+    description: the maximum number of concurrent upload requests
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: overwrite the specified storage blob without confirmation
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: download
+  description: Download the specified storage blob
+  usage: '[options] [container] [blob] [destination]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: --snapshot <snapshotTimestamp>
+    required: -12
+    optional: 0
+    bool: True
+    long: --snapshot
+    description: the snapshot timestamp
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: -d, --destination [destination]
+    required: 0
+    optional: -19
+    bool: True
+    short: -d
+    long: --destination
+    description: download destination file or directory path
+  - flags: -m, --checkmd5
+    required: 0
+    optional: 0
+    bool: True
+    short: -m
+    long: --checkmd5
+    description: check md5sum for the downloaded file
+  - flags: --concurrenttaskcount <concurrenttaskcount>
+    required: -23
+    optional: 0
+    bool: True
+    long: --concurrenttaskcount
+    description: the maximum number of concurrent download requests
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: overwrite the destination file without confirmation
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: snapshot
+  description: Creates a read-only snapshot of the blob
+  usage: '[options] [container] [blob]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+- name: update
+  description: Update the properties of the specified storage blob
+  usage: '[options] [container] [blob]'
+  filePath: commands/storage/storage.blob._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --container <container>
+    required: -13
+    optional: 0
+    bool: True
+    long: --container
+    description: the storage container name
+  - flags: -b, --blob <blobName>
+    required: -12
+    optional: 0
+    bool: True
+    short: -b
+    long: --blob
+    description: the storage blob name
+  - flags: -p, --properties <properties>
+    required: -18
+    optional: 0
+    bool: True
+    short: -p
+    long: --properties
+    description: the storage blob properties. Properties are key=value pairs and separated with semicolon(;). Available properties are contentType, contentEncoding, contentLanguage, cacheControl, contentDisposition, contentMD5
+  - flags: --lease <leaseId>
+    required: -9
+    optional: 0
+    bool: True
+    long: --lease
+    description: the lease ID
+  - flags: --sas <sas>
+    required: -7
+    optional: 0
+    bool: True
+    long: --sas
+    description: the shared access signature
+  - flags: -a, --account-name <accountName>
+    required: -20
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-name
+    description: the storage account name or omit it to use environment variable [AZURE_STORAGE_ACCOUNT]
+  - flags: -k, --account-key <accountKey>
+    required: -19
+    optional: 0
+    bool: True
+    short: -k
+    long: --account-key
+    description: the storage account key or omit it to use environment variable [AZURE_STORAGE_ACCESS_KEY]
+  - flags: -c, --connection-string <connectionString>
+    required: -25
+    optional: 0
+    bool: True
+    short: -c
+    long: --connection-string
+    description: the storage connection string or omit it to use environment variable [AZURE_STORAGE_CONNECTION_STRING]
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: run storage command in debug mode
+name: blob
+description: Commands to manage your storage blobs
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.blob._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.blob._js
+  update_at: 11/15/2016 9:28 AM
+  ms.date: 11/15/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/17c05bf432f4e01f69adb0280933a151452e6e08/lib/commands/storage/storage.blob._js
+

@@ -1,0 +1,47 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List usage of network resources.
+  usage: '[options] <location>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -l, --location <location>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: the location
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: usage
+description: Commands to manage network usage
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

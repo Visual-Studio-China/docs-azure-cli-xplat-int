@@ -1,0 +1,47 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Creates an autoscale webhook notification.
+  usage: '[options] <serviceUri>'
+  filePath: commands/arm/insights/insights.autoscale.notifications.js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -e --serviceUri <serviceUri>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --serviceUri
+    description: The service Uri.
+  - flags: -o --properties <properties>
+    required: -17
+    optional: 0
+    bool: True
+    short: -o
+    long: --properties
+    description: 'A string with the list of key / value pairs in comma-separated format. Example: "key1=value1;key2=value2".'
+name: webhook
+description: Creates autoscale webhook notifications
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

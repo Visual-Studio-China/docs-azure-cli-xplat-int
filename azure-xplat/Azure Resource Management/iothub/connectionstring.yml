@@ -1,0 +1,61 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Get an IoT hub connection string
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group.
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub.
+  - flags: -k --key-name <keyName>
+    required: -15
+    optional: 0
+    bool: True
+    short: -k
+    long: --key-name
+    description: 'The name of the key. Default : The first key in the list of keys retrieved for the iothub'
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier.
+name: connectionstring
+description: Command to get the connection string of an IoT hub
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

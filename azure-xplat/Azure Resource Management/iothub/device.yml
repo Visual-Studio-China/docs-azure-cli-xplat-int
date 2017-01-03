@@ -1,0 +1,132 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: export
+  description: Export the devices of an IoT hub
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -e --export-blob-container-uri <exportBlobContainerUri>
+    required: -32
+    optional: 0
+    bool: True
+    short: -e
+    long: --export-blob-container-uri
+    description: The container Uri to export the devices to
+  - flags: -k --exclude-keys [excludeKeys]
+    required: 0
+    optional: -19
+    bool: True
+    short: -k
+    long: --exclude-keys
+    description: 'The flag indicating if the keys should also be exported or not. One of true, false. Default : true'
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+- name: import
+  description: Import the devices of an IoT hub
+  usage: <resourceGroup> <name> [options]
+  filePath: commands/arm/iothub/iothub._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resourceGroup>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: The name of the resource group
+  - flags: -n --name <name>
+    required: -11
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: The name of the IoT hub
+  - flags: -i --input-blob-container-uri <inputBlobContainerUri>
+    required: -31
+    optional: 0
+    bool: True
+    short: -i
+    long: --input-blob-container-uri
+    description: The container Uri from where devices will be imported
+  - flags: -o --output-blob-container-uri [outputBlobContainerUri]
+    required: 0
+    optional: -32
+    bool: True
+    short: -o
+    long: --output-blob-container-uri
+    description: The output container Uri which will be used to write some information related to the import job
+  - flags: -s --subscription [subscription]
+    required: 0
+    optional: -19
+    bool: True
+    short: -s
+    long: --subscription
+    description: The subscription identifier
+name: device
+description: Commands to manage the devices of an IoT hub
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/iothub/iothub._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/iothub/iothub._js
+  update_at: 10/20/2016 1:45 AM
+  ms.date: 10/20/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/eea6992a75fca6a96fcb02718ca0fe14ce17509c/lib/commands/arm/iothub/iothub._js
+

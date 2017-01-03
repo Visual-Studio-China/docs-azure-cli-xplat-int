@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: storage
+description: Commands to manage your Storage objects
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

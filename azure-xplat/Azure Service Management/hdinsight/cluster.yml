@@ -1,0 +1,239 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: "Create a cluster.\nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
+  usage: '[options] <clusterName> <osType> <storageAccountName> <storageAccountKey> <storageContainer> <dataNodeCount> <headNodeSize> <dataNodeSize> <location> <userName> <password> <sshUserName> <sshPassword>'
+  filePath: commands/asm/hdinsight._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --clusterName <clusterName>
+    required: -15
+    optional: 0
+    bool: True
+    long: --clusterName
+    description: HDInsight cluster name
+  - flags: --osType <osType>
+    required: -10
+    optional: 0
+    bool: True
+    long: --osType
+    description: HDInsight cluster operating system - 'windows' or 'linux'
+  - flags: --storageAccountName <storageAccountName>
+    required: -22
+    optional: 0
+    bool: True
+    long: --storageAccountName
+    description: Storage account url to use for default HDInsight storage
+  - flags: --storageAccountKey <storageAccountKey>
+    required: -21
+    optional: 0
+    bool: True
+    long: --storageAccountKey
+    description: Key to the storage account to use for default HDInsight storage
+  - flags: --storageContainer <storageContainer>
+    required: -20
+    optional: 0
+    bool: True
+    long: --storageContainer
+    description: Container in the storage account to use for HDInsight default storage
+  - flags: --dataNodeCount <dataNodeCount>
+    required: -17
+    optional: 0
+    bool: True
+    long: --dataNodeCount
+    description: Number of data nodes to use for the cluster
+  - flags: --headNodeSize <headNodeSize>
+    required: -16
+    optional: 0
+    bool: True
+    long: --headNodeSize
+    description: "NOTE: Head node size for the cluster (only allowed for 'windows' ostype)"
+  - flags: --dataNodeSize <dataNodeSize>
+    required: -16
+    optional: 0
+    bool: True
+    long: --dataNodeSize
+    description: "NOTE: Data node size for the cluster (only allowed for 'windows' ostype)"
+  - flags: --location <location>
+    required: -12
+    optional: 0
+    bool: True
+    long: --location
+    description: Data center location for the cluster
+  - flags: --userName <userName>
+    required: -12
+    optional: 0
+    bool: True
+    long: --userName
+    description: Cluster username
+  - flags: --password <password>
+    required: -12
+    optional: 0
+    bool: True
+    long: --password
+    description: Cluster password
+  - flags: --sshUserName <sshUserName>
+    required: -15
+    optional: 0
+    bool: True
+    long: --sshUserName
+    description: SSH username
+  - flags: --sshPassword <sshPassword>
+    required: -15
+    optional: 0
+    bool: True
+    long: --sshPassword
+    description: SSH password
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: "Delete a cluster.\nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
+  usage: '[options] <clusterName> <location> <osType>'
+  filePath: commands/asm/hdinsight._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --clusterName <clusterName>
+    required: -15
+    optional: 0
+    bool: True
+    long: --clusterName
+    description: Cluster name
+  - flags: --location <location>
+    required: -12
+    optional: 0
+    bool: True
+    long: --location
+    description: Cluster location
+  - flags: --osType <osType>
+    required: -10
+    optional: 0
+    bool: True
+    long: --osType
+    description: Cluster OS type
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: "Show cluster details.\nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
+  usage: '[options] <clusterName> <osType>'
+  filePath: commands/asm/hdinsight._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --clusterName <clusterName>
+    required: -15
+    optional: 0
+    bool: True
+    long: --clusterName
+    description: the HdInsight cluster name
+  - flags: --osType <osType>
+    required: -10
+    optional: 0
+    bool: True
+    long: --osType
+    description: 'the HdInsight cluster operating system: windows OR linux'
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: list
+  description: "List the clustershelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
+  usage: '[options]'
+  filePath: commands/asm/hdinsight._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+name: cluster
+description: "Commands to manage HDInsight clusters.\nhelp: 		HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 		To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 		For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/hdinsight._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/hdinsight._js
+  update_at: 8/2/2016 1:17 AM
+  ms.date: 8/2/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/6a8f8fd63a69c6cba551e70be84f5687073f98e2/lib/commands/asm/hdinsight._js
+

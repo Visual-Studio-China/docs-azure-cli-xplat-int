@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: sb
+description: Commands to manage your Service Bus configuration
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

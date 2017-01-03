@@ -1,0 +1,309 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List all the WebJobs under a web site
+  usage: '[options] [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-type <job-type>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-type
+    description: optional. The type of the webjob. Valid value is "triggered" or "continuous". By default return webjobs of all types.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show details of a specific webjob
+  usage: '[options] <jobName> <jobType> [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --job-type <job-type>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-type
+    description: required. The type of the webjob. Valid value is "triggered" or "continuous".
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a WebJob
+  usage: '[options] <jobName> <jobType> [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --job-type <job-type>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-type
+    description: required. The type of the webjob. Valid value is "triggered" or "continuous".
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: upload
+  description: Upload a new WebJob
+  usage: '[options] <jobName> <jobType> <jobFile> [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --job-type <job-type>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-type
+    description: required. The type of the webjob. Valid values are "triggered" or "continuous".
+  - flags: --job-file <job-file>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-file
+    description: required. The job file.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: start
+  description: Start a WebJob
+  usage: '[options] <jobName> <jobType> [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --job-type <job-type>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-type
+    description: required. The type of the webjob. Valid value is "triggered" or "continuous".
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: stop
+  description: Stops a WebJob. Only continuous jobs can  be stopped
+  usage: '[options] <jobName> <jobType> [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: job
+description: Commands to manage your Web Site WebJobs
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  update_at: 3/29/2015 4:31 AM
+  ms.date: 3/29/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1c23942cd12df3e279ffea7338fff79a401ff13/lib/commands/asm/site.jobs._js
+

@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: hdinsight
+description: Commands to manage HDInsight clusters and jobs
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

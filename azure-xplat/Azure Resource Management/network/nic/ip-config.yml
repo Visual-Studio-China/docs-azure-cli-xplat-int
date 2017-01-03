@@ -1,0 +1,450 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a network interface ip configuration
+  usage: '[options] <resource-group> <nic-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -c, --nic-name <nic-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --nic-name
+    description: the name of the network interface
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the ip configuration
+  - flags: -y, --is-primary [is-primary]
+    required: 0
+    optional: -18
+    bool: True
+    short: -y
+    long: --is-primary
+    description: "set the ip-config as primary for the network interface [false,true].\n     Default is false, if option is not specified.\n     NOTE: only one ip configuration can be set as primary for a NIC. \n     By specifying true for an ip-config, all other ip-configs will be set as \"primary: false\""
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for change primary IP config confirmation
+  - flags: -u, --subnet-id [subnet-id]
+    required: 0
+    optional: -17
+    bool: True
+    short: -u
+    long: --subnet-id
+    description: >-
+      the subnet identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/VirtualNetworks/<vnet-name>/subnets/<subnet-name>
+  - flags: -k, --subnet-name [subnet-name]
+    required: 0
+    optional: -19
+    bool: True
+    short: -k
+    long: --subnet-name
+    description: the subnet name
+  - flags: -m, --subnet-vnet-name [subnet-vnet-name]
+    required: 0
+    optional: -24
+    bool: True
+    short: -m
+    long: --subnet-vnet-name
+    description: the vnet name under which subnet-name exists
+  - flags: -i, --public-ip-id [public-ip-id]
+    required: 0
+    optional: -20
+    bool: True
+    short: -i
+    long: --public-ip-id
+    description: >-
+      the public IP identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/publicIPAddresses/<public-ip-name>
+  - flags: -p, --public-ip-name [public-ip-name]
+    required: 0
+    optional: -22
+    bool: True
+    short: -p
+    long: --public-ip-name
+    description: >-
+      the public IP name.
+           This public ip must exist in the same resource group as the nic.
+           Please use public-ip-id if that is not the case.
+  - flags: -d, --lb-address-pool-ids [lb-address-pool-ids]
+    required: 0
+    optional: -27
+    bool: True
+    short: -d
+    long: --lb-address-pool-ids
+    description: >-
+      the comma separated list of load balancer address pool identifiers
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/loadbalancers/<lb-name>/backendAddressPools/<address-pool-name>
+  - flags: -e, --lb-inbound-nat-rule-ids [lb-inbound-nat-rule-ids]
+    required: 0
+    optional: -31
+    bool: True
+    short: -e
+    long: --lb-inbound-nat-rule-ids
+    description: >-
+      the comma separated list of load balancer inbound NAT rule identifiers
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/loadbalancers/<lb-name>/inboundNatRules/<nat-rule-name>
+  - flags: -a, --private-ip-address [private-ip-address]
+    required: 0
+    optional: -26
+    bool: True
+    short: -a
+    long: --private-ip-address
+    description: the private ip address
+  - flags: -b, --private-ip-version [private-ip-version]
+    required: 0
+    optional: -26
+    bool: True
+    short: -b
+    long: --private-ip-version
+    description: >-
+      the private ip version, valid values are
+           [IPv4,IPv6], default is IPv4
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set a network interface ip configuration
+  usage: '[options] <resource-group> <nic-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -c, --nic-name <nic-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --nic-name
+    description: the name of the network interface
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the ip configuration
+  - flags: -y, --is-primary [is-primary]
+    required: 0
+    optional: -18
+    bool: True
+    short: -y
+    long: --is-primary
+    description: "set the ip-config as primary for the network interface [false,true].\n     Default is false, if option is not specified.\n     NOTE: only one ip configuration can be set as primary for a NIC. \n     By specifying true for an ip-config, all other ip-configs will be set as \"primary: false\""
+  - flags: -u, --subnet-id [subnet-id]
+    required: 0
+    optional: -17
+    bool: True
+    short: -u
+    long: --subnet-id
+    description: >-
+      the subnet identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/VirtualNetworks/<vnet-name>/subnets/<subnet-name>
+  - flags: -k, --subnet-name [subnet-name]
+    required: 0
+    optional: -19
+    bool: True
+    short: -k
+    long: --subnet-name
+    description: the subnet name
+  - flags: -m, --subnet-vnet-name [subnet-vnet-name]
+    required: 0
+    optional: -24
+    bool: True
+    short: -m
+    long: --subnet-vnet-name
+    description: the vnet name under which subnet-name exists
+  - flags: -i, --public-ip-id [public-ip-id]
+    required: 0
+    optional: -20
+    bool: True
+    short: -i
+    long: --public-ip-id
+    description: >-
+      the public IP identifier.
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/publicIPAddresses/<public-ip-name>
+  - flags: -p, --public-ip-name [public-ip-name]
+    required: 0
+    optional: -22
+    bool: True
+    short: -p
+    long: --public-ip-name
+    description: >-
+      the public IP name.
+           This public ip must exist in the same resource group as the nic.
+           Please use public-ip-id if that is not the case.
+  - flags: -d, --lb-address-pool-ids [lb-address-pool-ids]
+    required: 0
+    optional: -27
+    bool: True
+    short: -d
+    long: --lb-address-pool-ids
+    description: >-
+      the comma separated list of load balancer address pool identifiers
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/loadbalancers/<lb-name>/backendAddressPools/<address-pool-name>
+  - flags: -e, --lb-inbound-nat-rule-ids [lb-inbound-nat-rule-ids]
+    required: 0
+    optional: -31
+    bool: True
+    short: -e
+    long: --lb-inbound-nat-rule-ids
+    description: >-
+      the comma separated list of load balancer inbound NAT rule identifiers
+           e.g. /subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.Network/loadbalancers/<lb-name>/inboundNatRules/<nat-rule-name>
+  - flags: -a, --private-ip-address [private-ip-address]
+    required: 0
+    optional: -26
+    bool: True
+    short: -a
+    long: --private-ip-address
+    description: the private ip address
+  - flags: -b, --private-ip-version [private-ip-version]
+    required: 0
+    optional: -26
+    bool: True
+    short: -b
+    long: --private-ip-version
+    description: >-
+      the private ip version, valid values are
+           [IPv4,IPv6]
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: List a network interface ip configurations
+  usage: '[options] <resource-group> <nic-name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -c, --nic-name <nic-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --nic-name
+    description: the name of the network interface
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get details of a network interface ip configuration
+  usage: '[options] <resource-group> <nic-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -c, --nic-name <nic-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --nic-name
+    description: the name of the network interface
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the ip configuration
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: >-
+    Delete a network interface ip configuration
+         IP configuration marked as primary cannot be deleted. In this case, update another ip configuration as primary prior to deletion
+         Deleting an ip configuration is not supported if it is the only one on a network interface. There must be at least one ip configuration
+  usage: '[options] <resource-group> <nic-name> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -c, --nic-name <nic-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -c
+    long: --nic-name
+    description: the name of the network interface
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the ip configuration
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: ip-config
+description: Commands to manage network interface ip configurations
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  update_at: 12/7/2016 11:31 AM
+  ms.date: 12/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8f95a9647009830e06df64a6fef19075df64748e/lib/commands/arm/network/network._js
+

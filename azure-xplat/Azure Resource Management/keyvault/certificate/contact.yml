@@ -1,0 +1,128 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List vault certificate contacts
+  usage: '[options] <vault-name>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+- name: add
+  description: Adds a certificate contact to the vault
+  usage: '[options] <vault-name> <email-address>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -e, --email-address <email-address>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --email-address
+    description: the contact email address
+- name: delete
+  description: Deletes a certificate contact from the vault
+  usage: '[options <vault-name> <email-address>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -e, --email-address <email-address>
+    required: -21
+    optional: 0
+    bool: True
+    short: -e
+    long: --email-address
+    description: the email address
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+name: contact
+description: Commands to manage certificate contacts in the Azure Key Vault service
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  update_at: 10/11/2016 5:10 PM
+  ms.date: 10/11/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/2d353bf83a4d051fc1fbb452b112cf28b20a0e2d/lib/commands/arm/keyvault/keyvault.certificate._js
+

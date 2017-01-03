@@ -1,0 +1,201 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Lists certificate issuers of a vault
+  usage: '[options] <vault-name>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+- name: show
+  description: Shows a vault certificate issuer
+  usage: '[options] <vault-name> <certificate-issuer-name>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-issuer-name <certificate-issuer-name>
+    required: -31
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-issuer-name
+    description: the certificate issuer name
+- name: create
+  description: Creates a vault certificate issuer
+  usage: '[options] <vault-name> <certificate-issuer-name> <provider-name> '
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-issuer-name <certificate-issuer-name>
+    required: -31
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-issuer-name
+    description: the certificate issuer name
+  - flags: -p, --provider-name <provider-name>
+    required: -21
+    optional: 0
+    bool: True
+    short: -p
+    long: --provider-name
+    description: the provider-name
+  - flags: -a, --account-id <account-id>
+    required: -18
+    optional: 0
+    bool: True
+    short: -a
+    long: --account-id
+    description: account identifier
+  - flags: -k, --api-key <api-key>
+    required: -15
+    optional: 0
+    bool: True
+    short: -k
+    long: --api-key
+    description: api key for the account
+  - flags: -o, --certificate-organization <certificate-organization>
+    required: -32
+    optional: 0
+    bool: True
+    short: -o
+    long: --certificate-organization
+    description: the certificate organization
+  - flags: -e --certificate-organization-file <certificate-organization-file>
+    required: -36
+    optional: 0
+    bool: True
+    short: -e
+    long: --certificate-organization-file
+    description: a file containing the certificate organization. Mutually exclusive with --certificate-organization.
+- name: delete
+  description: Deletes a certificate issuer from the vault
+  usage: '[options] <vault-name> <certificate-issuer-name>'
+  filePath: commands/arm/keyvault/keyvault.certificate._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -u, --vault-name <vault-name>
+    required: -18
+    optional: 0
+    bool: True
+    short: -u
+    long: --vault-name
+    description: the vault name
+  - flags: -c, --certificate-issuer-name <certificate-issuer-name>
+    required: -31
+    optional: 0
+    bool: True
+    short: -c
+    long: --certificate-issuer-name
+    description: the certificate issuer name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+name: issuer
+description: Commands to manage certificate issuers in the Azure Key Vault service
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/keyvault/keyvault.certificate._js
+  update_at: 10/11/2016 5:10 PM
+  ms.date: 10/11/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/2d353bf83a4d051fc1fbb452b112cf28b20a0e2d/lib/commands/arm/keyvault/keyvault.certificate._js
+

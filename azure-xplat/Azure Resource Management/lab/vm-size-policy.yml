@@ -1,0 +1,156 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: Set allowed virtual machine sizes policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -z, --vm-sizes <vm-sizes>
+    required: -16
+    optional: 0
+    bool: True
+    short: -z
+    long: --vm-sizes
+    description: 'allowed virtual machine sizes, example value: Standard_A0,StandardA1'
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get allowed virtual machine sizes policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Delete allowed virtual machine sizes policy.
+  usage: '[options]'
+  filePath: commands/arm/devtestlabs/devTestLabs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group name of the lab
+  - flags: -l, --lab-name <lab-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -l
+    long: --lab-name
+    description: the lab name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: vm-size-policy
+description: Commands to manage allowed virtual machine sizes policy
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/devtestlabs/devTestLabs._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/devtestlabs/devTestLabs._js
+  update_at: 7/11/2016 11:00 PM
+  ms.date: 7/11/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1bae301a86173fd6bf2b6ff28c4dc4252d87fe00/lib/commands/arm/devtestlabs/devTestLabs._js
+

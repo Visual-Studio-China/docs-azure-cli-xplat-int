@@ -1,0 +1,378 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List available resource extensions for VMs
+  usage: '[options]'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --extension-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -n
+    long: --extension-name
+    description: name of the extension
+  - flags: -p, --publisher-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher-name
+    description: name of the extension publisher
+  - flags: -e, --version <version>
+    required: -15
+    optional: 0
+    bool: True
+    short: -e
+    long: --version
+    description: version number of the extension to fetch
+  - flags: -a, --all-versions
+    required: 0
+    optional: 0
+    bool: True
+    short: -a
+    long: --all-versions
+    description: list all versions of an extension
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: set
+  description: Enable/disable resource extensions for VMs
+  usage: '[options] <vm-name> <extension-name> <publisher-name> <version>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -r, --reference-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -r
+    long: --reference-name
+    description: extension's reference name
+  - flags: -i, --public-config <public-config>
+    required: -21
+    optional: 0
+    bool: True
+    short: -i
+    long: --public-config
+    description: public configuration text
+  - flags: -c, --public-config-path <public-config-path>
+    required: -26
+    optional: 0
+    bool: True
+    short: -c
+    long: --public-config-path
+    description: public configuration file path
+  - flags: -t, --private-config <private-config>
+    required: -22
+    optional: 0
+    bool: True
+    short: -t
+    long: --private-config
+    description: private configuration text
+  - flags: -e, --private-config-path <private-config-path>
+    required: -27
+    optional: 0
+    bool: True
+    short: -e
+    long: --private-config-path
+    description: private configuration file path
+  - flags: -b, --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -b
+    long: --disable
+    description: disable extension
+  - flags: -u, --uninstall
+    required: 0
+    optional: 0
+    bool: True
+    short: -u
+    long: --uninstall
+    description: uninstall extension
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider VM hosted in this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: set-chef
+  description: Enable/disable Chef extensions for VMs
+  usage: '[options] <vm-name>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -V, --version <number>
+    required: -15
+    optional: 0
+    bool: True
+    short: -V
+    long: --version
+    description: extension's version number. Default is latest.
+  - flags: -r, --reference-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -r
+    long: --reference-name
+    description: extension's reference name
+  - flags: -R, --run-list <run-list>
+    required: -16
+    optional: 0
+    bool: True
+    short: -R
+    long: --run-list
+    description: Runlist of roles/recipes to apply to VM
+  - flags: -O, --validation-pem <validation-pem>
+    required: -22
+    optional: 0
+    bool: True
+    short: -O
+    long: --validation-pem
+    description: chef validation pem file path. Not required if -C or --client-pem option specified
+  - flags: -c, --client-config <client-config>
+    required: -21
+    optional: 0
+    bool: True
+    short: -c
+    long: --client-config
+    description: chef client configuration file(i.e client.rb) path
+  - flags: -C, --client-pem <client-pem>
+    required: -18
+    optional: 0
+    bool: True
+    short: -C
+    long: --client-pem
+    description: chef client pem file path i.e required in validator less bootstrap
+  - flags: -j, --bootstrap-options <bootstrap-json-attribute>
+    required: -25
+    optional: 0
+    bool: True
+    short: -j
+    long: --bootstrap-options
+    description: "Bootstrap options in JSON format. Ex: -j '{\"chef_node_name\":\"test_node\"}'"
+  - flags: -v, --bootstrap-version <number>
+    required: -25
+    optional: 0
+    bool: True
+    short: -v
+    long: --bootstrap-version
+    description: chef-client version to be installed
+  - flags: -b, --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -b
+    long: --disable
+    description: disable extension
+  - flags: -u, --uninstall
+    required: 0
+    optional: 0
+    bool: True
+    short: -u
+    long: --uninstall
+    description: uninstall extension
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider VM hosted in this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+  - flags: --json-attributes <json-attributes>
+    required: -19
+    optional: 0
+    bool: True
+    long: --json-attributes
+    description: "A JSON string to be added to the first run of chef-client. Ex: --json-attributes '{\"foo\" : \"bar\"}'"
+- name: get
+  description: Gets resource extensions applied to a VM.
+  usage: '[options] <vm-name>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n, --extension-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -n
+    long: --extension-name
+    description: name of the extension
+  - flags: -p, --publisher-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -p
+    long: --publisher-name
+    description: name of the extension publisher
+  - flags: -r, --reference-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -r
+    long: --reference-name
+    description: extension's reference name
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider only VM for this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: get-chef
+  description: Gets Chef extension applied to a VM.
+  usage: '[options] <vm-name>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -r, --reference-name <name>
+    required: -22
+    optional: 0
+    bool: True
+    short: -r
+    long: --reference-name
+    description: extension's reference name
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider only VM for this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: extension
+description: Commands to manage VM resource extensions
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  update_at: 10/6/2016 12:59 PM
+  ms.date: 10/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f12dcbb247d6c0bec436509df0396f1f00f15256/lib/commands/asm/vm._js
+

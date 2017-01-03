@@ -1,0 +1,146 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Show your site domains
+  usage: '[options] [name]'
+  filePath: commands/asm/site.domain._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: add
+  description: Add a site domain
+  usage: '[options] <dn> [name]'
+  filePath: commands/asm/site.domain._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --dn <dn>
+    required: -10
+    optional: 0
+    bool: True
+    short: -d
+    long: --dn
+    description: the new domain name
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a site domain
+  usage: '[options] <dn> [name]'
+  filePath: commands/asm/site.domain._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --dn <dn>
+    required: -10
+    optional: 0
+    bool: True
+    short: -d
+    long: --dn
+    description: the domain name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: domain
+description: Commands to manage your Web Site domains
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.domain._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.domain._js
+  update_at: 3/24/2014 11:13 PM
+  ms.date: 3/24/2014
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8d1dd46ff12851698b14f49e42abe42f83bb4fcd/lib/commands/asm/site.domain._js
+

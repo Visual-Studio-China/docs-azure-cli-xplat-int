@@ -1,0 +1,445 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a DNS zone
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Set a DNS zone
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -t, --tags [tags]
+    required: 0
+    optional: -12
+    bool: True
+    short: -t
+    long: --tags
+    description: >-
+      the list of tags.
+           Can be multiple. In the format of "name=value".
+           Name is required and value is optional.
+           Existing tag values will be replaced by the values specified.
+           For example, -t "tag1=value1;tag2"
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: list
+  description: Get all DNS zones
+  usage: '[options] [resource-group]'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group [resource-group]
+    required: 0
+    optional: -22
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Get a DNS zone
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: >-
+      the name of the DNS zone
+           You can specify "*" (in quotes) for this parameter
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: clear
+  description: Delete all record sets in a DNS zone
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for clear confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: 'Delete a DNS zone. WARNING: This will delete the DNS zone and all DNS records. This operation cannot be undone.'
+  usage: '[options] <resource-group> <name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: import
+  description: Import a DNS zone
+  usage: '[options] <resource-group> <name> <file-name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -f, --file-name <file-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -f
+    long: --file-name
+    description: the name of the zone file
+  - flags: --force
+    required: 0
+    optional: 0
+    bool: True
+    long: --force
+    description: force overwrite of existing record sets. Otherwise, records are merged with existing record sets
+  - flags: --debug
+    required: 0
+    optional: 0
+    bool: True
+    long: --debug
+    description: output debug info
+  - flags: --parse-only
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse-only
+    description: parse zone file only, without import
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: export
+  description: Export a DNS zone as a zone file
+  usage: '[options] <resource-group> <name> <file-name>'
+  filePath: commands/arm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g, --resource-group <resource-group>
+    required: -22
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the name of the resource group
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the DNS zone
+  - flags: -f, --file-name <file-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -f
+    long: --file-name
+    description: the name of the zone file
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for overwrite confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: zone
+description: Commands to manage DNS zone
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/network/network._js
+  update_at: 12/7/2016 11:31 AM
+  ms.date: 12/7/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/8f95a9647009830e06df64a6fef19075df64748e/lib/commands/arm/network/network._js
+

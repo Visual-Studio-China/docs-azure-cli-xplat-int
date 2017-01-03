@@ -1,0 +1,125 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: Associate a network security group with a subnet
+  usage: '[options] <nsg-name> <vnet-name> <subnet-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -n, --subnet-name <subnet-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name of the virtual network subnet
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: remove
+  description: Remove association between a network security group and subnet
+  usage: '[options] <nsg-name> <vnet-name> <subnet-name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -a, --nsg-name <nsg-name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -a
+    long: --nsg-name
+    description: the name of the network security group
+  - flags: -n, --vnet-name <vnet-name>
+    required: -17
+    optional: 0
+    bool: True
+    short: -n
+    long: --vnet-name
+    description: the name of the virtual network
+  - flags: -n, --subnet-name <subnet-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -n
+    long: --subnet-name
+    description: the name of the virtual network subnet
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: subnet
+description: Commands to manage network security group of subnet
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  update_at: 2/16/2016 8:20 AM
+  ms.date: 2/16/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ad831194034c67c12c577182ff8519f2a62f3200/lib/commands/asm/network/network._js
+

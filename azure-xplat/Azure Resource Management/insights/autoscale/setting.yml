@@ -1,0 +1,170 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List autoscale settings for a resource.
+  usage: '[options] <resourceGroup>'
+  filePath: commands/arm/insights/insights.autoscale.setting._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: -n --settingName <settingName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --settingName
+    description: The name of the setting.
+- name: delete
+  description: Deletes an autoscale setting.
+  usage: '[options] <resourceGroup> <settingName>'
+  filePath: commands/arm/insights/insights.autoscale.setting._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: -n --settingName <settingName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --settingName
+    description: The name of the setting.
+- name: set
+  description: Create or set an autoscale setting.
+  usage: '[options] <settingName> <location> <resourceGroup>'
+  filePath: commands/arm/insights/insights.autoscale.setting._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -x --disable
+    required: 0
+    optional: 0
+    bool: True
+    short: -x
+    long: --disable
+    description: Flag to disable the setting.
+  - flags: -a --autoProfiles <autoProfiles>
+    required: -19
+    optional: 0
+    bool: True
+    short: -a
+    long: --autoProfiles
+    description: A list of autoscale profiles in JSON format.
+  - flags: -g --resourceGroup <resourceGroup>
+    required: -20
+    optional: 0
+    bool: True
+    short: -g
+    long: --resourceGroup
+    description: The resource group.
+  - flags: -n --settingName <settingName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --settingName
+    description: The name of the setting.
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: The location.
+  - flags: -i --targetResourceId <targetResourceId>
+    required: -23
+    optional: 0
+    bool: True
+    short: -i
+    long: --targetResourceId
+    description: The resource Id.
+  - flags: -p --settingSpec <settingSpec>
+    required: -18
+    optional: 0
+    bool: True
+    short: -p
+    long: --settingSpec
+    description: The setting spec in JSON format.
+  - flags: -w --notifications <notifications>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --notifications
+    description: The list object autoscale notifications in escaped-jsson format.
+name: setting
+description: Manages autoscale settings
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.setting._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.setting._js
+  update_at: 3/29/2016 12:26 AM
+  ms.date: 3/29/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/71a90d9fa746e7fd1adc424586d5b069ef620c3b/lib/commands/arm/insights/insights.autoscale.setting._js
+

@@ -1,0 +1,146 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set additional-unattend-content in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"additionalUnattendContent\" : {\r\n             \"passName\":null,\r\n             \"componentName\":null,\r\n             \"settingName\":null,\r\n             \"content\":\"\"\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --index <index>
+    required: -9
+    optional: 0
+    bool: True
+    long: --index
+    description: 'Indexer: index.'
+  - flags: --value <value>
+    required: -9
+    optional: 0
+    bool: True
+    long: --value
+    description: The input string value for the indexed item.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --pass-name <passName>
+    required: -13
+    optional: 0
+    bool: True
+    long: --pass-name
+    description: Set the pass-name value.
+  - flags: --component-name <componentName>
+    required: -18
+    optional: 0
+    bool: True
+    long: --component-name
+    description: Set the component-name value.
+  - flags: --setting-name <settingName>
+    required: -16
+    optional: 0
+    bool: True
+    long: --setting-name
+    description: Set the setting-name value.
+  - flags: --content <content>
+    required: -11
+    optional: 0
+    bool: True
+    long: --content
+    description: Set the content value.
+- name: delete
+  description: "Remove additional-unattend-content in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"additionalUnattendContent\" : {\r\n             \"passName\":null,\r\n             \"componentName\":null,\r\n             \"settingName\":null,\r\n             \"content\":\"\"\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --index <index>
+    required: -9
+    optional: 0
+    bool: True
+    long: --index
+    description: 'Indexer: index.'
+  - flags: --pass-name
+    required: 0
+    optional: 0
+    bool: True
+    long: --pass-name
+    description: Remove the pass-name value.
+  - flags: --component-name
+    required: 0
+    optional: 0
+    bool: True
+    long: --component-name
+    description: Remove the component-name value.
+  - flags: --setting-name
+    required: 0
+    optional: 0
+    bool: True
+    long: --setting-name
+    description: Remove the setting-name value.
+  - flags: --content
+    required: 0
+    optional: 0
+    bool: True
+    long: --content
+    description: Remove the content value.
+name: additional-unattend-content
+description: Commands to configure additional-unattend-content of vmss in config file.
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  update_at: 7/1/2016 11:36 PM
+  ms.date: 7/1/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1520512f3f9011a1a0e6c2038953d5808a20ccc8/lib/commands/arm/compute/virtualMachineScaleSets._js
+

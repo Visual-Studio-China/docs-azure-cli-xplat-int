@@ -1,0 +1,120 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: add
+  description: Add a backend address pool to an Application Gateway
+  usage: '[options] <gateway-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the backend address pool
+  - flags: -r, --servers <servers>
+    required: -15
+    optional: 0
+    bool: True
+    short: -r
+    long: --servers
+    description: >-
+      comma separated list of IP addresses or DNS names
+           corresponding to backend servers
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: remove
+  description: Remove a backend address pool from an Application Gateway
+  usage: '[options] <gateway-name> <name>'
+  filePath: commands/asm/network/network._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -w, --gateway-name <gateway-name>
+    required: -20
+    optional: 0
+    bool: True
+    short: -w
+    long: --gateway-name
+    description: the name of the Application Gateway
+  - flags: -n, --name <name>
+    required: -12
+    optional: 0
+    bool: True
+    short: -n
+    long: --name
+    description: the name of the backend address pool
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for unregister confirmation
+  - flags: -s, --subscription <subscription>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: address-pool
+description: Commands to manage Application Gateway backend address pool
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/network/network._js
+  update_at: 2/16/2016 8:20 AM
+  ms.date: 2/16/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/ad831194034c67c12c577182ff8519f2a62f3200/lib/commands/asm/network/network._js
+

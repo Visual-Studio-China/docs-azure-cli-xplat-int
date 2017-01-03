@@ -1,0 +1,128 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: show
+  description: Show a VM static IP address
+  usage: '[options] <vm-name>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider VM hosted in this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: set
+  description: Set a VM static IP address
+  usage: '[options] <vm-name> <ip-address>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider VM hosted in this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: remove
+  description: Remove a VM static IP address
+  usage: '[options] <vm-name>'
+  filePath: commands/asm/vm._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d, --dns-name <name>
+    required: -16
+    optional: 0
+    bool: True
+    short: -d
+    long: --dns-name
+    description: consider VM hosted in this DNS name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: static-ip
+description: Commands to manage your Virtual Machine static IP address
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  update_at: 10/6/2016 12:59 PM
+  ms.date: 10/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f12dcbb247d6c0bec436509df0396f1f00f15256/lib/commands/asm/vm._js
+

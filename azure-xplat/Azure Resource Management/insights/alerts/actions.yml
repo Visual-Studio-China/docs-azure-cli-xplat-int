@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: actions
+description: Creates alert rules actions
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

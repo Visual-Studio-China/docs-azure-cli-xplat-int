@@ -1,0 +1,159 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List mobile service custom APIs
+  usage: '[options] [servicename]'
+  filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: use the subscription id
+- name: create
+  description: Creates a mobile service custom API
+  usage: '[options] [servicename] [apiname]'
+  filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: use the subscription id
+  - flags: -p, --permissions <permissions>
+    required: -19
+    optional: 0
+    bool: True
+    short: -p
+    long: --permissions
+    description: comma delimited list of <method>=<permission> pairs
+- name: update
+  description: Updates a mobile service custom API
+  usage: '[options] [servicename] [apiname]'
+  filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: use the subscription id
+  - flags: -p, --permissions <permissions>
+    required: -19
+    optional: 0
+    bool: True
+    short: -p
+    long: --permissions
+    description: comma delimited list of <method>=<permission> pairs
+  - flags: -f, --force
+    required: 0
+    optional: 0
+    bool: True
+    short: -f
+    long: --force
+    description: override any custom changes to the permissions metadata file
+- name: delete
+  description: Deletes a mobile service custom API
+  usage: '[options] [servicename] [apiname]'
+  filePath: commands/asm/mobile._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: use the subscription id
+name: api
+description: Commands to manage your mobile service APIs
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/mobile._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/mobile._js
+  update_at: 12/8/2016 6:17 PM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/620513b6c8a708e9a5459b832fb4f67489566770/lib/commands/asm/mobile._js
+

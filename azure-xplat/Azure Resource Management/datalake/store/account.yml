@@ -1,0 +1,322 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List all Data Lake Store accounts available for your subscription or subscription and resource group
+  usage: '[options]'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the optional resource group to list the accounts in
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: show
+  description: Shows a Data Lake Store Account based on account name
+  usage: '[options] <accountName>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the optional resource group to list the accounts in
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: delete
+  description: Deletes a Data Lake Store Account based on account name
+  usage: '[options] <accountName>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: the Data Lake Store account name
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the optional resource group to force the command to find the Data Lake Store account to delete in.
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: create
+  description: Creates a Data Lake Store Account
+  usage: '[options] <accountName> <location> <resource-group>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: The Data Lake Store account name to create
+  - flags: -l --location <location>
+    required: -15
+    optional: 0
+    bool: True
+    short: -l
+    long: --location
+    description: 'the location the Data Lake Store account will be created in. Valid values are: North Central US, South Central US, Central US, West Europe, North Europe, West US, East US, East US 2, Japan East, Japan West, Brazil South, Southeast Asia, East Asia, Australia East, Australia Southeast'
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the resource group to create the account in
+  - flags: -d --defaultGroup <defaultGroup>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --defaultGroup
+    description: the optional default permissions group to add to the account when created
+  - flags: -e --encryption <'UserManaged'|'ServiceManaged'>
+    required: -17
+    optional: 0
+    bool: True
+    short: -e
+    long: --encryption
+    description: optionally indicates what type of encryption to provision the account with, if any. Valid values are UserManaged or ServiceManaged
+  - flags: -k --keyVaultId <key vault id>
+    required: -17
+    optional: 0
+    bool: True
+    short: -k
+    long: --keyVaultId
+    description: if the encryption type is UserAssigned, this is the id of the key vault the user wishes to use
+  - flags: -y --keyName <key name>
+    required: -14
+    optional: 0
+    bool: True
+    short: -y
+    long: --keyName
+    description: if the encryption type is UserAssigned, this is the key name in the key vault the user wishes to use
+  - flags: -s --keyVersion <key version>
+    required: -17
+    optional: 0
+    bool: True
+    short: -s
+    long: --keyVersion
+    description: if the encryption type is UserAssigned, this is the key version of the key the user wishes to use
+  - flags: -t --tags <tags>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set to the the Data Lake Store account. Can be mutliple. In the format of 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+- name: set
+  description: Updates the properties of an existing Data Lake Store Account
+  usage: '[options] <accountName>'
+  filePath: commands/arm/datalakestore/datalakestore._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --accountName <accountName>
+    required: -18
+    optional: 0
+    bool: True
+    short: -n
+    long: --accountName
+    description: The Data Lake Store account name to update with new tags and/or default permissions group
+  - flags: -g --resource-group <resource-group>
+    required: -21
+    optional: 0
+    bool: True
+    short: -g
+    long: --resource-group
+    description: the optional resource group to forcibly look for the account to update in
+  - flags: -d --defaultGroup <defaultGroup>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --defaultGroup
+    description: the optional default permissions group to set in the existing account
+  - flags: -t --trustedIdProviderState <Enabled|Disabled>
+    required: -29
+    optional: 0
+    bool: True
+    short: -t
+    long: --trustedIdProviderState
+    description: optionally enable or disable existing trusted identity providers. Valid values are 'Enabled' or 'Disabled'
+  - flags: -f --firewallState <Enabled|Disabled>
+    required: -20
+    optional: 0
+    bool: True
+    short: -f
+    long: --firewallState
+    description: optionally enable or disable existing firewall rules. Valid values are 'Enabled' or 'Disabled'
+  - flags: -t --tags <tags>
+    required: -11
+    optional: 0
+    bool: True
+    short: -t
+    long: --tags
+    description: Tags to set to the Data Lake Store account. Can be mutliple. In the format of 'name=value'. Name is required and value is optional. For example, -t tag1=value1;tag2
+  - flags: --no-tags
+    required: 0
+    optional: 0
+    bool: False
+    long: --no-tags
+    description: remove all existing tags
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription identifier
+name: account
+description: Commands to manage your Data Lake Storage accounts
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakestore/datalakestore._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakestore/datalakestore._js
+  update_at: 12/8/2016 2:19 AM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/fe837089a4ac131960cec086dd0e75215e5dacf9/lib/commands/arm/datalakestore/datalakestore._js
+

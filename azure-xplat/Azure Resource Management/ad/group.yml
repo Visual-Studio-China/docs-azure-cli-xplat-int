@@ -1,0 +1,159 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: Get Active Directory groups in current subscription's tenant. When --json flag is used, it will get the information from all the pages and then provide the final json array.
+  usage: '[options]'
+  filePath: commands/arm/ad/ad.groups._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: '| more'
+    required: 0
+    optional: 0
+    bool: True
+    short: ''
+    long: more
+    description: Provides paging support. Press 'Enter' for more information.
+- name: show
+  description: Get Active Directory groups
+  usage: '[options]'
+  filePath: commands/arm/ad/ad.groups._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -o --objectId <objectId>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --objectId
+    description: the object Id of the group to return
+  - flags: -c --search <search>
+    required: -13
+    optional: 0
+    bool: True
+    short: -c
+    long: --search
+    description: Search by display name which starts with the provided value
+- name: create
+  description: Creates an Active Directory group in the tenant.
+  usage: '[options] <display-name> <mail-nickname>'
+  filePath: commands/arm/ad/ad.groups._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -d --display-name <display-name>
+    required: -19
+    optional: 0
+    bool: True
+    short: -d
+    long: --display-name
+    description: The name to display in the address book for the group.
+  - flags: -m --mail-nickname <mail-nickname>
+    required: -20
+    optional: 0
+    bool: True
+    short: -m
+    long: --mail-nickname
+    description: The mail alias for the group.
+- name: delete
+  description: Deletes an Active Directory group.
+  usage: '[options] <objectId>'
+  filePath: commands/arm/ad/ad.groups._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -o --objectId <objectId>
+    required: -15
+    optional: 0
+    bool: True
+    short: -o
+    long: --objectId
+    description: the object Id of the group to delete
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode (do not ask for delete confirmation)
+name: group
+description: Commands to display Active Directory groups
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.groups._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/ad/ad.groups._js
+  update_at: 10/28/2016 2:28 AM
+  ms.date: 10/28/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7c71f782208ab7537b6fe3eab3f05ab03e10d9d0/lib/commands/arm/ad/ad.groups._js
+

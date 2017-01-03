@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: code
+description: Commands to manage your code
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

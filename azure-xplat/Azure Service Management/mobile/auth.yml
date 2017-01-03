@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: auth
+description: Commands to manage authentication settings for mobile service
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

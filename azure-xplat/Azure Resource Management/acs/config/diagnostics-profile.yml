@@ -1,0 +1,92 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set diagnostics-profile in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"diagnosticsProfile\" : {\r\n             \"vmDiagnostics\":{\r\n               \"enabled\":null,\r\n               \"storageUri\":\"\"\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --vm-diagnostics <vmDiagnostics>
+    required: -18
+    optional: 0
+    bool: True
+    long: --vm-diagnostics
+    description: Set the vm-diagnostics value.
+- name: delete
+  description: "Remove diagnostics-profile in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"diagnosticsProfile\" : {\r\n             \"vmDiagnostics\":{\r\n               \"enabled\":null,\r\n               \"storageUri\":\"\"\r\n             }\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/containerService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --vm-diagnostics
+    required: 0
+    optional: 0
+    bool: True
+    long: --vm-diagnostics
+    description: Remove the vm-diagnostics value.
+name: diagnostics-profile
+description: Commands to configure diagnostics-profile of acs in config file.
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/containerService._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/containerService._js
+  update_at: 4/22/2016 10:11 PM
+  ms.date: 4/22/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/22bdde5abbc14c459e3dcaa698646cd0f7e56f41/lib/commands/arm/compute/containerService._js
+

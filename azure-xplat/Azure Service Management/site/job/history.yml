@@ -1,0 +1,106 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List all the triggered WebJobs runs under a web site
+  usage: '[options] [jobName] [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Get the detaisl for a triggered WebJobs run under a web site
+  usage: '[options] [jobName] [runId] [name]'
+  filePath: commands/asm/site.jobs._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --job-name <job-name>
+    required: -12
+    optional: 0
+    bool: True
+    long: --job-name
+    description: required. The name of the webjob.
+  - flags: --run-id <run-id>
+    required: -10
+    optional: 0
+    bool: True
+    long: --run-id
+    description: optional. The id of the run history. If not specified, show the latest run.
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: history
+description: Commands to manage your Web Site WebJobs History
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.jobs._js
+  update_at: 3/29/2015 4:31 AM
+  ms.date: 3/29/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1c23942cd12df3e279ffea7338fff79a401ff13/lib/commands/asm/site.jobs._js
+

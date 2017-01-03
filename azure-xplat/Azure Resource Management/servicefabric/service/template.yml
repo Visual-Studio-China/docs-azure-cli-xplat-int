@@ -1,0 +1,54 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create service from template
+  usage: '[options] [applicationName] [serviceName] [serviceTypeName]'
+  filePath: commands/servicefabric/serviceFabricService._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: -n --application-name <applicationName>
+    required: -23
+    optional: 0
+    bool: True
+    short: -n
+    long: --application-name
+    description: the name of the application
+  - flags: -e --service-name <serviceName>
+    required: -19
+    optional: 0
+    bool: True
+    short: -e
+    long: --service-name
+    description: the name of the service
+  - flags: -t --service-type-name <serviceTypeName>
+    required: -24
+    optional: 0
+    bool: True
+    short: -t
+    long: --service-type-name
+    description: the name of the service type
+name: template
+description: Commands to manage your service template
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

@@ -1,0 +1,201 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: list
+  description: List your git deployments
+  usage: '[options] [name]'
+  filePath: commands/asm/site.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -m, --max <count>
+    required: -11
+    optional: 0
+    bool: True
+    short: -m
+    long: --max
+    description: Limit the maximum number of results
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show your git deployment
+  usage: '[options] <commitId> [name]'
+  filePath: commands/asm/site.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -d, --details
+    required: 0
+    optional: 0
+    bool: True
+    short: -d
+    long: --details
+    description: Display log details
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: redeploy
+  description: Redeploy your git deployment
+  usage: '[options] <commitId> [name]'
+  filePath: commands/asm/site.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for redeploy confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: github
+  description: Link a website to a github account for deployment
+  usage: '[options] [name]'
+  filePath: commands/asm/site.deployment._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --slot <slot>
+    required: -8
+    optional: 0
+    bool: True
+    long: --slot
+    description: the name of the slot
+  - flags: --githubusername <username>
+    required: -18
+    optional: 0
+    bool: True
+    long: --githubusername
+    description: the github username
+  - flags: --githubpassword <password>
+    required: -18
+    optional: 0
+    bool: True
+    long: --githubpassword
+    description: the github password
+  - flags: --githubrepository <repository>
+    required: -20
+    optional: 0
+    bool: True
+    long: --githubrepository
+    description: the github repository full name (i.e. user/repository)
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: deployment
+description: Commands to manage your Web Site deployments
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.deployment._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site.deployment._js
+  update_at: 3/29/2015 4:31 AM
+  ms.date: 3/29/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1c23942cd12df3e279ffea7338fff79a401ff13/lib/commands/asm/site.deployment._js
+

@@ -1,0 +1,199 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: create
+  description: Create a firewall rule for a SQL Server
+  usage: '[options] <serverName> <ruleName> <startIPAddress> <endIPAddress>'
+  filePath: commands/asm/sql._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --serverName <serverName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --serverName
+    description: the SQL Server name
+  - flags: --ruleName <ruleName>
+    required: -12
+    optional: 0
+    bool: True
+    long: --ruleName
+    description: the firewall rule name
+  - flags: --startIPAddress <startIPAddress>
+    required: -18
+    optional: 0
+    bool: True
+    long: --startIPAddress
+    description: the starting IP address for the firewall rule
+  - flags: --endIPAddress <endIPAddress>
+    required: -16
+    optional: 0
+    bool: True
+    long: --endIPAddress
+    description: the ending IP address for the firewall rule
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: show
+  description: Show firewall rule details
+  usage: '[options] <serverName> <ruleName>'
+  filePath: commands/asm/sql._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --serverName <serverName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --serverName
+    description: the SQL Server name
+  - flags: --ruleName <ruleName>
+    required: -12
+    optional: 0
+    bool: True
+    long: --ruleName
+    description: the firewall rule name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: list
+  description: List the firewall rules
+  usage: '[options] <serverName>'
+  filePath: commands/asm/sql._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --serverName <serverName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --serverName
+    description: the SQL Server name
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+- name: delete
+  description: Delete a firewall rule
+  usage: '[options] <serverName> <ruleName>'
+  filePath: commands/asm/sql._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --serverName <serverName>
+    required: -14
+    optional: 0
+    bool: True
+    long: --serverName
+    description: the SQL server name
+  - flags: --ruleName <ruleName>
+    required: -12
+    optional: 0
+    bool: True
+    long: --ruleName
+    description: the firewall rule name
+  - flags: -q, --quiet
+    required: 0
+    optional: 0
+    bool: True
+    short: -q
+    long: --quiet
+    description: quiet mode, do not ask for delete confirmation
+  - flags: -s, --subscription <id>
+    required: -20
+    optional: 0
+    bool: True
+    short: -s
+    long: --subscription
+    description: the subscription id
+name: firewallrule
+description: Commands to manage your SQL Server firewall rules
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sql._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/sql._js
+  update_at: 5/4/2015 3:24 AM
+  ms.date: 5/4/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/7ac34733fd2f4b4e2a3d60f3b1dbefa0bd3c43c7/lib/commands/asm/sql._js
+

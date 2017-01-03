@@ -1,0 +1,206 @@
+### YamlMime:AzureXplatCli
+commands:
+- name: set
+  description: "Set extensions in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"extensions\" : {\r\n             \"name\":\"\",\r\n             \"publisher\":\"\",\r\n             \"type\":\"\",\r\n             \"typeHandlerVersion\":\"\",\r\n             \"autoUpgradeMinorVersion\":null,\r\n             \"settings\":{\r\n             },\r\n             \"protectedSettings\":{\r\n             },\r\n             \"provisioningState\":\"\",\r\n             \"id\":\"\"\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --index <index>
+    required: -9
+    optional: 0
+    bool: True
+    long: --index
+    description: 'Indexer: index.'
+  - flags: --value <value>
+    required: -9
+    optional: 0
+    bool: True
+    long: --value
+    description: The input string value for the indexed item.
+  - flags: --parse
+    required: 0
+    optional: 0
+    bool: True
+    long: --parse
+    description: Parse the input string, i.e. str, for parameters to a JSON object, e.g. JSON.parse(str).
+  - flags: --name <name>
+    required: -8
+    optional: 0
+    bool: True
+    long: --name
+    description: Set the name value.
+  - flags: --publisher <publisher>
+    required: -13
+    optional: 0
+    bool: True
+    long: --publisher
+    description: Set the publisher value.
+  - flags: --type <type>
+    required: -8
+    optional: 0
+    bool: True
+    long: --type
+    description: Set the type value.
+  - flags: --type-handler-version <typeHandlerVersion>
+    required: -24
+    optional: 0
+    bool: True
+    long: --type-handler-version
+    description: Set the type-handler-version value.
+  - flags: --auto-upgrade-minor-version <autoUpgradeMinorVersion>
+    required: -30
+    optional: 0
+    bool: True
+    long: --auto-upgrade-minor-version
+    description: Set the auto-upgrade-minor-version value.
+  - flags: --settings <settings>
+    required: -12
+    optional: 0
+    bool: True
+    long: --settings
+    description: Set the settings value.
+  - flags: --protected-settings <protectedSettings>
+    required: -22
+    optional: 0
+    bool: True
+    long: --protected-settings
+    description: Set the protected-settings value.
+  - flags: --provisioning-state <provisioningState>
+    required: -22
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Set the provisioning-state value.
+  - flags: --id <id>
+    required: -6
+    optional: 0
+    bool: True
+    long: --id
+    description: Set the id value.
+- name: delete
+  description: "Remove extensions in config string or files, e.g. \r\n         {\r\n           ...\r\n           \"extensions\" : {\r\n             \"name\":\"\",\r\n             \"publisher\":\"\",\r\n             \"type\":\"\",\r\n             \"typeHandlerVersion\":\"\",\r\n             \"autoUpgradeMinorVersion\":null,\r\n             \"settings\":{\r\n             },\r\n             \"protectedSettings\":{\r\n             },\r\n             \"provisioningState\":\"\",\r\n             \"id\":\"\"\r\n           }\r\n           ...\r\n         }\r\n\r\n         There are two sets of commands:\r\n           1) function commands that are used to manage Azure resources in the cloud, and \r\n           2) parameter commands that generate & edit input files for the other set of commands.\r\n         For example, 'vmss show/list/stop' are the function commands that call get, list and stop operations of \r\n         virtual machine scale set, whereas 'vmss config * generate/create/set/delete/add' commands \r\n         are used to configure the input parameter file. The 'vmss config' command takes a parameter \r\n         file as for the VM scale set configuration, and creates it online."
+  usage: '[options]'
+  filePath: commands/arm/compute/virtualMachineScaleSets._js
+  options:
+  - flags: -v, --verbose
+    required: 0
+    optional: 0
+    bool: True
+    short: -v
+    long: --verbose
+    description: use verbose output
+  - flags: -vv
+    required: 0
+    optional: 0
+    bool: True
+    long: -vv
+    description: more verbose with debug output
+  - flags: --json
+    required: 0
+    optional: 0
+    bool: True
+    long: --json
+    description: use json output
+  - flags: --parameter-file <parameter-file>
+    required: -18
+    optional: 0
+    bool: True
+    long: --parameter-file
+    description: The parameter file path.
+  - flags: --index <index>
+    required: -9
+    optional: 0
+    bool: True
+    long: --index
+    description: 'Indexer: index.'
+  - flags: --name
+    required: 0
+    optional: 0
+    bool: True
+    long: --name
+    description: Remove the name value.
+  - flags: --publisher
+    required: 0
+    optional: 0
+    bool: True
+    long: --publisher
+    description: Remove the publisher value.
+  - flags: --type
+    required: 0
+    optional: 0
+    bool: True
+    long: --type
+    description: Remove the type value.
+  - flags: --type-handler-version
+    required: 0
+    optional: 0
+    bool: True
+    long: --type-handler-version
+    description: Remove the type-handler-version value.
+  - flags: --auto-upgrade-minor-version
+    required: 0
+    optional: 0
+    bool: True
+    long: --auto-upgrade-minor-version
+    description: Remove the auto-upgrade-minor-version value.
+  - flags: --settings
+    required: 0
+    optional: 0
+    bool: True
+    long: --settings
+    description: Remove the settings value.
+  - flags: --protected-settings
+    required: 0
+    optional: 0
+    bool: True
+    long: --protected-settings
+    description: Remove the protected-settings value.
+  - flags: --provisioning-state
+    required: 0
+    optional: 0
+    bool: True
+    long: --provisioning-state
+    description: Remove the provisioning-state value.
+  - flags: --id
+    required: 0
+    optional: 0
+    bool: True
+    long: --id
+    description: Remove the id value.
+name: extensions
+description: Commands to configure extensions of vmss in config file.
+usage: '[options] [command]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/compute/virtualMachineScaleSets._js
+  update_at: 7/1/2016 11:36 PM
+  ms.date: 7/1/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1520512f3f9011a1a0e6c2038953d5808a20ccc8/lib/commands/arm/compute/virtualMachineScaleSets._js
+

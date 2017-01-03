@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: cdn
+description: Commands to manage Azure Content Delivery Network (CDN)
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+

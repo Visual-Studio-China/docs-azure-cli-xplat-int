@@ -1,0 +1,9 @@
+### YamlMime:AzureXplatCli
+commands: []
+name: storage
+description: Commands to invoke service management operations.
+usage: '[options]'
+Metadata:
+  ms.topic: reference
+  open_to_public_contributors: false
+
