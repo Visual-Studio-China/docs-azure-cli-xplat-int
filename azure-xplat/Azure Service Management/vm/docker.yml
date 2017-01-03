@@ -183,5 +183,10 @@ description: Commands to manage your Docker Virtual Machine
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/vm._js
+  update_at: 10/6/2016 12:59 PM
+  ms.date: 10/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f12dcbb247d6c0bec436509df0396f1f00f15256/lib/commands/asm/vm._js
 

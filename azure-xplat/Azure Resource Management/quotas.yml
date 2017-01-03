@@ -43,5 +43,10 @@ description: Command to view your aggregated Azure quotas
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/quotas/quotas._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/quotas/quotas._js
+  update_at: 6/4/2016 7:58 AM
+  ms.date: 6/4/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/0a5e4e6ffe6dfc5d1f4c3e494ab3f33c4cafe0bd/lib/commands/arm/quotas/quotas._js
 

@@ -57,5 +57,10 @@ description: Commands to manage your Data Lake Analytics Catalog
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakeanalytics/datalakeanalytics._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/datalakeanalytics/datalakeanalytics._js
+  update_at: 12/8/2016 12:28 AM
+  ms.date: 12/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/de660c7458c877be142c0618d4cb32cf6d555374/lib/commands/arm/datalakeanalytics/datalakeanalytics._js
 

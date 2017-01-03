@@ -56,5 +56,10 @@ description: Commands to manage node agent skus of IaaS pools
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.pool._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.pool._js
+  update_at: 9/14/2016 9:56 PM
+  ms.date: 9/14/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b1abe0a71f81a16d5f2999811e0dbf70b940317c/lib/commands/batch/batch.pool._js
 

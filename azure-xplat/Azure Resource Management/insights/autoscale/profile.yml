@@ -127,5 +127,10 @@ description: Manages autoscale profiles
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.profile.js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.profile.js
+  update_at: 3/29/2016 12:26 AM
+  ms.date: 3/29/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/71a90d9fa746e7fd1adc424586d5b069ef620c3b/lib/commands/arm/insights/insights.autoscale.profile.js
 

@@ -43,5 +43,10 @@ description: Creates autoscale webhook notifications
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.notifications.js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.notifications.js
+  update_at: 3/29/2016 4:16 PM
+  ms.date: 3/29/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/35cc0d3d34c5b633e53e20bffeed603fcffce33c/lib/commands/arm/insights/insights.autoscale.notifications.js
 

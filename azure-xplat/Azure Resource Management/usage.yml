@@ -72,5 +72,10 @@ description: Command to view your aggregated Azure usage data
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/usage/usage._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/usage/usage._js
+  update_at: 10/28/2016 2:27 AM
+  ms.date: 10/28/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f2f4bc75e2463eec64360efac2fa8979b582be31/lib/commands/arm/usage/usage._js
 

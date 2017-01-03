@@ -36,5 +36,10 @@ description: Commands to manage Batch service quotas at the region level
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.location._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/batch/batch.location._js
+  update_at: 10/6/2016 8:15 PM
+  ms.date: 10/6/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/f0127621f58044a1c9042589b1be65098eac959e/lib/commands/batch/batch.location._js
 

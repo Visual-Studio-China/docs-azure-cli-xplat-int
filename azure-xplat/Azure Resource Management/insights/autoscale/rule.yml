@@ -113,5 +113,10 @@ description: Manages autoscale rules
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.rule.js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.autoscale.rule.js
+  update_at: 3/29/2016 10:08 PM
+  ms.date: 3/29/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/157c965d6225366e30123ffc393e0ce12bebb022/lib/commands/arm/insights/insights.autoscale.rule.js
 

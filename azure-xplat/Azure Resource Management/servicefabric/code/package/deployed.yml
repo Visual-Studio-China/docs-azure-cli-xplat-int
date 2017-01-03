@@ -49,5 +49,10 @@ description: Commands to manage your deployed code package
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricPackage._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricPackage._js
+  update_at: 11/17/2016 11:21 PM
+  ms.date: 11/17/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/4f263a370d77014a28a7dec154d5824b56121eeb/lib/commands/servicefabric/serviceFabricPackage._js
 

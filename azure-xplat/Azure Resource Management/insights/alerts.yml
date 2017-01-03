@@ -76,5 +76,10 @@ description: Manages alert rules
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.alerts._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.alerts._js
+  update_at: 3/22/2016 7:34 PM
+  ms.date: 3/22/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1913ed28a1e06b7380bae96b5ad373e1d1f8be71/lib/commands/arm/insights/insights.alerts._js
 

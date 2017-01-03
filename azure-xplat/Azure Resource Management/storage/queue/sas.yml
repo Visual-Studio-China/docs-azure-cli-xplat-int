@@ -92,5 +92,10 @@ description: Commands to manage shared access signatures of your Storage queue
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.queue._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.queue._js
+  update_at: 8/9/2016 8:11 AM
+  ms.date: 8/9/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/9c2bdfe3928ac335b1f20167b7f5236c32764c18/lib/commands/storage/storage.queue._js
 

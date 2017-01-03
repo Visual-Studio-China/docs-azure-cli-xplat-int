@@ -41,5 +41,10 @@ description: Commands to get the available locations
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/location/location._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/location/location._js
+  update_at: 8/20/2016 12:32 AM
+  ms.date: 8/20/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/cc727cad0e640a02062d851a1d2cfc47078607ed/lib/commands/arm/location/location._js
 

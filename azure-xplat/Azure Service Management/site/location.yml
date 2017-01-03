@@ -29,5 +29,10 @@ description: Commands to manage your Web Site locations
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/site._js
+  update_at: 8/2/2016 7:45 PM
+  ms.date: 8/2/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/c1fc4c00cf9a95e736fe4cb717c553968031ae23/lib/commands/asm/site._js
 

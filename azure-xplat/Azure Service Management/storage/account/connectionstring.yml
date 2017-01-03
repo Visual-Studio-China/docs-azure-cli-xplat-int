@@ -66,5 +66,10 @@ description: Commands to show your Storage connection string
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.account._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.account._js
+  update_at: 7/25/2016 5:00 PM
+  ms.date: 7/25/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/9cf0bdb3689b6d00c802bdedf7c4cb13c52e756b/lib/commands/storage/storage.account._js
 

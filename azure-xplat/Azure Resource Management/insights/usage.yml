@@ -64,5 +64,10 @@ description: Retrieve usage metrics for a resource.
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.usage._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.usage._js
+  update_at: 4/28/2015 11:18 PM
+  ms.date: 4/28/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/b24932be22ed4b50cf72d778eb6816a005749477/lib/commands/arm/insights/insights.usage._js
 

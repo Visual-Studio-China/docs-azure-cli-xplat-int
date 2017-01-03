@@ -49,5 +49,10 @@ description: Commands to manage your account certificates
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/account.cert._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/asm/account.cert._js
+  update_at: 3/18/2015 10:42 PM
+  ms.date: 3/18/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/fd450c647bacc94752ab7a494bc972ebe606b24f/lib/commands/asm/account.cert._js
 

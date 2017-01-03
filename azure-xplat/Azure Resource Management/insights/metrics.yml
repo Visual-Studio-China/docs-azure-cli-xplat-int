@@ -71,5 +71,10 @@ description: Retrieve metrics values resource
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.metrics._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights.metrics._js
+  update_at: 4/8/2016 9:20 PM
+  ms.date: 4/8/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1dae871a46f6f1b922ecedb7930a856862b81a6c/lib/commands/arm/insights/insights.metrics._js
 

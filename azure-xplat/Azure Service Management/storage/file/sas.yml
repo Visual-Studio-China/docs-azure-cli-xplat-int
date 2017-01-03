@@ -99,5 +99,10 @@ description: Commands to manage shared access signatures of your Storage file
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.file._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/storage/storage.file._js
+  update_at: 11/15/2016 9:38 AM
+  ms.date: 11/15/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/89ed28f2616096f8659f837e2c86e31f58810c45/lib/commands/storage/storage.file._js
 

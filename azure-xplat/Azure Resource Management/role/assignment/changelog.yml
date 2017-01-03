@@ -59,5 +59,10 @@ description: Gets access change history for the selected subscription for the sp
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/role/role.assignment.audit._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/role/role.assignment.audit._js
+  update_at: 9/29/2015 3:30 AM
+  ms.date: 9/29/2015
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/80dc9b99e1712fc42cb55700f9e5f0ddb424d6d0/lib/commands/arm/role/role.assignment.audit._js
 

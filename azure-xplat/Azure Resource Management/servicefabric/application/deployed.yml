@@ -49,5 +49,10 @@ description: Commands to manage your deployed application
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricApplication._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricApplication._js
+  update_at: 9/27/2016 11:09 PM
+  ms.date: 9/27/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/bbc8b77e316312c275483886fab4817ccde67579/lib/commands/servicefabric/serviceFabricApplication._js
 

@@ -64,5 +64,10 @@ description: Commands to manage resource group logs
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/group/group._js
+  update_at: 10/10/2016 10:39 PM
+  ms.date: 10/10/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/c1e44e2b6ecd840de22db448481ce85e2193666d/lib/commands/arm/group/group._js
 

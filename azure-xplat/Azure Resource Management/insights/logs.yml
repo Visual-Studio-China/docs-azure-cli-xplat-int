@@ -104,5 +104,10 @@ description: Retrieve operation logs for a subscription, a correlationId, a reso
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/arm/insights/insights._js
+  update_at: 3/23/2016 10:33 PM
+  ms.date: 3/23/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/1b97e660769fe8d5c6f99b1bf77784aec5e28b0e/lib/commands/arm/insights/insights._js
 

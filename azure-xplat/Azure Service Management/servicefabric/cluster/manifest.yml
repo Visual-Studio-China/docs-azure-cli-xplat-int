@@ -29,5 +29,10 @@ description: Commands to manage your cluster manifest
 usage: '[options] [command]'
 Metadata:
   ms.topic: reference
-  open_to_public_contributors: false
+  open_to_public_contributors: true
+  content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricCluster._js
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/dev/lib/commands/servicefabric/serviceFabricCluster._js
+  update_at: 9/27/2016 7:53 PM
+  ms.date: 9/27/2016
+  gitcommit: https://github.com/Visual-Studio-China/azure-xplat-cli/blob/9c973be94e818004c7bcbc686e45bbf474cb03e5/lib/commands/servicefabric/serviceFabricCluster._js
 
