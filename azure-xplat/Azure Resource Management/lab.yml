@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: lab
-description: Commands to manage your DevTest Labs
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

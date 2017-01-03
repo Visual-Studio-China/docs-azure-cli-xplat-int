@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: servicefabric
-description: Commands to manage your Azure Service Fabric
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

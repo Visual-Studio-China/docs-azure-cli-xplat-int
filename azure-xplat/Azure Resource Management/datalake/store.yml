@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: store
-description: Commands to manage your Data Lake Storage objects
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

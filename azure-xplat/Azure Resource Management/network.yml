@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: network
-description: Commands to manage network resources
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

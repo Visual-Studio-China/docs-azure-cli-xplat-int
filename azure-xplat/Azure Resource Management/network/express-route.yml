@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: express-route
-description: Commands to manage express routes
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

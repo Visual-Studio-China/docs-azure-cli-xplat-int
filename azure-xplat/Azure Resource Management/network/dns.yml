@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: dns
-description: Commands to manage DNS
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: hdinsight
-description: "Commands to manage HDInsight clusters and jobs.\nhelp: 			  HDInsight commands in ASM mode are deprecated and will be removed in January 2017. Please use ARM mode instead by entering:  azure config mode arm\nhelp: 			  To submit jobs, please use a Secure Shell (SSH) connection to your cluster.\nhelp: 			  For more information, go to http://go.microsoft.com/fwlink/?LinkID=746541&clcid=0x404 \nhelp:"
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-

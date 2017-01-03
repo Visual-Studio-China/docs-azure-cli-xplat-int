@@ -1,9 +1,0 @@
-### YamlMime:AzureXplatCli
-commands: []
-name: sql
-description: Commands to manage your SQL Server accounts
-usage: '[options]'
-Metadata:
-  ms.topic: reference
-  open_to_public_contributors: false
-
