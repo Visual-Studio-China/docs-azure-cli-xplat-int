@@ -1,3 +1,36 @@
+- name: Conceptual
+  items:
+    - name: Authentication
+      href: ./Conceptual/Authentication.md
+    - name: BestPractices-Testing
+      href: ./Conceptual/BestPractices-Testing.md
+    - name: CorporateProxy
+      href: ./Conceptual/CorporateProxy.md
+    - name: Debugging
+      href: ./Conceptual/Debugging.md
+    - name: DummyCerts
+      href: ./Conceptual/DummyCerts.md
+    - name: Endpoints
+      href: ./Conceptual/Endpoints.md
+    - name: EnvironmentVariables
+      href: ./Conceptual/EnvironmentVariables.md
+    - name: README
+      href: ./Conceptual/README.md
+    - name: ReleaseProcess
+      href: ./Conceptual/ReleaseProcess.md
+    - name: RunTests
+      href: ./Conceptual/RunTests.md
+    - name: SetupBatchTest
+      href: ./Conceptual/SetupBatchTest.md
+    - name: SetupRepo
+      href: ./Conceptual/SetupRepo.md
+    - name: TestModes
+      href: ./Conceptual/TestModes.md
+    - name: Writing-Cmd
+      href: ./Conceptual/Writing-Cmd.md
+    - name: Writing-Test
+      href: ./Conceptual/Writing-Test.md
+      items:
 - name: Azure Resource Management
   href: ./Azure Resource Management.yml
   items:
