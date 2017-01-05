@@ -8,7 +8,8 @@
         "exclude": [
           "**/obj/**",
           "azure-xplat-cli-poc/**",
-          "**/includes/**"
+          "**/includes/**",
+          "specs/*.md"
         ]
       }
     ],
@@ -26,14 +27,11 @@
         ]
       }
     ],
-    "overwrite": "specs/*.md",
-    "externalReference": [],
+    "overwrite": ["specs/*.md"],
     "globalMetadata": {
         "breadcrumb_path": "/azure-xplat-cli-poc/breadcrumb.json",
         "brand": "azure"
     },
-    "fileMetadata": {},
-    "template": [],
     "dest": "azure-xplat-cli-poc"
   }
 }
